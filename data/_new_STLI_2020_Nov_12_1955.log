@@ -1,0 +1,101 @@
+1.4772 	WARNING 	We strongly recommend you activate the PTB sound engine in PsychoPy prefs as the preferred audio engine. Its timing is vastly superior. Your prefs are currently set to use ['sounddevice', 'PTB', 'pyo', 'pygame'] (in that order).
+5.5676 	WARNING 	User requested fullscreen with size [1024  768], but screen is actually [1920, 1080]. Using actual size
+8.0874 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=False, args=UNKNOWN, autoLog=True, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([0., 0., 0.]), colorSpace='rgb', depthBits=8, fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x000001B7E1077940>, gamma=None, gammaErrorPolicy='raise', kwargs=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x000001B7E0DC9940>, multiSample=False, name='window1', numSamples=2, pos=[0.0, 0.0], screen=0, size=array([1920, 1080]), stencilBits=0, stereo=False, units='height', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+8.0877 	EXP 	window1: mouseVisible = True
+8.0877 	EXP 	window1: recordFrameIntervals = False
+8.1563 	EXP 	window1: recordFrameIntervals = True
+8.2131 	WARNING 	t of last frame was 8.46ms (=1/118)
+8.2329 	EXP 	window1: recordFrameIntervals = False
+8.6205 	EXP 	Created text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='text', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='Welcome', units='height', win=Window(...), wrapWidth=1)
+8.6219 	EXP 	Created Cross = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, autoDraw=False, autoLog=True, closeShape=True, contrast=1.0, depth=0.0, fillColor=array([1., 1., 1.]), fillColorSpace='rgb', interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineWidth=1, name='Cross', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([0.5, 0.5]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+8.6242 	EXP 	Created image = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='image', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128, units='height', win=Window(...))
+8.6263 	EXP 	Created image_2 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='image_2', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128, units='height', win=Window(...))
+8.6281 	EXP 	Created image_3 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-3.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='image_3', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128, units='height', win=Window(...))
+8.6297 	EXP 	Created image_4 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-4.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='image_4', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128, units='height', win=Window(...))
+8.6313 	EXP 	Created Topleft = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Topleft', opacity=1.0, ori=0.0, pos=array([-0.25,  0.25]), size=array([0.5, 0.5]), texRes=128, units='height', win=Window(...))
+8.6407 	EXP 	Created Topright = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, image=str(...), interpolate=True, mask=None, maskParams=None, name='Topright', opacity=1.0, ori=0.0, pos=array([0.25, 0.25]), size=array([0.5, 0.5]), texRes=128, units='height', win=Window(...))
+8.6484 	EXP 	Created Bottomleft = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, image=str(...), interpolate=True, mask=None, maskParams=None, name='Bottomleft', opacity=1.0, ori=0.0, pos=array([-0.25, -0.25]), size=array([0.5, 0.5]), texRes=128, units='height', win=Window(...))
+8.6557 	EXP 	Created Bottomright = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-3.0, flipHoriz=False, flipVert=False, image=str(...), interpolate=True, mask=None, maskParams=None, name='Bottomright', opacity=1.0, ori=0.0, pos=array([ 0.25, -0.25]), size=array([0.5, 0.5]), texRes=128, units='height', win=Window(...))
+8.6593 	EXP 	Created Fixation_cross = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-4.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='Fixation_cross', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='+', units='height', win=Window(...), wrapWidth=1)
+8.6677 	EXP 	Created text_2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='text_2', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='End\n\n', units='height', win=Window(...), wrapWidth=1)
+8.6999 	EXP 	text: autoDraw = True
+9.7060 	EXP 	Imported index.xlsx as conditions, 2 conditions, 5 params
+9.7062 	EXP 	Created sequence: sequential, trialTypes=2, nReps=1, seed=None
+9.7065 	EXP 	New trial (rep=0, index=0): OrderedDict([('trial', 1), ('image1', 'images\\Alcohol 5.jpg'), ('image2', 'images\\Alcohol 8.jpg'), ('image3', 'images\\Astronaut 1.jpg'), ('image4', 'images\\Baby 1.jpg')])
+9.7335 	EXP 	text: autoDraw = False
+9.7335 	EXP 	image: image = 'images\\Alcohol 5.jpg'
+9.7335 	EXP 	image_2: image = 'images\\Alcohol 8.jpg'
+9.7335 	EXP 	image_3: image = 'images\\Astronaut 1.jpg'
+9.7335 	EXP 	image_4: image = 'images\\Baby 1.jpg'
+9.7335 	EXP 	Cross: autoDraw = True
+10.7811 	EXP 	image: autoDraw = True
+10.7876 	EXP 	Cross: autoDraw = False
+11.7267 	EXP 	image_2: autoDraw = True
+11.7831 	EXP 	image: autoDraw = False
+12.7262 	EXP 	image_2: autoDraw = False
+12.7262 	EXP 	image_3: autoDraw = True
+13.7264 	EXP 	image_3: autoDraw = False
+13.7264 	EXP 	image_4: autoDraw = True
+14.6836 	EXP 	Cross: autoDraw = False
+14.6836 	EXP 	image: autoDraw = False
+14.6836 	EXP 	image_2: autoDraw = False
+14.6836 	EXP 	image_3: autoDraw = False
+14.6836 	EXP 	image_4: autoDraw = False
+14.6836 	EXP 	Topleft: image = 'C:\\Users\\Ram\\OneDrive - University of Sussex\\Desktop\\LZ correlation\\LZ_correlation\\test\\Alcohol 5.jpg'
+14.6836 	EXP 	Fixation_cross: autoDraw = True
+15.6820 	EXP 	Topleft: autoDraw = True
+15.6820 	EXP 	Topright: autoDraw = True
+15.6820 	EXP 	Bottomleft: autoDraw = True
+15.6820 	EXP 	Bottomright: autoDraw = True
+15.6936 	EXP 	Fixation_cross: autoDraw = False
+19.6867 	EXP 	Topleft: autoDraw = False
+19.6867 	EXP 	Topright: autoDraw = False
+19.6867 	EXP 	Bottomleft: autoDraw = False
+19.6867 	EXP 	Bottomright: autoDraw = False
+21.0525 	EXP 	New trial (rep=0, index=1): OrderedDict([('trial', 2), ('image1', 'images\\Baby 2.jpg'), ('image2', 'images\\Baby 3.jpg'), ('image3', 'images\\Baby 4.jpg'), ('image4', 'images\\Baby 5.jpg')])
+21.0727 	DATA 	Keypress: a
+21.0769 	EXP 	Topleft: autoDraw = False
+21.0769 	EXP 	Topright: autoDraw = False
+21.0769 	EXP 	Bottomleft: autoDraw = False
+21.0769 	EXP 	Bottomright: autoDraw = False
+21.0769 	EXP 	Fixation_cross: autoDraw = False
+21.0769 	EXP 	image: image = 'images\\Baby 2.jpg'
+21.0769 	EXP 	image_2: image = 'images\\Baby 3.jpg'
+21.0769 	EXP 	image_3: image = 'images\\Baby 4.jpg'
+21.0769 	EXP 	image_4: image = 'images\\Baby 5.jpg'
+21.0769 	EXP 	Cross: autoDraw = True
+22.0668 	EXP 	image: autoDraw = True
+22.0810 	EXP 	Cross: autoDraw = False
+23.0666 	EXP 	image: autoDraw = False
+23.0666 	EXP 	image_2: autoDraw = True
+24.0667 	EXP 	image_2: autoDraw = False
+24.0667 	EXP 	image_3: autoDraw = True
+25.0666 	EXP 	image_3: autoDraw = False
+25.0666 	EXP 	image_4: autoDraw = True
+26.0634 	EXP 	Cross: autoDraw = False
+26.0634 	EXP 	image: autoDraw = False
+26.0634 	EXP 	image_2: autoDraw = False
+26.0634 	EXP 	image_3: autoDraw = False
+26.0634 	EXP 	image_4: autoDraw = False
+26.0634 	EXP 	Topleft: image = 'C:\\Users\\Ram\\OneDrive - University of Sussex\\Desktop\\LZ correlation\\LZ_correlation\\test\\Alcohol 5.jpg'
+26.0634 	EXP 	Fixation_cross: autoDraw = True
+27.0609 	EXP 	Topleft: autoDraw = True
+27.0609 	EXP 	Topright: autoDraw = True
+27.0609 	EXP 	Bottomleft: autoDraw = True
+27.0609 	EXP 	Bottomright: autoDraw = True
+27.0721 	EXP 	Fixation_cross: autoDraw = False
+30.0511 	DATA 	Keypress: semicolon
+30.7383 	DATA 	Keypress: period
+31.0696 	EXP 	Topleft: autoDraw = False
+31.0696 	EXP 	Topright: autoDraw = False
+31.0696 	EXP 	Bottomleft: autoDraw = False
+31.0696 	EXP 	Bottomright: autoDraw = False
+36.0679 	DATA 	Keypress: z
+36.0824 	EXP 	Topleft: autoDraw = False
+36.0824 	EXP 	Topright: autoDraw = False
+36.0824 	EXP 	Bottomleft: autoDraw = False
+36.0824 	EXP 	Bottomright: autoDraw = False
+36.0824 	EXP 	Fixation_cross: autoDraw = False
+36.0824 	EXP 	text_2: autoDraw = True
+37.0869 	EXP 	text_2: autoDraw = False
+38.3325 	EXP 	window1: mouseVisible = True
