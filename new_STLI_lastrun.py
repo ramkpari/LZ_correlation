@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2020.2.4),
-    on November 12, 2020, at 19:55
+    on November 17, 2020, at 01:26
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -543,8 +543,7 @@ for thisTrial in trials:
                 Fixation_cross.setAutoDraw(False)
         
         # *key_resp* updates
-        waitOnFlip = False
-        if key_resp.status == NOT_STARTED and tThisFlip >= 1.0-frameTolerance:
+        if key_resp.status == NOT_STARTED and t >= 1.0-frameTolerance:
             # keep track of start time/frame for later
             key_resp.frameNStart = frameN  # exact frame index
             key_resp.tStart = t  # local t and not account for scr refresh
@@ -552,11 +551,10 @@ for thisTrial in trials:
             win.timeOnFlip(key_resp, 'tStartRefresh')  # time at next scr refresh
             key_resp.status = STARTED
             # keyboard checking is just starting
-            waitOnFlip = True
-            win.callOnFlip(key_resp.clock.reset)  # t=0 on next screen flip
-            win.callOnFlip(key_resp.clearEvents, eventType='keyboard')  # clear events on next screen flip
-        if key_resp.status == STARTED and not waitOnFlip:
-            theseKeys = key_resp.getKeys(keyList=['a', 'z', ';', '.'], waitRelease=False)
+            key_resp.clock.reset()  # now t=0
+            key_resp.clearEvents(eventType='keyboard')
+        if key_resp.status == STARTED:
+            theseKeys = key_resp.getKeys(keyList=['a', 'z', 'k', 'm'], waitRelease=False)
             _key_resp_allKeys.extend(theseKeys)
             if len(_key_resp_allKeys):
                 key_resp.keys = _key_resp_allKeys[0].name  # just the first key pressed
@@ -601,8 +599,8 @@ for thisTrial in trials:
     trials.addData('key_resp.keys',key_resp.keys)
     if key_resp.keys != None:  # we had a response
         trials.addData('key_resp.rt', key_resp.rt)
-    trials.addData('key_resp.started', key_resp.tStartRefresh)
-    trials.addData('key_resp.stopped', key_resp.tStopRefresh)
+    trials.addData('key_resp.started', key_resp.tStart)
+    trials.addData('key_resp.stopped', key_resp.tStop)
     # the Routine "trial" was not non-slip safe, so reset the non-slip timer
     routineTimer.reset()
     thisExp.nextEntry()
