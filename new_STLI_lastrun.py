@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2020.2.4),
-    on November 17, 2020, at 01:26
+    on November 18, 2020, at 17:07
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -145,7 +145,7 @@ Topleft = visual.ImageStim(
 Topright = visual.ImageStim(
     win=win,
     name='Topright', 
-    image='C:\\Users\\Ram\\OneDrive - University of Sussex\\Desktop\\LZ correlation\\LZ_correlation\\test\\Alcohol 8.jpg', mask=None,
+    image='sin', mask=None,
     ori=0, pos=(0.25 , 0.25), size=(0.5, 0.5),
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
@@ -153,7 +153,7 @@ Topright = visual.ImageStim(
 Bottomleft = visual.ImageStim(
     win=win,
     name='Bottomleft', 
-    image='C:\\Users\\Ram\\OneDrive - University of Sussex\\Desktop\\LZ correlation\\LZ_correlation\\test\\Astronaut 1.jpg', mask=None,
+    image='sin', mask=None,
     ori=0, pos=(-0.25, -0.25), size=(0.5, 0.5),
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
@@ -161,7 +161,7 @@ Bottomleft = visual.ImageStim(
 Bottomright = visual.ImageStim(
     win=win,
     name='Bottomright', 
-    image='C:\\Users\\Ram\\OneDrive - University of Sussex\\Desktop\\LZ correlation\\LZ_correlation\\test\\Baby 1.jpg', mask=None,
+    image='sin', mask=None,
     ori=0, pos=(0.25, -0.25), size=(0.5, 0.5),
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
@@ -259,32 +259,32 @@ thisExp.addData('text.started', text.tStartRefresh)
 thisExp.addData('text.stopped', text.tStopRefresh)
 
 # set up handler to look after randomisation of conditions etc
-trials = data.TrialHandler(nReps=1, method='sequential', 
+block_one = data.TrialHandler(nReps=1, method='sequential', 
     extraInfo=expInfo, originPath=-1,
-    trialList=data.importConditions('index.xlsx'),
-    seed=None, name='trials')
-thisExp.addLoop(trials)  # add the loop to the experiment
-thisTrial = trials.trialList[0]  # so we can initialise stimuli with some values
-# abbreviate parameter names if possible (e.g. rgb = thisTrial.rgb)
-if thisTrial != None:
-    for paramName in thisTrial:
-        exec('{} = thisTrial[paramName]'.format(paramName))
+    trialList=data.importConditions('stim_present_data_block_1.csv'),
+    seed=None, name='block_one')
+thisExp.addLoop(block_one)  # add the loop to the experiment
+thisBlock_one = block_one.trialList[0]  # so we can initialise stimuli with some values
+# abbreviate parameter names if possible (e.g. rgb = thisBlock_one.rgb)
+if thisBlock_one != None:
+    for paramName in thisBlock_one:
+        exec('{} = thisBlock_one[paramName]'.format(paramName))
 
-for thisTrial in trials:
-    currentLoop = trials
-    # abbreviate parameter names if possible (e.g. rgb = thisTrial.rgb)
-    if thisTrial != None:
-        for paramName in thisTrial:
-            exec('{} = thisTrial[paramName]'.format(paramName))
+for thisBlock_one in block_one:
+    currentLoop = block_one
+    # abbreviate parameter names if possible (e.g. rgb = thisBlock_one.rgb)
+    if thisBlock_one != None:
+        for paramName in thisBlock_one:
+            exec('{} = thisBlock_one[paramName]'.format(paramName))
     
     # ------Prepare to start Routine "rsvp"-------
     continueRoutine = True
     routineTimer.add(5.000000)
     # update component parameters for each repeat
-    image.setImage(image1)
-    image_2.setImage(image2)
-    image_3.setImage(image3)
-    image_4.setImage(image4)
+    image.setImage(imageone)
+    image_2.setImage(imagetwo)
+    image_3.setImage(imagethree)
+    image_4.setImage(imagefour)
     # keep track of which components have finished
     rsvpComponents = [Cross, image, image_2, image_3, image_4]
     for thisComponent in rsvpComponents:
@@ -415,21 +415,24 @@ for thisTrial in trials:
     for thisComponent in rsvpComponents:
         if hasattr(thisComponent, "setAutoDraw"):
             thisComponent.setAutoDraw(False)
-    trials.addData('Cross.started', Cross.tStartRefresh)
-    trials.addData('Cross.stopped', Cross.tStopRefresh)
-    trials.addData('image.started', image.tStartRefresh)
-    trials.addData('image.stopped', image.tStopRefresh)
-    trials.addData('image_2.started', image_2.tStartRefresh)
-    trials.addData('image_2.stopped', image_2.tStopRefresh)
-    trials.addData('image_3.started', image_3.tStartRefresh)
-    trials.addData('image_3.stopped', image_3.tStopRefresh)
-    trials.addData('image_4.started', image_4.tStartRefresh)
-    trials.addData('image_4.stopped', image_4.tStopRefresh)
+    block_one.addData('Cross.started', Cross.tStartRefresh)
+    block_one.addData('Cross.stopped', Cross.tStopRefresh)
+    block_one.addData('image.started', image.tStartRefresh)
+    block_one.addData('image.stopped', image.tStopRefresh)
+    block_one.addData('image_2.started', image_2.tStartRefresh)
+    block_one.addData('image_2.stopped', image_2.tStopRefresh)
+    block_one.addData('image_3.started', image_3.tStartRefresh)
+    block_one.addData('image_3.stopped', image_3.tStopRefresh)
+    block_one.addData('image_4.started', image_4.tStartRefresh)
+    block_one.addData('image_4.stopped', image_4.tStopRefresh)
     
     # ------Prepare to start Routine "trial"-------
     continueRoutine = True
     # update component parameters for each repeat
-    Topleft.setImage('C:\\Users\\Ram\\OneDrive - University of Sussex\\Desktop\\LZ correlation\\LZ_correlation\\test\\Alcohol 5.jpg')
+    Topleft.setImage(imageTL)
+    Topright.setImage(imageTR)
+    Bottomleft.setImage(imageBL)
+    Bottomright.setImage(imageBR)
     key_resp.keys = []
     key_resp.rt = []
     _key_resp_allKeys = []
@@ -583,29 +586,29 @@ for thisTrial in trials:
     for thisComponent in trialComponents:
         if hasattr(thisComponent, "setAutoDraw"):
             thisComponent.setAutoDraw(False)
-    trials.addData('Topleft.started', Topleft.tStartRefresh)
-    trials.addData('Topleft.stopped', Topleft.tStopRefresh)
-    trials.addData('Topright.started', Topright.tStartRefresh)
-    trials.addData('Topright.stopped', Topright.tStopRefresh)
-    trials.addData('Bottomleft.started', Bottomleft.tStartRefresh)
-    trials.addData('Bottomleft.stopped', Bottomleft.tStopRefresh)
-    trials.addData('Bottomright.started', Bottomright.tStartRefresh)
-    trials.addData('Bottomright.stopped', Bottomright.tStopRefresh)
-    trials.addData('Fixation_cross.started', Fixation_cross.tStartRefresh)
-    trials.addData('Fixation_cross.stopped', Fixation_cross.tStopRefresh)
+    block_one.addData('Topleft.started', Topleft.tStartRefresh)
+    block_one.addData('Topleft.stopped', Topleft.tStopRefresh)
+    block_one.addData('Topright.started', Topright.tStartRefresh)
+    block_one.addData('Topright.stopped', Topright.tStopRefresh)
+    block_one.addData('Bottomleft.started', Bottomleft.tStartRefresh)
+    block_one.addData('Bottomleft.stopped', Bottomleft.tStopRefresh)
+    block_one.addData('Bottomright.started', Bottomright.tStartRefresh)
+    block_one.addData('Bottomright.stopped', Bottomright.tStopRefresh)
+    block_one.addData('Fixation_cross.started', Fixation_cross.tStartRefresh)
+    block_one.addData('Fixation_cross.stopped', Fixation_cross.tStopRefresh)
     # check responses
     if key_resp.keys in ['', [], None]:  # No response was made
         key_resp.keys = None
-    trials.addData('key_resp.keys',key_resp.keys)
+    block_one.addData('key_resp.keys',key_resp.keys)
     if key_resp.keys != None:  # we had a response
-        trials.addData('key_resp.rt', key_resp.rt)
-    trials.addData('key_resp.started', key_resp.tStart)
-    trials.addData('key_resp.stopped', key_resp.tStop)
+        block_one.addData('key_resp.rt', key_resp.rt)
+    block_one.addData('key_resp.started', key_resp.tStart)
+    block_one.addData('key_resp.stopped', key_resp.tStop)
     # the Routine "trial" was not non-slip safe, so reset the non-slip timer
     routineTimer.reset()
     thisExp.nextEntry()
     
-# completed 1 repeats of 'trials'
+# completed 1 repeats of 'block_one'
 
 
 # ------Prepare to start Routine "End"-------
