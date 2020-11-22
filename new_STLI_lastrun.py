@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2020.2.4),
-    on November 19, 2020, at 00:33
+    on November 22, 2020, at 02:10
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -562,6 +562,11 @@ for thisBlock_one in block_one:
             if len(_key_resp_allKeys):
                 key_resp.keys = _key_resp_allKeys[0].name  # just the first key pressed
                 key_resp.rt = _key_resp_allKeys[0].rt
+                # was this correct?
+                if (key_resp.keys == str(correct_answer)) or (key_resp.keys == correct_answer):
+                    key_resp.corr = 1
+                else:
+                    key_resp.corr = 0
                 # a response ends the routine
                 continueRoutine = False
         
@@ -599,7 +604,14 @@ for thisBlock_one in block_one:
     # check responses
     if key_resp.keys in ['', [], None]:  # No response was made
         key_resp.keys = None
+        # was no response the correct answer?!
+        if str(correct_answer).lower() == 'none':
+           key_resp.corr = 1;  # correct non-response
+        else:
+           key_resp.corr = 0;  # failed to respond (incorrectly)
+    # store data for block_one (TrialHandler)
     block_one.addData('key_resp.keys',key_resp.keys)
+    block_one.addData('key_resp.corr', key_resp.corr)
     if key_resp.keys != None:  # we had a response
         block_one.addData('key_resp.rt', key_resp.rt)
     block_one.addData('key_resp.started', key_resp.tStart)
