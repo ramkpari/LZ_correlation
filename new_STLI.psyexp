@@ -305,7 +305,7 @@
       </ImageComponent>
       <ParallelOutComponent name="EEG_trigger">
         <Param name="address" updates="None" val="0xD010" valType="str"/>
-        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="disabled" updates="None" val="True" valType="bool"/>
         <Param name="durationEstim" updates="None" val="" valType="code"/>
         <Param name="name" updates="None" val="EEG_trigger" valType="code"/>
         <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
