@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2020.2.4),
-    on November 23, 2020, at 20:03
+    on November 24, 2020, at 00:25
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -83,64 +83,61 @@ defaultKeyboard = keyboard.Keyboard()
 # Initialize components for Routine "Welcome"
 WelcomeClock = core.Clock()
 text = visual.TextStim(win=win, name='text',
-    text='Welcome',
+    text='Welcome to the experiment\n\nPress the Space key to start the experiment\n',
     font='Arial',
     pos=(0, 0), height=0.1, wrapWidth=None, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=0.0);
+Welcome_enter = keyboard.Keyboard()
 
-# Initialize components for Routine "rsvp_f1"
-rsvp_f1Clock = core.Clock()
-Cross = visual.ShapeStim(
-    win=win, name='Cross', vertices='cross',
-    size=(0.1, 0.1),
+# Initialize components for Routine "Cross_and_control"
+Cross_and_controlClock = core.Clock()
+Crossm = visual.ShapeStim(
+    win=win, name='Crossm', vertices='cross',
+    size=(0.05, 0.05),
     ori=0, pos=(0, 0),
     lineWidth=1, lineColor=[1,1,1], lineColorSpace='rgb',
     fillColor=[1,1,1], fillColorSpace='rgb',
     opacity=1, depth=0.0, interpolate=True)
-Presentation_image_1_f1 = visual.ImageStim(
+
+# Initialize components for Routine "rsvp_f1"
+rsvp_f1Clock = core.Clock()
+Presentation_image_1_f1_1 = visual.ImageStim(
     win=win,
-    name='Presentation_image_1_f1', 
+    name='Presentation_image_1_f1_1', 
+    image='sin', mask=None,
+    ori=0, pos=(0, 0), size=(0.5, 0.5),
+    color=[1,1,1], colorSpace='rgb', opacity=1,
+    flipHoriz=False, flipVert=False,
+    texRes=128, interpolate=True, depth=0.0)
+Presentation_image_2_f1_1 = visual.ImageStim(
+    win=win,
+    name='Presentation_image_2_f1_1', 
     image='sin', mask=None,
     ori=0, pos=(0, 0), size=(0.5, 0.5),
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
     texRes=128, interpolate=True, depth=-1.0)
-Presentation_image_2_f1 = visual.ImageStim(
+Presentation_image_3_f1_1 = visual.ImageStim(
     win=win,
-    name='Presentation_image_2_f1', 
+    name='Presentation_image_3_f1_1', 
     image='sin', mask=None,
     ori=0, pos=(0, 0), size=(0.5, 0.5),
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
     texRes=128, interpolate=True, depth=-2.0)
-Presentation_image_3_f1 = visual.ImageStim(
+Presentation_image_4_f1_1 = visual.ImageStim(
     win=win,
-    name='Presentation_image_3_f1', 
+    name='Presentation_image_4_f1_1', 
     image='sin', mask=None,
     ori=0, pos=(0, 0), size=(0.5, 0.5),
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
     texRes=128, interpolate=True, depth=-3.0)
-Presentation_image_4_f1 = visual.ImageStim(
-    win=win,
-    name='Presentation_image_4_f1', 
-    image='sin', mask=None,
-    ori=0, pos=(0, 0), size=(0.5, 0.5),
-    color=[1,1,1], colorSpace='rgb', opacity=1,
-    flipHoriz=False, flipVert=False,
-    texRes=128, interpolate=True, depth=-4.0)
 
 # Initialize components for Routine "rsvp_f2"
 rsvp_f2Clock = core.Clock()
-Cross_2 = visual.ShapeStim(
-    win=win, name='Cross_2', vertices='cross',
-    size=(0.1, 0.1),
-    ori=0, pos=(0, 0),
-    lineWidth=1, lineColor=[1,1,1], lineColorSpace='rgb',
-    fillColor=[1,1,1], fillColorSpace='rgb',
-    opacity=1, depth=0.0, interpolate=True)
 Presentation_image_f2_1 = visual.ImageStim(
     win=win,
     name='Presentation_image_f2_1', 
@@ -148,7 +145,7 @@ Presentation_image_f2_1 = visual.ImageStim(
     ori=0, pos=(0, 0), size=(0.5, 0.5),
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
-    texRes=128, interpolate=True, depth=-1.0)
+    texRes=128, interpolate=True, depth=0.0)
 Presentation_image_f2_2 = visual.ImageStim(
     win=win,
     name='Presentation_image_f2_2', 
@@ -156,7 +153,7 @@ Presentation_image_f2_2 = visual.ImageStim(
     ori=0, pos=(0, 0), size=(0.5, 0.5),
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
-    texRes=128, interpolate=True, depth=-2.0)
+    texRes=128, interpolate=True, depth=-1.0)
 Presentation_image_2_f2_1 = visual.ImageStim(
     win=win,
     name='Presentation_image_2_f2_1', 
@@ -164,15 +161,15 @@ Presentation_image_2_f2_1 = visual.ImageStim(
     ori=0, pos=(0, 0), size=(0.5, 0.5),
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
-    texRes=128, interpolate=True, depth=-3.0)
-Presentatio_image_2_f2_2 = visual.ImageStim(
+    texRes=128, interpolate=True, depth=-2.0)
+Presentation_image_2_f2_2 = visual.ImageStim(
     win=win,
-    name='Presentatio_image_2_f2_2', 
+    name='Presentation_image_2_f2_2', 
     image='sin', mask=None,
     ori=0, pos=(0, 0), size=(0.5, 0.5),
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
-    texRes=128, interpolate=True, depth=-4.0)
+    texRes=128, interpolate=True, depth=-3.0)
 Presentation_image_3_f2_1 = visual.ImageStim(
     win=win,
     name='Presentation_image_3_f2_1', 
@@ -180,7 +177,7 @@ Presentation_image_3_f2_1 = visual.ImageStim(
     ori=0, pos=(0, 0), size=(0.5, 0.5),
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
-    texRes=128, interpolate=True, depth=-5.0)
+    texRes=128, interpolate=True, depth=-4.0)
 Presentation_image_3_f2_2 = visual.ImageStim(
     win=win,
     name='Presentation_image_3_f2_2', 
@@ -188,7 +185,7 @@ Presentation_image_3_f2_2 = visual.ImageStim(
     ori=0, pos=(0, 0), size=(0.5, 0.5),
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
-    texRes=128, interpolate=True, depth=-6.0)
+    texRes=128, interpolate=True, depth=-5.0)
 Presentation_image_4_f2_1 = visual.ImageStim(
     win=win,
     name='Presentation_image_4_f2_1', 
@@ -196,7 +193,7 @@ Presentation_image_4_f2_1 = visual.ImageStim(
     ori=0, pos=(0, 0), size=(0.5, 0.5),
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
-    texRes=128, interpolate=True, depth=-7.0)
+    texRes=128, interpolate=True, depth=-6.0)
 Presentation_image_4_f2_2 = visual.ImageStim(
     win=win,
     name='Presentation_image_4_f2_2', 
@@ -204,10 +201,240 @@ Presentation_image_4_f2_2 = visual.ImageStim(
     ori=0, pos=(0, 0), size=(0.5, 0.5),
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
+    texRes=128, interpolate=True, depth=-7.0)
+
+# Initialize components for Routine "rsvp_f3"
+rsvp_f3Clock = core.Clock()
+Presentation_image_f3_1 = visual.ImageStim(
+    win=win,
+    name='Presentation_image_f3_1', 
+    image='sin', mask=None,
+    ori=0, pos=(0, 0), size=(0.5, 0.5),
+    color=[1,1,1], colorSpace='rgb', opacity=1,
+    flipHoriz=False, flipVert=False,
+    texRes=128, interpolate=True, depth=0.0)
+Presentation_image_f3_2 = visual.ImageStim(
+    win=win,
+    name='Presentation_image_f3_2', 
+    image='sin', mask=None,
+    ori=0, pos=(0, 0), size=(0.5, 0.5),
+    color=[1,1,1], colorSpace='rgb', opacity=1,
+    flipHoriz=False, flipVert=False,
+    texRes=128, interpolate=True, depth=-1.0)
+Presentation_image_f3_3 = visual.ImageStim(
+    win=win,
+    name='Presentation_image_f3_3', 
+    image='sin', mask=None,
+    ori=0, pos=(0, 0), size=(0.5, 0.5),
+    color=[1,1,1], colorSpace='rgb', opacity=1,
+    flipHoriz=False, flipVert=False,
+    texRes=128, interpolate=True, depth=-2.0)
+Presentation_image_2_f3_1 = visual.ImageStim(
+    win=win,
+    name='Presentation_image_2_f3_1', 
+    image='sin', mask=None,
+    ori=0, pos=(0, 0), size=(0.5, 0.5),
+    color=[1,1,1], colorSpace='rgb', opacity=1,
+    flipHoriz=False, flipVert=False,
+    texRes=128, interpolate=True, depth=-3.0)
+Presentation_image_2_f3_2 = visual.ImageStim(
+    win=win,
+    name='Presentation_image_2_f3_2', 
+    image='sin', mask=None,
+    ori=0, pos=(0, 0), size=(0.5, 0.5),
+    color=[1,1,1], colorSpace='rgb', opacity=1,
+    flipHoriz=False, flipVert=False,
+    texRes=128, interpolate=True, depth=-4.0)
+Presentation_image_2_f3_3 = visual.ImageStim(
+    win=win,
+    name='Presentation_image_2_f3_3', 
+    image='sin', mask=None,
+    ori=0, pos=(0, 0), size=(0.5, 0.5),
+    color=[1,1,1], colorSpace='rgb', opacity=1,
+    flipHoriz=False, flipVert=False,
+    texRes=128, interpolate=True, depth=-5.0)
+Presentation_image_3_f3_1 = visual.ImageStim(
+    win=win,
+    name='Presentation_image_3_f3_1', 
+    image='sin', mask=None,
+    ori=0, pos=(0, 0), size=(0.5, 0.5),
+    color=[1,1,1], colorSpace='rgb', opacity=1,
+    flipHoriz=False, flipVert=False,
+    texRes=128, interpolate=True, depth=-6.0)
+Presentation_image_3_f3_2 = visual.ImageStim(
+    win=win,
+    name='Presentation_image_3_f3_2', 
+    image='sin', mask=None,
+    ori=0, pos=(0, 0), size=(0.5, 0.5),
+    color=[1,1,1], colorSpace='rgb', opacity=1,
+    flipHoriz=False, flipVert=False,
+    texRes=128, interpolate=True, depth=-7.0)
+Presentation_image_3_f3_3 = visual.ImageStim(
+    win=win,
+    name='Presentation_image_3_f3_3', 
+    image='sin', mask=None,
+    ori=0, pos=(0, 0), size=(0.5, 0.5),
+    color=[1,1,1], colorSpace='rgb', opacity=1,
+    flipHoriz=False, flipVert=False,
     texRes=128, interpolate=True, depth=-8.0)
+Presentation_image_4_f3_1 = visual.ImageStim(
+    win=win,
+    name='Presentation_image_4_f3_1', 
+    image='sin', mask=None,
+    ori=0, pos=(0, 0), size=(0.5, 0.5),
+    color=[1,1,1], colorSpace='rgb', opacity=1,
+    flipHoriz=False, flipVert=False,
+    texRes=128, interpolate=True, depth=-9.0)
+Presentation_image_4_f3_2 = visual.ImageStim(
+    win=win,
+    name='Presentation_image_4_f3_2', 
+    image='sin', mask=None,
+    ori=0, pos=(0, 0), size=(0.5, 0.5),
+    color=[1,1,1], colorSpace='rgb', opacity=1,
+    flipHoriz=False, flipVert=False,
+    texRes=128, interpolate=True, depth=-10.0)
+Presentation_image_4_f3_3 = visual.ImageStim(
+    win=win,
+    name='Presentation_image_4_f3_3', 
+    image='sin', mask=None,
+    ori=0, pos=(0, 0), size=(0.5, 0.5),
+    color=[1,1,1], colorSpace='rgb', opacity=1,
+    flipHoriz=False, flipVert=False,
+    texRes=128, interpolate=True, depth=-11.0)
 
-# Initialize components for Routine "trial"
-trialClock = core.Clock()
+# Initialize components for Routine "rsvp_f4"
+rsvp_f4Clock = core.Clock()
+Presentation_image_f4_1 = visual.ImageStim(
+    win=win,
+    name='Presentation_image_f4_1', 
+    image='sin', mask=None,
+    ori=0, pos=(0, 0), size=(0.5, 0.5),
+    color=[1,1,1], colorSpace='rgb', opacity=1,
+    flipHoriz=False, flipVert=False,
+    texRes=128, interpolate=True, depth=0.0)
+Presentation_image_f4_2 = visual.ImageStim(
+    win=win,
+    name='Presentation_image_f4_2', 
+    image='sin', mask=None,
+    ori=0, pos=(0, 0), size=(0.5, 0.5),
+    color=[1,1,1], colorSpace='rgb', opacity=1,
+    flipHoriz=False, flipVert=False,
+    texRes=128, interpolate=True, depth=-1.0)
+Presentation_image_f4_3 = visual.ImageStim(
+    win=win,
+    name='Presentation_image_f4_3', 
+    image='sin', mask=None,
+    ori=0, pos=(0, 0), size=(0.5, 0.5),
+    color=[1,1,1], colorSpace='rgb', opacity=1,
+    flipHoriz=False, flipVert=False,
+    texRes=128, interpolate=True, depth=-2.0)
+Presentation_image_f4_4 = visual.ImageStim(
+    win=win,
+    name='Presentation_image_f4_4', 
+    image='sin', mask=None,
+    ori=0, pos=(0, 0), size=(0.5, 0.5),
+    color=[1,1,1], colorSpace='rgb', opacity=1,
+    flipHoriz=False, flipVert=False,
+    texRes=128, interpolate=True, depth=-3.0)
+Presentation_image_2_f4_1 = visual.ImageStim(
+    win=win,
+    name='Presentation_image_2_f4_1', 
+    image='sin', mask=None,
+    ori=0, pos=(0, 0), size=(0.5, 0.5),
+    color=[1,1,1], colorSpace='rgb', opacity=1,
+    flipHoriz=False, flipVert=False,
+    texRes=128, interpolate=True, depth=-4.0)
+Presentation_image_2_f4_2 = visual.ImageStim(
+    win=win,
+    name='Presentation_image_2_f4_2', 
+    image='sin', mask=None,
+    ori=0, pos=(0, 0), size=(0.5, 0.5),
+    color=[1,1,1], colorSpace='rgb', opacity=1,
+    flipHoriz=False, flipVert=False,
+    texRes=128, interpolate=True, depth=-5.0)
+Presentation_image_2_f4_3 = visual.ImageStim(
+    win=win,
+    name='Presentation_image_2_f4_3', 
+    image='sin', mask=None,
+    ori=0, pos=(0, 0), size=(0.5, 0.5),
+    color=[1,1,1], colorSpace='rgb', opacity=1,
+    flipHoriz=False, flipVert=False,
+    texRes=128, interpolate=True, depth=-6.0)
+Presentation_image_2_f4_4 = visual.ImageStim(
+    win=win,
+    name='Presentation_image_2_f4_4', 
+    image='sin', mask=None,
+    ori=0, pos=(0, 0), size=(0.5, 0.5),
+    color=[1,1,1], colorSpace='rgb', opacity=1,
+    flipHoriz=False, flipVert=False,
+    texRes=128, interpolate=True, depth=-7.0)
+Presentation_image_3_f4_1 = visual.ImageStim(
+    win=win,
+    name='Presentation_image_3_f4_1', 
+    image='sin', mask=None,
+    ori=0, pos=(0, 0), size=(0.5, 0.5),
+    color=[1,1,1], colorSpace='rgb', opacity=1,
+    flipHoriz=False, flipVert=False,
+    texRes=128, interpolate=True, depth=-8.0)
+Presentation_image_3_f4_2 = visual.ImageStim(
+    win=win,
+    name='Presentation_image_3_f4_2', 
+    image='sin', mask=None,
+    ori=0, pos=(0, 0), size=(0.5, 0.5),
+    color=[1,1,1], colorSpace='rgb', opacity=1,
+    flipHoriz=False, flipVert=False,
+    texRes=128, interpolate=True, depth=-9.0)
+Presentation_image_3_f4_3 = visual.ImageStim(
+    win=win,
+    name='Presentation_image_3_f4_3', 
+    image='sin', mask=None,
+    ori=0, pos=(0, 0), size=(0.5, 0.5),
+    color=[1,1,1], colorSpace='rgb', opacity=1,
+    flipHoriz=False, flipVert=False,
+    texRes=128, interpolate=True, depth=-10.0)
+Presentation_image_3_f4_4 = visual.ImageStim(
+    win=win,
+    name='Presentation_image_3_f4_4', 
+    image='sin', mask=None,
+    ori=0, pos=(0, 0), size=(0.5, 0.5),
+    color=[1,1,1], colorSpace='rgb', opacity=1,
+    flipHoriz=False, flipVert=False,
+    texRes=128, interpolate=True, depth=-11.0)
+Presentation_image_4_f4_1 = visual.ImageStim(
+    win=win,
+    name='Presentation_image_4_f4_1', 
+    image='sin', mask=None,
+    ori=0, pos=(0, 0), size=(0.5, 0.5),
+    color=[1,1,1], colorSpace='rgb', opacity=1,
+    flipHoriz=False, flipVert=False,
+    texRes=128, interpolate=True, depth=-12.0)
+Presentation_image_4_f3_4 = visual.ImageStim(
+    win=win,
+    name='Presentation_image_4_f3_4', 
+    image='sin', mask=None,
+    ori=0, pos=(0, 0), size=(0.5, 0.5),
+    color=[1,1,1], colorSpace='rgb', opacity=1,
+    flipHoriz=False, flipVert=False,
+    texRes=128, interpolate=True, depth=-13.0)
+Presentation_image_4_f4_3 = visual.ImageStim(
+    win=win,
+    name='Presentation_image_4_f4_3', 
+    image='sin', mask=None,
+    ori=0, pos=(0, 0), size=(0.5, 0.5),
+    color=[1,1,1], colorSpace='rgb', opacity=1,
+    flipHoriz=False, flipVert=False,
+    texRes=128, interpolate=True, depth=-14.0)
+Presentation_image_4_f4_4 = visual.ImageStim(
+    win=win,
+    name='Presentation_image_4_f4_4', 
+    image='sin', mask=None,
+    ori=0, pos=(0, 0), size=(0.5, 0.5),
+    color=[1,1,1], colorSpace='rgb', opacity=1,
+    flipHoriz=False, flipVert=False,
+    texRes=128, interpolate=True, depth=-15.0)
+
+# Initialize components for Routine "choice"
+choiceClock = core.Clock()
 Fixation_cross = visual.ShapeStim(
     win=win, name='Fixation_cross', vertices='cross',
     size=(0.1, 0.1),
@@ -262,48 +489,207 @@ key_resp_2 = keyboard.Keyboard()
 
 # Initialize components for Routine "rsvp_f1"
 rsvp_f1Clock = core.Clock()
-Cross = visual.ShapeStim(
-    win=win, name='Cross', vertices='cross',
-    size=(0.1, 0.1),
-    ori=0, pos=(0, 0),
-    lineWidth=1, lineColor=[1,1,1], lineColorSpace='rgb',
-    fillColor=[1,1,1], fillColorSpace='rgb',
-    opacity=1, depth=0.0, interpolate=True)
-Presentation_image_1_f1 = visual.ImageStim(
+Presentation_image_1_f1_1 = visual.ImageStim(
     win=win,
-    name='Presentation_image_1_f1', 
+    name='Presentation_image_1_f1_1', 
+    image='sin', mask=None,
+    ori=0, pos=(0, 0), size=(0.5, 0.5),
+    color=[1,1,1], colorSpace='rgb', opacity=1,
+    flipHoriz=False, flipVert=False,
+    texRes=128, interpolate=True, depth=0.0)
+Presentation_image_2_f1_1 = visual.ImageStim(
+    win=win,
+    name='Presentation_image_2_f1_1', 
     image='sin', mask=None,
     ori=0, pos=(0, 0), size=(0.5, 0.5),
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
     texRes=128, interpolate=True, depth=-1.0)
-Presentation_image_2_f1 = visual.ImageStim(
+Presentation_image_3_f1_1 = visual.ImageStim(
     win=win,
-    name='Presentation_image_2_f1', 
+    name='Presentation_image_3_f1_1', 
     image='sin', mask=None,
     ori=0, pos=(0, 0), size=(0.5, 0.5),
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
     texRes=128, interpolate=True, depth=-2.0)
-Presentation_image_3_f1 = visual.ImageStim(
+Presentation_image_4_f1_1 = visual.ImageStim(
     win=win,
-    name='Presentation_image_3_f1', 
+    name='Presentation_image_4_f1_1', 
     image='sin', mask=None,
     ori=0, pos=(0, 0), size=(0.5, 0.5),
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
     texRes=128, interpolate=True, depth=-3.0)
-Presentation_image_4_f1 = visual.ImageStim(
+
+# Initialize components for Routine "rsvp_f2"
+rsvp_f2Clock = core.Clock()
+Presentation_image_f2_1 = visual.ImageStim(
     win=win,
-    name='Presentation_image_4_f1', 
+    name='Presentation_image_f2_1', 
+    image='sin', mask=None,
+    ori=0, pos=(0, 0), size=(0.5, 0.5),
+    color=[1,1,1], colorSpace='rgb', opacity=1,
+    flipHoriz=False, flipVert=False,
+    texRes=128, interpolate=True, depth=0.0)
+Presentation_image_f2_2 = visual.ImageStim(
+    win=win,
+    name='Presentation_image_f2_2', 
+    image='sin', mask=None,
+    ori=0, pos=(0, 0), size=(0.5, 0.5),
+    color=[1,1,1], colorSpace='rgb', opacity=1,
+    flipHoriz=False, flipVert=False,
+    texRes=128, interpolate=True, depth=-1.0)
+Presentation_image_2_f2_1 = visual.ImageStim(
+    win=win,
+    name='Presentation_image_2_f2_1', 
+    image='sin', mask=None,
+    ori=0, pos=(0, 0), size=(0.5, 0.5),
+    color=[1,1,1], colorSpace='rgb', opacity=1,
+    flipHoriz=False, flipVert=False,
+    texRes=128, interpolate=True, depth=-2.0)
+Presentation_image_2_f2_2 = visual.ImageStim(
+    win=win,
+    name='Presentation_image_2_f2_2', 
+    image='sin', mask=None,
+    ori=0, pos=(0, 0), size=(0.5, 0.5),
+    color=[1,1,1], colorSpace='rgb', opacity=1,
+    flipHoriz=False, flipVert=False,
+    texRes=128, interpolate=True, depth=-3.0)
+Presentation_image_3_f2_1 = visual.ImageStim(
+    win=win,
+    name='Presentation_image_3_f2_1', 
     image='sin', mask=None,
     ori=0, pos=(0, 0), size=(0.5, 0.5),
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
     texRes=128, interpolate=True, depth=-4.0)
+Presentation_image_3_f2_2 = visual.ImageStim(
+    win=win,
+    name='Presentation_image_3_f2_2', 
+    image='sin', mask=None,
+    ori=0, pos=(0, 0), size=(0.5, 0.5),
+    color=[1,1,1], colorSpace='rgb', opacity=1,
+    flipHoriz=False, flipVert=False,
+    texRes=128, interpolate=True, depth=-5.0)
+Presentation_image_4_f2_1 = visual.ImageStim(
+    win=win,
+    name='Presentation_image_4_f2_1', 
+    image='sin', mask=None,
+    ori=0, pos=(0, 0), size=(0.5, 0.5),
+    color=[1,1,1], colorSpace='rgb', opacity=1,
+    flipHoriz=False, flipVert=False,
+    texRes=128, interpolate=True, depth=-6.0)
+Presentation_image_4_f2_2 = visual.ImageStim(
+    win=win,
+    name='Presentation_image_4_f2_2', 
+    image='sin', mask=None,
+    ori=0, pos=(0, 0), size=(0.5, 0.5),
+    color=[1,1,1], colorSpace='rgb', opacity=1,
+    flipHoriz=False, flipVert=False,
+    texRes=128, interpolate=True, depth=-7.0)
 
-# Initialize components for Routine "trial"
-trialClock = core.Clock()
+# Initialize components for Routine "rsvp_f3"
+rsvp_f3Clock = core.Clock()
+Presentation_image_f3_1 = visual.ImageStim(
+    win=win,
+    name='Presentation_image_f3_1', 
+    image='sin', mask=None,
+    ori=0, pos=(0, 0), size=(0.5, 0.5),
+    color=[1,1,1], colorSpace='rgb', opacity=1,
+    flipHoriz=False, flipVert=False,
+    texRes=128, interpolate=True, depth=0.0)
+Presentation_image_f3_2 = visual.ImageStim(
+    win=win,
+    name='Presentation_image_f3_2', 
+    image='sin', mask=None,
+    ori=0, pos=(0, 0), size=(0.5, 0.5),
+    color=[1,1,1], colorSpace='rgb', opacity=1,
+    flipHoriz=False, flipVert=False,
+    texRes=128, interpolate=True, depth=-1.0)
+Presentation_image_f3_3 = visual.ImageStim(
+    win=win,
+    name='Presentation_image_f3_3', 
+    image='sin', mask=None,
+    ori=0, pos=(0, 0), size=(0.5, 0.5),
+    color=[1,1,1], colorSpace='rgb', opacity=1,
+    flipHoriz=False, flipVert=False,
+    texRes=128, interpolate=True, depth=-2.0)
+Presentation_image_2_f3_1 = visual.ImageStim(
+    win=win,
+    name='Presentation_image_2_f3_1', 
+    image='sin', mask=None,
+    ori=0, pos=(0, 0), size=(0.5, 0.5),
+    color=[1,1,1], colorSpace='rgb', opacity=1,
+    flipHoriz=False, flipVert=False,
+    texRes=128, interpolate=True, depth=-3.0)
+Presentation_image_2_f3_2 = visual.ImageStim(
+    win=win,
+    name='Presentation_image_2_f3_2', 
+    image='sin', mask=None,
+    ori=0, pos=(0, 0), size=(0.5, 0.5),
+    color=[1,1,1], colorSpace='rgb', opacity=1,
+    flipHoriz=False, flipVert=False,
+    texRes=128, interpolate=True, depth=-4.0)
+Presentation_image_2_f3_3 = visual.ImageStim(
+    win=win,
+    name='Presentation_image_2_f3_3', 
+    image='sin', mask=None,
+    ori=0, pos=(0, 0), size=(0.5, 0.5),
+    color=[1,1,1], colorSpace='rgb', opacity=1,
+    flipHoriz=False, flipVert=False,
+    texRes=128, interpolate=True, depth=-5.0)
+Presentation_image_3_f3_1 = visual.ImageStim(
+    win=win,
+    name='Presentation_image_3_f3_1', 
+    image='sin', mask=None,
+    ori=0, pos=(0, 0), size=(0.5, 0.5),
+    color=[1,1,1], colorSpace='rgb', opacity=1,
+    flipHoriz=False, flipVert=False,
+    texRes=128, interpolate=True, depth=-6.0)
+Presentation_image_3_f3_2 = visual.ImageStim(
+    win=win,
+    name='Presentation_image_3_f3_2', 
+    image='sin', mask=None,
+    ori=0, pos=(0, 0), size=(0.5, 0.5),
+    color=[1,1,1], colorSpace='rgb', opacity=1,
+    flipHoriz=False, flipVert=False,
+    texRes=128, interpolate=True, depth=-7.0)
+Presentation_image_3_f3_3 = visual.ImageStim(
+    win=win,
+    name='Presentation_image_3_f3_3', 
+    image='sin', mask=None,
+    ori=0, pos=(0, 0), size=(0.5, 0.5),
+    color=[1,1,1], colorSpace='rgb', opacity=1,
+    flipHoriz=False, flipVert=False,
+    texRes=128, interpolate=True, depth=-8.0)
+Presentation_image_4_f3_1 = visual.ImageStim(
+    win=win,
+    name='Presentation_image_4_f3_1', 
+    image='sin', mask=None,
+    ori=0, pos=(0, 0), size=(0.5, 0.5),
+    color=[1,1,1], colorSpace='rgb', opacity=1,
+    flipHoriz=False, flipVert=False,
+    texRes=128, interpolate=True, depth=-9.0)
+Presentation_image_4_f3_2 = visual.ImageStim(
+    win=win,
+    name='Presentation_image_4_f3_2', 
+    image='sin', mask=None,
+    ori=0, pos=(0, 0), size=(0.5, 0.5),
+    color=[1,1,1], colorSpace='rgb', opacity=1,
+    flipHoriz=False, flipVert=False,
+    texRes=128, interpolate=True, depth=-10.0)
+Presentation_image_4_f3_3 = visual.ImageStim(
+    win=win,
+    name='Presentation_image_4_f3_3', 
+    image='sin', mask=None,
+    ori=0, pos=(0, 0), size=(0.5, 0.5),
+    color=[1,1,1], colorSpace='rgb', opacity=1,
+    flipHoriz=False, flipVert=False,
+    texRes=128, interpolate=True, depth=-11.0)
+
+# Initialize components for Routine "choice"
+choiceClock = core.Clock()
 Fixation_cross = visual.ShapeStim(
     win=win, name='Fixation_cross', vertices='cross',
     size=(0.1, 0.1),
@@ -358,48 +744,41 @@ key_resp_2 = keyboard.Keyboard()
 
 # Initialize components for Routine "rsvp_f1"
 rsvp_f1Clock = core.Clock()
-Cross = visual.ShapeStim(
-    win=win, name='Cross', vertices='cross',
-    size=(0.1, 0.1),
-    ori=0, pos=(0, 0),
-    lineWidth=1, lineColor=[1,1,1], lineColorSpace='rgb',
-    fillColor=[1,1,1], fillColorSpace='rgb',
-    opacity=1, depth=0.0, interpolate=True)
-Presentation_image_1_f1 = visual.ImageStim(
+Presentation_image_1_f1_1 = visual.ImageStim(
     win=win,
-    name='Presentation_image_1_f1', 
+    name='Presentation_image_1_f1_1', 
+    image='sin', mask=None,
+    ori=0, pos=(0, 0), size=(0.5, 0.5),
+    color=[1,1,1], colorSpace='rgb', opacity=1,
+    flipHoriz=False, flipVert=False,
+    texRes=128, interpolate=True, depth=0.0)
+Presentation_image_2_f1_1 = visual.ImageStim(
+    win=win,
+    name='Presentation_image_2_f1_1', 
     image='sin', mask=None,
     ori=0, pos=(0, 0), size=(0.5, 0.5),
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
     texRes=128, interpolate=True, depth=-1.0)
-Presentation_image_2_f1 = visual.ImageStim(
+Presentation_image_3_f1_1 = visual.ImageStim(
     win=win,
-    name='Presentation_image_2_f1', 
+    name='Presentation_image_3_f1_1', 
     image='sin', mask=None,
     ori=0, pos=(0, 0), size=(0.5, 0.5),
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
     texRes=128, interpolate=True, depth=-2.0)
-Presentation_image_3_f1 = visual.ImageStim(
+Presentation_image_4_f1_1 = visual.ImageStim(
     win=win,
-    name='Presentation_image_3_f1', 
+    name='Presentation_image_4_f1_1', 
     image='sin', mask=None,
     ori=0, pos=(0, 0), size=(0.5, 0.5),
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
     texRes=128, interpolate=True, depth=-3.0)
-Presentation_image_4_f1 = visual.ImageStim(
-    win=win,
-    name='Presentation_image_4_f1', 
-    image='sin', mask=None,
-    ori=0, pos=(0, 0), size=(0.5, 0.5),
-    color=[1,1,1], colorSpace='rgb', opacity=1,
-    flipHoriz=False, flipVert=False,
-    texRes=128, interpolate=True, depth=-4.0)
 
-# Initialize components for Routine "trial"
-trialClock = core.Clock()
+# Initialize components for Routine "choice"
+choiceClock = core.Clock()
 Fixation_cross = visual.ShapeStim(
     win=win, name='Fixation_cross', vertices='cross',
     size=(0.1, 0.1),
@@ -454,48 +833,41 @@ key_resp_2 = keyboard.Keyboard()
 
 # Initialize components for Routine "rsvp_f1"
 rsvp_f1Clock = core.Clock()
-Cross = visual.ShapeStim(
-    win=win, name='Cross', vertices='cross',
-    size=(0.1, 0.1),
-    ori=0, pos=(0, 0),
-    lineWidth=1, lineColor=[1,1,1], lineColorSpace='rgb',
-    fillColor=[1,1,1], fillColorSpace='rgb',
-    opacity=1, depth=0.0, interpolate=True)
-Presentation_image_1_f1 = visual.ImageStim(
+Presentation_image_1_f1_1 = visual.ImageStim(
     win=win,
-    name='Presentation_image_1_f1', 
+    name='Presentation_image_1_f1_1', 
+    image='sin', mask=None,
+    ori=0, pos=(0, 0), size=(0.5, 0.5),
+    color=[1,1,1], colorSpace='rgb', opacity=1,
+    flipHoriz=False, flipVert=False,
+    texRes=128, interpolate=True, depth=0.0)
+Presentation_image_2_f1_1 = visual.ImageStim(
+    win=win,
+    name='Presentation_image_2_f1_1', 
     image='sin', mask=None,
     ori=0, pos=(0, 0), size=(0.5, 0.5),
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
     texRes=128, interpolate=True, depth=-1.0)
-Presentation_image_2_f1 = visual.ImageStim(
+Presentation_image_3_f1_1 = visual.ImageStim(
     win=win,
-    name='Presentation_image_2_f1', 
+    name='Presentation_image_3_f1_1', 
     image='sin', mask=None,
     ori=0, pos=(0, 0), size=(0.5, 0.5),
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
     texRes=128, interpolate=True, depth=-2.0)
-Presentation_image_3_f1 = visual.ImageStim(
+Presentation_image_4_f1_1 = visual.ImageStim(
     win=win,
-    name='Presentation_image_3_f1', 
+    name='Presentation_image_4_f1_1', 
     image='sin', mask=None,
     ori=0, pos=(0, 0), size=(0.5, 0.5),
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
     texRes=128, interpolate=True, depth=-3.0)
-Presentation_image_4_f1 = visual.ImageStim(
-    win=win,
-    name='Presentation_image_4_f1', 
-    image='sin', mask=None,
-    ori=0, pos=(0, 0), size=(0.5, 0.5),
-    color=[1,1,1], colorSpace='rgb', opacity=1,
-    flipHoriz=False, flipVert=False,
-    texRes=128, interpolate=True, depth=-4.0)
 
-# Initialize components for Routine "trial"
-trialClock = core.Clock()
+# Initialize components for Routine "choice"
+choiceClock = core.Clock()
 Fixation_cross = visual.ShapeStim(
     win=win, name='Fixation_cross', vertices='cross',
     size=(0.1, 0.1),
@@ -553,10 +925,12 @@ routineTimer = core.CountdownTimer()  # to track time remaining of each (non-sli
 
 # ------Prepare to start Routine "Welcome"-------
 continueRoutine = True
-routineTimer.add(1.000000)
 # update component parameters for each repeat
+Welcome_enter.keys = []
+Welcome_enter.rt = []
+_Welcome_enter_allKeys = []
 # keep track of which components have finished
-WelcomeComponents = [text]
+WelcomeComponents = [text, Welcome_enter]
 for thisComponent in WelcomeComponents:
     thisComponent.tStart = None
     thisComponent.tStop = None
@@ -571,7 +945,7 @@ WelcomeClock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
 frameN = -1
 
 # -------Run Routine "Welcome"-------
-while continueRoutine and routineTimer.getTime() > 0:
+while continueRoutine:
     # get current time
     t = WelcomeClock.getTime()
     tThisFlip = win.getFutureFlipTime(clock=WelcomeClock)
@@ -587,14 +961,28 @@ while continueRoutine and routineTimer.getTime() > 0:
         text.tStartRefresh = tThisFlipGlobal  # on global time
         win.timeOnFlip(text, 'tStartRefresh')  # time at next scr refresh
         text.setAutoDraw(True)
-    if text.status == STARTED:
-        # is it time to stop? (based on global clock, using actual start)
-        if tThisFlipGlobal > text.tStartRefresh + 1.0-frameTolerance:
-            # keep track of stop time/frame for later
-            text.tStop = t  # not accounting for scr refresh
-            text.frameNStop = frameN  # exact frame index
-            win.timeOnFlip(text, 'tStopRefresh')  # time at next scr refresh
-            text.setAutoDraw(False)
+    
+    # *Welcome_enter* updates
+    waitOnFlip = False
+    if Welcome_enter.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+        # keep track of start time/frame for later
+        Welcome_enter.frameNStart = frameN  # exact frame index
+        Welcome_enter.tStart = t  # local t and not account for scr refresh
+        Welcome_enter.tStartRefresh = tThisFlipGlobal  # on global time
+        win.timeOnFlip(Welcome_enter, 'tStartRefresh')  # time at next scr refresh
+        Welcome_enter.status = STARTED
+        # keyboard checking is just starting
+        waitOnFlip = True
+        win.callOnFlip(Welcome_enter.clock.reset)  # t=0 on next screen flip
+        win.callOnFlip(Welcome_enter.clearEvents, eventType='keyboard')  # clear events on next screen flip
+    if Welcome_enter.status == STARTED and not waitOnFlip:
+        theseKeys = Welcome_enter.getKeys(keyList=['space'], waitRelease=False)
+        _Welcome_enter_allKeys.extend(theseKeys)
+        if len(_Welcome_enter_allKeys):
+            Welcome_enter.keys = _Welcome_enter_allKeys[-1].name  # just the last key pressed
+            Welcome_enter.rt = _Welcome_enter_allKeys[-1].rt
+            # a response ends the routine
+            continueRoutine = False
     
     # check for quit (typically the Esc key)
     if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
@@ -619,6 +1007,8 @@ for thisComponent in WelcomeComponents:
         thisComponent.setAutoDraw(False)
 thisExp.addData('text.started', text.tStartRefresh)
 thisExp.addData('text.stopped', text.tStopRefresh)
+# the Routine "Welcome" was not non-slip safe, so reset the non-slip timer
+routineTimer.reset()
 
 # set up handler to look after randomisation of conditions etc
 block_one = data.TrialHandler(nReps=1, method='sequential', 
@@ -639,17 +1029,36 @@ for thisBlock_one in block_one:
         for paramName in thisBlock_one:
             exec('{} = thisBlock_one[paramName]'.format(paramName))
     
-    # ------Prepare to start Routine "rsvp_f1"-------
+    # ------Prepare to start Routine "Cross_and_control"-------
     continueRoutine = True
-    routineTimer.add(5.000000)
+    routineTimer.add(1.000000)
     # update component parameters for each repeat
-    Presentation_image_1_f1.setImage(imageone)
-    Presentation_image_2_f1.setImage(imagetwo)
-    Presentation_image_3_f1.setImage(imagethree)
-    Presentation_image_4_f1.setImage(imagefour)
+    if frequency == 1:
+        dofone = 1
+        doftwo = 0
+        dofthree = 0
+        doffour = 0
+        
+    elif frequency == 2:
+        dofone = 0
+        doftwo = 1
+        dofthree = 0
+        doffour = 0
+        
+    elif frequency == 3:
+        dofone = 0
+        doftwo = 0
+        dofthree = 1
+        doffour = 0
+     
+    elif frequency == 4:
+        dofone = 0
+        doftwo = 0
+        dofthree = 0
+        doffour = 1
     # keep track of which components have finished
-    rsvp_f1Components = [Cross, Presentation_image_1_f1, Presentation_image_2_f1, Presentation_image_3_f1, Presentation_image_4_f1]
-    for thisComponent in rsvp_f1Components:
+    Cross_and_controlComponents = [Crossm]
+    for thisComponent in Cross_and_controlComponents:
         thisComponent.tStart = None
         thisComponent.tStop = None
         thisComponent.tStartRefresh = None
@@ -659,102 +1068,34 @@ for thisBlock_one in block_one:
     # reset timers
     t = 0
     _timeToFirstFrame = win.getFutureFlipTime(clock="now")
-    rsvp_f1Clock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
+    Cross_and_controlClock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
     frameN = -1
     
-    # -------Run Routine "rsvp_f1"-------
+    # -------Run Routine "Cross_and_control"-------
     while continueRoutine and routineTimer.getTime() > 0:
         # get current time
-        t = rsvp_f1Clock.getTime()
-        tThisFlip = win.getFutureFlipTime(clock=rsvp_f1Clock)
+        t = Cross_and_controlClock.getTime()
+        tThisFlip = win.getFutureFlipTime(clock=Cross_and_controlClock)
         tThisFlipGlobal = win.getFutureFlipTime(clock=None)
         frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
         # update/draw components on each frame
         
-        # *Cross* updates
-        if Cross.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+        # *Crossm* updates
+        if Crossm.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
             # keep track of start time/frame for later
-            Cross.frameNStart = frameN  # exact frame index
-            Cross.tStart = t  # local t and not account for scr refresh
-            Cross.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(Cross, 'tStartRefresh')  # time at next scr refresh
-            Cross.setAutoDraw(True)
-        if Cross.status == STARTED:
+            Crossm.frameNStart = frameN  # exact frame index
+            Crossm.tStart = t  # local t and not account for scr refresh
+            Crossm.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(Crossm, 'tStartRefresh')  # time at next scr refresh
+            Crossm.setAutoDraw(True)
+        if Crossm.status == STARTED:
             # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > Cross.tStartRefresh + 1.0-frameTolerance:
+            if tThisFlipGlobal > Crossm.tStartRefresh + 1.0-frameTolerance:
                 # keep track of stop time/frame for later
-                Cross.tStop = t  # not accounting for scr refresh
-                Cross.frameNStop = frameN  # exact frame index
-                win.timeOnFlip(Cross, 'tStopRefresh')  # time at next scr refresh
-                Cross.setAutoDraw(False)
-        
-        # *Presentation_image_1_f1* updates
-        if Presentation_image_1_f1.status == NOT_STARTED and tThisFlip >= 1.0-frameTolerance:
-            # keep track of start time/frame for later
-            Presentation_image_1_f1.frameNStart = frameN  # exact frame index
-            Presentation_image_1_f1.tStart = t  # local t and not account for scr refresh
-            Presentation_image_1_f1.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(Presentation_image_1_f1, 'tStartRefresh')  # time at next scr refresh
-            Presentation_image_1_f1.setAutoDraw(True)
-        if Presentation_image_1_f1.status == STARTED:
-            # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > Presentation_image_1_f1.tStartRefresh + 1.0-frameTolerance:
-                # keep track of stop time/frame for later
-                Presentation_image_1_f1.tStop = t  # not accounting for scr refresh
-                Presentation_image_1_f1.frameNStop = frameN  # exact frame index
-                win.timeOnFlip(Presentation_image_1_f1, 'tStopRefresh')  # time at next scr refresh
-                Presentation_image_1_f1.setAutoDraw(False)
-        
-        # *Presentation_image_2_f1* updates
-        if Presentation_image_2_f1.status == NOT_STARTED and tThisFlip >= 2.0-frameTolerance:
-            # keep track of start time/frame for later
-            Presentation_image_2_f1.frameNStart = frameN  # exact frame index
-            Presentation_image_2_f1.tStart = t  # local t and not account for scr refresh
-            Presentation_image_2_f1.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(Presentation_image_2_f1, 'tStartRefresh')  # time at next scr refresh
-            Presentation_image_2_f1.setAutoDraw(True)
-        if Presentation_image_2_f1.status == STARTED:
-            # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > Presentation_image_2_f1.tStartRefresh + 1.0-frameTolerance:
-                # keep track of stop time/frame for later
-                Presentation_image_2_f1.tStop = t  # not accounting for scr refresh
-                Presentation_image_2_f1.frameNStop = frameN  # exact frame index
-                win.timeOnFlip(Presentation_image_2_f1, 'tStopRefresh')  # time at next scr refresh
-                Presentation_image_2_f1.setAutoDraw(False)
-        
-        # *Presentation_image_3_f1* updates
-        if Presentation_image_3_f1.status == NOT_STARTED and tThisFlip >= 3.0-frameTolerance:
-            # keep track of start time/frame for later
-            Presentation_image_3_f1.frameNStart = frameN  # exact frame index
-            Presentation_image_3_f1.tStart = t  # local t and not account for scr refresh
-            Presentation_image_3_f1.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(Presentation_image_3_f1, 'tStartRefresh')  # time at next scr refresh
-            Presentation_image_3_f1.setAutoDraw(True)
-        if Presentation_image_3_f1.status == STARTED:
-            # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > Presentation_image_3_f1.tStartRefresh + 1.0-frameTolerance:
-                # keep track of stop time/frame for later
-                Presentation_image_3_f1.tStop = t  # not accounting for scr refresh
-                Presentation_image_3_f1.frameNStop = frameN  # exact frame index
-                win.timeOnFlip(Presentation_image_3_f1, 'tStopRefresh')  # time at next scr refresh
-                Presentation_image_3_f1.setAutoDraw(False)
-        
-        # *Presentation_image_4_f1* updates
-        if Presentation_image_4_f1.status == NOT_STARTED and tThisFlip >= 4.0-frameTolerance:
-            # keep track of start time/frame for later
-            Presentation_image_4_f1.frameNStart = frameN  # exact frame index
-            Presentation_image_4_f1.tStart = t  # local t and not account for scr refresh
-            Presentation_image_4_f1.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(Presentation_image_4_f1, 'tStartRefresh')  # time at next scr refresh
-            Presentation_image_4_f1.setAutoDraw(True)
-        if Presentation_image_4_f1.status == STARTED:
-            # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > Presentation_image_4_f1.tStartRefresh + 1.0-frameTolerance:
-                # keep track of stop time/frame for later
-                Presentation_image_4_f1.tStop = t  # not accounting for scr refresh
-                Presentation_image_4_f1.frameNStop = frameN  # exact frame index
-                win.timeOnFlip(Presentation_image_4_f1, 'tStopRefresh')  # time at next scr refresh
-                Presentation_image_4_f1.setAutoDraw(False)
+                Crossm.tStop = t  # not accounting for scr refresh
+                Crossm.frameNStop = frameN  # exact frame index
+                win.timeOnFlip(Crossm, 'tStopRefresh')  # time at next scr refresh
+                Crossm.setAutoDraw(False)
         
         # check for quit (typically the Esc key)
         if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
@@ -764,260 +1105,1115 @@ for thisBlock_one in block_one:
         if not continueRoutine:  # a component has requested a forced-end of Routine
             break
         continueRoutine = False  # will revert to True if at least one component still running
+        for thisComponent in Cross_and_controlComponents:
+            if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
+                continueRoutine = True
+                break  # at least one component has not yet finished
+        
+        # refresh the screen
+        if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
+            win.flip()
+    
+    # -------Ending Routine "Cross_and_control"-------
+    for thisComponent in Cross_and_controlComponents:
+        if hasattr(thisComponent, "setAutoDraw"):
+            thisComponent.setAutoDraw(False)
+    block_one.addData('Crossm.started', Crossm.tStartRefresh)
+    block_one.addData('Crossm.stopped', Crossm.tStopRefresh)
+    
+    # set up handler to look after randomisation of conditions etc
+    fone_control = data.TrialHandler(nReps=dofone, method='sequential', 
+        extraInfo=expInfo, originPath=-1,
+        trialList=[None],
+        seed=None, name='fone_control')
+    thisExp.addLoop(fone_control)  # add the loop to the experiment
+    thisFone_control = fone_control.trialList[0]  # so we can initialise stimuli with some values
+    # abbreviate parameter names if possible (e.g. rgb = thisFone_control.rgb)
+    if thisFone_control != None:
+        for paramName in thisFone_control:
+            exec('{} = thisFone_control[paramName]'.format(paramName))
+    
+    for thisFone_control in fone_control:
+        currentLoop = fone_control
+        # abbreviate parameter names if possible (e.g. rgb = thisFone_control.rgb)
+        if thisFone_control != None:
+            for paramName in thisFone_control:
+                exec('{} = thisFone_control[paramName]'.format(paramName))
+        
+        # ------Prepare to start Routine "rsvp_f1"-------
+        continueRoutine = True
+        routineTimer.add(4.000000)
+        # update component parameters for each repeat
+        Presentation_image_1_f1_1.setImage(imageone)
+        Presentation_image_2_f1_1.setImage(imagetwo)
+        Presentation_image_3_f1_1.setImage(imagethree)
+        Presentation_image_4_f1_1.setImage(imagefour)
+        # keep track of which components have finished
+        rsvp_f1Components = [Presentation_image_1_f1_1, Presentation_image_2_f1_1, Presentation_image_3_f1_1, Presentation_image_4_f1_1]
         for thisComponent in rsvp_f1Components:
-            if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
-                continueRoutine = True
-                break  # at least one component has not yet finished
+            thisComponent.tStart = None
+            thisComponent.tStop = None
+            thisComponent.tStartRefresh = None
+            thisComponent.tStopRefresh = None
+            if hasattr(thisComponent, 'status'):
+                thisComponent.status = NOT_STARTED
+        # reset timers
+        t = 0
+        _timeToFirstFrame = win.getFutureFlipTime(clock="now")
+        rsvp_f1Clock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
+        frameN = -1
         
-        # refresh the screen
-        if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
-            win.flip()
+        # -------Run Routine "rsvp_f1"-------
+        while continueRoutine and routineTimer.getTime() > 0:
+            # get current time
+            t = rsvp_f1Clock.getTime()
+            tThisFlip = win.getFutureFlipTime(clock=rsvp_f1Clock)
+            tThisFlipGlobal = win.getFutureFlipTime(clock=None)
+            frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+            # update/draw components on each frame
+            
+            # *Presentation_image_1_f1_1* updates
+            if Presentation_image_1_f1_1.status == NOT_STARTED and tThisFlip >= 0-frameTolerance:
+                # keep track of start time/frame for later
+                Presentation_image_1_f1_1.frameNStart = frameN  # exact frame index
+                Presentation_image_1_f1_1.tStart = t  # local t and not account for scr refresh
+                Presentation_image_1_f1_1.tStartRefresh = tThisFlipGlobal  # on global time
+                win.timeOnFlip(Presentation_image_1_f1_1, 'tStartRefresh')  # time at next scr refresh
+                Presentation_image_1_f1_1.setAutoDraw(True)
+            if Presentation_image_1_f1_1.status == STARTED:
+                # is it time to stop? (based on global clock, using actual start)
+                if tThisFlipGlobal > Presentation_image_1_f1_1.tStartRefresh + 1.0-frameTolerance:
+                    # keep track of stop time/frame for later
+                    Presentation_image_1_f1_1.tStop = t  # not accounting for scr refresh
+                    Presentation_image_1_f1_1.frameNStop = frameN  # exact frame index
+                    win.timeOnFlip(Presentation_image_1_f1_1, 'tStopRefresh')  # time at next scr refresh
+                    Presentation_image_1_f1_1.setAutoDraw(False)
+            
+            # *Presentation_image_2_f1_1* updates
+            if Presentation_image_2_f1_1.status == NOT_STARTED and tThisFlip >= 1.0-frameTolerance:
+                # keep track of start time/frame for later
+                Presentation_image_2_f1_1.frameNStart = frameN  # exact frame index
+                Presentation_image_2_f1_1.tStart = t  # local t and not account for scr refresh
+                Presentation_image_2_f1_1.tStartRefresh = tThisFlipGlobal  # on global time
+                win.timeOnFlip(Presentation_image_2_f1_1, 'tStartRefresh')  # time at next scr refresh
+                Presentation_image_2_f1_1.setAutoDraw(True)
+            if Presentation_image_2_f1_1.status == STARTED:
+                # is it time to stop? (based on global clock, using actual start)
+                if tThisFlipGlobal > Presentation_image_2_f1_1.tStartRefresh + 1.0-frameTolerance:
+                    # keep track of stop time/frame for later
+                    Presentation_image_2_f1_1.tStop = t  # not accounting for scr refresh
+                    Presentation_image_2_f1_1.frameNStop = frameN  # exact frame index
+                    win.timeOnFlip(Presentation_image_2_f1_1, 'tStopRefresh')  # time at next scr refresh
+                    Presentation_image_2_f1_1.setAutoDraw(False)
+            
+            # *Presentation_image_3_f1_1* updates
+            if Presentation_image_3_f1_1.status == NOT_STARTED and tThisFlip >= 2.0-frameTolerance:
+                # keep track of start time/frame for later
+                Presentation_image_3_f1_1.frameNStart = frameN  # exact frame index
+                Presentation_image_3_f1_1.tStart = t  # local t and not account for scr refresh
+                Presentation_image_3_f1_1.tStartRefresh = tThisFlipGlobal  # on global time
+                win.timeOnFlip(Presentation_image_3_f1_1, 'tStartRefresh')  # time at next scr refresh
+                Presentation_image_3_f1_1.setAutoDraw(True)
+            if Presentation_image_3_f1_1.status == STARTED:
+                # is it time to stop? (based on global clock, using actual start)
+                if tThisFlipGlobal > Presentation_image_3_f1_1.tStartRefresh + 1.0-frameTolerance:
+                    # keep track of stop time/frame for later
+                    Presentation_image_3_f1_1.tStop = t  # not accounting for scr refresh
+                    Presentation_image_3_f1_1.frameNStop = frameN  # exact frame index
+                    win.timeOnFlip(Presentation_image_3_f1_1, 'tStopRefresh')  # time at next scr refresh
+                    Presentation_image_3_f1_1.setAutoDraw(False)
+            
+            # *Presentation_image_4_f1_1* updates
+            if Presentation_image_4_f1_1.status == NOT_STARTED and tThisFlip >= 3.0-frameTolerance:
+                # keep track of start time/frame for later
+                Presentation_image_4_f1_1.frameNStart = frameN  # exact frame index
+                Presentation_image_4_f1_1.tStart = t  # local t and not account for scr refresh
+                Presentation_image_4_f1_1.tStartRefresh = tThisFlipGlobal  # on global time
+                win.timeOnFlip(Presentation_image_4_f1_1, 'tStartRefresh')  # time at next scr refresh
+                Presentation_image_4_f1_1.setAutoDraw(True)
+            if Presentation_image_4_f1_1.status == STARTED:
+                # is it time to stop? (based on global clock, using actual start)
+                if tThisFlipGlobal > Presentation_image_4_f1_1.tStartRefresh + 1.0-frameTolerance:
+                    # keep track of stop time/frame for later
+                    Presentation_image_4_f1_1.tStop = t  # not accounting for scr refresh
+                    Presentation_image_4_f1_1.frameNStop = frameN  # exact frame index
+                    win.timeOnFlip(Presentation_image_4_f1_1, 'tStopRefresh')  # time at next scr refresh
+                    Presentation_image_4_f1_1.setAutoDraw(False)
+            
+            # check for quit (typically the Esc key)
+            if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
+                core.quit()
+            
+            # check if all components have finished
+            if not continueRoutine:  # a component has requested a forced-end of Routine
+                break
+            continueRoutine = False  # will revert to True if at least one component still running
+            for thisComponent in rsvp_f1Components:
+                if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
+                    continueRoutine = True
+                    break  # at least one component has not yet finished
+            
+            # refresh the screen
+            if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
+                win.flip()
+        
+        # -------Ending Routine "rsvp_f1"-------
+        for thisComponent in rsvp_f1Components:
+            if hasattr(thisComponent, "setAutoDraw"):
+                thisComponent.setAutoDraw(False)
+        fone_control.addData('Presentation_image_1_f1_1.started', Presentation_image_1_f1_1.tStartRefresh)
+        fone_control.addData('Presentation_image_1_f1_1.stopped', Presentation_image_1_f1_1.tStopRefresh)
+        fone_control.addData('Presentation_image_2_f1_1.started', Presentation_image_2_f1_1.tStartRefresh)
+        fone_control.addData('Presentation_image_2_f1_1.stopped', Presentation_image_2_f1_1.tStopRefresh)
+        fone_control.addData('Presentation_image_3_f1_1.started', Presentation_image_3_f1_1.tStartRefresh)
+        fone_control.addData('Presentation_image_3_f1_1.stopped', Presentation_image_3_f1_1.tStopRefresh)
+        fone_control.addData('Presentation_image_4_f1_1.started', Presentation_image_4_f1_1.tStartRefresh)
+        fone_control.addData('Presentation_image_4_f1_1.stopped', Presentation_image_4_f1_1.tStopRefresh)
+        thisExp.nextEntry()
+        
+    # completed dofone repeats of 'fone_control'
     
-    # -------Ending Routine "rsvp_f1"-------
-    for thisComponent in rsvp_f1Components:
-        if hasattr(thisComponent, "setAutoDraw"):
-            thisComponent.setAutoDraw(False)
-    block_one.addData('Cross.started', Cross.tStartRefresh)
-    block_one.addData('Cross.stopped', Cross.tStopRefresh)
-    block_one.addData('Presentation_image_1_f1.started', Presentation_image_1_f1.tStartRefresh)
-    block_one.addData('Presentation_image_1_f1.stopped', Presentation_image_1_f1.tStopRefresh)
-    block_one.addData('Presentation_image_2_f1.started', Presentation_image_2_f1.tStartRefresh)
-    block_one.addData('Presentation_image_2_f1.stopped', Presentation_image_2_f1.tStopRefresh)
-    block_one.addData('Presentation_image_3_f1.started', Presentation_image_3_f1.tStartRefresh)
-    block_one.addData('Presentation_image_3_f1.stopped', Presentation_image_3_f1.tStopRefresh)
-    block_one.addData('Presentation_image_4_f1.started', Presentation_image_4_f1.tStartRefresh)
-    block_one.addData('Presentation_image_4_f1.stopped', Presentation_image_4_f1.tStopRefresh)
     
-    # ------Prepare to start Routine "rsvp_f2"-------
-    continueRoutine = True
-    routineTimer.add(4.950000)
-    # update component parameters for each repeat
-    Presentation_image_f2_1.setImage(imageone)
-    Presentation_image_f2_2.setImage(imageone)
-    Presentation_image_2_f2_1.setImage(imagetwo)
-    Presentatio_image_2_f2_2.setImage(imagetwo)
-    Presentation_image_3_f2_1.setImage(imagethree)
-    Presentation_image_3_f2_2.setImage(imagethree)
-    Presentation_image_4_f2_1.setImage(imagefour)
-    Presentation_image_4_f2_2.setImage(imagefour)
-    # keep track of which components have finished
-    rsvp_f2Components = [Cross_2, Presentation_image_f2_1, Presentation_image_f2_2, Presentation_image_2_f2_1, Presentatio_image_2_f2_2, Presentation_image_3_f2_1, Presentation_image_3_f2_2, Presentation_image_4_f2_1, Presentation_image_4_f2_2]
-    for thisComponent in rsvp_f2Components:
-        thisComponent.tStart = None
-        thisComponent.tStop = None
-        thisComponent.tStartRefresh = None
-        thisComponent.tStopRefresh = None
-        if hasattr(thisComponent, 'status'):
-            thisComponent.status = NOT_STARTED
-    # reset timers
-    t = 0
-    _timeToFirstFrame = win.getFutureFlipTime(clock="now")
-    rsvp_f2Clock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
-    frameN = -1
+    # set up handler to look after randomisation of conditions etc
+    ftwo_control = data.TrialHandler(nReps=doftwo, method='sequential', 
+        extraInfo=expInfo, originPath=-1,
+        trialList=[None],
+        seed=None, name='ftwo_control')
+    thisExp.addLoop(ftwo_control)  # add the loop to the experiment
+    thisFtwo_control = ftwo_control.trialList[0]  # so we can initialise stimuli with some values
+    # abbreviate parameter names if possible (e.g. rgb = thisFtwo_control.rgb)
+    if thisFtwo_control != None:
+        for paramName in thisFtwo_control:
+            exec('{} = thisFtwo_control[paramName]'.format(paramName))
     
-    # -------Run Routine "rsvp_f2"-------
-    while continueRoutine and routineTimer.getTime() > 0:
-        # get current time
-        t = rsvp_f2Clock.getTime()
-        tThisFlip = win.getFutureFlipTime(clock=rsvp_f2Clock)
-        tThisFlipGlobal = win.getFutureFlipTime(clock=None)
-        frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
-        # update/draw components on each frame
+    for thisFtwo_control in ftwo_control:
+        currentLoop = ftwo_control
+        # abbreviate parameter names if possible (e.g. rgb = thisFtwo_control.rgb)
+        if thisFtwo_control != None:
+            for paramName in thisFtwo_control:
+                exec('{} = thisFtwo_control[paramName]'.format(paramName))
         
-        # *Cross_2* updates
-        if Cross_2.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
-            # keep track of start time/frame for later
-            Cross_2.frameNStart = frameN  # exact frame index
-            Cross_2.tStart = t  # local t and not account for scr refresh
-            Cross_2.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(Cross_2, 'tStartRefresh')  # time at next scr refresh
-            Cross_2.setAutoDraw(True)
-        if Cross_2.status == STARTED:
-            # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > Cross_2.tStartRefresh + 1.0-frameTolerance:
-                # keep track of stop time/frame for later
-                Cross_2.tStop = t  # not accounting for scr refresh
-                Cross_2.frameNStop = frameN  # exact frame index
-                win.timeOnFlip(Cross_2, 'tStopRefresh')  # time at next scr refresh
-                Cross_2.setAutoDraw(False)
-        
-        # *Presentation_image_f2_1* updates
-        if Presentation_image_f2_1.status == NOT_STARTED and tThisFlip >= 1.0-frameTolerance:
-            # keep track of start time/frame for later
-            Presentation_image_f2_1.frameNStart = frameN  # exact frame index
-            Presentation_image_f2_1.tStart = t  # local t and not account for scr refresh
-            Presentation_image_f2_1.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(Presentation_image_f2_1, 'tStartRefresh')  # time at next scr refresh
-            Presentation_image_f2_1.setAutoDraw(True)
-        if Presentation_image_f2_1.status == STARTED:
-            # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > Presentation_image_f2_1.tStartRefresh + 0.45-frameTolerance:
-                # keep track of stop time/frame for later
-                Presentation_image_f2_1.tStop = t  # not accounting for scr refresh
-                Presentation_image_f2_1.frameNStop = frameN  # exact frame index
-                win.timeOnFlip(Presentation_image_f2_1, 'tStopRefresh')  # time at next scr refresh
-                Presentation_image_f2_1.setAutoDraw(False)
-        
-        # *Presentation_image_f2_2* updates
-        if Presentation_image_f2_2.status == NOT_STARTED and tThisFlip >= 1.5-frameTolerance:
-            # keep track of start time/frame for later
-            Presentation_image_f2_2.frameNStart = frameN  # exact frame index
-            Presentation_image_f2_2.tStart = t  # local t and not account for scr refresh
-            Presentation_image_f2_2.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(Presentation_image_f2_2, 'tStartRefresh')  # time at next scr refresh
-            Presentation_image_f2_2.setAutoDraw(True)
-        if Presentation_image_f2_2.status == STARTED:
-            # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > Presentation_image_f2_2.tStartRefresh + 0.45-frameTolerance:
-                # keep track of stop time/frame for later
-                Presentation_image_f2_2.tStop = t  # not accounting for scr refresh
-                Presentation_image_f2_2.frameNStop = frameN  # exact frame index
-                win.timeOnFlip(Presentation_image_f2_2, 'tStopRefresh')  # time at next scr refresh
-                Presentation_image_f2_2.setAutoDraw(False)
-        
-        # *Presentation_image_2_f2_1* updates
-        if Presentation_image_2_f2_1.status == NOT_STARTED and tThisFlip >= 2.0-frameTolerance:
-            # keep track of start time/frame for later
-            Presentation_image_2_f2_1.frameNStart = frameN  # exact frame index
-            Presentation_image_2_f2_1.tStart = t  # local t and not account for scr refresh
-            Presentation_image_2_f2_1.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(Presentation_image_2_f2_1, 'tStartRefresh')  # time at next scr refresh
-            Presentation_image_2_f2_1.setAutoDraw(True)
-        if Presentation_image_2_f2_1.status == STARTED:
-            # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > Presentation_image_2_f2_1.tStartRefresh + 0.45-frameTolerance:
-                # keep track of stop time/frame for later
-                Presentation_image_2_f2_1.tStop = t  # not accounting for scr refresh
-                Presentation_image_2_f2_1.frameNStop = frameN  # exact frame index
-                win.timeOnFlip(Presentation_image_2_f2_1, 'tStopRefresh')  # time at next scr refresh
-                Presentation_image_2_f2_1.setAutoDraw(False)
-        
-        # *Presentatio_image_2_f2_2* updates
-        if Presentatio_image_2_f2_2.status == NOT_STARTED and tThisFlip >= 2.5-frameTolerance:
-            # keep track of start time/frame for later
-            Presentatio_image_2_f2_2.frameNStart = frameN  # exact frame index
-            Presentatio_image_2_f2_2.tStart = t  # local t and not account for scr refresh
-            Presentatio_image_2_f2_2.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(Presentatio_image_2_f2_2, 'tStartRefresh')  # time at next scr refresh
-            Presentatio_image_2_f2_2.setAutoDraw(True)
-        if Presentatio_image_2_f2_2.status == STARTED:
-            # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > Presentatio_image_2_f2_2.tStartRefresh + 0.45-frameTolerance:
-                # keep track of stop time/frame for later
-                Presentatio_image_2_f2_2.tStop = t  # not accounting for scr refresh
-                Presentatio_image_2_f2_2.frameNStop = frameN  # exact frame index
-                win.timeOnFlip(Presentatio_image_2_f2_2, 'tStopRefresh')  # time at next scr refresh
-                Presentatio_image_2_f2_2.setAutoDraw(False)
-        
-        # *Presentation_image_3_f2_1* updates
-        if Presentation_image_3_f2_1.status == NOT_STARTED and tThisFlip >= 3.0-frameTolerance:
-            # keep track of start time/frame for later
-            Presentation_image_3_f2_1.frameNStart = frameN  # exact frame index
-            Presentation_image_3_f2_1.tStart = t  # local t and not account for scr refresh
-            Presentation_image_3_f2_1.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(Presentation_image_3_f2_1, 'tStartRefresh')  # time at next scr refresh
-            Presentation_image_3_f2_1.setAutoDraw(True)
-        if Presentation_image_3_f2_1.status == STARTED:
-            # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > Presentation_image_3_f2_1.tStartRefresh + 0.45-frameTolerance:
-                # keep track of stop time/frame for later
-                Presentation_image_3_f2_1.tStop = t  # not accounting for scr refresh
-                Presentation_image_3_f2_1.frameNStop = frameN  # exact frame index
-                win.timeOnFlip(Presentation_image_3_f2_1, 'tStopRefresh')  # time at next scr refresh
-                Presentation_image_3_f2_1.setAutoDraw(False)
-        
-        # *Presentation_image_3_f2_2* updates
-        if Presentation_image_3_f2_2.status == NOT_STARTED and tThisFlip >= 3.5-frameTolerance:
-            # keep track of start time/frame for later
-            Presentation_image_3_f2_2.frameNStart = frameN  # exact frame index
-            Presentation_image_3_f2_2.tStart = t  # local t and not account for scr refresh
-            Presentation_image_3_f2_2.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(Presentation_image_3_f2_2, 'tStartRefresh')  # time at next scr refresh
-            Presentation_image_3_f2_2.setAutoDraw(True)
-        if Presentation_image_3_f2_2.status == STARTED:
-            # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > Presentation_image_3_f2_2.tStartRefresh + 0.45-frameTolerance:
-                # keep track of stop time/frame for later
-                Presentation_image_3_f2_2.tStop = t  # not accounting for scr refresh
-                Presentation_image_3_f2_2.frameNStop = frameN  # exact frame index
-                win.timeOnFlip(Presentation_image_3_f2_2, 'tStopRefresh')  # time at next scr refresh
-                Presentation_image_3_f2_2.setAutoDraw(False)
-        
-        # *Presentation_image_4_f2_1* updates
-        if Presentation_image_4_f2_1.status == NOT_STARTED and tThisFlip >= 4.0-frameTolerance:
-            # keep track of start time/frame for later
-            Presentation_image_4_f2_1.frameNStart = frameN  # exact frame index
-            Presentation_image_4_f2_1.tStart = t  # local t and not account for scr refresh
-            Presentation_image_4_f2_1.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(Presentation_image_4_f2_1, 'tStartRefresh')  # time at next scr refresh
-            Presentation_image_4_f2_1.setAutoDraw(True)
-        if Presentation_image_4_f2_1.status == STARTED:
-            # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > Presentation_image_4_f2_1.tStartRefresh + 0.45-frameTolerance:
-                # keep track of stop time/frame for later
-                Presentation_image_4_f2_1.tStop = t  # not accounting for scr refresh
-                Presentation_image_4_f2_1.frameNStop = frameN  # exact frame index
-                win.timeOnFlip(Presentation_image_4_f2_1, 'tStopRefresh')  # time at next scr refresh
-                Presentation_image_4_f2_1.setAutoDraw(False)
-        
-        # *Presentation_image_4_f2_2* updates
-        if Presentation_image_4_f2_2.status == NOT_STARTED and tThisFlip >= 4.5-frameTolerance:
-            # keep track of start time/frame for later
-            Presentation_image_4_f2_2.frameNStart = frameN  # exact frame index
-            Presentation_image_4_f2_2.tStart = t  # local t and not account for scr refresh
-            Presentation_image_4_f2_2.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(Presentation_image_4_f2_2, 'tStartRefresh')  # time at next scr refresh
-            Presentation_image_4_f2_2.setAutoDraw(True)
-        if Presentation_image_4_f2_2.status == STARTED:
-            # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > Presentation_image_4_f2_2.tStartRefresh + 0.45-frameTolerance:
-                # keep track of stop time/frame for later
-                Presentation_image_4_f2_2.tStop = t  # not accounting for scr refresh
-                Presentation_image_4_f2_2.frameNStop = frameN  # exact frame index
-                win.timeOnFlip(Presentation_image_4_f2_2, 'tStopRefresh')  # time at next scr refresh
-                Presentation_image_4_f2_2.setAutoDraw(False)
-        
-        # check for quit (typically the Esc key)
-        if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
-            core.quit()
-        
-        # check if all components have finished
-        if not continueRoutine:  # a component has requested a forced-end of Routine
-            break
-        continueRoutine = False  # will revert to True if at least one component still running
+        # ------Prepare to start Routine "rsvp_f2"-------
+        continueRoutine = True
+        routineTimer.add(3.950000)
+        # update component parameters for each repeat
+        Presentation_image_f2_1.setImage(imageone)
+        Presentation_image_f2_2.setImage(imageone)
+        Presentation_image_2_f2_1.setImage(imagetwo)
+        Presentation_image_2_f2_2.setImage(imagetwo)
+        Presentation_image_3_f2_1.setImage(imagethree)
+        Presentation_image_3_f2_2.setImage(imagethree)
+        Presentation_image_4_f2_1.setImage(imagefour)
+        Presentation_image_4_f2_2.setImage(imagefour)
+        # keep track of which components have finished
+        rsvp_f2Components = [Presentation_image_f2_1, Presentation_image_f2_2, Presentation_image_2_f2_1, Presentation_image_2_f2_2, Presentation_image_3_f2_1, Presentation_image_3_f2_2, Presentation_image_4_f2_1, Presentation_image_4_f2_2]
         for thisComponent in rsvp_f2Components:
-            if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
-                continueRoutine = True
-                break  # at least one component has not yet finished
+            thisComponent.tStart = None
+            thisComponent.tStop = None
+            thisComponent.tStartRefresh = None
+            thisComponent.tStopRefresh = None
+            if hasattr(thisComponent, 'status'):
+                thisComponent.status = NOT_STARTED
+        # reset timers
+        t = 0
+        _timeToFirstFrame = win.getFutureFlipTime(clock="now")
+        rsvp_f2Clock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
+        frameN = -1
         
-        # refresh the screen
-        if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
-            win.flip()
+        # -------Run Routine "rsvp_f2"-------
+        while continueRoutine and routineTimer.getTime() > 0:
+            # get current time
+            t = rsvp_f2Clock.getTime()
+            tThisFlip = win.getFutureFlipTime(clock=rsvp_f2Clock)
+            tThisFlipGlobal = win.getFutureFlipTime(clock=None)
+            frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+            # update/draw components on each frame
+            
+            # *Presentation_image_f2_1* updates
+            if Presentation_image_f2_1.status == NOT_STARTED and tThisFlip >= 0-frameTolerance:
+                # keep track of start time/frame for later
+                Presentation_image_f2_1.frameNStart = frameN  # exact frame index
+                Presentation_image_f2_1.tStart = t  # local t and not account for scr refresh
+                Presentation_image_f2_1.tStartRefresh = tThisFlipGlobal  # on global time
+                win.timeOnFlip(Presentation_image_f2_1, 'tStartRefresh')  # time at next scr refresh
+                Presentation_image_f2_1.setAutoDraw(True)
+            if Presentation_image_f2_1.status == STARTED:
+                # is it time to stop? (based on global clock, using actual start)
+                if tThisFlipGlobal > Presentation_image_f2_1.tStartRefresh + 0.45-frameTolerance:
+                    # keep track of stop time/frame for later
+                    Presentation_image_f2_1.tStop = t  # not accounting for scr refresh
+                    Presentation_image_f2_1.frameNStop = frameN  # exact frame index
+                    win.timeOnFlip(Presentation_image_f2_1, 'tStopRefresh')  # time at next scr refresh
+                    Presentation_image_f2_1.setAutoDraw(False)
+            
+            # *Presentation_image_f2_2* updates
+            if Presentation_image_f2_2.status == NOT_STARTED and tThisFlip >= 0.5-frameTolerance:
+                # keep track of start time/frame for later
+                Presentation_image_f2_2.frameNStart = frameN  # exact frame index
+                Presentation_image_f2_2.tStart = t  # local t and not account for scr refresh
+                Presentation_image_f2_2.tStartRefresh = tThisFlipGlobal  # on global time
+                win.timeOnFlip(Presentation_image_f2_2, 'tStartRefresh')  # time at next scr refresh
+                Presentation_image_f2_2.setAutoDraw(True)
+            if Presentation_image_f2_2.status == STARTED:
+                # is it time to stop? (based on global clock, using actual start)
+                if tThisFlipGlobal > Presentation_image_f2_2.tStartRefresh + 0.45-frameTolerance:
+                    # keep track of stop time/frame for later
+                    Presentation_image_f2_2.tStop = t  # not accounting for scr refresh
+                    Presentation_image_f2_2.frameNStop = frameN  # exact frame index
+                    win.timeOnFlip(Presentation_image_f2_2, 'tStopRefresh')  # time at next scr refresh
+                    Presentation_image_f2_2.setAutoDraw(False)
+            
+            # *Presentation_image_2_f2_1* updates
+            if Presentation_image_2_f2_1.status == NOT_STARTED and tThisFlip >= 1.0-frameTolerance:
+                # keep track of start time/frame for later
+                Presentation_image_2_f2_1.frameNStart = frameN  # exact frame index
+                Presentation_image_2_f2_1.tStart = t  # local t and not account for scr refresh
+                Presentation_image_2_f2_1.tStartRefresh = tThisFlipGlobal  # on global time
+                win.timeOnFlip(Presentation_image_2_f2_1, 'tStartRefresh')  # time at next scr refresh
+                Presentation_image_2_f2_1.setAutoDraw(True)
+            if Presentation_image_2_f2_1.status == STARTED:
+                # is it time to stop? (based on global clock, using actual start)
+                if tThisFlipGlobal > Presentation_image_2_f2_1.tStartRefresh + 0.45-frameTolerance:
+                    # keep track of stop time/frame for later
+                    Presentation_image_2_f2_1.tStop = t  # not accounting for scr refresh
+                    Presentation_image_2_f2_1.frameNStop = frameN  # exact frame index
+                    win.timeOnFlip(Presentation_image_2_f2_1, 'tStopRefresh')  # time at next scr refresh
+                    Presentation_image_2_f2_1.setAutoDraw(False)
+            
+            # *Presentation_image_2_f2_2* updates
+            if Presentation_image_2_f2_2.status == NOT_STARTED and tThisFlip >= 1.5-frameTolerance:
+                # keep track of start time/frame for later
+                Presentation_image_2_f2_2.frameNStart = frameN  # exact frame index
+                Presentation_image_2_f2_2.tStart = t  # local t and not account for scr refresh
+                Presentation_image_2_f2_2.tStartRefresh = tThisFlipGlobal  # on global time
+                win.timeOnFlip(Presentation_image_2_f2_2, 'tStartRefresh')  # time at next scr refresh
+                Presentation_image_2_f2_2.setAutoDraw(True)
+            if Presentation_image_2_f2_2.status == STARTED:
+                # is it time to stop? (based on global clock, using actual start)
+                if tThisFlipGlobal > Presentation_image_2_f2_2.tStartRefresh + 0.45-frameTolerance:
+                    # keep track of stop time/frame for later
+                    Presentation_image_2_f2_2.tStop = t  # not accounting for scr refresh
+                    Presentation_image_2_f2_2.frameNStop = frameN  # exact frame index
+                    win.timeOnFlip(Presentation_image_2_f2_2, 'tStopRefresh')  # time at next scr refresh
+                    Presentation_image_2_f2_2.setAutoDraw(False)
+            
+            # *Presentation_image_3_f2_1* updates
+            if Presentation_image_3_f2_1.status == NOT_STARTED and tThisFlip >= 2.0-frameTolerance:
+                # keep track of start time/frame for later
+                Presentation_image_3_f2_1.frameNStart = frameN  # exact frame index
+                Presentation_image_3_f2_1.tStart = t  # local t and not account for scr refresh
+                Presentation_image_3_f2_1.tStartRefresh = tThisFlipGlobal  # on global time
+                win.timeOnFlip(Presentation_image_3_f2_1, 'tStartRefresh')  # time at next scr refresh
+                Presentation_image_3_f2_1.setAutoDraw(True)
+            if Presentation_image_3_f2_1.status == STARTED:
+                # is it time to stop? (based on global clock, using actual start)
+                if tThisFlipGlobal > Presentation_image_3_f2_1.tStartRefresh + 0.45-frameTolerance:
+                    # keep track of stop time/frame for later
+                    Presentation_image_3_f2_1.tStop = t  # not accounting for scr refresh
+                    Presentation_image_3_f2_1.frameNStop = frameN  # exact frame index
+                    win.timeOnFlip(Presentation_image_3_f2_1, 'tStopRefresh')  # time at next scr refresh
+                    Presentation_image_3_f2_1.setAutoDraw(False)
+            
+            # *Presentation_image_3_f2_2* updates
+            if Presentation_image_3_f2_2.status == NOT_STARTED and tThisFlip >= 2.5-frameTolerance:
+                # keep track of start time/frame for later
+                Presentation_image_3_f2_2.frameNStart = frameN  # exact frame index
+                Presentation_image_3_f2_2.tStart = t  # local t and not account for scr refresh
+                Presentation_image_3_f2_2.tStartRefresh = tThisFlipGlobal  # on global time
+                win.timeOnFlip(Presentation_image_3_f2_2, 'tStartRefresh')  # time at next scr refresh
+                Presentation_image_3_f2_2.setAutoDraw(True)
+            if Presentation_image_3_f2_2.status == STARTED:
+                # is it time to stop? (based on global clock, using actual start)
+                if tThisFlipGlobal > Presentation_image_3_f2_2.tStartRefresh + 0.45-frameTolerance:
+                    # keep track of stop time/frame for later
+                    Presentation_image_3_f2_2.tStop = t  # not accounting for scr refresh
+                    Presentation_image_3_f2_2.frameNStop = frameN  # exact frame index
+                    win.timeOnFlip(Presentation_image_3_f2_2, 'tStopRefresh')  # time at next scr refresh
+                    Presentation_image_3_f2_2.setAutoDraw(False)
+            
+            # *Presentation_image_4_f2_1* updates
+            if Presentation_image_4_f2_1.status == NOT_STARTED and tThisFlip >= 3.0-frameTolerance:
+                # keep track of start time/frame for later
+                Presentation_image_4_f2_1.frameNStart = frameN  # exact frame index
+                Presentation_image_4_f2_1.tStart = t  # local t and not account for scr refresh
+                Presentation_image_4_f2_1.tStartRefresh = tThisFlipGlobal  # on global time
+                win.timeOnFlip(Presentation_image_4_f2_1, 'tStartRefresh')  # time at next scr refresh
+                Presentation_image_4_f2_1.setAutoDraw(True)
+            if Presentation_image_4_f2_1.status == STARTED:
+                # is it time to stop? (based on global clock, using actual start)
+                if tThisFlipGlobal > Presentation_image_4_f2_1.tStartRefresh + 0.45-frameTolerance:
+                    # keep track of stop time/frame for later
+                    Presentation_image_4_f2_1.tStop = t  # not accounting for scr refresh
+                    Presentation_image_4_f2_1.frameNStop = frameN  # exact frame index
+                    win.timeOnFlip(Presentation_image_4_f2_1, 'tStopRefresh')  # time at next scr refresh
+                    Presentation_image_4_f2_1.setAutoDraw(False)
+            
+            # *Presentation_image_4_f2_2* updates
+            if Presentation_image_4_f2_2.status == NOT_STARTED and tThisFlip >= 3.5-frameTolerance:
+                # keep track of start time/frame for later
+                Presentation_image_4_f2_2.frameNStart = frameN  # exact frame index
+                Presentation_image_4_f2_2.tStart = t  # local t and not account for scr refresh
+                Presentation_image_4_f2_2.tStartRefresh = tThisFlipGlobal  # on global time
+                win.timeOnFlip(Presentation_image_4_f2_2, 'tStartRefresh')  # time at next scr refresh
+                Presentation_image_4_f2_2.setAutoDraw(True)
+            if Presentation_image_4_f2_2.status == STARTED:
+                # is it time to stop? (based on global clock, using actual start)
+                if tThisFlipGlobal > Presentation_image_4_f2_2.tStartRefresh + 0.45-frameTolerance:
+                    # keep track of stop time/frame for later
+                    Presentation_image_4_f2_2.tStop = t  # not accounting for scr refresh
+                    Presentation_image_4_f2_2.frameNStop = frameN  # exact frame index
+                    win.timeOnFlip(Presentation_image_4_f2_2, 'tStopRefresh')  # time at next scr refresh
+                    Presentation_image_4_f2_2.setAutoDraw(False)
+            
+            # check for quit (typically the Esc key)
+            if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
+                core.quit()
+            
+            # check if all components have finished
+            if not continueRoutine:  # a component has requested a forced-end of Routine
+                break
+            continueRoutine = False  # will revert to True if at least one component still running
+            for thisComponent in rsvp_f2Components:
+                if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
+                    continueRoutine = True
+                    break  # at least one component has not yet finished
+            
+            # refresh the screen
+            if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
+                win.flip()
+        
+        # -------Ending Routine "rsvp_f2"-------
+        for thisComponent in rsvp_f2Components:
+            if hasattr(thisComponent, "setAutoDraw"):
+                thisComponent.setAutoDraw(False)
+        ftwo_control.addData('Presentation_image_f2_1.started', Presentation_image_f2_1.tStartRefresh)
+        ftwo_control.addData('Presentation_image_f2_1.stopped', Presentation_image_f2_1.tStopRefresh)
+        ftwo_control.addData('Presentation_image_f2_2.started', Presentation_image_f2_2.tStartRefresh)
+        ftwo_control.addData('Presentation_image_f2_2.stopped', Presentation_image_f2_2.tStopRefresh)
+        ftwo_control.addData('Presentation_image_2_f2_1.started', Presentation_image_2_f2_1.tStartRefresh)
+        ftwo_control.addData('Presentation_image_2_f2_1.stopped', Presentation_image_2_f2_1.tStopRefresh)
+        ftwo_control.addData('Presentation_image_2_f2_2.started', Presentation_image_2_f2_2.tStartRefresh)
+        ftwo_control.addData('Presentation_image_2_f2_2.stopped', Presentation_image_2_f2_2.tStopRefresh)
+        ftwo_control.addData('Presentation_image_3_f2_1.started', Presentation_image_3_f2_1.tStartRefresh)
+        ftwo_control.addData('Presentation_image_3_f2_1.stopped', Presentation_image_3_f2_1.tStopRefresh)
+        ftwo_control.addData('Presentation_image_3_f2_2.started', Presentation_image_3_f2_2.tStartRefresh)
+        ftwo_control.addData('Presentation_image_3_f2_2.stopped', Presentation_image_3_f2_2.tStopRefresh)
+        ftwo_control.addData('Presentation_image_4_f2_1.started', Presentation_image_4_f2_1.tStartRefresh)
+        ftwo_control.addData('Presentation_image_4_f2_1.stopped', Presentation_image_4_f2_1.tStopRefresh)
+        ftwo_control.addData('Presentation_image_4_f2_2.started', Presentation_image_4_f2_2.tStartRefresh)
+        ftwo_control.addData('Presentation_image_4_f2_2.stopped', Presentation_image_4_f2_2.tStopRefresh)
+        thisExp.nextEntry()
+        
+    # completed doftwo repeats of 'ftwo_control'
     
-    # -------Ending Routine "rsvp_f2"-------
-    for thisComponent in rsvp_f2Components:
-        if hasattr(thisComponent, "setAutoDraw"):
-            thisComponent.setAutoDraw(False)
-    block_one.addData('Cross_2.started', Cross_2.tStartRefresh)
-    block_one.addData('Cross_2.stopped', Cross_2.tStopRefresh)
-    block_one.addData('Presentation_image_f2_1.started', Presentation_image_f2_1.tStartRefresh)
-    block_one.addData('Presentation_image_f2_1.stopped', Presentation_image_f2_1.tStopRefresh)
-    block_one.addData('Presentation_image_f2_2.started', Presentation_image_f2_2.tStartRefresh)
-    block_one.addData('Presentation_image_f2_2.stopped', Presentation_image_f2_2.tStopRefresh)
-    block_one.addData('Presentation_image_2_f2_1.started', Presentation_image_2_f2_1.tStartRefresh)
-    block_one.addData('Presentation_image_2_f2_1.stopped', Presentation_image_2_f2_1.tStopRefresh)
-    block_one.addData('Presentatio_image_2_f2_2.started', Presentatio_image_2_f2_2.tStartRefresh)
-    block_one.addData('Presentatio_image_2_f2_2.stopped', Presentatio_image_2_f2_2.tStopRefresh)
-    block_one.addData('Presentation_image_3_f2_1.started', Presentation_image_3_f2_1.tStartRefresh)
-    block_one.addData('Presentation_image_3_f2_1.stopped', Presentation_image_3_f2_1.tStopRefresh)
-    block_one.addData('Presentation_image_3_f2_2.started', Presentation_image_3_f2_2.tStartRefresh)
-    block_one.addData('Presentation_image_3_f2_2.stopped', Presentation_image_3_f2_2.tStopRefresh)
-    block_one.addData('Presentation_image_4_f2_1.started', Presentation_image_4_f2_1.tStartRefresh)
-    block_one.addData('Presentation_image_4_f2_1.stopped', Presentation_image_4_f2_1.tStopRefresh)
-    block_one.addData('Presentation_image_4_f2_2.started', Presentation_image_4_f2_2.tStartRefresh)
-    block_one.addData('Presentation_image_4_f2_2.stopped', Presentation_image_4_f2_2.tStopRefresh)
     
-    # ------Prepare to start Routine "trial"-------
+    # set up handler to look after randomisation of conditions etc
+    fthree_control = data.TrialHandler(nReps=dofthree, method='sequential', 
+        extraInfo=expInfo, originPath=-1,
+        trialList=[None],
+        seed=None, name='fthree_control')
+    thisExp.addLoop(fthree_control)  # add the loop to the experiment
+    thisFthree_control = fthree_control.trialList[0]  # so we can initialise stimuli with some values
+    # abbreviate parameter names if possible (e.g. rgb = thisFthree_control.rgb)
+    if thisFthree_control != None:
+        for paramName in thisFthree_control:
+            exec('{} = thisFthree_control[paramName]'.format(paramName))
+    
+    for thisFthree_control in fthree_control:
+        currentLoop = fthree_control
+        # abbreviate parameter names if possible (e.g. rgb = thisFthree_control.rgb)
+        if thisFthree_control != None:
+            for paramName in thisFthree_control:
+                exec('{} = thisFthree_control[paramName]'.format(paramName))
+        
+        # ------Prepare to start Routine "rsvp_f3"-------
+        continueRoutine = True
+        routineTimer.add(4.000000)
+        # update component parameters for each repeat
+        Presentation_image_f3_1.setImage(imageone)
+        Presentation_image_f3_2.setImage(imageone)
+        Presentation_image_f3_3.setImage(imageone)
+        Presentation_image_2_f3_1.setImage(imagetwo)
+        Presentation_image_2_f3_2.setImage(imagetwo)
+        Presentation_image_2_f3_3.setImage(imagetwo)
+        Presentation_image_3_f3_1.setImage(imagethree)
+        Presentation_image_3_f3_2.setImage(imagethree)
+        Presentation_image_3_f3_3.setImage(imagethree)
+        Presentation_image_4_f3_1.setImage(imagefour)
+        Presentation_image_4_f3_2.setImage(imagefour)
+        Presentation_image_4_f3_3.setImage(imagefour)
+        # keep track of which components have finished
+        rsvp_f3Components = [Presentation_image_f3_1, Presentation_image_f3_2, Presentation_image_f3_3, Presentation_image_2_f3_1, Presentation_image_2_f3_2, Presentation_image_2_f3_3, Presentation_image_3_f3_1, Presentation_image_3_f3_2, Presentation_image_3_f3_3, Presentation_image_4_f3_1, Presentation_image_4_f3_2, Presentation_image_4_f3_3]
+        for thisComponent in rsvp_f3Components:
+            thisComponent.tStart = None
+            thisComponent.tStop = None
+            thisComponent.tStartRefresh = None
+            thisComponent.tStopRefresh = None
+            if hasattr(thisComponent, 'status'):
+                thisComponent.status = NOT_STARTED
+        # reset timers
+        t = 0
+        _timeToFirstFrame = win.getFutureFlipTime(clock="now")
+        rsvp_f3Clock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
+        frameN = -1
+        
+        # -------Run Routine "rsvp_f3"-------
+        while continueRoutine and routineTimer.getTime() > 0:
+            # get current time
+            t = rsvp_f3Clock.getTime()
+            tThisFlip = win.getFutureFlipTime(clock=rsvp_f3Clock)
+            tThisFlipGlobal = win.getFutureFlipTime(clock=None)
+            frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+            # update/draw components on each frame
+            
+            # *Presentation_image_f3_1* updates
+            if Presentation_image_f3_1.status == NOT_STARTED and tThisFlip >= 0-frameTolerance:
+                # keep track of start time/frame for later
+                Presentation_image_f3_1.frameNStart = frameN  # exact frame index
+                Presentation_image_f3_1.tStart = t  # local t and not account for scr refresh
+                Presentation_image_f3_1.tStartRefresh = tThisFlipGlobal  # on global time
+                win.timeOnFlip(Presentation_image_f3_1, 'tStartRefresh')  # time at next scr refresh
+                Presentation_image_f3_1.setAutoDraw(True)
+            if Presentation_image_f3_1.status == STARTED:
+                # is it time to stop? (based on global clock, using actual start)
+                if tThisFlipGlobal > Presentation_image_f3_1.tStartRefresh + 0.30-frameTolerance:
+                    # keep track of stop time/frame for later
+                    Presentation_image_f3_1.tStop = t  # not accounting for scr refresh
+                    Presentation_image_f3_1.frameNStop = frameN  # exact frame index
+                    win.timeOnFlip(Presentation_image_f3_1, 'tStopRefresh')  # time at next scr refresh
+                    Presentation_image_f3_1.setAutoDraw(False)
+            
+            # *Presentation_image_f3_2* updates
+            if Presentation_image_f3_2.status == NOT_STARTED and tThisFlip >= 0.35-frameTolerance:
+                # keep track of start time/frame for later
+                Presentation_image_f3_2.frameNStart = frameN  # exact frame index
+                Presentation_image_f3_2.tStart = t  # local t and not account for scr refresh
+                Presentation_image_f3_2.tStartRefresh = tThisFlipGlobal  # on global time
+                win.timeOnFlip(Presentation_image_f3_2, 'tStartRefresh')  # time at next scr refresh
+                Presentation_image_f3_2.setAutoDraw(True)
+            if Presentation_image_f3_2.status == STARTED:
+                # is it time to stop? (based on global clock, using actual start)
+                if tThisFlipGlobal > Presentation_image_f3_2.tStartRefresh + 0.3-frameTolerance:
+                    # keep track of stop time/frame for later
+                    Presentation_image_f3_2.tStop = t  # not accounting for scr refresh
+                    Presentation_image_f3_2.frameNStop = frameN  # exact frame index
+                    win.timeOnFlip(Presentation_image_f3_2, 'tStopRefresh')  # time at next scr refresh
+                    Presentation_image_f3_2.setAutoDraw(False)
+            
+            # *Presentation_image_f3_3* updates
+            if Presentation_image_f3_3.status == NOT_STARTED and tThisFlip >= 0.70-frameTolerance:
+                # keep track of start time/frame for later
+                Presentation_image_f3_3.frameNStart = frameN  # exact frame index
+                Presentation_image_f3_3.tStart = t  # local t and not account for scr refresh
+                Presentation_image_f3_3.tStartRefresh = tThisFlipGlobal  # on global time
+                win.timeOnFlip(Presentation_image_f3_3, 'tStartRefresh')  # time at next scr refresh
+                Presentation_image_f3_3.setAutoDraw(True)
+            if Presentation_image_f3_3.status == STARTED:
+                # is it time to stop? (based on global clock, using actual start)
+                if tThisFlipGlobal > Presentation_image_f3_3.tStartRefresh + 0.3-frameTolerance:
+                    # keep track of stop time/frame for later
+                    Presentation_image_f3_3.tStop = t  # not accounting for scr refresh
+                    Presentation_image_f3_3.frameNStop = frameN  # exact frame index
+                    win.timeOnFlip(Presentation_image_f3_3, 'tStopRefresh')  # time at next scr refresh
+                    Presentation_image_f3_3.setAutoDraw(False)
+            
+            # *Presentation_image_2_f3_1* updates
+            if Presentation_image_2_f3_1.status == NOT_STARTED and tThisFlip >= 1-frameTolerance:
+                # keep track of start time/frame for later
+                Presentation_image_2_f3_1.frameNStart = frameN  # exact frame index
+                Presentation_image_2_f3_1.tStart = t  # local t and not account for scr refresh
+                Presentation_image_2_f3_1.tStartRefresh = tThisFlipGlobal  # on global time
+                win.timeOnFlip(Presentation_image_2_f3_1, 'tStartRefresh')  # time at next scr refresh
+                Presentation_image_2_f3_1.setAutoDraw(True)
+            if Presentation_image_2_f3_1.status == STARTED:
+                # is it time to stop? (based on global clock, using actual start)
+                if tThisFlipGlobal > Presentation_image_2_f3_1.tStartRefresh + 0.3-frameTolerance:
+                    # keep track of stop time/frame for later
+                    Presentation_image_2_f3_1.tStop = t  # not accounting for scr refresh
+                    Presentation_image_2_f3_1.frameNStop = frameN  # exact frame index
+                    win.timeOnFlip(Presentation_image_2_f3_1, 'tStopRefresh')  # time at next scr refresh
+                    Presentation_image_2_f3_1.setAutoDraw(False)
+            
+            # *Presentation_image_2_f3_2* updates
+            if Presentation_image_2_f3_2.status == NOT_STARTED and tThisFlip >= 1.35-frameTolerance:
+                # keep track of start time/frame for later
+                Presentation_image_2_f3_2.frameNStart = frameN  # exact frame index
+                Presentation_image_2_f3_2.tStart = t  # local t and not account for scr refresh
+                Presentation_image_2_f3_2.tStartRefresh = tThisFlipGlobal  # on global time
+                win.timeOnFlip(Presentation_image_2_f3_2, 'tStartRefresh')  # time at next scr refresh
+                Presentation_image_2_f3_2.setAutoDraw(True)
+            if Presentation_image_2_f3_2.status == STARTED:
+                # is it time to stop? (based on global clock, using actual start)
+                if tThisFlipGlobal > Presentation_image_2_f3_2.tStartRefresh + 0.3-frameTolerance:
+                    # keep track of stop time/frame for later
+                    Presentation_image_2_f3_2.tStop = t  # not accounting for scr refresh
+                    Presentation_image_2_f3_2.frameNStop = frameN  # exact frame index
+                    win.timeOnFlip(Presentation_image_2_f3_2, 'tStopRefresh')  # time at next scr refresh
+                    Presentation_image_2_f3_2.setAutoDraw(False)
+            
+            # *Presentation_image_2_f3_3* updates
+            if Presentation_image_2_f3_3.status == NOT_STARTED and tThisFlip >= 1.70-frameTolerance:
+                # keep track of start time/frame for later
+                Presentation_image_2_f3_3.frameNStart = frameN  # exact frame index
+                Presentation_image_2_f3_3.tStart = t  # local t and not account for scr refresh
+                Presentation_image_2_f3_3.tStartRefresh = tThisFlipGlobal  # on global time
+                win.timeOnFlip(Presentation_image_2_f3_3, 'tStartRefresh')  # time at next scr refresh
+                Presentation_image_2_f3_3.setAutoDraw(True)
+            if Presentation_image_2_f3_3.status == STARTED:
+                # is it time to stop? (based on global clock, using actual start)
+                if tThisFlipGlobal > Presentation_image_2_f3_3.tStartRefresh + 0.3-frameTolerance:
+                    # keep track of stop time/frame for later
+                    Presentation_image_2_f3_3.tStop = t  # not accounting for scr refresh
+                    Presentation_image_2_f3_3.frameNStop = frameN  # exact frame index
+                    win.timeOnFlip(Presentation_image_2_f3_3, 'tStopRefresh')  # time at next scr refresh
+                    Presentation_image_2_f3_3.setAutoDraw(False)
+            
+            # *Presentation_image_3_f3_1* updates
+            if Presentation_image_3_f3_1.status == NOT_STARTED and tThisFlip >= 2.0-frameTolerance:
+                # keep track of start time/frame for later
+                Presentation_image_3_f3_1.frameNStart = frameN  # exact frame index
+                Presentation_image_3_f3_1.tStart = t  # local t and not account for scr refresh
+                Presentation_image_3_f3_1.tStartRefresh = tThisFlipGlobal  # on global time
+                win.timeOnFlip(Presentation_image_3_f3_1, 'tStartRefresh')  # time at next scr refresh
+                Presentation_image_3_f3_1.setAutoDraw(True)
+            if Presentation_image_3_f3_1.status == STARTED:
+                # is it time to stop? (based on global clock, using actual start)
+                if tThisFlipGlobal > Presentation_image_3_f3_1.tStartRefresh + 0.3-frameTolerance:
+                    # keep track of stop time/frame for later
+                    Presentation_image_3_f3_1.tStop = t  # not accounting for scr refresh
+                    Presentation_image_3_f3_1.frameNStop = frameN  # exact frame index
+                    win.timeOnFlip(Presentation_image_3_f3_1, 'tStopRefresh')  # time at next scr refresh
+                    Presentation_image_3_f3_1.setAutoDraw(False)
+            
+            # *Presentation_image_3_f3_2* updates
+            if Presentation_image_3_f3_2.status == NOT_STARTED and tThisFlip >= 2.35-frameTolerance:
+                # keep track of start time/frame for later
+                Presentation_image_3_f3_2.frameNStart = frameN  # exact frame index
+                Presentation_image_3_f3_2.tStart = t  # local t and not account for scr refresh
+                Presentation_image_3_f3_2.tStartRefresh = tThisFlipGlobal  # on global time
+                win.timeOnFlip(Presentation_image_3_f3_2, 'tStartRefresh')  # time at next scr refresh
+                Presentation_image_3_f3_2.setAutoDraw(True)
+            if Presentation_image_3_f3_2.status == STARTED:
+                # is it time to stop? (based on global clock, using actual start)
+                if tThisFlipGlobal > Presentation_image_3_f3_2.tStartRefresh + 0.3-frameTolerance:
+                    # keep track of stop time/frame for later
+                    Presentation_image_3_f3_2.tStop = t  # not accounting for scr refresh
+                    Presentation_image_3_f3_2.frameNStop = frameN  # exact frame index
+                    win.timeOnFlip(Presentation_image_3_f3_2, 'tStopRefresh')  # time at next scr refresh
+                    Presentation_image_3_f3_2.setAutoDraw(False)
+            
+            # *Presentation_image_3_f3_3* updates
+            if Presentation_image_3_f3_3.status == NOT_STARTED and tThisFlip >= 2.70-frameTolerance:
+                # keep track of start time/frame for later
+                Presentation_image_3_f3_3.frameNStart = frameN  # exact frame index
+                Presentation_image_3_f3_3.tStart = t  # local t and not account for scr refresh
+                Presentation_image_3_f3_3.tStartRefresh = tThisFlipGlobal  # on global time
+                win.timeOnFlip(Presentation_image_3_f3_3, 'tStartRefresh')  # time at next scr refresh
+                Presentation_image_3_f3_3.setAutoDraw(True)
+            if Presentation_image_3_f3_3.status == STARTED:
+                # is it time to stop? (based on global clock, using actual start)
+                if tThisFlipGlobal > Presentation_image_3_f3_3.tStartRefresh + 0.3-frameTolerance:
+                    # keep track of stop time/frame for later
+                    Presentation_image_3_f3_3.tStop = t  # not accounting for scr refresh
+                    Presentation_image_3_f3_3.frameNStop = frameN  # exact frame index
+                    win.timeOnFlip(Presentation_image_3_f3_3, 'tStopRefresh')  # time at next scr refresh
+                    Presentation_image_3_f3_3.setAutoDraw(False)
+            
+            # *Presentation_image_4_f3_1* updates
+            if Presentation_image_4_f3_1.status == NOT_STARTED and tThisFlip >= 3.0-frameTolerance:
+                # keep track of start time/frame for later
+                Presentation_image_4_f3_1.frameNStart = frameN  # exact frame index
+                Presentation_image_4_f3_1.tStart = t  # local t and not account for scr refresh
+                Presentation_image_4_f3_1.tStartRefresh = tThisFlipGlobal  # on global time
+                win.timeOnFlip(Presentation_image_4_f3_1, 'tStartRefresh')  # time at next scr refresh
+                Presentation_image_4_f3_1.setAutoDraw(True)
+            if Presentation_image_4_f3_1.status == STARTED:
+                # is it time to stop? (based on global clock, using actual start)
+                if tThisFlipGlobal > Presentation_image_4_f3_1.tStartRefresh + 0.3-frameTolerance:
+                    # keep track of stop time/frame for later
+                    Presentation_image_4_f3_1.tStop = t  # not accounting for scr refresh
+                    Presentation_image_4_f3_1.frameNStop = frameN  # exact frame index
+                    win.timeOnFlip(Presentation_image_4_f3_1, 'tStopRefresh')  # time at next scr refresh
+                    Presentation_image_4_f3_1.setAutoDraw(False)
+            
+            # *Presentation_image_4_f3_2* updates
+            if Presentation_image_4_f3_2.status == NOT_STARTED and tThisFlip >= 3.35-frameTolerance:
+                # keep track of start time/frame for later
+                Presentation_image_4_f3_2.frameNStart = frameN  # exact frame index
+                Presentation_image_4_f3_2.tStart = t  # local t and not account for scr refresh
+                Presentation_image_4_f3_2.tStartRefresh = tThisFlipGlobal  # on global time
+                win.timeOnFlip(Presentation_image_4_f3_2, 'tStartRefresh')  # time at next scr refresh
+                Presentation_image_4_f3_2.setAutoDraw(True)
+            if Presentation_image_4_f3_2.status == STARTED:
+                # is it time to stop? (based on global clock, using actual start)
+                if tThisFlipGlobal > Presentation_image_4_f3_2.tStartRefresh + 0.3-frameTolerance:
+                    # keep track of stop time/frame for later
+                    Presentation_image_4_f3_2.tStop = t  # not accounting for scr refresh
+                    Presentation_image_4_f3_2.frameNStop = frameN  # exact frame index
+                    win.timeOnFlip(Presentation_image_4_f3_2, 'tStopRefresh')  # time at next scr refresh
+                    Presentation_image_4_f3_2.setAutoDraw(False)
+            
+            # *Presentation_image_4_f3_3* updates
+            if Presentation_image_4_f3_3.status == NOT_STARTED and tThisFlip >= 3.7-frameTolerance:
+                # keep track of start time/frame for later
+                Presentation_image_4_f3_3.frameNStart = frameN  # exact frame index
+                Presentation_image_4_f3_3.tStart = t  # local t and not account for scr refresh
+                Presentation_image_4_f3_3.tStartRefresh = tThisFlipGlobal  # on global time
+                win.timeOnFlip(Presentation_image_4_f3_3, 'tStartRefresh')  # time at next scr refresh
+                Presentation_image_4_f3_3.setAutoDraw(True)
+            if Presentation_image_4_f3_3.status == STARTED:
+                # is it time to stop? (based on global clock, using actual start)
+                if tThisFlipGlobal > Presentation_image_4_f3_3.tStartRefresh + 0.3-frameTolerance:
+                    # keep track of stop time/frame for later
+                    Presentation_image_4_f3_3.tStop = t  # not accounting for scr refresh
+                    Presentation_image_4_f3_3.frameNStop = frameN  # exact frame index
+                    win.timeOnFlip(Presentation_image_4_f3_3, 'tStopRefresh')  # time at next scr refresh
+                    Presentation_image_4_f3_3.setAutoDraw(False)
+            
+            # check for quit (typically the Esc key)
+            if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
+                core.quit()
+            
+            # check if all components have finished
+            if not continueRoutine:  # a component has requested a forced-end of Routine
+                break
+            continueRoutine = False  # will revert to True if at least one component still running
+            for thisComponent in rsvp_f3Components:
+                if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
+                    continueRoutine = True
+                    break  # at least one component has not yet finished
+            
+            # refresh the screen
+            if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
+                win.flip()
+        
+        # -------Ending Routine "rsvp_f3"-------
+        for thisComponent in rsvp_f3Components:
+            if hasattr(thisComponent, "setAutoDraw"):
+                thisComponent.setAutoDraw(False)
+        fthree_control.addData('Presentation_image_f3_1.started', Presentation_image_f3_1.tStartRefresh)
+        fthree_control.addData('Presentation_image_f3_1.stopped', Presentation_image_f3_1.tStopRefresh)
+        fthree_control.addData('Presentation_image_f3_2.started', Presentation_image_f3_2.tStartRefresh)
+        fthree_control.addData('Presentation_image_f3_2.stopped', Presentation_image_f3_2.tStopRefresh)
+        fthree_control.addData('Presentation_image_f3_3.started', Presentation_image_f3_3.tStartRefresh)
+        fthree_control.addData('Presentation_image_f3_3.stopped', Presentation_image_f3_3.tStopRefresh)
+        fthree_control.addData('Presentation_image_2_f3_1.started', Presentation_image_2_f3_1.tStartRefresh)
+        fthree_control.addData('Presentation_image_2_f3_1.stopped', Presentation_image_2_f3_1.tStopRefresh)
+        fthree_control.addData('Presentation_image_2_f3_2.started', Presentation_image_2_f3_2.tStartRefresh)
+        fthree_control.addData('Presentation_image_2_f3_2.stopped', Presentation_image_2_f3_2.tStopRefresh)
+        fthree_control.addData('Presentation_image_2_f3_3.started', Presentation_image_2_f3_3.tStartRefresh)
+        fthree_control.addData('Presentation_image_2_f3_3.stopped', Presentation_image_2_f3_3.tStopRefresh)
+        fthree_control.addData('Presentation_image_3_f3_1.started', Presentation_image_3_f3_1.tStartRefresh)
+        fthree_control.addData('Presentation_image_3_f3_1.stopped', Presentation_image_3_f3_1.tStopRefresh)
+        fthree_control.addData('Presentation_image_3_f3_2.started', Presentation_image_3_f3_2.tStartRefresh)
+        fthree_control.addData('Presentation_image_3_f3_2.stopped', Presentation_image_3_f3_2.tStopRefresh)
+        fthree_control.addData('Presentation_image_3_f3_3.started', Presentation_image_3_f3_3.tStartRefresh)
+        fthree_control.addData('Presentation_image_3_f3_3.stopped', Presentation_image_3_f3_3.tStopRefresh)
+        fthree_control.addData('Presentation_image_4_f3_1.started', Presentation_image_4_f3_1.tStartRefresh)
+        fthree_control.addData('Presentation_image_4_f3_1.stopped', Presentation_image_4_f3_1.tStopRefresh)
+        fthree_control.addData('Presentation_image_4_f3_2.started', Presentation_image_4_f3_2.tStartRefresh)
+        fthree_control.addData('Presentation_image_4_f3_2.stopped', Presentation_image_4_f3_2.tStopRefresh)
+        fthree_control.addData('Presentation_image_4_f3_3.started', Presentation_image_4_f3_3.tStartRefresh)
+        fthree_control.addData('Presentation_image_4_f3_3.stopped', Presentation_image_4_f3_3.tStopRefresh)
+        thisExp.nextEntry()
+        
+    # completed dofthree repeats of 'fthree_control'
+    
+    
+    # set up handler to look after randomisation of conditions etc
+    ffour_control = data.TrialHandler(nReps=doffour, method='sequential', 
+        extraInfo=expInfo, originPath=-1,
+        trialList=[None],
+        seed=None, name='ffour_control')
+    thisExp.addLoop(ffour_control)  # add the loop to the experiment
+    thisFfour_control = ffour_control.trialList[0]  # so we can initialise stimuli with some values
+    # abbreviate parameter names if possible (e.g. rgb = thisFfour_control.rgb)
+    if thisFfour_control != None:
+        for paramName in thisFfour_control:
+            exec('{} = thisFfour_control[paramName]'.format(paramName))
+    
+    for thisFfour_control in ffour_control:
+        currentLoop = ffour_control
+        # abbreviate parameter names if possible (e.g. rgb = thisFfour_control.rgb)
+        if thisFfour_control != None:
+            for paramName in thisFfour_control:
+                exec('{} = thisFfour_control[paramName]'.format(paramName))
+        
+        # ------Prepare to start Routine "rsvp_f4"-------
+        continueRoutine = True
+        routineTimer.add(3.950000)
+        # update component parameters for each repeat
+        Presentation_image_f4_1.setImage(imageone)
+        Presentation_image_f4_2.setImage(imageone)
+        Presentation_image_f4_3.setImage(imageone)
+        Presentation_image_f4_4.setImage(imageone)
+        Presentation_image_2_f4_1.setImage(imagetwo)
+        Presentation_image_2_f4_2.setImage(imagetwo)
+        Presentation_image_2_f4_3.setImage(imagetwo)
+        Presentation_image_2_f4_4.setImage(imagetwo)
+        Presentation_image_3_f4_1.setImage(imagethree)
+        Presentation_image_3_f4_2.setImage(imagethree)
+        Presentation_image_3_f4_3.setImage(imagethree)
+        Presentation_image_3_f4_4.setImage(imagethree)
+        Presentation_image_4_f4_1.setImage(imagefour)
+        Presentation_image_4_f3_4.setImage(imagefour)
+        Presentation_image_4_f4_3.setImage(imagefour)
+        Presentation_image_4_f4_4.setImage(imagefour)
+        # keep track of which components have finished
+        rsvp_f4Components = [Presentation_image_f4_1, Presentation_image_f4_2, Presentation_image_f4_3, Presentation_image_f4_4, Presentation_image_2_f4_1, Presentation_image_2_f4_2, Presentation_image_2_f4_3, Presentation_image_2_f4_4, Presentation_image_3_f4_1, Presentation_image_3_f4_2, Presentation_image_3_f4_3, Presentation_image_3_f4_4, Presentation_image_4_f4_1, Presentation_image_4_f3_4, Presentation_image_4_f4_3, Presentation_image_4_f4_4]
+        for thisComponent in rsvp_f4Components:
+            thisComponent.tStart = None
+            thisComponent.tStop = None
+            thisComponent.tStartRefresh = None
+            thisComponent.tStopRefresh = None
+            if hasattr(thisComponent, 'status'):
+                thisComponent.status = NOT_STARTED
+        # reset timers
+        t = 0
+        _timeToFirstFrame = win.getFutureFlipTime(clock="now")
+        rsvp_f4Clock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
+        frameN = -1
+        
+        # -------Run Routine "rsvp_f4"-------
+        while continueRoutine and routineTimer.getTime() > 0:
+            # get current time
+            t = rsvp_f4Clock.getTime()
+            tThisFlip = win.getFutureFlipTime(clock=rsvp_f4Clock)
+            tThisFlipGlobal = win.getFutureFlipTime(clock=None)
+            frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+            # update/draw components on each frame
+            
+            # *Presentation_image_f4_1* updates
+            if Presentation_image_f4_1.status == NOT_STARTED and tThisFlip >= 0-frameTolerance:
+                # keep track of start time/frame for later
+                Presentation_image_f4_1.frameNStart = frameN  # exact frame index
+                Presentation_image_f4_1.tStart = t  # local t and not account for scr refresh
+                Presentation_image_f4_1.tStartRefresh = tThisFlipGlobal  # on global time
+                win.timeOnFlip(Presentation_image_f4_1, 'tStartRefresh')  # time at next scr refresh
+                Presentation_image_f4_1.setAutoDraw(True)
+            if Presentation_image_f4_1.status == STARTED:
+                # is it time to stop? (based on global clock, using actual start)
+                if tThisFlipGlobal > Presentation_image_f4_1.tStartRefresh + 0.20-frameTolerance:
+                    # keep track of stop time/frame for later
+                    Presentation_image_f4_1.tStop = t  # not accounting for scr refresh
+                    Presentation_image_f4_1.frameNStop = frameN  # exact frame index
+                    win.timeOnFlip(Presentation_image_f4_1, 'tStopRefresh')  # time at next scr refresh
+                    Presentation_image_f4_1.setAutoDraw(False)
+            
+            # *Presentation_image_f4_2* updates
+            if Presentation_image_f4_2.status == NOT_STARTED and tThisFlip >= 0.25-frameTolerance:
+                # keep track of start time/frame for later
+                Presentation_image_f4_2.frameNStart = frameN  # exact frame index
+                Presentation_image_f4_2.tStart = t  # local t and not account for scr refresh
+                Presentation_image_f4_2.tStartRefresh = tThisFlipGlobal  # on global time
+                win.timeOnFlip(Presentation_image_f4_2, 'tStartRefresh')  # time at next scr refresh
+                Presentation_image_f4_2.setAutoDraw(True)
+            if Presentation_image_f4_2.status == STARTED:
+                # is it time to stop? (based on global clock, using actual start)
+                if tThisFlipGlobal > Presentation_image_f4_2.tStartRefresh + 0.2-frameTolerance:
+                    # keep track of stop time/frame for later
+                    Presentation_image_f4_2.tStop = t  # not accounting for scr refresh
+                    Presentation_image_f4_2.frameNStop = frameN  # exact frame index
+                    win.timeOnFlip(Presentation_image_f4_2, 'tStopRefresh')  # time at next scr refresh
+                    Presentation_image_f4_2.setAutoDraw(False)
+            
+            # *Presentation_image_f4_3* updates
+            if Presentation_image_f4_3.status == NOT_STARTED and tThisFlip >= 0.5-frameTolerance:
+                # keep track of start time/frame for later
+                Presentation_image_f4_3.frameNStart = frameN  # exact frame index
+                Presentation_image_f4_3.tStart = t  # local t and not account for scr refresh
+                Presentation_image_f4_3.tStartRefresh = tThisFlipGlobal  # on global time
+                win.timeOnFlip(Presentation_image_f4_3, 'tStartRefresh')  # time at next scr refresh
+                Presentation_image_f4_3.setAutoDraw(True)
+            if Presentation_image_f4_3.status == STARTED:
+                # is it time to stop? (based on global clock, using actual start)
+                if tThisFlipGlobal > Presentation_image_f4_3.tStartRefresh + 0.2-frameTolerance:
+                    # keep track of stop time/frame for later
+                    Presentation_image_f4_3.tStop = t  # not accounting for scr refresh
+                    Presentation_image_f4_3.frameNStop = frameN  # exact frame index
+                    win.timeOnFlip(Presentation_image_f4_3, 'tStopRefresh')  # time at next scr refresh
+                    Presentation_image_f4_3.setAutoDraw(False)
+            
+            # *Presentation_image_f4_4* updates
+            if Presentation_image_f4_4.status == NOT_STARTED and tThisFlip >= 0.75-frameTolerance:
+                # keep track of start time/frame for later
+                Presentation_image_f4_4.frameNStart = frameN  # exact frame index
+                Presentation_image_f4_4.tStart = t  # local t and not account for scr refresh
+                Presentation_image_f4_4.tStartRefresh = tThisFlipGlobal  # on global time
+                win.timeOnFlip(Presentation_image_f4_4, 'tStartRefresh')  # time at next scr refresh
+                Presentation_image_f4_4.setAutoDraw(True)
+            if Presentation_image_f4_4.status == STARTED:
+                # is it time to stop? (based on global clock, using actual start)
+                if tThisFlipGlobal > Presentation_image_f4_4.tStartRefresh + 0.2-frameTolerance:
+                    # keep track of stop time/frame for later
+                    Presentation_image_f4_4.tStop = t  # not accounting for scr refresh
+                    Presentation_image_f4_4.frameNStop = frameN  # exact frame index
+                    win.timeOnFlip(Presentation_image_f4_4, 'tStopRefresh')  # time at next scr refresh
+                    Presentation_image_f4_4.setAutoDraw(False)
+            
+            # *Presentation_image_2_f4_1* updates
+            if Presentation_image_2_f4_1.status == NOT_STARTED and tThisFlip >= 1-frameTolerance:
+                # keep track of start time/frame for later
+                Presentation_image_2_f4_1.frameNStart = frameN  # exact frame index
+                Presentation_image_2_f4_1.tStart = t  # local t and not account for scr refresh
+                Presentation_image_2_f4_1.tStartRefresh = tThisFlipGlobal  # on global time
+                win.timeOnFlip(Presentation_image_2_f4_1, 'tStartRefresh')  # time at next scr refresh
+                Presentation_image_2_f4_1.setAutoDraw(True)
+            if Presentation_image_2_f4_1.status == STARTED:
+                # is it time to stop? (based on global clock, using actual start)
+                if tThisFlipGlobal > Presentation_image_2_f4_1.tStartRefresh + 0.2-frameTolerance:
+                    # keep track of stop time/frame for later
+                    Presentation_image_2_f4_1.tStop = t  # not accounting for scr refresh
+                    Presentation_image_2_f4_1.frameNStop = frameN  # exact frame index
+                    win.timeOnFlip(Presentation_image_2_f4_1, 'tStopRefresh')  # time at next scr refresh
+                    Presentation_image_2_f4_1.setAutoDraw(False)
+            
+            # *Presentation_image_2_f4_2* updates
+            if Presentation_image_2_f4_2.status == NOT_STARTED and tThisFlip >= 1.25-frameTolerance:
+                # keep track of start time/frame for later
+                Presentation_image_2_f4_2.frameNStart = frameN  # exact frame index
+                Presentation_image_2_f4_2.tStart = t  # local t and not account for scr refresh
+                Presentation_image_2_f4_2.tStartRefresh = tThisFlipGlobal  # on global time
+                win.timeOnFlip(Presentation_image_2_f4_2, 'tStartRefresh')  # time at next scr refresh
+                Presentation_image_2_f4_2.setAutoDraw(True)
+            if Presentation_image_2_f4_2.status == STARTED:
+                # is it time to stop? (based on global clock, using actual start)
+                if tThisFlipGlobal > Presentation_image_2_f4_2.tStartRefresh + 0.2-frameTolerance:
+                    # keep track of stop time/frame for later
+                    Presentation_image_2_f4_2.tStop = t  # not accounting for scr refresh
+                    Presentation_image_2_f4_2.frameNStop = frameN  # exact frame index
+                    win.timeOnFlip(Presentation_image_2_f4_2, 'tStopRefresh')  # time at next scr refresh
+                    Presentation_image_2_f4_2.setAutoDraw(False)
+            
+            # *Presentation_image_2_f4_3* updates
+            if Presentation_image_2_f4_3.status == NOT_STARTED and tThisFlip >= 1.50-frameTolerance:
+                # keep track of start time/frame for later
+                Presentation_image_2_f4_3.frameNStart = frameN  # exact frame index
+                Presentation_image_2_f4_3.tStart = t  # local t and not account for scr refresh
+                Presentation_image_2_f4_3.tStartRefresh = tThisFlipGlobal  # on global time
+                win.timeOnFlip(Presentation_image_2_f4_3, 'tStartRefresh')  # time at next scr refresh
+                Presentation_image_2_f4_3.setAutoDraw(True)
+            if Presentation_image_2_f4_3.status == STARTED:
+                # is it time to stop? (based on global clock, using actual start)
+                if tThisFlipGlobal > Presentation_image_2_f4_3.tStartRefresh + 0.2-frameTolerance:
+                    # keep track of stop time/frame for later
+                    Presentation_image_2_f4_3.tStop = t  # not accounting for scr refresh
+                    Presentation_image_2_f4_3.frameNStop = frameN  # exact frame index
+                    win.timeOnFlip(Presentation_image_2_f4_3, 'tStopRefresh')  # time at next scr refresh
+                    Presentation_image_2_f4_3.setAutoDraw(False)
+            
+            # *Presentation_image_2_f4_4* updates
+            if Presentation_image_2_f4_4.status == NOT_STARTED and tThisFlip >= 1.75-frameTolerance:
+                # keep track of start time/frame for later
+                Presentation_image_2_f4_4.frameNStart = frameN  # exact frame index
+                Presentation_image_2_f4_4.tStart = t  # local t and not account for scr refresh
+                Presentation_image_2_f4_4.tStartRefresh = tThisFlipGlobal  # on global time
+                win.timeOnFlip(Presentation_image_2_f4_4, 'tStartRefresh')  # time at next scr refresh
+                Presentation_image_2_f4_4.setAutoDraw(True)
+            if Presentation_image_2_f4_4.status == STARTED:
+                # is it time to stop? (based on global clock, using actual start)
+                if tThisFlipGlobal > Presentation_image_2_f4_4.tStartRefresh + 0.2-frameTolerance:
+                    # keep track of stop time/frame for later
+                    Presentation_image_2_f4_4.tStop = t  # not accounting for scr refresh
+                    Presentation_image_2_f4_4.frameNStop = frameN  # exact frame index
+                    win.timeOnFlip(Presentation_image_2_f4_4, 'tStopRefresh')  # time at next scr refresh
+                    Presentation_image_2_f4_4.setAutoDraw(False)
+            
+            # *Presentation_image_3_f4_1* updates
+            if Presentation_image_3_f4_1.status == NOT_STARTED and tThisFlip >= 2.0-frameTolerance:
+                # keep track of start time/frame for later
+                Presentation_image_3_f4_1.frameNStart = frameN  # exact frame index
+                Presentation_image_3_f4_1.tStart = t  # local t and not account for scr refresh
+                Presentation_image_3_f4_1.tStartRefresh = tThisFlipGlobal  # on global time
+                win.timeOnFlip(Presentation_image_3_f4_1, 'tStartRefresh')  # time at next scr refresh
+                Presentation_image_3_f4_1.setAutoDraw(True)
+            if Presentation_image_3_f4_1.status == STARTED:
+                # is it time to stop? (based on global clock, using actual start)
+                if tThisFlipGlobal > Presentation_image_3_f4_1.tStartRefresh + 0.2-frameTolerance:
+                    # keep track of stop time/frame for later
+                    Presentation_image_3_f4_1.tStop = t  # not accounting for scr refresh
+                    Presentation_image_3_f4_1.frameNStop = frameN  # exact frame index
+                    win.timeOnFlip(Presentation_image_3_f4_1, 'tStopRefresh')  # time at next scr refresh
+                    Presentation_image_3_f4_1.setAutoDraw(False)
+            
+            # *Presentation_image_3_f4_2* updates
+            if Presentation_image_3_f4_2.status == NOT_STARTED and tThisFlip >= 2.25-frameTolerance:
+                # keep track of start time/frame for later
+                Presentation_image_3_f4_2.frameNStart = frameN  # exact frame index
+                Presentation_image_3_f4_2.tStart = t  # local t and not account for scr refresh
+                Presentation_image_3_f4_2.tStartRefresh = tThisFlipGlobal  # on global time
+                win.timeOnFlip(Presentation_image_3_f4_2, 'tStartRefresh')  # time at next scr refresh
+                Presentation_image_3_f4_2.setAutoDraw(True)
+            if Presentation_image_3_f4_2.status == STARTED:
+                # is it time to stop? (based on global clock, using actual start)
+                if tThisFlipGlobal > Presentation_image_3_f4_2.tStartRefresh + 0.2-frameTolerance:
+                    # keep track of stop time/frame for later
+                    Presentation_image_3_f4_2.tStop = t  # not accounting for scr refresh
+                    Presentation_image_3_f4_2.frameNStop = frameN  # exact frame index
+                    win.timeOnFlip(Presentation_image_3_f4_2, 'tStopRefresh')  # time at next scr refresh
+                    Presentation_image_3_f4_2.setAutoDraw(False)
+            
+            # *Presentation_image_3_f4_3* updates
+            if Presentation_image_3_f4_3.status == NOT_STARTED and tThisFlip >= 2.50-frameTolerance:
+                # keep track of start time/frame for later
+                Presentation_image_3_f4_3.frameNStart = frameN  # exact frame index
+                Presentation_image_3_f4_3.tStart = t  # local t and not account for scr refresh
+                Presentation_image_3_f4_3.tStartRefresh = tThisFlipGlobal  # on global time
+                win.timeOnFlip(Presentation_image_3_f4_3, 'tStartRefresh')  # time at next scr refresh
+                Presentation_image_3_f4_3.setAutoDraw(True)
+            if Presentation_image_3_f4_3.status == STARTED:
+                # is it time to stop? (based on global clock, using actual start)
+                if tThisFlipGlobal > Presentation_image_3_f4_3.tStartRefresh + 0.2-frameTolerance:
+                    # keep track of stop time/frame for later
+                    Presentation_image_3_f4_3.tStop = t  # not accounting for scr refresh
+                    Presentation_image_3_f4_3.frameNStop = frameN  # exact frame index
+                    win.timeOnFlip(Presentation_image_3_f4_3, 'tStopRefresh')  # time at next scr refresh
+                    Presentation_image_3_f4_3.setAutoDraw(False)
+            
+            # *Presentation_image_3_f4_4* updates
+            if Presentation_image_3_f4_4.status == NOT_STARTED and tThisFlip >= 2.75-frameTolerance:
+                # keep track of start time/frame for later
+                Presentation_image_3_f4_4.frameNStart = frameN  # exact frame index
+                Presentation_image_3_f4_4.tStart = t  # local t and not account for scr refresh
+                Presentation_image_3_f4_4.tStartRefresh = tThisFlipGlobal  # on global time
+                win.timeOnFlip(Presentation_image_3_f4_4, 'tStartRefresh')  # time at next scr refresh
+                Presentation_image_3_f4_4.setAutoDraw(True)
+            if Presentation_image_3_f4_4.status == STARTED:
+                # is it time to stop? (based on global clock, using actual start)
+                if tThisFlipGlobal > Presentation_image_3_f4_4.tStartRefresh + 0.2-frameTolerance:
+                    # keep track of stop time/frame for later
+                    Presentation_image_3_f4_4.tStop = t  # not accounting for scr refresh
+                    Presentation_image_3_f4_4.frameNStop = frameN  # exact frame index
+                    win.timeOnFlip(Presentation_image_3_f4_4, 'tStopRefresh')  # time at next scr refresh
+                    Presentation_image_3_f4_4.setAutoDraw(False)
+            
+            # *Presentation_image_4_f4_1* updates
+            if Presentation_image_4_f4_1.status == NOT_STARTED and tThisFlip >= 3.0-frameTolerance:
+                # keep track of start time/frame for later
+                Presentation_image_4_f4_1.frameNStart = frameN  # exact frame index
+                Presentation_image_4_f4_1.tStart = t  # local t and not account for scr refresh
+                Presentation_image_4_f4_1.tStartRefresh = tThisFlipGlobal  # on global time
+                win.timeOnFlip(Presentation_image_4_f4_1, 'tStartRefresh')  # time at next scr refresh
+                Presentation_image_4_f4_1.setAutoDraw(True)
+            if Presentation_image_4_f4_1.status == STARTED:
+                # is it time to stop? (based on global clock, using actual start)
+                if tThisFlipGlobal > Presentation_image_4_f4_1.tStartRefresh + 0.2-frameTolerance:
+                    # keep track of stop time/frame for later
+                    Presentation_image_4_f4_1.tStop = t  # not accounting for scr refresh
+                    Presentation_image_4_f4_1.frameNStop = frameN  # exact frame index
+                    win.timeOnFlip(Presentation_image_4_f4_1, 'tStopRefresh')  # time at next scr refresh
+                    Presentation_image_4_f4_1.setAutoDraw(False)
+            
+            # *Presentation_image_4_f3_4* updates
+            if Presentation_image_4_f3_4.status == NOT_STARTED and tThisFlip >= 3.25-frameTolerance:
+                # keep track of start time/frame for later
+                Presentation_image_4_f3_4.frameNStart = frameN  # exact frame index
+                Presentation_image_4_f3_4.tStart = t  # local t and not account for scr refresh
+                Presentation_image_4_f3_4.tStartRefresh = tThisFlipGlobal  # on global time
+                win.timeOnFlip(Presentation_image_4_f3_4, 'tStartRefresh')  # time at next scr refresh
+                Presentation_image_4_f3_4.setAutoDraw(True)
+            if Presentation_image_4_f3_4.status == STARTED:
+                # is it time to stop? (based on global clock, using actual start)
+                if tThisFlipGlobal > Presentation_image_4_f3_4.tStartRefresh + 0.2-frameTolerance:
+                    # keep track of stop time/frame for later
+                    Presentation_image_4_f3_4.tStop = t  # not accounting for scr refresh
+                    Presentation_image_4_f3_4.frameNStop = frameN  # exact frame index
+                    win.timeOnFlip(Presentation_image_4_f3_4, 'tStopRefresh')  # time at next scr refresh
+                    Presentation_image_4_f3_4.setAutoDraw(False)
+            
+            # *Presentation_image_4_f4_3* updates
+            if Presentation_image_4_f4_3.status == NOT_STARTED and tThisFlip >= 3.5-frameTolerance:
+                # keep track of start time/frame for later
+                Presentation_image_4_f4_3.frameNStart = frameN  # exact frame index
+                Presentation_image_4_f4_3.tStart = t  # local t and not account for scr refresh
+                Presentation_image_4_f4_3.tStartRefresh = tThisFlipGlobal  # on global time
+                win.timeOnFlip(Presentation_image_4_f4_3, 'tStartRefresh')  # time at next scr refresh
+                Presentation_image_4_f4_3.setAutoDraw(True)
+            if Presentation_image_4_f4_3.status == STARTED:
+                # is it time to stop? (based on global clock, using actual start)
+                if tThisFlipGlobal > Presentation_image_4_f4_3.tStartRefresh + 0.2-frameTolerance:
+                    # keep track of stop time/frame for later
+                    Presentation_image_4_f4_3.tStop = t  # not accounting for scr refresh
+                    Presentation_image_4_f4_3.frameNStop = frameN  # exact frame index
+                    win.timeOnFlip(Presentation_image_4_f4_3, 'tStopRefresh')  # time at next scr refresh
+                    Presentation_image_4_f4_3.setAutoDraw(False)
+            
+            # *Presentation_image_4_f4_4* updates
+            if Presentation_image_4_f4_4.status == NOT_STARTED and tThisFlip >= 3.75-frameTolerance:
+                # keep track of start time/frame for later
+                Presentation_image_4_f4_4.frameNStart = frameN  # exact frame index
+                Presentation_image_4_f4_4.tStart = t  # local t and not account for scr refresh
+                Presentation_image_4_f4_4.tStartRefresh = tThisFlipGlobal  # on global time
+                win.timeOnFlip(Presentation_image_4_f4_4, 'tStartRefresh')  # time at next scr refresh
+                Presentation_image_4_f4_4.setAutoDraw(True)
+            if Presentation_image_4_f4_4.status == STARTED:
+                # is it time to stop? (based on global clock, using actual start)
+                if tThisFlipGlobal > Presentation_image_4_f4_4.tStartRefresh + 0.2-frameTolerance:
+                    # keep track of stop time/frame for later
+                    Presentation_image_4_f4_4.tStop = t  # not accounting for scr refresh
+                    Presentation_image_4_f4_4.frameNStop = frameN  # exact frame index
+                    win.timeOnFlip(Presentation_image_4_f4_4, 'tStopRefresh')  # time at next scr refresh
+                    Presentation_image_4_f4_4.setAutoDraw(False)
+            
+            # check for quit (typically the Esc key)
+            if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
+                core.quit()
+            
+            # check if all components have finished
+            if not continueRoutine:  # a component has requested a forced-end of Routine
+                break
+            continueRoutine = False  # will revert to True if at least one component still running
+            for thisComponent in rsvp_f4Components:
+                if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
+                    continueRoutine = True
+                    break  # at least one component has not yet finished
+            
+            # refresh the screen
+            if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
+                win.flip()
+        
+        # -------Ending Routine "rsvp_f4"-------
+        for thisComponent in rsvp_f4Components:
+            if hasattr(thisComponent, "setAutoDraw"):
+                thisComponent.setAutoDraw(False)
+        ffour_control.addData('Presentation_image_f4_1.started', Presentation_image_f4_1.tStartRefresh)
+        ffour_control.addData('Presentation_image_f4_1.stopped', Presentation_image_f4_1.tStopRefresh)
+        ffour_control.addData('Presentation_image_f4_2.started', Presentation_image_f4_2.tStartRefresh)
+        ffour_control.addData('Presentation_image_f4_2.stopped', Presentation_image_f4_2.tStopRefresh)
+        ffour_control.addData('Presentation_image_f4_3.started', Presentation_image_f4_3.tStartRefresh)
+        ffour_control.addData('Presentation_image_f4_3.stopped', Presentation_image_f4_3.tStopRefresh)
+        ffour_control.addData('Presentation_image_f4_4.started', Presentation_image_f4_4.tStartRefresh)
+        ffour_control.addData('Presentation_image_f4_4.stopped', Presentation_image_f4_4.tStopRefresh)
+        ffour_control.addData('Presentation_image_2_f4_1.started', Presentation_image_2_f4_1.tStartRefresh)
+        ffour_control.addData('Presentation_image_2_f4_1.stopped', Presentation_image_2_f4_1.tStopRefresh)
+        ffour_control.addData('Presentation_image_2_f4_2.started', Presentation_image_2_f4_2.tStartRefresh)
+        ffour_control.addData('Presentation_image_2_f4_2.stopped', Presentation_image_2_f4_2.tStopRefresh)
+        ffour_control.addData('Presentation_image_2_f4_3.started', Presentation_image_2_f4_3.tStartRefresh)
+        ffour_control.addData('Presentation_image_2_f4_3.stopped', Presentation_image_2_f4_3.tStopRefresh)
+        ffour_control.addData('Presentation_image_2_f4_4.started', Presentation_image_2_f4_4.tStartRefresh)
+        ffour_control.addData('Presentation_image_2_f4_4.stopped', Presentation_image_2_f4_4.tStopRefresh)
+        ffour_control.addData('Presentation_image_3_f4_1.started', Presentation_image_3_f4_1.tStartRefresh)
+        ffour_control.addData('Presentation_image_3_f4_1.stopped', Presentation_image_3_f4_1.tStopRefresh)
+        ffour_control.addData('Presentation_image_3_f4_2.started', Presentation_image_3_f4_2.tStartRefresh)
+        ffour_control.addData('Presentation_image_3_f4_2.stopped', Presentation_image_3_f4_2.tStopRefresh)
+        ffour_control.addData('Presentation_image_3_f4_3.started', Presentation_image_3_f4_3.tStartRefresh)
+        ffour_control.addData('Presentation_image_3_f4_3.stopped', Presentation_image_3_f4_3.tStopRefresh)
+        ffour_control.addData('Presentation_image_3_f4_4.started', Presentation_image_3_f4_4.tStartRefresh)
+        ffour_control.addData('Presentation_image_3_f4_4.stopped', Presentation_image_3_f4_4.tStopRefresh)
+        ffour_control.addData('Presentation_image_4_f4_1.started', Presentation_image_4_f4_1.tStartRefresh)
+        ffour_control.addData('Presentation_image_4_f4_1.stopped', Presentation_image_4_f4_1.tStopRefresh)
+        ffour_control.addData('Presentation_image_4_f3_4.started', Presentation_image_4_f3_4.tStartRefresh)
+        ffour_control.addData('Presentation_image_4_f3_4.stopped', Presentation_image_4_f3_4.tStopRefresh)
+        ffour_control.addData('Presentation_image_4_f4_3.started', Presentation_image_4_f4_3.tStartRefresh)
+        ffour_control.addData('Presentation_image_4_f4_3.stopped', Presentation_image_4_f4_3.tStopRefresh)
+        ffour_control.addData('Presentation_image_4_f4_4.started', Presentation_image_4_f4_4.tStartRefresh)
+        ffour_control.addData('Presentation_image_4_f4_4.stopped', Presentation_image_4_f4_4.tStopRefresh)
+        thisExp.nextEntry()
+        
+    # completed doffour repeats of 'ffour_control'
+    
+    
+    # ------Prepare to start Routine "choice"-------
     continueRoutine = True
     # update component parameters for each repeat
     Topleft.setImage(imageTL)
@@ -1028,8 +2224,8 @@ for thisBlock_one in block_one:
     key_resp.rt = []
     _key_resp_allKeys = []
     # keep track of which components have finished
-    trialComponents = [Fixation_cross, Topleft, Topright, Bottomleft, Bottomright, key_resp]
-    for thisComponent in trialComponents:
+    choiceComponents = [Fixation_cross, Topleft, Topright, Bottomleft, Bottomright, key_resp]
+    for thisComponent in choiceComponents:
         thisComponent.tStart = None
         thisComponent.tStop = None
         thisComponent.tStartRefresh = None
@@ -1039,14 +2235,14 @@ for thisBlock_one in block_one:
     # reset timers
     t = 0
     _timeToFirstFrame = win.getFutureFlipTime(clock="now")
-    trialClock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
+    choiceClock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
     frameN = -1
     
-    # -------Run Routine "trial"-------
+    # -------Run Routine "choice"-------
     while continueRoutine:
         # get current time
-        t = trialClock.getTime()
-        tThisFlip = win.getFutureFlipTime(clock=trialClock)
+        t = choiceClock.getTime()
+        tThisFlip = win.getFutureFlipTime(clock=choiceClock)
         tThisFlipGlobal = win.getFutureFlipTime(clock=None)
         frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
         # update/draw components on each frame
@@ -1169,7 +2365,7 @@ for thisBlock_one in block_one:
         if not continueRoutine:  # a component has requested a forced-end of Routine
             break
         continueRoutine = False  # will revert to True if at least one component still running
-        for thisComponent in trialComponents:
+        for thisComponent in choiceComponents:
             if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
                 continueRoutine = True
                 break  # at least one component has not yet finished
@@ -1178,8 +2374,8 @@ for thisBlock_one in block_one:
         if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
             win.flip()
     
-    # -------Ending Routine "trial"-------
-    for thisComponent in trialComponents:
+    # -------Ending Routine "choice"-------
+    for thisComponent in choiceComponents:
         if hasattr(thisComponent, "setAutoDraw"):
             thisComponent.setAutoDraw(False)
     block_one.addData('Fixation_cross.started', Fixation_cross.tStartRefresh)
@@ -1207,7 +2403,7 @@ for thisBlock_one in block_one:
         block_one.addData('key_resp.rt', key_resp.rt)
     block_one.addData('key_resp.started', key_resp.tStart)
     block_one.addData('key_resp.stopped', key_resp.tStop)
-    # the Routine "trial" was not non-slip safe, so reset the non-slip timer
+    # the Routine "choice" was not non-slip safe, so reset the non-slip timer
     routineTimer.reset()
     thisExp.nextEntry()
     
@@ -1322,14 +2518,14 @@ for thisBlock_two in block_two:
     
     # ------Prepare to start Routine "rsvp_f1"-------
     continueRoutine = True
-    routineTimer.add(5.000000)
+    routineTimer.add(4.000000)
     # update component parameters for each repeat
-    Presentation_image_1_f1.setImage(imageone)
-    Presentation_image_2_f1.setImage(imagetwo)
-    Presentation_image_3_f1.setImage(imagethree)
-    Presentation_image_4_f1.setImage(imagefour)
+    Presentation_image_1_f1_1.setImage(imageone)
+    Presentation_image_2_f1_1.setImage(imagetwo)
+    Presentation_image_3_f1_1.setImage(imagethree)
+    Presentation_image_4_f1_1.setImage(imagefour)
     # keep track of which components have finished
-    rsvp_f1Components = [Cross, Presentation_image_1_f1, Presentation_image_2_f1, Presentation_image_3_f1, Presentation_image_4_f1]
+    rsvp_f1Components = [Presentation_image_1_f1_1, Presentation_image_2_f1_1, Presentation_image_3_f1_1, Presentation_image_4_f1_1]
     for thisComponent in rsvp_f1Components:
         thisComponent.tStart = None
         thisComponent.tStop = None
@@ -1352,90 +2548,73 @@ for thisBlock_two in block_two:
         frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
         # update/draw components on each frame
         
-        # *Cross* updates
-        if Cross.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+        # *Presentation_image_1_f1_1* updates
+        if Presentation_image_1_f1_1.status == NOT_STARTED and tThisFlip >= 0-frameTolerance:
             # keep track of start time/frame for later
-            Cross.frameNStart = frameN  # exact frame index
-            Cross.tStart = t  # local t and not account for scr refresh
-            Cross.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(Cross, 'tStartRefresh')  # time at next scr refresh
-            Cross.setAutoDraw(True)
-        if Cross.status == STARTED:
+            Presentation_image_1_f1_1.frameNStart = frameN  # exact frame index
+            Presentation_image_1_f1_1.tStart = t  # local t and not account for scr refresh
+            Presentation_image_1_f1_1.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(Presentation_image_1_f1_1, 'tStartRefresh')  # time at next scr refresh
+            Presentation_image_1_f1_1.setAutoDraw(True)
+        if Presentation_image_1_f1_1.status == STARTED:
             # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > Cross.tStartRefresh + 1.0-frameTolerance:
+            if tThisFlipGlobal > Presentation_image_1_f1_1.tStartRefresh + 1.0-frameTolerance:
                 # keep track of stop time/frame for later
-                Cross.tStop = t  # not accounting for scr refresh
-                Cross.frameNStop = frameN  # exact frame index
-                win.timeOnFlip(Cross, 'tStopRefresh')  # time at next scr refresh
-                Cross.setAutoDraw(False)
+                Presentation_image_1_f1_1.tStop = t  # not accounting for scr refresh
+                Presentation_image_1_f1_1.frameNStop = frameN  # exact frame index
+                win.timeOnFlip(Presentation_image_1_f1_1, 'tStopRefresh')  # time at next scr refresh
+                Presentation_image_1_f1_1.setAutoDraw(False)
         
-        # *Presentation_image_1_f1* updates
-        if Presentation_image_1_f1.status == NOT_STARTED and tThisFlip >= 1.0-frameTolerance:
+        # *Presentation_image_2_f1_1* updates
+        if Presentation_image_2_f1_1.status == NOT_STARTED and tThisFlip >= 1.0-frameTolerance:
             # keep track of start time/frame for later
-            Presentation_image_1_f1.frameNStart = frameN  # exact frame index
-            Presentation_image_1_f1.tStart = t  # local t and not account for scr refresh
-            Presentation_image_1_f1.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(Presentation_image_1_f1, 'tStartRefresh')  # time at next scr refresh
-            Presentation_image_1_f1.setAutoDraw(True)
-        if Presentation_image_1_f1.status == STARTED:
+            Presentation_image_2_f1_1.frameNStart = frameN  # exact frame index
+            Presentation_image_2_f1_1.tStart = t  # local t and not account for scr refresh
+            Presentation_image_2_f1_1.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(Presentation_image_2_f1_1, 'tStartRefresh')  # time at next scr refresh
+            Presentation_image_2_f1_1.setAutoDraw(True)
+        if Presentation_image_2_f1_1.status == STARTED:
             # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > Presentation_image_1_f1.tStartRefresh + 1.0-frameTolerance:
+            if tThisFlipGlobal > Presentation_image_2_f1_1.tStartRefresh + 1.0-frameTolerance:
                 # keep track of stop time/frame for later
-                Presentation_image_1_f1.tStop = t  # not accounting for scr refresh
-                Presentation_image_1_f1.frameNStop = frameN  # exact frame index
-                win.timeOnFlip(Presentation_image_1_f1, 'tStopRefresh')  # time at next scr refresh
-                Presentation_image_1_f1.setAutoDraw(False)
+                Presentation_image_2_f1_1.tStop = t  # not accounting for scr refresh
+                Presentation_image_2_f1_1.frameNStop = frameN  # exact frame index
+                win.timeOnFlip(Presentation_image_2_f1_1, 'tStopRefresh')  # time at next scr refresh
+                Presentation_image_2_f1_1.setAutoDraw(False)
         
-        # *Presentation_image_2_f1* updates
-        if Presentation_image_2_f1.status == NOT_STARTED and tThisFlip >= 2.0-frameTolerance:
+        # *Presentation_image_3_f1_1* updates
+        if Presentation_image_3_f1_1.status == NOT_STARTED and tThisFlip >= 2.0-frameTolerance:
             # keep track of start time/frame for later
-            Presentation_image_2_f1.frameNStart = frameN  # exact frame index
-            Presentation_image_2_f1.tStart = t  # local t and not account for scr refresh
-            Presentation_image_2_f1.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(Presentation_image_2_f1, 'tStartRefresh')  # time at next scr refresh
-            Presentation_image_2_f1.setAutoDraw(True)
-        if Presentation_image_2_f1.status == STARTED:
+            Presentation_image_3_f1_1.frameNStart = frameN  # exact frame index
+            Presentation_image_3_f1_1.tStart = t  # local t and not account for scr refresh
+            Presentation_image_3_f1_1.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(Presentation_image_3_f1_1, 'tStartRefresh')  # time at next scr refresh
+            Presentation_image_3_f1_1.setAutoDraw(True)
+        if Presentation_image_3_f1_1.status == STARTED:
             # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > Presentation_image_2_f1.tStartRefresh + 1.0-frameTolerance:
+            if tThisFlipGlobal > Presentation_image_3_f1_1.tStartRefresh + 1.0-frameTolerance:
                 # keep track of stop time/frame for later
-                Presentation_image_2_f1.tStop = t  # not accounting for scr refresh
-                Presentation_image_2_f1.frameNStop = frameN  # exact frame index
-                win.timeOnFlip(Presentation_image_2_f1, 'tStopRefresh')  # time at next scr refresh
-                Presentation_image_2_f1.setAutoDraw(False)
+                Presentation_image_3_f1_1.tStop = t  # not accounting for scr refresh
+                Presentation_image_3_f1_1.frameNStop = frameN  # exact frame index
+                win.timeOnFlip(Presentation_image_3_f1_1, 'tStopRefresh')  # time at next scr refresh
+                Presentation_image_3_f1_1.setAutoDraw(False)
         
-        # *Presentation_image_3_f1* updates
-        if Presentation_image_3_f1.status == NOT_STARTED and tThisFlip >= 3.0-frameTolerance:
+        # *Presentation_image_4_f1_1* updates
+        if Presentation_image_4_f1_1.status == NOT_STARTED and tThisFlip >= 3.0-frameTolerance:
             # keep track of start time/frame for later
-            Presentation_image_3_f1.frameNStart = frameN  # exact frame index
-            Presentation_image_3_f1.tStart = t  # local t and not account for scr refresh
-            Presentation_image_3_f1.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(Presentation_image_3_f1, 'tStartRefresh')  # time at next scr refresh
-            Presentation_image_3_f1.setAutoDraw(True)
-        if Presentation_image_3_f1.status == STARTED:
+            Presentation_image_4_f1_1.frameNStart = frameN  # exact frame index
+            Presentation_image_4_f1_1.tStart = t  # local t and not account for scr refresh
+            Presentation_image_4_f1_1.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(Presentation_image_4_f1_1, 'tStartRefresh')  # time at next scr refresh
+            Presentation_image_4_f1_1.setAutoDraw(True)
+        if Presentation_image_4_f1_1.status == STARTED:
             # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > Presentation_image_3_f1.tStartRefresh + 1.0-frameTolerance:
+            if tThisFlipGlobal > Presentation_image_4_f1_1.tStartRefresh + 1.0-frameTolerance:
                 # keep track of stop time/frame for later
-                Presentation_image_3_f1.tStop = t  # not accounting for scr refresh
-                Presentation_image_3_f1.frameNStop = frameN  # exact frame index
-                win.timeOnFlip(Presentation_image_3_f1, 'tStopRefresh')  # time at next scr refresh
-                Presentation_image_3_f1.setAutoDraw(False)
-        
-        # *Presentation_image_4_f1* updates
-        if Presentation_image_4_f1.status == NOT_STARTED and tThisFlip >= 4.0-frameTolerance:
-            # keep track of start time/frame for later
-            Presentation_image_4_f1.frameNStart = frameN  # exact frame index
-            Presentation_image_4_f1.tStart = t  # local t and not account for scr refresh
-            Presentation_image_4_f1.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(Presentation_image_4_f1, 'tStartRefresh')  # time at next scr refresh
-            Presentation_image_4_f1.setAutoDraw(True)
-        if Presentation_image_4_f1.status == STARTED:
-            # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > Presentation_image_4_f1.tStartRefresh + 1.0-frameTolerance:
-                # keep track of stop time/frame for later
-                Presentation_image_4_f1.tStop = t  # not accounting for scr refresh
-                Presentation_image_4_f1.frameNStop = frameN  # exact frame index
-                win.timeOnFlip(Presentation_image_4_f1, 'tStopRefresh')  # time at next scr refresh
-                Presentation_image_4_f1.setAutoDraw(False)
+                Presentation_image_4_f1_1.tStop = t  # not accounting for scr refresh
+                Presentation_image_4_f1_1.frameNStop = frameN  # exact frame index
+                win.timeOnFlip(Presentation_image_4_f1_1, 'tStopRefresh')  # time at next scr refresh
+                Presentation_image_4_f1_1.setAutoDraw(False)
         
         # check for quit (typically the Esc key)
         if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
@@ -1458,18 +2637,516 @@ for thisBlock_two in block_two:
     for thisComponent in rsvp_f1Components:
         if hasattr(thisComponent, "setAutoDraw"):
             thisComponent.setAutoDraw(False)
-    block_two.addData('Cross.started', Cross.tStartRefresh)
-    block_two.addData('Cross.stopped', Cross.tStopRefresh)
-    block_two.addData('Presentation_image_1_f1.started', Presentation_image_1_f1.tStartRefresh)
-    block_two.addData('Presentation_image_1_f1.stopped', Presentation_image_1_f1.tStopRefresh)
-    block_two.addData('Presentation_image_2_f1.started', Presentation_image_2_f1.tStartRefresh)
-    block_two.addData('Presentation_image_2_f1.stopped', Presentation_image_2_f1.tStopRefresh)
-    block_two.addData('Presentation_image_3_f1.started', Presentation_image_3_f1.tStartRefresh)
-    block_two.addData('Presentation_image_3_f1.stopped', Presentation_image_3_f1.tStopRefresh)
-    block_two.addData('Presentation_image_4_f1.started', Presentation_image_4_f1.tStartRefresh)
-    block_two.addData('Presentation_image_4_f1.stopped', Presentation_image_4_f1.tStopRefresh)
+    block_two.addData('Presentation_image_1_f1_1.started', Presentation_image_1_f1_1.tStartRefresh)
+    block_two.addData('Presentation_image_1_f1_1.stopped', Presentation_image_1_f1_1.tStopRefresh)
+    block_two.addData('Presentation_image_2_f1_1.started', Presentation_image_2_f1_1.tStartRefresh)
+    block_two.addData('Presentation_image_2_f1_1.stopped', Presentation_image_2_f1_1.tStopRefresh)
+    block_two.addData('Presentation_image_3_f1_1.started', Presentation_image_3_f1_1.tStartRefresh)
+    block_two.addData('Presentation_image_3_f1_1.stopped', Presentation_image_3_f1_1.tStopRefresh)
+    block_two.addData('Presentation_image_4_f1_1.started', Presentation_image_4_f1_1.tStartRefresh)
+    block_two.addData('Presentation_image_4_f1_1.stopped', Presentation_image_4_f1_1.tStopRefresh)
     
-    # ------Prepare to start Routine "trial"-------
+    # ------Prepare to start Routine "rsvp_f2"-------
+    continueRoutine = True
+    routineTimer.add(3.950000)
+    # update component parameters for each repeat
+    Presentation_image_f2_1.setImage(imageone)
+    Presentation_image_f2_2.setImage(imageone)
+    Presentation_image_2_f2_1.setImage(imagetwo)
+    Presentation_image_2_f2_2.setImage(imagetwo)
+    Presentation_image_3_f2_1.setImage(imagethree)
+    Presentation_image_3_f2_2.setImage(imagethree)
+    Presentation_image_4_f2_1.setImage(imagefour)
+    Presentation_image_4_f2_2.setImage(imagefour)
+    # keep track of which components have finished
+    rsvp_f2Components = [Presentation_image_f2_1, Presentation_image_f2_2, Presentation_image_2_f2_1, Presentation_image_2_f2_2, Presentation_image_3_f2_1, Presentation_image_3_f2_2, Presentation_image_4_f2_1, Presentation_image_4_f2_2]
+    for thisComponent in rsvp_f2Components:
+        thisComponent.tStart = None
+        thisComponent.tStop = None
+        thisComponent.tStartRefresh = None
+        thisComponent.tStopRefresh = None
+        if hasattr(thisComponent, 'status'):
+            thisComponent.status = NOT_STARTED
+    # reset timers
+    t = 0
+    _timeToFirstFrame = win.getFutureFlipTime(clock="now")
+    rsvp_f2Clock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
+    frameN = -1
+    
+    # -------Run Routine "rsvp_f2"-------
+    while continueRoutine and routineTimer.getTime() > 0:
+        # get current time
+        t = rsvp_f2Clock.getTime()
+        tThisFlip = win.getFutureFlipTime(clock=rsvp_f2Clock)
+        tThisFlipGlobal = win.getFutureFlipTime(clock=None)
+        frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+        # update/draw components on each frame
+        
+        # *Presentation_image_f2_1* updates
+        if Presentation_image_f2_1.status == NOT_STARTED and tThisFlip >= 0-frameTolerance:
+            # keep track of start time/frame for later
+            Presentation_image_f2_1.frameNStart = frameN  # exact frame index
+            Presentation_image_f2_1.tStart = t  # local t and not account for scr refresh
+            Presentation_image_f2_1.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(Presentation_image_f2_1, 'tStartRefresh')  # time at next scr refresh
+            Presentation_image_f2_1.setAutoDraw(True)
+        if Presentation_image_f2_1.status == STARTED:
+            # is it time to stop? (based on global clock, using actual start)
+            if tThisFlipGlobal > Presentation_image_f2_1.tStartRefresh + 0.45-frameTolerance:
+                # keep track of stop time/frame for later
+                Presentation_image_f2_1.tStop = t  # not accounting for scr refresh
+                Presentation_image_f2_1.frameNStop = frameN  # exact frame index
+                win.timeOnFlip(Presentation_image_f2_1, 'tStopRefresh')  # time at next scr refresh
+                Presentation_image_f2_1.setAutoDraw(False)
+        
+        # *Presentation_image_f2_2* updates
+        if Presentation_image_f2_2.status == NOT_STARTED and tThisFlip >= 0.5-frameTolerance:
+            # keep track of start time/frame for later
+            Presentation_image_f2_2.frameNStart = frameN  # exact frame index
+            Presentation_image_f2_2.tStart = t  # local t and not account for scr refresh
+            Presentation_image_f2_2.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(Presentation_image_f2_2, 'tStartRefresh')  # time at next scr refresh
+            Presentation_image_f2_2.setAutoDraw(True)
+        if Presentation_image_f2_2.status == STARTED:
+            # is it time to stop? (based on global clock, using actual start)
+            if tThisFlipGlobal > Presentation_image_f2_2.tStartRefresh + 0.45-frameTolerance:
+                # keep track of stop time/frame for later
+                Presentation_image_f2_2.tStop = t  # not accounting for scr refresh
+                Presentation_image_f2_2.frameNStop = frameN  # exact frame index
+                win.timeOnFlip(Presentation_image_f2_2, 'tStopRefresh')  # time at next scr refresh
+                Presentation_image_f2_2.setAutoDraw(False)
+        
+        # *Presentation_image_2_f2_1* updates
+        if Presentation_image_2_f2_1.status == NOT_STARTED and tThisFlip >= 1.0-frameTolerance:
+            # keep track of start time/frame for later
+            Presentation_image_2_f2_1.frameNStart = frameN  # exact frame index
+            Presentation_image_2_f2_1.tStart = t  # local t and not account for scr refresh
+            Presentation_image_2_f2_1.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(Presentation_image_2_f2_1, 'tStartRefresh')  # time at next scr refresh
+            Presentation_image_2_f2_1.setAutoDraw(True)
+        if Presentation_image_2_f2_1.status == STARTED:
+            # is it time to stop? (based on global clock, using actual start)
+            if tThisFlipGlobal > Presentation_image_2_f2_1.tStartRefresh + 0.45-frameTolerance:
+                # keep track of stop time/frame for later
+                Presentation_image_2_f2_1.tStop = t  # not accounting for scr refresh
+                Presentation_image_2_f2_1.frameNStop = frameN  # exact frame index
+                win.timeOnFlip(Presentation_image_2_f2_1, 'tStopRefresh')  # time at next scr refresh
+                Presentation_image_2_f2_1.setAutoDraw(False)
+        
+        # *Presentation_image_2_f2_2* updates
+        if Presentation_image_2_f2_2.status == NOT_STARTED and tThisFlip >= 1.5-frameTolerance:
+            # keep track of start time/frame for later
+            Presentation_image_2_f2_2.frameNStart = frameN  # exact frame index
+            Presentation_image_2_f2_2.tStart = t  # local t and not account for scr refresh
+            Presentation_image_2_f2_2.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(Presentation_image_2_f2_2, 'tStartRefresh')  # time at next scr refresh
+            Presentation_image_2_f2_2.setAutoDraw(True)
+        if Presentation_image_2_f2_2.status == STARTED:
+            # is it time to stop? (based on global clock, using actual start)
+            if tThisFlipGlobal > Presentation_image_2_f2_2.tStartRefresh + 0.45-frameTolerance:
+                # keep track of stop time/frame for later
+                Presentation_image_2_f2_2.tStop = t  # not accounting for scr refresh
+                Presentation_image_2_f2_2.frameNStop = frameN  # exact frame index
+                win.timeOnFlip(Presentation_image_2_f2_2, 'tStopRefresh')  # time at next scr refresh
+                Presentation_image_2_f2_2.setAutoDraw(False)
+        
+        # *Presentation_image_3_f2_1* updates
+        if Presentation_image_3_f2_1.status == NOT_STARTED and tThisFlip >= 2.0-frameTolerance:
+            # keep track of start time/frame for later
+            Presentation_image_3_f2_1.frameNStart = frameN  # exact frame index
+            Presentation_image_3_f2_1.tStart = t  # local t and not account for scr refresh
+            Presentation_image_3_f2_1.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(Presentation_image_3_f2_1, 'tStartRefresh')  # time at next scr refresh
+            Presentation_image_3_f2_1.setAutoDraw(True)
+        if Presentation_image_3_f2_1.status == STARTED:
+            # is it time to stop? (based on global clock, using actual start)
+            if tThisFlipGlobal > Presentation_image_3_f2_1.tStartRefresh + 0.45-frameTolerance:
+                # keep track of stop time/frame for later
+                Presentation_image_3_f2_1.tStop = t  # not accounting for scr refresh
+                Presentation_image_3_f2_1.frameNStop = frameN  # exact frame index
+                win.timeOnFlip(Presentation_image_3_f2_1, 'tStopRefresh')  # time at next scr refresh
+                Presentation_image_3_f2_1.setAutoDraw(False)
+        
+        # *Presentation_image_3_f2_2* updates
+        if Presentation_image_3_f2_2.status == NOT_STARTED and tThisFlip >= 2.5-frameTolerance:
+            # keep track of start time/frame for later
+            Presentation_image_3_f2_2.frameNStart = frameN  # exact frame index
+            Presentation_image_3_f2_2.tStart = t  # local t and not account for scr refresh
+            Presentation_image_3_f2_2.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(Presentation_image_3_f2_2, 'tStartRefresh')  # time at next scr refresh
+            Presentation_image_3_f2_2.setAutoDraw(True)
+        if Presentation_image_3_f2_2.status == STARTED:
+            # is it time to stop? (based on global clock, using actual start)
+            if tThisFlipGlobal > Presentation_image_3_f2_2.tStartRefresh + 0.45-frameTolerance:
+                # keep track of stop time/frame for later
+                Presentation_image_3_f2_2.tStop = t  # not accounting for scr refresh
+                Presentation_image_3_f2_2.frameNStop = frameN  # exact frame index
+                win.timeOnFlip(Presentation_image_3_f2_2, 'tStopRefresh')  # time at next scr refresh
+                Presentation_image_3_f2_2.setAutoDraw(False)
+        
+        # *Presentation_image_4_f2_1* updates
+        if Presentation_image_4_f2_1.status == NOT_STARTED and tThisFlip >= 3.0-frameTolerance:
+            # keep track of start time/frame for later
+            Presentation_image_4_f2_1.frameNStart = frameN  # exact frame index
+            Presentation_image_4_f2_1.tStart = t  # local t and not account for scr refresh
+            Presentation_image_4_f2_1.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(Presentation_image_4_f2_1, 'tStartRefresh')  # time at next scr refresh
+            Presentation_image_4_f2_1.setAutoDraw(True)
+        if Presentation_image_4_f2_1.status == STARTED:
+            # is it time to stop? (based on global clock, using actual start)
+            if tThisFlipGlobal > Presentation_image_4_f2_1.tStartRefresh + 0.45-frameTolerance:
+                # keep track of stop time/frame for later
+                Presentation_image_4_f2_1.tStop = t  # not accounting for scr refresh
+                Presentation_image_4_f2_1.frameNStop = frameN  # exact frame index
+                win.timeOnFlip(Presentation_image_4_f2_1, 'tStopRefresh')  # time at next scr refresh
+                Presentation_image_4_f2_1.setAutoDraw(False)
+        
+        # *Presentation_image_4_f2_2* updates
+        if Presentation_image_4_f2_2.status == NOT_STARTED and tThisFlip >= 3.5-frameTolerance:
+            # keep track of start time/frame for later
+            Presentation_image_4_f2_2.frameNStart = frameN  # exact frame index
+            Presentation_image_4_f2_2.tStart = t  # local t and not account for scr refresh
+            Presentation_image_4_f2_2.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(Presentation_image_4_f2_2, 'tStartRefresh')  # time at next scr refresh
+            Presentation_image_4_f2_2.setAutoDraw(True)
+        if Presentation_image_4_f2_2.status == STARTED:
+            # is it time to stop? (based on global clock, using actual start)
+            if tThisFlipGlobal > Presentation_image_4_f2_2.tStartRefresh + 0.45-frameTolerance:
+                # keep track of stop time/frame for later
+                Presentation_image_4_f2_2.tStop = t  # not accounting for scr refresh
+                Presentation_image_4_f2_2.frameNStop = frameN  # exact frame index
+                win.timeOnFlip(Presentation_image_4_f2_2, 'tStopRefresh')  # time at next scr refresh
+                Presentation_image_4_f2_2.setAutoDraw(False)
+        
+        # check for quit (typically the Esc key)
+        if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
+            core.quit()
+        
+        # check if all components have finished
+        if not continueRoutine:  # a component has requested a forced-end of Routine
+            break
+        continueRoutine = False  # will revert to True if at least one component still running
+        for thisComponent in rsvp_f2Components:
+            if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
+                continueRoutine = True
+                break  # at least one component has not yet finished
+        
+        # refresh the screen
+        if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
+            win.flip()
+    
+    # -------Ending Routine "rsvp_f2"-------
+    for thisComponent in rsvp_f2Components:
+        if hasattr(thisComponent, "setAutoDraw"):
+            thisComponent.setAutoDraw(False)
+    block_two.addData('Presentation_image_f2_1.started', Presentation_image_f2_1.tStartRefresh)
+    block_two.addData('Presentation_image_f2_1.stopped', Presentation_image_f2_1.tStopRefresh)
+    block_two.addData('Presentation_image_f2_2.started', Presentation_image_f2_2.tStartRefresh)
+    block_two.addData('Presentation_image_f2_2.stopped', Presentation_image_f2_2.tStopRefresh)
+    block_two.addData('Presentation_image_2_f2_1.started', Presentation_image_2_f2_1.tStartRefresh)
+    block_two.addData('Presentation_image_2_f2_1.stopped', Presentation_image_2_f2_1.tStopRefresh)
+    block_two.addData('Presentation_image_2_f2_2.started', Presentation_image_2_f2_2.tStartRefresh)
+    block_two.addData('Presentation_image_2_f2_2.stopped', Presentation_image_2_f2_2.tStopRefresh)
+    block_two.addData('Presentation_image_3_f2_1.started', Presentation_image_3_f2_1.tStartRefresh)
+    block_two.addData('Presentation_image_3_f2_1.stopped', Presentation_image_3_f2_1.tStopRefresh)
+    block_two.addData('Presentation_image_3_f2_2.started', Presentation_image_3_f2_2.tStartRefresh)
+    block_two.addData('Presentation_image_3_f2_2.stopped', Presentation_image_3_f2_2.tStopRefresh)
+    block_two.addData('Presentation_image_4_f2_1.started', Presentation_image_4_f2_1.tStartRefresh)
+    block_two.addData('Presentation_image_4_f2_1.stopped', Presentation_image_4_f2_1.tStopRefresh)
+    block_two.addData('Presentation_image_4_f2_2.started', Presentation_image_4_f2_2.tStartRefresh)
+    block_two.addData('Presentation_image_4_f2_2.stopped', Presentation_image_4_f2_2.tStopRefresh)
+    
+    # ------Prepare to start Routine "rsvp_f3"-------
+    continueRoutine = True
+    routineTimer.add(4.000000)
+    # update component parameters for each repeat
+    Presentation_image_f3_1.setImage(imageone)
+    Presentation_image_f3_2.setImage(imageone)
+    Presentation_image_f3_3.setImage(imageone)
+    Presentation_image_2_f3_1.setImage(imagetwo)
+    Presentation_image_2_f3_2.setImage(imagetwo)
+    Presentation_image_2_f3_3.setImage(imagetwo)
+    Presentation_image_3_f3_1.setImage(imagethree)
+    Presentation_image_3_f3_2.setImage(imagethree)
+    Presentation_image_3_f3_3.setImage(imagethree)
+    Presentation_image_4_f3_1.setImage(imagefour)
+    Presentation_image_4_f3_2.setImage(imagefour)
+    Presentation_image_4_f3_3.setImage(imagefour)
+    # keep track of which components have finished
+    rsvp_f3Components = [Presentation_image_f3_1, Presentation_image_f3_2, Presentation_image_f3_3, Presentation_image_2_f3_1, Presentation_image_2_f3_2, Presentation_image_2_f3_3, Presentation_image_3_f3_1, Presentation_image_3_f3_2, Presentation_image_3_f3_3, Presentation_image_4_f3_1, Presentation_image_4_f3_2, Presentation_image_4_f3_3]
+    for thisComponent in rsvp_f3Components:
+        thisComponent.tStart = None
+        thisComponent.tStop = None
+        thisComponent.tStartRefresh = None
+        thisComponent.tStopRefresh = None
+        if hasattr(thisComponent, 'status'):
+            thisComponent.status = NOT_STARTED
+    # reset timers
+    t = 0
+    _timeToFirstFrame = win.getFutureFlipTime(clock="now")
+    rsvp_f3Clock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
+    frameN = -1
+    
+    # -------Run Routine "rsvp_f3"-------
+    while continueRoutine and routineTimer.getTime() > 0:
+        # get current time
+        t = rsvp_f3Clock.getTime()
+        tThisFlip = win.getFutureFlipTime(clock=rsvp_f3Clock)
+        tThisFlipGlobal = win.getFutureFlipTime(clock=None)
+        frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+        # update/draw components on each frame
+        
+        # *Presentation_image_f3_1* updates
+        if Presentation_image_f3_1.status == NOT_STARTED and tThisFlip >= 0-frameTolerance:
+            # keep track of start time/frame for later
+            Presentation_image_f3_1.frameNStart = frameN  # exact frame index
+            Presentation_image_f3_1.tStart = t  # local t and not account for scr refresh
+            Presentation_image_f3_1.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(Presentation_image_f3_1, 'tStartRefresh')  # time at next scr refresh
+            Presentation_image_f3_1.setAutoDraw(True)
+        if Presentation_image_f3_1.status == STARTED:
+            # is it time to stop? (based on global clock, using actual start)
+            if tThisFlipGlobal > Presentation_image_f3_1.tStartRefresh + 0.30-frameTolerance:
+                # keep track of stop time/frame for later
+                Presentation_image_f3_1.tStop = t  # not accounting for scr refresh
+                Presentation_image_f3_1.frameNStop = frameN  # exact frame index
+                win.timeOnFlip(Presentation_image_f3_1, 'tStopRefresh')  # time at next scr refresh
+                Presentation_image_f3_1.setAutoDraw(False)
+        
+        # *Presentation_image_f3_2* updates
+        if Presentation_image_f3_2.status == NOT_STARTED and tThisFlip >= 0.35-frameTolerance:
+            # keep track of start time/frame for later
+            Presentation_image_f3_2.frameNStart = frameN  # exact frame index
+            Presentation_image_f3_2.tStart = t  # local t and not account for scr refresh
+            Presentation_image_f3_2.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(Presentation_image_f3_2, 'tStartRefresh')  # time at next scr refresh
+            Presentation_image_f3_2.setAutoDraw(True)
+        if Presentation_image_f3_2.status == STARTED:
+            # is it time to stop? (based on global clock, using actual start)
+            if tThisFlipGlobal > Presentation_image_f3_2.tStartRefresh + 0.3-frameTolerance:
+                # keep track of stop time/frame for later
+                Presentation_image_f3_2.tStop = t  # not accounting for scr refresh
+                Presentation_image_f3_2.frameNStop = frameN  # exact frame index
+                win.timeOnFlip(Presentation_image_f3_2, 'tStopRefresh')  # time at next scr refresh
+                Presentation_image_f3_2.setAutoDraw(False)
+        
+        # *Presentation_image_f3_3* updates
+        if Presentation_image_f3_3.status == NOT_STARTED and tThisFlip >= 0.70-frameTolerance:
+            # keep track of start time/frame for later
+            Presentation_image_f3_3.frameNStart = frameN  # exact frame index
+            Presentation_image_f3_3.tStart = t  # local t and not account for scr refresh
+            Presentation_image_f3_3.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(Presentation_image_f3_3, 'tStartRefresh')  # time at next scr refresh
+            Presentation_image_f3_3.setAutoDraw(True)
+        if Presentation_image_f3_3.status == STARTED:
+            # is it time to stop? (based on global clock, using actual start)
+            if tThisFlipGlobal > Presentation_image_f3_3.tStartRefresh + 0.3-frameTolerance:
+                # keep track of stop time/frame for later
+                Presentation_image_f3_3.tStop = t  # not accounting for scr refresh
+                Presentation_image_f3_3.frameNStop = frameN  # exact frame index
+                win.timeOnFlip(Presentation_image_f3_3, 'tStopRefresh')  # time at next scr refresh
+                Presentation_image_f3_3.setAutoDraw(False)
+        
+        # *Presentation_image_2_f3_1* updates
+        if Presentation_image_2_f3_1.status == NOT_STARTED and tThisFlip >= 1-frameTolerance:
+            # keep track of start time/frame for later
+            Presentation_image_2_f3_1.frameNStart = frameN  # exact frame index
+            Presentation_image_2_f3_1.tStart = t  # local t and not account for scr refresh
+            Presentation_image_2_f3_1.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(Presentation_image_2_f3_1, 'tStartRefresh')  # time at next scr refresh
+            Presentation_image_2_f3_1.setAutoDraw(True)
+        if Presentation_image_2_f3_1.status == STARTED:
+            # is it time to stop? (based on global clock, using actual start)
+            if tThisFlipGlobal > Presentation_image_2_f3_1.tStartRefresh + 0.3-frameTolerance:
+                # keep track of stop time/frame for later
+                Presentation_image_2_f3_1.tStop = t  # not accounting for scr refresh
+                Presentation_image_2_f3_1.frameNStop = frameN  # exact frame index
+                win.timeOnFlip(Presentation_image_2_f3_1, 'tStopRefresh')  # time at next scr refresh
+                Presentation_image_2_f3_1.setAutoDraw(False)
+        
+        # *Presentation_image_2_f3_2* updates
+        if Presentation_image_2_f3_2.status == NOT_STARTED and tThisFlip >= 1.35-frameTolerance:
+            # keep track of start time/frame for later
+            Presentation_image_2_f3_2.frameNStart = frameN  # exact frame index
+            Presentation_image_2_f3_2.tStart = t  # local t and not account for scr refresh
+            Presentation_image_2_f3_2.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(Presentation_image_2_f3_2, 'tStartRefresh')  # time at next scr refresh
+            Presentation_image_2_f3_2.setAutoDraw(True)
+        if Presentation_image_2_f3_2.status == STARTED:
+            # is it time to stop? (based on global clock, using actual start)
+            if tThisFlipGlobal > Presentation_image_2_f3_2.tStartRefresh + 0.3-frameTolerance:
+                # keep track of stop time/frame for later
+                Presentation_image_2_f3_2.tStop = t  # not accounting for scr refresh
+                Presentation_image_2_f3_2.frameNStop = frameN  # exact frame index
+                win.timeOnFlip(Presentation_image_2_f3_2, 'tStopRefresh')  # time at next scr refresh
+                Presentation_image_2_f3_2.setAutoDraw(False)
+        
+        # *Presentation_image_2_f3_3* updates
+        if Presentation_image_2_f3_3.status == NOT_STARTED and tThisFlip >= 1.70-frameTolerance:
+            # keep track of start time/frame for later
+            Presentation_image_2_f3_3.frameNStart = frameN  # exact frame index
+            Presentation_image_2_f3_3.tStart = t  # local t and not account for scr refresh
+            Presentation_image_2_f3_3.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(Presentation_image_2_f3_3, 'tStartRefresh')  # time at next scr refresh
+            Presentation_image_2_f3_3.setAutoDraw(True)
+        if Presentation_image_2_f3_3.status == STARTED:
+            # is it time to stop? (based on global clock, using actual start)
+            if tThisFlipGlobal > Presentation_image_2_f3_3.tStartRefresh + 0.3-frameTolerance:
+                # keep track of stop time/frame for later
+                Presentation_image_2_f3_3.tStop = t  # not accounting for scr refresh
+                Presentation_image_2_f3_3.frameNStop = frameN  # exact frame index
+                win.timeOnFlip(Presentation_image_2_f3_3, 'tStopRefresh')  # time at next scr refresh
+                Presentation_image_2_f3_3.setAutoDraw(False)
+        
+        # *Presentation_image_3_f3_1* updates
+        if Presentation_image_3_f3_1.status == NOT_STARTED and tThisFlip >= 2.0-frameTolerance:
+            # keep track of start time/frame for later
+            Presentation_image_3_f3_1.frameNStart = frameN  # exact frame index
+            Presentation_image_3_f3_1.tStart = t  # local t and not account for scr refresh
+            Presentation_image_3_f3_1.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(Presentation_image_3_f3_1, 'tStartRefresh')  # time at next scr refresh
+            Presentation_image_3_f3_1.setAutoDraw(True)
+        if Presentation_image_3_f3_1.status == STARTED:
+            # is it time to stop? (based on global clock, using actual start)
+            if tThisFlipGlobal > Presentation_image_3_f3_1.tStartRefresh + 0.3-frameTolerance:
+                # keep track of stop time/frame for later
+                Presentation_image_3_f3_1.tStop = t  # not accounting for scr refresh
+                Presentation_image_3_f3_1.frameNStop = frameN  # exact frame index
+                win.timeOnFlip(Presentation_image_3_f3_1, 'tStopRefresh')  # time at next scr refresh
+                Presentation_image_3_f3_1.setAutoDraw(False)
+        
+        # *Presentation_image_3_f3_2* updates
+        if Presentation_image_3_f3_2.status == NOT_STARTED and tThisFlip >= 2.35-frameTolerance:
+            # keep track of start time/frame for later
+            Presentation_image_3_f3_2.frameNStart = frameN  # exact frame index
+            Presentation_image_3_f3_2.tStart = t  # local t and not account for scr refresh
+            Presentation_image_3_f3_2.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(Presentation_image_3_f3_2, 'tStartRefresh')  # time at next scr refresh
+            Presentation_image_3_f3_2.setAutoDraw(True)
+        if Presentation_image_3_f3_2.status == STARTED:
+            # is it time to stop? (based on global clock, using actual start)
+            if tThisFlipGlobal > Presentation_image_3_f3_2.tStartRefresh + 0.3-frameTolerance:
+                # keep track of stop time/frame for later
+                Presentation_image_3_f3_2.tStop = t  # not accounting for scr refresh
+                Presentation_image_3_f3_2.frameNStop = frameN  # exact frame index
+                win.timeOnFlip(Presentation_image_3_f3_2, 'tStopRefresh')  # time at next scr refresh
+                Presentation_image_3_f3_2.setAutoDraw(False)
+        
+        # *Presentation_image_3_f3_3* updates
+        if Presentation_image_3_f3_3.status == NOT_STARTED and tThisFlip >= 2.70-frameTolerance:
+            # keep track of start time/frame for later
+            Presentation_image_3_f3_3.frameNStart = frameN  # exact frame index
+            Presentation_image_3_f3_3.tStart = t  # local t and not account for scr refresh
+            Presentation_image_3_f3_3.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(Presentation_image_3_f3_3, 'tStartRefresh')  # time at next scr refresh
+            Presentation_image_3_f3_3.setAutoDraw(True)
+        if Presentation_image_3_f3_3.status == STARTED:
+            # is it time to stop? (based on global clock, using actual start)
+            if tThisFlipGlobal > Presentation_image_3_f3_3.tStartRefresh + 0.3-frameTolerance:
+                # keep track of stop time/frame for later
+                Presentation_image_3_f3_3.tStop = t  # not accounting for scr refresh
+                Presentation_image_3_f3_3.frameNStop = frameN  # exact frame index
+                win.timeOnFlip(Presentation_image_3_f3_3, 'tStopRefresh')  # time at next scr refresh
+                Presentation_image_3_f3_3.setAutoDraw(False)
+        
+        # *Presentation_image_4_f3_1* updates
+        if Presentation_image_4_f3_1.status == NOT_STARTED and tThisFlip >= 3.0-frameTolerance:
+            # keep track of start time/frame for later
+            Presentation_image_4_f3_1.frameNStart = frameN  # exact frame index
+            Presentation_image_4_f3_1.tStart = t  # local t and not account for scr refresh
+            Presentation_image_4_f3_1.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(Presentation_image_4_f3_1, 'tStartRefresh')  # time at next scr refresh
+            Presentation_image_4_f3_1.setAutoDraw(True)
+        if Presentation_image_4_f3_1.status == STARTED:
+            # is it time to stop? (based on global clock, using actual start)
+            if tThisFlipGlobal > Presentation_image_4_f3_1.tStartRefresh + 0.3-frameTolerance:
+                # keep track of stop time/frame for later
+                Presentation_image_4_f3_1.tStop = t  # not accounting for scr refresh
+                Presentation_image_4_f3_1.frameNStop = frameN  # exact frame index
+                win.timeOnFlip(Presentation_image_4_f3_1, 'tStopRefresh')  # time at next scr refresh
+                Presentation_image_4_f3_1.setAutoDraw(False)
+        
+        # *Presentation_image_4_f3_2* updates
+        if Presentation_image_4_f3_2.status == NOT_STARTED and tThisFlip >= 3.35-frameTolerance:
+            # keep track of start time/frame for later
+            Presentation_image_4_f3_2.frameNStart = frameN  # exact frame index
+            Presentation_image_4_f3_2.tStart = t  # local t and not account for scr refresh
+            Presentation_image_4_f3_2.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(Presentation_image_4_f3_2, 'tStartRefresh')  # time at next scr refresh
+            Presentation_image_4_f3_2.setAutoDraw(True)
+        if Presentation_image_4_f3_2.status == STARTED:
+            # is it time to stop? (based on global clock, using actual start)
+            if tThisFlipGlobal > Presentation_image_4_f3_2.tStartRefresh + 0.3-frameTolerance:
+                # keep track of stop time/frame for later
+                Presentation_image_4_f3_2.tStop = t  # not accounting for scr refresh
+                Presentation_image_4_f3_2.frameNStop = frameN  # exact frame index
+                win.timeOnFlip(Presentation_image_4_f3_2, 'tStopRefresh')  # time at next scr refresh
+                Presentation_image_4_f3_2.setAutoDraw(False)
+        
+        # *Presentation_image_4_f3_3* updates
+        if Presentation_image_4_f3_3.status == NOT_STARTED and tThisFlip >= 3.7-frameTolerance:
+            # keep track of start time/frame for later
+            Presentation_image_4_f3_3.frameNStart = frameN  # exact frame index
+            Presentation_image_4_f3_3.tStart = t  # local t and not account for scr refresh
+            Presentation_image_4_f3_3.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(Presentation_image_4_f3_3, 'tStartRefresh')  # time at next scr refresh
+            Presentation_image_4_f3_3.setAutoDraw(True)
+        if Presentation_image_4_f3_3.status == STARTED:
+            # is it time to stop? (based on global clock, using actual start)
+            if tThisFlipGlobal > Presentation_image_4_f3_3.tStartRefresh + 0.3-frameTolerance:
+                # keep track of stop time/frame for later
+                Presentation_image_4_f3_3.tStop = t  # not accounting for scr refresh
+                Presentation_image_4_f3_3.frameNStop = frameN  # exact frame index
+                win.timeOnFlip(Presentation_image_4_f3_3, 'tStopRefresh')  # time at next scr refresh
+                Presentation_image_4_f3_3.setAutoDraw(False)
+        
+        # check for quit (typically the Esc key)
+        if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
+            core.quit()
+        
+        # check if all components have finished
+        if not continueRoutine:  # a component has requested a forced-end of Routine
+            break
+        continueRoutine = False  # will revert to True if at least one component still running
+        for thisComponent in rsvp_f3Components:
+            if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
+                continueRoutine = True
+                break  # at least one component has not yet finished
+        
+        # refresh the screen
+        if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
+            win.flip()
+    
+    # -------Ending Routine "rsvp_f3"-------
+    for thisComponent in rsvp_f3Components:
+        if hasattr(thisComponent, "setAutoDraw"):
+            thisComponent.setAutoDraw(False)
+    block_two.addData('Presentation_image_f3_1.started', Presentation_image_f3_1.tStartRefresh)
+    block_two.addData('Presentation_image_f3_1.stopped', Presentation_image_f3_1.tStopRefresh)
+    block_two.addData('Presentation_image_f3_2.started', Presentation_image_f3_2.tStartRefresh)
+    block_two.addData('Presentation_image_f3_2.stopped', Presentation_image_f3_2.tStopRefresh)
+    block_two.addData('Presentation_image_f3_3.started', Presentation_image_f3_3.tStartRefresh)
+    block_two.addData('Presentation_image_f3_3.stopped', Presentation_image_f3_3.tStopRefresh)
+    block_two.addData('Presentation_image_2_f3_1.started', Presentation_image_2_f3_1.tStartRefresh)
+    block_two.addData('Presentation_image_2_f3_1.stopped', Presentation_image_2_f3_1.tStopRefresh)
+    block_two.addData('Presentation_image_2_f3_2.started', Presentation_image_2_f3_2.tStartRefresh)
+    block_two.addData('Presentation_image_2_f3_2.stopped', Presentation_image_2_f3_2.tStopRefresh)
+    block_two.addData('Presentation_image_2_f3_3.started', Presentation_image_2_f3_3.tStartRefresh)
+    block_two.addData('Presentation_image_2_f3_3.stopped', Presentation_image_2_f3_3.tStopRefresh)
+    block_two.addData('Presentation_image_3_f3_1.started', Presentation_image_3_f3_1.tStartRefresh)
+    block_two.addData('Presentation_image_3_f3_1.stopped', Presentation_image_3_f3_1.tStopRefresh)
+    block_two.addData('Presentation_image_3_f3_2.started', Presentation_image_3_f3_2.tStartRefresh)
+    block_two.addData('Presentation_image_3_f3_2.stopped', Presentation_image_3_f3_2.tStopRefresh)
+    block_two.addData('Presentation_image_3_f3_3.started', Presentation_image_3_f3_3.tStartRefresh)
+    block_two.addData('Presentation_image_3_f3_3.stopped', Presentation_image_3_f3_3.tStopRefresh)
+    block_two.addData('Presentation_image_4_f3_1.started', Presentation_image_4_f3_1.tStartRefresh)
+    block_two.addData('Presentation_image_4_f3_1.stopped', Presentation_image_4_f3_1.tStopRefresh)
+    block_two.addData('Presentation_image_4_f3_2.started', Presentation_image_4_f3_2.tStartRefresh)
+    block_two.addData('Presentation_image_4_f3_2.stopped', Presentation_image_4_f3_2.tStopRefresh)
+    block_two.addData('Presentation_image_4_f3_3.started', Presentation_image_4_f3_3.tStartRefresh)
+    block_two.addData('Presentation_image_4_f3_3.stopped', Presentation_image_4_f3_3.tStopRefresh)
+    
+    # ------Prepare to start Routine "choice"-------
     continueRoutine = True
     # update component parameters for each repeat
     Topleft.setImage(imageTL)
@@ -1480,8 +3157,8 @@ for thisBlock_two in block_two:
     key_resp.rt = []
     _key_resp_allKeys = []
     # keep track of which components have finished
-    trialComponents = [Fixation_cross, Topleft, Topright, Bottomleft, Bottomright, key_resp]
-    for thisComponent in trialComponents:
+    choiceComponents = [Fixation_cross, Topleft, Topright, Bottomleft, Bottomright, key_resp]
+    for thisComponent in choiceComponents:
         thisComponent.tStart = None
         thisComponent.tStop = None
         thisComponent.tStartRefresh = None
@@ -1491,14 +3168,14 @@ for thisBlock_two in block_two:
     # reset timers
     t = 0
     _timeToFirstFrame = win.getFutureFlipTime(clock="now")
-    trialClock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
+    choiceClock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
     frameN = -1
     
-    # -------Run Routine "trial"-------
+    # -------Run Routine "choice"-------
     while continueRoutine:
         # get current time
-        t = trialClock.getTime()
-        tThisFlip = win.getFutureFlipTime(clock=trialClock)
+        t = choiceClock.getTime()
+        tThisFlip = win.getFutureFlipTime(clock=choiceClock)
         tThisFlipGlobal = win.getFutureFlipTime(clock=None)
         frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
         # update/draw components on each frame
@@ -1621,7 +3298,7 @@ for thisBlock_two in block_two:
         if not continueRoutine:  # a component has requested a forced-end of Routine
             break
         continueRoutine = False  # will revert to True if at least one component still running
-        for thisComponent in trialComponents:
+        for thisComponent in choiceComponents:
             if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
                 continueRoutine = True
                 break  # at least one component has not yet finished
@@ -1630,8 +3307,8 @@ for thisBlock_two in block_two:
         if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
             win.flip()
     
-    # -------Ending Routine "trial"-------
-    for thisComponent in trialComponents:
+    # -------Ending Routine "choice"-------
+    for thisComponent in choiceComponents:
         if hasattr(thisComponent, "setAutoDraw"):
             thisComponent.setAutoDraw(False)
     block_two.addData('Fixation_cross.started', Fixation_cross.tStartRefresh)
@@ -1659,7 +3336,7 @@ for thisBlock_two in block_two:
         block_two.addData('key_resp.rt', key_resp.rt)
     block_two.addData('key_resp.started', key_resp.tStart)
     block_two.addData('key_resp.stopped', key_resp.tStop)
-    # the Routine "trial" was not non-slip safe, so reset the non-slip timer
+    # the Routine "choice" was not non-slip safe, so reset the non-slip timer
     routineTimer.reset()
     thisExp.nextEntry()
     
@@ -1774,14 +3451,14 @@ for thisBlock_three in block_three:
     
     # ------Prepare to start Routine "rsvp_f1"-------
     continueRoutine = True
-    routineTimer.add(5.000000)
+    routineTimer.add(4.000000)
     # update component parameters for each repeat
-    Presentation_image_1_f1.setImage(imageone)
-    Presentation_image_2_f1.setImage(imagetwo)
-    Presentation_image_3_f1.setImage(imagethree)
-    Presentation_image_4_f1.setImage(imagefour)
+    Presentation_image_1_f1_1.setImage(imageone)
+    Presentation_image_2_f1_1.setImage(imagetwo)
+    Presentation_image_3_f1_1.setImage(imagethree)
+    Presentation_image_4_f1_1.setImage(imagefour)
     # keep track of which components have finished
-    rsvp_f1Components = [Cross, Presentation_image_1_f1, Presentation_image_2_f1, Presentation_image_3_f1, Presentation_image_4_f1]
+    rsvp_f1Components = [Presentation_image_1_f1_1, Presentation_image_2_f1_1, Presentation_image_3_f1_1, Presentation_image_4_f1_1]
     for thisComponent in rsvp_f1Components:
         thisComponent.tStart = None
         thisComponent.tStop = None
@@ -1804,90 +3481,73 @@ for thisBlock_three in block_three:
         frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
         # update/draw components on each frame
         
-        # *Cross* updates
-        if Cross.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+        # *Presentation_image_1_f1_1* updates
+        if Presentation_image_1_f1_1.status == NOT_STARTED and tThisFlip >= 0-frameTolerance:
             # keep track of start time/frame for later
-            Cross.frameNStart = frameN  # exact frame index
-            Cross.tStart = t  # local t and not account for scr refresh
-            Cross.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(Cross, 'tStartRefresh')  # time at next scr refresh
-            Cross.setAutoDraw(True)
-        if Cross.status == STARTED:
+            Presentation_image_1_f1_1.frameNStart = frameN  # exact frame index
+            Presentation_image_1_f1_1.tStart = t  # local t and not account for scr refresh
+            Presentation_image_1_f1_1.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(Presentation_image_1_f1_1, 'tStartRefresh')  # time at next scr refresh
+            Presentation_image_1_f1_1.setAutoDraw(True)
+        if Presentation_image_1_f1_1.status == STARTED:
             # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > Cross.tStartRefresh + 1.0-frameTolerance:
+            if tThisFlipGlobal > Presentation_image_1_f1_1.tStartRefresh + 1.0-frameTolerance:
                 # keep track of stop time/frame for later
-                Cross.tStop = t  # not accounting for scr refresh
-                Cross.frameNStop = frameN  # exact frame index
-                win.timeOnFlip(Cross, 'tStopRefresh')  # time at next scr refresh
-                Cross.setAutoDraw(False)
+                Presentation_image_1_f1_1.tStop = t  # not accounting for scr refresh
+                Presentation_image_1_f1_1.frameNStop = frameN  # exact frame index
+                win.timeOnFlip(Presentation_image_1_f1_1, 'tStopRefresh')  # time at next scr refresh
+                Presentation_image_1_f1_1.setAutoDraw(False)
         
-        # *Presentation_image_1_f1* updates
-        if Presentation_image_1_f1.status == NOT_STARTED and tThisFlip >= 1.0-frameTolerance:
+        # *Presentation_image_2_f1_1* updates
+        if Presentation_image_2_f1_1.status == NOT_STARTED and tThisFlip >= 1.0-frameTolerance:
             # keep track of start time/frame for later
-            Presentation_image_1_f1.frameNStart = frameN  # exact frame index
-            Presentation_image_1_f1.tStart = t  # local t and not account for scr refresh
-            Presentation_image_1_f1.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(Presentation_image_1_f1, 'tStartRefresh')  # time at next scr refresh
-            Presentation_image_1_f1.setAutoDraw(True)
-        if Presentation_image_1_f1.status == STARTED:
+            Presentation_image_2_f1_1.frameNStart = frameN  # exact frame index
+            Presentation_image_2_f1_1.tStart = t  # local t and not account for scr refresh
+            Presentation_image_2_f1_1.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(Presentation_image_2_f1_1, 'tStartRefresh')  # time at next scr refresh
+            Presentation_image_2_f1_1.setAutoDraw(True)
+        if Presentation_image_2_f1_1.status == STARTED:
             # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > Presentation_image_1_f1.tStartRefresh + 1.0-frameTolerance:
+            if tThisFlipGlobal > Presentation_image_2_f1_1.tStartRefresh + 1.0-frameTolerance:
                 # keep track of stop time/frame for later
-                Presentation_image_1_f1.tStop = t  # not accounting for scr refresh
-                Presentation_image_1_f1.frameNStop = frameN  # exact frame index
-                win.timeOnFlip(Presentation_image_1_f1, 'tStopRefresh')  # time at next scr refresh
-                Presentation_image_1_f1.setAutoDraw(False)
+                Presentation_image_2_f1_1.tStop = t  # not accounting for scr refresh
+                Presentation_image_2_f1_1.frameNStop = frameN  # exact frame index
+                win.timeOnFlip(Presentation_image_2_f1_1, 'tStopRefresh')  # time at next scr refresh
+                Presentation_image_2_f1_1.setAutoDraw(False)
         
-        # *Presentation_image_2_f1* updates
-        if Presentation_image_2_f1.status == NOT_STARTED and tThisFlip >= 2.0-frameTolerance:
+        # *Presentation_image_3_f1_1* updates
+        if Presentation_image_3_f1_1.status == NOT_STARTED and tThisFlip >= 2.0-frameTolerance:
             # keep track of start time/frame for later
-            Presentation_image_2_f1.frameNStart = frameN  # exact frame index
-            Presentation_image_2_f1.tStart = t  # local t and not account for scr refresh
-            Presentation_image_2_f1.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(Presentation_image_2_f1, 'tStartRefresh')  # time at next scr refresh
-            Presentation_image_2_f1.setAutoDraw(True)
-        if Presentation_image_2_f1.status == STARTED:
+            Presentation_image_3_f1_1.frameNStart = frameN  # exact frame index
+            Presentation_image_3_f1_1.tStart = t  # local t and not account for scr refresh
+            Presentation_image_3_f1_1.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(Presentation_image_3_f1_1, 'tStartRefresh')  # time at next scr refresh
+            Presentation_image_3_f1_1.setAutoDraw(True)
+        if Presentation_image_3_f1_1.status == STARTED:
             # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > Presentation_image_2_f1.tStartRefresh + 1.0-frameTolerance:
+            if tThisFlipGlobal > Presentation_image_3_f1_1.tStartRefresh + 1.0-frameTolerance:
                 # keep track of stop time/frame for later
-                Presentation_image_2_f1.tStop = t  # not accounting for scr refresh
-                Presentation_image_2_f1.frameNStop = frameN  # exact frame index
-                win.timeOnFlip(Presentation_image_2_f1, 'tStopRefresh')  # time at next scr refresh
-                Presentation_image_2_f1.setAutoDraw(False)
+                Presentation_image_3_f1_1.tStop = t  # not accounting for scr refresh
+                Presentation_image_3_f1_1.frameNStop = frameN  # exact frame index
+                win.timeOnFlip(Presentation_image_3_f1_1, 'tStopRefresh')  # time at next scr refresh
+                Presentation_image_3_f1_1.setAutoDraw(False)
         
-        # *Presentation_image_3_f1* updates
-        if Presentation_image_3_f1.status == NOT_STARTED and tThisFlip >= 3.0-frameTolerance:
+        # *Presentation_image_4_f1_1* updates
+        if Presentation_image_4_f1_1.status == NOT_STARTED and tThisFlip >= 3.0-frameTolerance:
             # keep track of start time/frame for later
-            Presentation_image_3_f1.frameNStart = frameN  # exact frame index
-            Presentation_image_3_f1.tStart = t  # local t and not account for scr refresh
-            Presentation_image_3_f1.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(Presentation_image_3_f1, 'tStartRefresh')  # time at next scr refresh
-            Presentation_image_3_f1.setAutoDraw(True)
-        if Presentation_image_3_f1.status == STARTED:
+            Presentation_image_4_f1_1.frameNStart = frameN  # exact frame index
+            Presentation_image_4_f1_1.tStart = t  # local t and not account for scr refresh
+            Presentation_image_4_f1_1.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(Presentation_image_4_f1_1, 'tStartRefresh')  # time at next scr refresh
+            Presentation_image_4_f1_1.setAutoDraw(True)
+        if Presentation_image_4_f1_1.status == STARTED:
             # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > Presentation_image_3_f1.tStartRefresh + 1.0-frameTolerance:
+            if tThisFlipGlobal > Presentation_image_4_f1_1.tStartRefresh + 1.0-frameTolerance:
                 # keep track of stop time/frame for later
-                Presentation_image_3_f1.tStop = t  # not accounting for scr refresh
-                Presentation_image_3_f1.frameNStop = frameN  # exact frame index
-                win.timeOnFlip(Presentation_image_3_f1, 'tStopRefresh')  # time at next scr refresh
-                Presentation_image_3_f1.setAutoDraw(False)
-        
-        # *Presentation_image_4_f1* updates
-        if Presentation_image_4_f1.status == NOT_STARTED and tThisFlip >= 4.0-frameTolerance:
-            # keep track of start time/frame for later
-            Presentation_image_4_f1.frameNStart = frameN  # exact frame index
-            Presentation_image_4_f1.tStart = t  # local t and not account for scr refresh
-            Presentation_image_4_f1.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(Presentation_image_4_f1, 'tStartRefresh')  # time at next scr refresh
-            Presentation_image_4_f1.setAutoDraw(True)
-        if Presentation_image_4_f1.status == STARTED:
-            # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > Presentation_image_4_f1.tStartRefresh + 1.0-frameTolerance:
-                # keep track of stop time/frame for later
-                Presentation_image_4_f1.tStop = t  # not accounting for scr refresh
-                Presentation_image_4_f1.frameNStop = frameN  # exact frame index
-                win.timeOnFlip(Presentation_image_4_f1, 'tStopRefresh')  # time at next scr refresh
-                Presentation_image_4_f1.setAutoDraw(False)
+                Presentation_image_4_f1_1.tStop = t  # not accounting for scr refresh
+                Presentation_image_4_f1_1.frameNStop = frameN  # exact frame index
+                win.timeOnFlip(Presentation_image_4_f1_1, 'tStopRefresh')  # time at next scr refresh
+                Presentation_image_4_f1_1.setAutoDraw(False)
         
         # check for quit (typically the Esc key)
         if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
@@ -1910,18 +3570,16 @@ for thisBlock_three in block_three:
     for thisComponent in rsvp_f1Components:
         if hasattr(thisComponent, "setAutoDraw"):
             thisComponent.setAutoDraw(False)
-    block_three.addData('Cross.started', Cross.tStartRefresh)
-    block_three.addData('Cross.stopped', Cross.tStopRefresh)
-    block_three.addData('Presentation_image_1_f1.started', Presentation_image_1_f1.tStartRefresh)
-    block_three.addData('Presentation_image_1_f1.stopped', Presentation_image_1_f1.tStopRefresh)
-    block_three.addData('Presentation_image_2_f1.started', Presentation_image_2_f1.tStartRefresh)
-    block_three.addData('Presentation_image_2_f1.stopped', Presentation_image_2_f1.tStopRefresh)
-    block_three.addData('Presentation_image_3_f1.started', Presentation_image_3_f1.tStartRefresh)
-    block_three.addData('Presentation_image_3_f1.stopped', Presentation_image_3_f1.tStopRefresh)
-    block_three.addData('Presentation_image_4_f1.started', Presentation_image_4_f1.tStartRefresh)
-    block_three.addData('Presentation_image_4_f1.stopped', Presentation_image_4_f1.tStopRefresh)
+    block_three.addData('Presentation_image_1_f1_1.started', Presentation_image_1_f1_1.tStartRefresh)
+    block_three.addData('Presentation_image_1_f1_1.stopped', Presentation_image_1_f1_1.tStopRefresh)
+    block_three.addData('Presentation_image_2_f1_1.started', Presentation_image_2_f1_1.tStartRefresh)
+    block_three.addData('Presentation_image_2_f1_1.stopped', Presentation_image_2_f1_1.tStopRefresh)
+    block_three.addData('Presentation_image_3_f1_1.started', Presentation_image_3_f1_1.tStartRefresh)
+    block_three.addData('Presentation_image_3_f1_1.stopped', Presentation_image_3_f1_1.tStopRefresh)
+    block_three.addData('Presentation_image_4_f1_1.started', Presentation_image_4_f1_1.tStartRefresh)
+    block_three.addData('Presentation_image_4_f1_1.stopped', Presentation_image_4_f1_1.tStopRefresh)
     
-    # ------Prepare to start Routine "trial"-------
+    # ------Prepare to start Routine "choice"-------
     continueRoutine = True
     # update component parameters for each repeat
     Topleft.setImage(imageTL)
@@ -1932,8 +3590,8 @@ for thisBlock_three in block_three:
     key_resp.rt = []
     _key_resp_allKeys = []
     # keep track of which components have finished
-    trialComponents = [Fixation_cross, Topleft, Topright, Bottomleft, Bottomright, key_resp]
-    for thisComponent in trialComponents:
+    choiceComponents = [Fixation_cross, Topleft, Topright, Bottomleft, Bottomright, key_resp]
+    for thisComponent in choiceComponents:
         thisComponent.tStart = None
         thisComponent.tStop = None
         thisComponent.tStartRefresh = None
@@ -1943,14 +3601,14 @@ for thisBlock_three in block_three:
     # reset timers
     t = 0
     _timeToFirstFrame = win.getFutureFlipTime(clock="now")
-    trialClock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
+    choiceClock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
     frameN = -1
     
-    # -------Run Routine "trial"-------
+    # -------Run Routine "choice"-------
     while continueRoutine:
         # get current time
-        t = trialClock.getTime()
-        tThisFlip = win.getFutureFlipTime(clock=trialClock)
+        t = choiceClock.getTime()
+        tThisFlip = win.getFutureFlipTime(clock=choiceClock)
         tThisFlipGlobal = win.getFutureFlipTime(clock=None)
         frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
         # update/draw components on each frame
@@ -2073,7 +3731,7 @@ for thisBlock_three in block_three:
         if not continueRoutine:  # a component has requested a forced-end of Routine
             break
         continueRoutine = False  # will revert to True if at least one component still running
-        for thisComponent in trialComponents:
+        for thisComponent in choiceComponents:
             if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
                 continueRoutine = True
                 break  # at least one component has not yet finished
@@ -2082,8 +3740,8 @@ for thisBlock_three in block_three:
         if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
             win.flip()
     
-    # -------Ending Routine "trial"-------
-    for thisComponent in trialComponents:
+    # -------Ending Routine "choice"-------
+    for thisComponent in choiceComponents:
         if hasattr(thisComponent, "setAutoDraw"):
             thisComponent.setAutoDraw(False)
     block_three.addData('Fixation_cross.started', Fixation_cross.tStartRefresh)
@@ -2111,7 +3769,7 @@ for thisBlock_three in block_three:
         block_three.addData('key_resp.rt', key_resp.rt)
     block_three.addData('key_resp.started', key_resp.tStart)
     block_three.addData('key_resp.stopped', key_resp.tStop)
-    # the Routine "trial" was not non-slip safe, so reset the non-slip timer
+    # the Routine "choice" was not non-slip safe, so reset the non-slip timer
     routineTimer.reset()
     thisExp.nextEntry()
     
@@ -2226,14 +3884,14 @@ for thisBlock_four in block_four:
     
     # ------Prepare to start Routine "rsvp_f1"-------
     continueRoutine = True
-    routineTimer.add(5.000000)
+    routineTimer.add(4.000000)
     # update component parameters for each repeat
-    Presentation_image_1_f1.setImage(imageone)
-    Presentation_image_2_f1.setImage(imagetwo)
-    Presentation_image_3_f1.setImage(imagethree)
-    Presentation_image_4_f1.setImage(imagefour)
+    Presentation_image_1_f1_1.setImage(imageone)
+    Presentation_image_2_f1_1.setImage(imagetwo)
+    Presentation_image_3_f1_1.setImage(imagethree)
+    Presentation_image_4_f1_1.setImage(imagefour)
     # keep track of which components have finished
-    rsvp_f1Components = [Cross, Presentation_image_1_f1, Presentation_image_2_f1, Presentation_image_3_f1, Presentation_image_4_f1]
+    rsvp_f1Components = [Presentation_image_1_f1_1, Presentation_image_2_f1_1, Presentation_image_3_f1_1, Presentation_image_4_f1_1]
     for thisComponent in rsvp_f1Components:
         thisComponent.tStart = None
         thisComponent.tStop = None
@@ -2256,90 +3914,73 @@ for thisBlock_four in block_four:
         frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
         # update/draw components on each frame
         
-        # *Cross* updates
-        if Cross.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+        # *Presentation_image_1_f1_1* updates
+        if Presentation_image_1_f1_1.status == NOT_STARTED and tThisFlip >= 0-frameTolerance:
             # keep track of start time/frame for later
-            Cross.frameNStart = frameN  # exact frame index
-            Cross.tStart = t  # local t and not account for scr refresh
-            Cross.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(Cross, 'tStartRefresh')  # time at next scr refresh
-            Cross.setAutoDraw(True)
-        if Cross.status == STARTED:
+            Presentation_image_1_f1_1.frameNStart = frameN  # exact frame index
+            Presentation_image_1_f1_1.tStart = t  # local t and not account for scr refresh
+            Presentation_image_1_f1_1.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(Presentation_image_1_f1_1, 'tStartRefresh')  # time at next scr refresh
+            Presentation_image_1_f1_1.setAutoDraw(True)
+        if Presentation_image_1_f1_1.status == STARTED:
             # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > Cross.tStartRefresh + 1.0-frameTolerance:
+            if tThisFlipGlobal > Presentation_image_1_f1_1.tStartRefresh + 1.0-frameTolerance:
                 # keep track of stop time/frame for later
-                Cross.tStop = t  # not accounting for scr refresh
-                Cross.frameNStop = frameN  # exact frame index
-                win.timeOnFlip(Cross, 'tStopRefresh')  # time at next scr refresh
-                Cross.setAutoDraw(False)
+                Presentation_image_1_f1_1.tStop = t  # not accounting for scr refresh
+                Presentation_image_1_f1_1.frameNStop = frameN  # exact frame index
+                win.timeOnFlip(Presentation_image_1_f1_1, 'tStopRefresh')  # time at next scr refresh
+                Presentation_image_1_f1_1.setAutoDraw(False)
         
-        # *Presentation_image_1_f1* updates
-        if Presentation_image_1_f1.status == NOT_STARTED and tThisFlip >= 1.0-frameTolerance:
+        # *Presentation_image_2_f1_1* updates
+        if Presentation_image_2_f1_1.status == NOT_STARTED and tThisFlip >= 1.0-frameTolerance:
             # keep track of start time/frame for later
-            Presentation_image_1_f1.frameNStart = frameN  # exact frame index
-            Presentation_image_1_f1.tStart = t  # local t and not account for scr refresh
-            Presentation_image_1_f1.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(Presentation_image_1_f1, 'tStartRefresh')  # time at next scr refresh
-            Presentation_image_1_f1.setAutoDraw(True)
-        if Presentation_image_1_f1.status == STARTED:
+            Presentation_image_2_f1_1.frameNStart = frameN  # exact frame index
+            Presentation_image_2_f1_1.tStart = t  # local t and not account for scr refresh
+            Presentation_image_2_f1_1.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(Presentation_image_2_f1_1, 'tStartRefresh')  # time at next scr refresh
+            Presentation_image_2_f1_1.setAutoDraw(True)
+        if Presentation_image_2_f1_1.status == STARTED:
             # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > Presentation_image_1_f1.tStartRefresh + 1.0-frameTolerance:
+            if tThisFlipGlobal > Presentation_image_2_f1_1.tStartRefresh + 1.0-frameTolerance:
                 # keep track of stop time/frame for later
-                Presentation_image_1_f1.tStop = t  # not accounting for scr refresh
-                Presentation_image_1_f1.frameNStop = frameN  # exact frame index
-                win.timeOnFlip(Presentation_image_1_f1, 'tStopRefresh')  # time at next scr refresh
-                Presentation_image_1_f1.setAutoDraw(False)
+                Presentation_image_2_f1_1.tStop = t  # not accounting for scr refresh
+                Presentation_image_2_f1_1.frameNStop = frameN  # exact frame index
+                win.timeOnFlip(Presentation_image_2_f1_1, 'tStopRefresh')  # time at next scr refresh
+                Presentation_image_2_f1_1.setAutoDraw(False)
         
-        # *Presentation_image_2_f1* updates
-        if Presentation_image_2_f1.status == NOT_STARTED and tThisFlip >= 2.0-frameTolerance:
+        # *Presentation_image_3_f1_1* updates
+        if Presentation_image_3_f1_1.status == NOT_STARTED and tThisFlip >= 2.0-frameTolerance:
             # keep track of start time/frame for later
-            Presentation_image_2_f1.frameNStart = frameN  # exact frame index
-            Presentation_image_2_f1.tStart = t  # local t and not account for scr refresh
-            Presentation_image_2_f1.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(Presentation_image_2_f1, 'tStartRefresh')  # time at next scr refresh
-            Presentation_image_2_f1.setAutoDraw(True)
-        if Presentation_image_2_f1.status == STARTED:
+            Presentation_image_3_f1_1.frameNStart = frameN  # exact frame index
+            Presentation_image_3_f1_1.tStart = t  # local t and not account for scr refresh
+            Presentation_image_3_f1_1.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(Presentation_image_3_f1_1, 'tStartRefresh')  # time at next scr refresh
+            Presentation_image_3_f1_1.setAutoDraw(True)
+        if Presentation_image_3_f1_1.status == STARTED:
             # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > Presentation_image_2_f1.tStartRefresh + 1.0-frameTolerance:
+            if tThisFlipGlobal > Presentation_image_3_f1_1.tStartRefresh + 1.0-frameTolerance:
                 # keep track of stop time/frame for later
-                Presentation_image_2_f1.tStop = t  # not accounting for scr refresh
-                Presentation_image_2_f1.frameNStop = frameN  # exact frame index
-                win.timeOnFlip(Presentation_image_2_f1, 'tStopRefresh')  # time at next scr refresh
-                Presentation_image_2_f1.setAutoDraw(False)
+                Presentation_image_3_f1_1.tStop = t  # not accounting for scr refresh
+                Presentation_image_3_f1_1.frameNStop = frameN  # exact frame index
+                win.timeOnFlip(Presentation_image_3_f1_1, 'tStopRefresh')  # time at next scr refresh
+                Presentation_image_3_f1_1.setAutoDraw(False)
         
-        # *Presentation_image_3_f1* updates
-        if Presentation_image_3_f1.status == NOT_STARTED and tThisFlip >= 3.0-frameTolerance:
+        # *Presentation_image_4_f1_1* updates
+        if Presentation_image_4_f1_1.status == NOT_STARTED and tThisFlip >= 3.0-frameTolerance:
             # keep track of start time/frame for later
-            Presentation_image_3_f1.frameNStart = frameN  # exact frame index
-            Presentation_image_3_f1.tStart = t  # local t and not account for scr refresh
-            Presentation_image_3_f1.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(Presentation_image_3_f1, 'tStartRefresh')  # time at next scr refresh
-            Presentation_image_3_f1.setAutoDraw(True)
-        if Presentation_image_3_f1.status == STARTED:
+            Presentation_image_4_f1_1.frameNStart = frameN  # exact frame index
+            Presentation_image_4_f1_1.tStart = t  # local t and not account for scr refresh
+            Presentation_image_4_f1_1.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(Presentation_image_4_f1_1, 'tStartRefresh')  # time at next scr refresh
+            Presentation_image_4_f1_1.setAutoDraw(True)
+        if Presentation_image_4_f1_1.status == STARTED:
             # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > Presentation_image_3_f1.tStartRefresh + 1.0-frameTolerance:
+            if tThisFlipGlobal > Presentation_image_4_f1_1.tStartRefresh + 1.0-frameTolerance:
                 # keep track of stop time/frame for later
-                Presentation_image_3_f1.tStop = t  # not accounting for scr refresh
-                Presentation_image_3_f1.frameNStop = frameN  # exact frame index
-                win.timeOnFlip(Presentation_image_3_f1, 'tStopRefresh')  # time at next scr refresh
-                Presentation_image_3_f1.setAutoDraw(False)
-        
-        # *Presentation_image_4_f1* updates
-        if Presentation_image_4_f1.status == NOT_STARTED and tThisFlip >= 4.0-frameTolerance:
-            # keep track of start time/frame for later
-            Presentation_image_4_f1.frameNStart = frameN  # exact frame index
-            Presentation_image_4_f1.tStart = t  # local t and not account for scr refresh
-            Presentation_image_4_f1.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(Presentation_image_4_f1, 'tStartRefresh')  # time at next scr refresh
-            Presentation_image_4_f1.setAutoDraw(True)
-        if Presentation_image_4_f1.status == STARTED:
-            # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > Presentation_image_4_f1.tStartRefresh + 1.0-frameTolerance:
-                # keep track of stop time/frame for later
-                Presentation_image_4_f1.tStop = t  # not accounting for scr refresh
-                Presentation_image_4_f1.frameNStop = frameN  # exact frame index
-                win.timeOnFlip(Presentation_image_4_f1, 'tStopRefresh')  # time at next scr refresh
-                Presentation_image_4_f1.setAutoDraw(False)
+                Presentation_image_4_f1_1.tStop = t  # not accounting for scr refresh
+                Presentation_image_4_f1_1.frameNStop = frameN  # exact frame index
+                win.timeOnFlip(Presentation_image_4_f1_1, 'tStopRefresh')  # time at next scr refresh
+                Presentation_image_4_f1_1.setAutoDraw(False)
         
         # check for quit (typically the Esc key)
         if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
@@ -2362,18 +4003,16 @@ for thisBlock_four in block_four:
     for thisComponent in rsvp_f1Components:
         if hasattr(thisComponent, "setAutoDraw"):
             thisComponent.setAutoDraw(False)
-    block_four.addData('Cross.started', Cross.tStartRefresh)
-    block_four.addData('Cross.stopped', Cross.tStopRefresh)
-    block_four.addData('Presentation_image_1_f1.started', Presentation_image_1_f1.tStartRefresh)
-    block_four.addData('Presentation_image_1_f1.stopped', Presentation_image_1_f1.tStopRefresh)
-    block_four.addData('Presentation_image_2_f1.started', Presentation_image_2_f1.tStartRefresh)
-    block_four.addData('Presentation_image_2_f1.stopped', Presentation_image_2_f1.tStopRefresh)
-    block_four.addData('Presentation_image_3_f1.started', Presentation_image_3_f1.tStartRefresh)
-    block_four.addData('Presentation_image_3_f1.stopped', Presentation_image_3_f1.tStopRefresh)
-    block_four.addData('Presentation_image_4_f1.started', Presentation_image_4_f1.tStartRefresh)
-    block_four.addData('Presentation_image_4_f1.stopped', Presentation_image_4_f1.tStopRefresh)
+    block_four.addData('Presentation_image_1_f1_1.started', Presentation_image_1_f1_1.tStartRefresh)
+    block_four.addData('Presentation_image_1_f1_1.stopped', Presentation_image_1_f1_1.tStopRefresh)
+    block_four.addData('Presentation_image_2_f1_1.started', Presentation_image_2_f1_1.tStartRefresh)
+    block_four.addData('Presentation_image_2_f1_1.stopped', Presentation_image_2_f1_1.tStopRefresh)
+    block_four.addData('Presentation_image_3_f1_1.started', Presentation_image_3_f1_1.tStartRefresh)
+    block_four.addData('Presentation_image_3_f1_1.stopped', Presentation_image_3_f1_1.tStopRefresh)
+    block_four.addData('Presentation_image_4_f1_1.started', Presentation_image_4_f1_1.tStartRefresh)
+    block_four.addData('Presentation_image_4_f1_1.stopped', Presentation_image_4_f1_1.tStopRefresh)
     
-    # ------Prepare to start Routine "trial"-------
+    # ------Prepare to start Routine "choice"-------
     continueRoutine = True
     # update component parameters for each repeat
     Topleft.setImage(imageTL)
@@ -2384,8 +4023,8 @@ for thisBlock_four in block_four:
     key_resp.rt = []
     _key_resp_allKeys = []
     # keep track of which components have finished
-    trialComponents = [Fixation_cross, Topleft, Topright, Bottomleft, Bottomright, key_resp]
-    for thisComponent in trialComponents:
+    choiceComponents = [Fixation_cross, Topleft, Topright, Bottomleft, Bottomright, key_resp]
+    for thisComponent in choiceComponents:
         thisComponent.tStart = None
         thisComponent.tStop = None
         thisComponent.tStartRefresh = None
@@ -2395,14 +4034,14 @@ for thisBlock_four in block_four:
     # reset timers
     t = 0
     _timeToFirstFrame = win.getFutureFlipTime(clock="now")
-    trialClock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
+    choiceClock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
     frameN = -1
     
-    # -------Run Routine "trial"-------
+    # -------Run Routine "choice"-------
     while continueRoutine:
         # get current time
-        t = trialClock.getTime()
-        tThisFlip = win.getFutureFlipTime(clock=trialClock)
+        t = choiceClock.getTime()
+        tThisFlip = win.getFutureFlipTime(clock=choiceClock)
         tThisFlipGlobal = win.getFutureFlipTime(clock=None)
         frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
         # update/draw components on each frame
@@ -2525,7 +4164,7 @@ for thisBlock_four in block_four:
         if not continueRoutine:  # a component has requested a forced-end of Routine
             break
         continueRoutine = False  # will revert to True if at least one component still running
-        for thisComponent in trialComponents:
+        for thisComponent in choiceComponents:
             if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
                 continueRoutine = True
                 break  # at least one component has not yet finished
@@ -2534,8 +4173,8 @@ for thisBlock_four in block_four:
         if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
             win.flip()
     
-    # -------Ending Routine "trial"-------
-    for thisComponent in trialComponents:
+    # -------Ending Routine "choice"-------
+    for thisComponent in choiceComponents:
         if hasattr(thisComponent, "setAutoDraw"):
             thisComponent.setAutoDraw(False)
     block_four.addData('Fixation_cross.started', Fixation_cross.tStartRefresh)
@@ -2563,7 +4202,7 @@ for thisBlock_four in block_four:
         block_four.addData('key_resp.rt', key_resp.rt)
     block_four.addData('key_resp.started', key_resp.tStart)
     block_four.addData('key_resp.stopped', key_resp.tStop)
-    # the Routine "trial" was not non-slip safe, so reset the non-slip timer
+    # the Routine "choice" was not non-slip safe, so reset the non-slip timer
     routineTimer.reset()
     thisExp.nextEntry()
     
