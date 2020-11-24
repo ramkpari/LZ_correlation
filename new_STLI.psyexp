@@ -1423,7 +1423,7 @@
       <Param name="random seed" updates="None" val="" valType="code"/>
     </LoopInitiator>
     <Routine name="Cross_and_control"/>
-    <LoopInitiator loopType="TrialHandler" name="fone_control">
+    <LoopInitiator loopType="TrialHandler" name="fone_control_b1">
       <Param name="Selected rows" updates="None" val="" valType="str"/>
       <Param name="conditions" updates="None" val="None" valType="str"/>
       <Param name="conditionsFile" updates="None" val="" valType="str"/>
@@ -1431,12 +1431,12 @@
       <Param name="isTrials" updates="None" val="True" valType="bool"/>
       <Param name="loopType" updates="None" val="sequential" valType="str"/>
       <Param name="nReps" updates="None" val="$dofone" valType="code"/>
-      <Param name="name" updates="None" val="fone_control" valType="code"/>
+      <Param name="name" updates="None" val="fone_control_b1" valType="code"/>
       <Param name="random seed" updates="None" val="" valType="code"/>
     </LoopInitiator>
     <Routine name="rsvp_f1"/>
-    <LoopTerminator name="fone_control"/>
-    <LoopInitiator loopType="TrialHandler" name="ftwo_control">
+    <LoopTerminator name="fone_control_b1"/>
+    <LoopInitiator loopType="TrialHandler" name="ftwo_control_b1">
       <Param name="Selected rows" updates="None" val="" valType="str"/>
       <Param name="conditions" updates="None" val="None" valType="str"/>
       <Param name="conditionsFile" updates="None" val="" valType="str"/>
@@ -1444,12 +1444,12 @@
       <Param name="isTrials" updates="None" val="True" valType="bool"/>
       <Param name="loopType" updates="None" val="sequential" valType="str"/>
       <Param name="nReps" updates="None" val="$doftwo" valType="code"/>
-      <Param name="name" updates="None" val="ftwo_control" valType="code"/>
+      <Param name="name" updates="None" val="ftwo_control_b1" valType="code"/>
       <Param name="random seed" updates="None" val="" valType="code"/>
     </LoopInitiator>
     <Routine name="rsvp_f2"/>
-    <LoopTerminator name="ftwo_control"/>
-    <LoopInitiator loopType="TrialHandler" name="fthree_control">
+    <LoopTerminator name="ftwo_control_b1"/>
+    <LoopInitiator loopType="TrialHandler" name="fthree_control_b1">
       <Param name="Selected rows" updates="None" val="" valType="str"/>
       <Param name="conditions" updates="None" val="None" valType="str"/>
       <Param name="conditionsFile" updates="None" val="" valType="str"/>
@@ -1457,12 +1457,12 @@
       <Param name="isTrials" updates="None" val="True" valType="bool"/>
       <Param name="loopType" updates="None" val="sequential" valType="str"/>
       <Param name="nReps" updates="None" val="$dofthree" valType="code"/>
-      <Param name="name" updates="None" val="fthree_control" valType="code"/>
+      <Param name="name" updates="None" val="fthree_control_b1" valType="code"/>
       <Param name="random seed" updates="None" val="" valType="code"/>
     </LoopInitiator>
     <Routine name="rsvp_f3"/>
-    <LoopTerminator name="fthree_control"/>
-    <LoopInitiator loopType="TrialHandler" name="ffour_control">
+    <LoopTerminator name="fthree_control_b1"/>
+    <LoopInitiator loopType="TrialHandler" name="ffour_control_b1">
       <Param name="Selected rows" updates="None" val="" valType="str"/>
       <Param name="conditions" updates="None" val="None" valType="str"/>
       <Param name="conditionsFile" updates="None" val="" valType="str"/>
@@ -1470,11 +1470,11 @@
       <Param name="isTrials" updates="None" val="True" valType="bool"/>
       <Param name="loopType" updates="None" val="sequential" valType="str"/>
       <Param name="nReps" updates="None" val="$doffour" valType="code"/>
-      <Param name="name" updates="None" val="ffour_control" valType="code"/>
+      <Param name="name" updates="None" val="ffour_control_b1" valType="code"/>
       <Param name="random seed" updates="None" val="" valType="code"/>
     </LoopInitiator>
     <Routine name="rsvp_f4"/>
-    <LoopTerminator name="ffour_control"/>
+    <LoopTerminator name="ffour_control_b1"/>
     <Routine name="choice"/>
     <LoopTerminator name="block_one"/>
     <Routine name="Break"/>
@@ -1489,9 +1489,59 @@
       <Param name="name" updates="None" val="block_two" valType="code"/>
       <Param name="random seed" updates="None" val="" valType="code"/>
     </LoopInitiator>
+    <Routine name="Cross_and_control"/>
+    <LoopInitiator loopType="TrialHandler" name="fone_control_b2">
+      <Param name="Selected rows" updates="None" val="" valType="str"/>
+      <Param name="conditions" updates="None" val="None" valType="str"/>
+      <Param name="conditionsFile" updates="None" val="" valType="str"/>
+      <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
+      <Param name="isTrials" updates="None" val="True" valType="bool"/>
+      <Param name="loopType" updates="None" val="random" valType="str"/>
+      <Param name="nReps" updates="None" val="$dofone" valType="code"/>
+      <Param name="name" updates="None" val="fone_control_b2" valType="code"/>
+      <Param name="random seed" updates="None" val="" valType="code"/>
+    </LoopInitiator>
     <Routine name="rsvp_f1"/>
+    <LoopTerminator name="fone_control_b2"/>
+    <LoopInitiator loopType="TrialHandler" name="ftwo_control_b2">
+      <Param name="Selected rows" updates="None" val="" valType="str"/>
+      <Param name="conditions" updates="None" val="None" valType="str"/>
+      <Param name="conditionsFile" updates="None" val="" valType="str"/>
+      <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
+      <Param name="isTrials" updates="None" val="True" valType="bool"/>
+      <Param name="loopType" updates="None" val="sequential" valType="str"/>
+      <Param name="nReps" updates="None" val="$doftwo" valType="code"/>
+      <Param name="name" updates="None" val="ftwo_control_b2" valType="code"/>
+      <Param name="random seed" updates="None" val="" valType="code"/>
+    </LoopInitiator>
     <Routine name="rsvp_f2"/>
+    <LoopTerminator name="ftwo_control_b2"/>
+    <LoopInitiator loopType="TrialHandler" name="fthree_control_b2">
+      <Param name="Selected rows" updates="None" val="" valType="str"/>
+      <Param name="conditions" updates="None" val="None" valType="str"/>
+      <Param name="conditionsFile" updates="None" val="" valType="str"/>
+      <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
+      <Param name="isTrials" updates="None" val="True" valType="bool"/>
+      <Param name="loopType" updates="None" val="sequential" valType="str"/>
+      <Param name="nReps" updates="None" val="$dofthree" valType="code"/>
+      <Param name="name" updates="None" val="fthree_control_b2" valType="code"/>
+      <Param name="random seed" updates="None" val="" valType="code"/>
+    </LoopInitiator>
     <Routine name="rsvp_f3"/>
+    <LoopTerminator name="fthree_control_b2"/>
+    <LoopInitiator loopType="TrialHandler" name="ffour_control_b2">
+      <Param name="Selected rows" updates="None" val="" valType="str"/>
+      <Param name="conditions" updates="None" val="None" valType="str"/>
+      <Param name="conditionsFile" updates="None" val="" valType="str"/>
+      <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
+      <Param name="isTrials" updates="None" val="True" valType="bool"/>
+      <Param name="loopType" updates="None" val="sequential" valType="str"/>
+      <Param name="nReps" updates="None" val="$doffour" valType="code"/>
+      <Param name="name" updates="None" val="ffour_control_b2" valType="code"/>
+      <Param name="random seed" updates="None" val="" valType="code"/>
+    </LoopInitiator>
+    <Routine name="rsvp_f4"/>
+    <LoopTerminator name="ffour_control_b2"/>
     <Routine name="choice"/>
     <LoopTerminator name="block_two"/>
     <Routine name="Break"/>
@@ -1506,7 +1556,59 @@
       <Param name="name" updates="None" val="block_three" valType="code"/>
       <Param name="random seed" updates="None" val="" valType="code"/>
     </LoopInitiator>
+    <Routine name="Cross_and_control"/>
+    <LoopInitiator loopType="TrialHandler" name="fone_control_b3">
+      <Param name="Selected rows" updates="None" val="" valType="str"/>
+      <Param name="conditions" updates="None" val="None" valType="str"/>
+      <Param name="conditionsFile" updates="None" val="" valType="str"/>
+      <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
+      <Param name="isTrials" updates="None" val="True" valType="bool"/>
+      <Param name="loopType" updates="None" val="sequential" valType="str"/>
+      <Param name="nReps" updates="None" val="$dofone" valType="code"/>
+      <Param name="name" updates="None" val="fone_control_b3" valType="code"/>
+      <Param name="random seed" updates="None" val="" valType="code"/>
+    </LoopInitiator>
     <Routine name="rsvp_f1"/>
+    <LoopTerminator name="fone_control_b3"/>
+    <LoopInitiator loopType="TrialHandler" name="ftwo_control_b3">
+      <Param name="Selected rows" updates="None" val="" valType="str"/>
+      <Param name="conditions" updates="None" val="None" valType="str"/>
+      <Param name="conditionsFile" updates="None" val="" valType="str"/>
+      <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
+      <Param name="isTrials" updates="None" val="True" valType="bool"/>
+      <Param name="loopType" updates="None" val="sequential" valType="str"/>
+      <Param name="nReps" updates="None" val="$doftwo" valType="code"/>
+      <Param name="name" updates="None" val="ftwo_control_b3" valType="code"/>
+      <Param name="random seed" updates="None" val="" valType="code"/>
+    </LoopInitiator>
+    <Routine name="rsvp_f2"/>
+    <LoopTerminator name="ftwo_control_b3"/>
+    <LoopInitiator loopType="TrialHandler" name="fthree_control_b3">
+      <Param name="Selected rows" updates="None" val="" valType="str"/>
+      <Param name="conditions" updates="None" val="None" valType="str"/>
+      <Param name="conditionsFile" updates="None" val="" valType="str"/>
+      <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
+      <Param name="isTrials" updates="None" val="True" valType="bool"/>
+      <Param name="loopType" updates="None" val="random" valType="str"/>
+      <Param name="nReps" updates="None" val="$dofthree" valType="code"/>
+      <Param name="name" updates="None" val="fthree_control_b3" valType="code"/>
+      <Param name="random seed" updates="None" val="" valType="code"/>
+    </LoopInitiator>
+    <Routine name="rsvp_f3"/>
+    <LoopTerminator name="fthree_control_b3"/>
+    <LoopInitiator loopType="TrialHandler" name="ffour_control_b3">
+      <Param name="Selected rows" updates="None" val="" valType="str"/>
+      <Param name="conditions" updates="None" val="None" valType="str"/>
+      <Param name="conditionsFile" updates="None" val="" valType="str"/>
+      <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
+      <Param name="isTrials" updates="None" val="True" valType="bool"/>
+      <Param name="loopType" updates="None" val="sequential" valType="str"/>
+      <Param name="nReps" updates="None" val="$doffour" valType="code"/>
+      <Param name="name" updates="None" val="ffour_control_b3" valType="code"/>
+      <Param name="random seed" updates="None" val="" valType="code"/>
+    </LoopInitiator>
+    <Routine name="rsvp_f4"/>
+    <LoopTerminator name="ffour_control_b3"/>
     <Routine name="choice"/>
     <LoopTerminator name="block_three"/>
     <Routine name="Break"/>
@@ -1521,7 +1623,59 @@
       <Param name="name" updates="None" val="block_four" valType="code"/>
       <Param name="random seed" updates="None" val="" valType="code"/>
     </LoopInitiator>
+    <Routine name="Cross_and_control"/>
+    <LoopInitiator loopType="TrialHandler" name="fone_control_b4">
+      <Param name="Selected rows" updates="None" val="" valType="str"/>
+      <Param name="conditions" updates="None" val="None" valType="str"/>
+      <Param name="conditionsFile" updates="None" val="" valType="str"/>
+      <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
+      <Param name="isTrials" updates="None" val="True" valType="bool"/>
+      <Param name="loopType" updates="None" val="random" valType="str"/>
+      <Param name="nReps" updates="None" val="$dofone" valType="code"/>
+      <Param name="name" updates="None" val="fone_control_b4" valType="code"/>
+      <Param name="random seed" updates="None" val="" valType="code"/>
+    </LoopInitiator>
     <Routine name="rsvp_f1"/>
+    <LoopTerminator name="fone_control_b4"/>
+    <LoopInitiator loopType="TrialHandler" name="ftwo_control_b4">
+      <Param name="Selected rows" updates="None" val="" valType="str"/>
+      <Param name="conditions" updates="None" val="None" valType="str"/>
+      <Param name="conditionsFile" updates="None" val="" valType="str"/>
+      <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
+      <Param name="isTrials" updates="None" val="True" valType="bool"/>
+      <Param name="loopType" updates="None" val="sequential" valType="str"/>
+      <Param name="nReps" updates="None" val="$doftwo" valType="code"/>
+      <Param name="name" updates="None" val="ftwo_control_b4" valType="code"/>
+      <Param name="random seed" updates="None" val="" valType="code"/>
+    </LoopInitiator>
+    <Routine name="rsvp_f2"/>
+    <LoopTerminator name="ftwo_control_b4"/>
+    <LoopInitiator loopType="TrialHandler" name="fthree_control_b4">
+      <Param name="Selected rows" updates="None" val="" valType="str"/>
+      <Param name="conditions" updates="None" val="None" valType="str"/>
+      <Param name="conditionsFile" updates="None" val="" valType="str"/>
+      <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
+      <Param name="isTrials" updates="None" val="True" valType="bool"/>
+      <Param name="loopType" updates="None" val="random" valType="str"/>
+      <Param name="nReps" updates="None" val="$dofthree" valType="code"/>
+      <Param name="name" updates="None" val="fthree_control_b4" valType="code"/>
+      <Param name="random seed" updates="None" val="" valType="code"/>
+    </LoopInitiator>
+    <Routine name="rsvp_f3"/>
+    <LoopTerminator name="fthree_control_b4"/>
+    <LoopInitiator loopType="TrialHandler" name="ffour_control_b4">
+      <Param name="Selected rows" updates="None" val="" valType="str"/>
+      <Param name="conditions" updates="None" val="None" valType="str"/>
+      <Param name="conditionsFile" updates="None" val="" valType="str"/>
+      <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
+      <Param name="isTrials" updates="None" val="True" valType="bool"/>
+      <Param name="loopType" updates="None" val="sequential" valType="str"/>
+      <Param name="nReps" updates="None" val="$doffour" valType="code"/>
+      <Param name="name" updates="None" val="ffour_control_b4" valType="code"/>
+      <Param name="random seed" updates="None" val="" valType="code"/>
+    </LoopInitiator>
+    <Routine name="rsvp_f4"/>
+    <LoopTerminator name="ffour_control_b4"/>
     <Routine name="choice"/>
     <LoopTerminator name="block_four"/>
     <Routine name="End"/>
