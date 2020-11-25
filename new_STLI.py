@@ -1,8 +1,8 @@
-#!/usr/bin/env python
+﻿#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2020.2.4),
-    on November 24, 2020, at 00:54
+    on November 24, 2020, at 16:48
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -1811,6 +1811,9 @@ for thisBlock_one in block_one:
         doftwo = 0
         dofthree = 0
         doffour = 1
+        
+    # Copy updated EEG trigger codes every trial to enable custom trigger script
+    big_trigger = condition_code
     # keep track of which components have finished
     Cross_and_controlComponents = [Crossm]
     for thisComponent in Cross_and_controlComponents:
@@ -3298,6 +3301,9 @@ for thisBlock_two in block_two:
         doftwo = 0
         dofthree = 0
         doffour = 1
+        
+    # Copy updated EEG trigger codes every trial to enable custom trigger script
+    big_trigger = condition_code
     # keep track of which components have finished
     Cross_and_controlComponents = [Crossm]
     for thisComponent in Cross_and_controlComponents:
@@ -4785,6 +4791,9 @@ for thisBlock_three in block_three:
         doftwo = 0
         dofthree = 0
         doffour = 1
+        
+    # Copy updated EEG trigger codes every trial to enable custom trigger script
+    big_trigger = condition_code
     # keep track of which components have finished
     Cross_and_controlComponents = [Crossm]
     for thisComponent in Cross_and_controlComponents:
@@ -6272,6 +6281,9 @@ for thisBlock_four in block_four:
         doftwo = 0
         dofthree = 0
         doffour = 1
+        
+    # Copy updated EEG trigger codes every trial to enable custom trigger script
+    big_trigger = condition_code
     # keep track of which components have finished
     Cross_and_controlComponents = [Crossm]
     for thisComponent in Cross_and_controlComponents:
