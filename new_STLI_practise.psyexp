@@ -24,7 +24,7 @@
     <Param name="Show mouse" updates="None" val="False" valType="bool"/>
     <Param name="Units" updates="None" val="height" valType="str"/>
     <Param name="Use version" updates="None" val="" valType="str"/>
-    <Param name="Window size (pixels)" updates="None" val="[1680, 1050]" valType="code"/>
+    <Param name="Window size (pixels)" updates="None" val="[1920, 1080]" valType="code"/>
     <Param name="blendMode" updates="None" val="avg" valType="str"/>
     <Param name="color" updates="None" val="$[0,0,0]" valType="str"/>
     <Param name="colorSpace" updates="None" val="rgb" valType="str"/>
@@ -250,7 +250,7 @@
       </ImageComponent>
       <ParallelOutComponent name="EEG_trigger_f1">
         <Param name="address" updates="None" val="0xD010" valType="str"/>
-        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="disabled" updates="None" val="True" valType="bool"/>
         <Param name="durationEstim" updates="None" val="" valType="code"/>
         <Param name="name" updates="None" val="EEG_trigger_f1" valType="code"/>
         <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
@@ -613,7 +613,7 @@
       </ImageComponent>
       <ParallelOutComponent name="EEG_trigger_f2">
         <Param name="address" updates="None" val="0xD010" valType="str"/>
-        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="disabled" updates="None" val="True" valType="bool"/>
         <Param name="durationEstim" updates="None" val="" valType="code"/>
         <Param name="name" updates="None" val="EEG_trigger_f2" valType="code"/>
         <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
@@ -931,7 +931,7 @@
       </ImageComponent>
       <ParallelOutComponent name="EEG_trigger_f3">
         <Param name="address" updates="None" val="0xD010" valType="str"/>
-        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="disabled" updates="None" val="True" valType="bool"/>
         <Param name="durationEstim" updates="None" val="" valType="code"/>
         <Param name="name" updates="None" val="EEG_trigger_f3" valType="code"/>
         <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
