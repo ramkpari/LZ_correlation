@@ -1,0 +1,5 @@
+library(rmarkdown)
+library(tidyverse)
+library(knitr)
+library(plyr)
+library(dplyr)
