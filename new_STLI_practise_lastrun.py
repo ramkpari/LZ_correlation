@@ -1,8 +1,8 @@
 ﻿#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """
-This experiment was created using PsychoPy3 Experiment Builder (v2020.2.9),
-    on December 04, 2020, at 02:22
+This experiment was created using PsychoPy3 Experiment Builder (v2020.2.10),
+    on December 07, 2020, at 02:50
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -35,7 +35,7 @@ _thisDir = os.path.dirname(os.path.abspath(__file__))
 os.chdir(_thisDir)
 
 # Store info about the experiment session
-psychopyVersion = '2020.2.9'
+psychopyVersion = '2020.2.10'
 expName = 'new_STLI_practise'  # from the Builder filename that created this script
 expInfo = {'participant': '', 'session': '001'}
 dlg = gui.DlgFromDict(dictionary=expInfo, sortKeys=False, title=expName)
@@ -65,7 +65,7 @@ frameTolerance = 0.001  # how close to onset before 'same' frame
 
 # Setup the Window
 win = visual.Window(
-    size=[1680, 1050], fullscr=True, screen=0, 
+    size=[1920, 1080], fullscr=True, screen=0, 
     winType='pyglet', allowGUI=False, allowStencil=False,
     monitor='testMonitor', color=[0,0,0], colorSpace='rgb',
     blendMode='avg', useFBO=True, 
@@ -1244,7 +1244,7 @@ routineTimer.reset()
 # set up handler to look after randomisation of conditions etc
 block_one = data.TrialHandler(nReps=1, method='sequential', 
     extraInfo=expInfo, originPath=-1,
-    trialList=data.importConditions('stim_present_data_block_1.csv'),
+    trialList=data.importConditions('stim_practise_data_block_1.csv'),
     seed=None, name='block_one')
 thisExp.addLoop(block_one)  # add the loop to the experiment
 thisBlock_one = block_one.trialList[0]  # so we can initialise stimuli with some values

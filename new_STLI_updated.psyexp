@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" ?>
-<PsychoPy2experiment encoding="utf-8" version="2020.2.5">
+<PsychoPy2experiment encoding="utf-8" version="2020.2.9">
   <Settings>
     <Param name="Audio latency priority" updates="None" val="use prefs" valType="str"/>
     <Param name="Audio lib" updates="None" val="use prefs" valType="str"/>
@@ -250,7 +250,7 @@
       </ImageComponent>
       <ParallelOutComponent name="EEG_trigger_f1">
         <Param name="address" updates="None" val="0xD010" valType="str"/>
-        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="disabled" updates="None" val="True" valType="bool"/>
         <Param name="durationEstim" updates="None" val="" valType="code"/>
         <Param name="name" updates="None" val="EEG_trigger_f1" valType="code"/>
         <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
@@ -613,7 +613,7 @@
       </ImageComponent>
       <ParallelOutComponent name="EEG_trigger_f2">
         <Param name="address" updates="None" val="0xD010" valType="str"/>
-        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="disabled" updates="None" val="True" valType="bool"/>
         <Param name="durationEstim" updates="None" val="" valType="code"/>
         <Param name="name" updates="None" val="EEG_trigger_f2" valType="code"/>
         <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
@@ -931,7 +931,7 @@
       </ImageComponent>
       <ParallelOutComponent name="EEG_trigger_f3">
         <Param name="address" updates="None" val="0xD010" valType="str"/>
-        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="disabled" updates="None" val="True" valType="bool"/>
         <Param name="durationEstim" updates="None" val="" valType="code"/>
         <Param name="name" updates="None" val="EEG_trigger_f3" valType="code"/>
         <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
@@ -1393,7 +1393,7 @@
       </ImageComponent>
       <ParallelOutComponent name="EEG_trigger_f4">
         <Param name="address" updates="None" val="0xD010" valType="str"/>
-        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="disabled" updates="None" val="True" valType="bool"/>
         <Param name="durationEstim" updates="None" val="" valType="code"/>
         <Param name="name" updates="None" val="EEG_trigger_f4" valType="code"/>
         <Param name="saveStartStop" updates="None" val="True" valType="bool"/>

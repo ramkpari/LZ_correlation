@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2020.2.9),
-    on December 03, 2020, at 14:04
+    on December 06, 2020, at 18:57
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -135,7 +135,6 @@ Presentation_image_f1_4 = visual.ImageStim(
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
     texRes=128, interpolate=True, depth=-3.0)
-EEG_trigger_f1 = parallel.ParallelPort(address='0xD010')
 
 # Initialize components for Routine "rsvp_f2"
 rsvp_f2Clock = core.Clock()
@@ -203,7 +202,6 @@ Presentation_image_f2_8 = visual.ImageStim(
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
     texRes=128, interpolate=True, depth=-7.0)
-EEG_trigger_f2 = parallel.ParallelPort(address='0xD010')
 
 # Initialize components for Routine "rsvp_f3"
 rsvp_f3Clock = core.Clock()
@@ -303,7 +301,6 @@ Presentation_image_f3_12 = visual.ImageStim(
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
     texRes=128, interpolate=True, depth=-11.0)
-EEG_trigger_f3 = parallel.ParallelPort(address='0xD010')
 
 # Initialize components for Routine "rsvp_f4"
 rsvp_f4Clock = core.Clock()
@@ -435,7 +432,6 @@ Presentation_image_f4_16 = visual.ImageStim(
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
     texRes=128, interpolate=True, depth=-15.0)
-EEG_trigger_f4 = parallel.ParallelPort(address='0xD010')
 
 # Initialize components for Routine "choice"
 choiceClock = core.Clock()
@@ -535,7 +531,6 @@ Presentation_image_f1_4 = visual.ImageStim(
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
     texRes=128, interpolate=True, depth=-3.0)
-EEG_trigger_f1 = parallel.ParallelPort(address='0xD010')
 
 # Initialize components for Routine "rsvp_f2"
 rsvp_f2Clock = core.Clock()
@@ -603,7 +598,6 @@ Presentation_image_f2_8 = visual.ImageStim(
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
     texRes=128, interpolate=True, depth=-7.0)
-EEG_trigger_f2 = parallel.ParallelPort(address='0xD010')
 
 # Initialize components for Routine "rsvp_f3"
 rsvp_f3Clock = core.Clock()
@@ -703,7 +697,6 @@ Presentation_image_f3_12 = visual.ImageStim(
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
     texRes=128, interpolate=True, depth=-11.0)
-EEG_trigger_f3 = parallel.ParallelPort(address='0xD010')
 
 # Initialize components for Routine "rsvp_f4"
 rsvp_f4Clock = core.Clock()
@@ -835,7 +828,6 @@ Presentation_image_f4_16 = visual.ImageStim(
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
     texRes=128, interpolate=True, depth=-15.0)
-EEG_trigger_f4 = parallel.ParallelPort(address='0xD010')
 
 # Initialize components for Routine "choice"
 choiceClock = core.Clock()
@@ -935,7 +927,6 @@ Presentation_image_f1_4 = visual.ImageStim(
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
     texRes=128, interpolate=True, depth=-3.0)
-EEG_trigger_f1 = parallel.ParallelPort(address='0xD010')
 
 # Initialize components for Routine "rsvp_f2"
 rsvp_f2Clock = core.Clock()
@@ -1003,7 +994,6 @@ Presentation_image_f2_8 = visual.ImageStim(
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
     texRes=128, interpolate=True, depth=-7.0)
-EEG_trigger_f2 = parallel.ParallelPort(address='0xD010')
 
 # Initialize components for Routine "rsvp_f3"
 rsvp_f3Clock = core.Clock()
@@ -1103,7 +1093,6 @@ Presentation_image_f3_12 = visual.ImageStim(
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
     texRes=128, interpolate=True, depth=-11.0)
-EEG_trigger_f3 = parallel.ParallelPort(address='0xD010')
 
 # Initialize components for Routine "rsvp_f4"
 rsvp_f4Clock = core.Clock()
@@ -1235,7 +1224,6 @@ Presentation_image_f4_16 = visual.ImageStim(
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
     texRes=128, interpolate=True, depth=-15.0)
-EEG_trigger_f4 = parallel.ParallelPort(address='0xD010')
 
 # Initialize components for Routine "choice"
 choiceClock = core.Clock()
@@ -1335,7 +1323,6 @@ Presentation_image_f1_4 = visual.ImageStim(
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
     texRes=128, interpolate=True, depth=-3.0)
-EEG_trigger_f1 = parallel.ParallelPort(address='0xD010')
 
 # Initialize components for Routine "rsvp_f2"
 rsvp_f2Clock = core.Clock()
@@ -1403,7 +1390,6 @@ Presentation_image_f2_8 = visual.ImageStim(
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
     texRes=128, interpolate=True, depth=-7.0)
-EEG_trigger_f2 = parallel.ParallelPort(address='0xD010')
 
 # Initialize components for Routine "rsvp_f3"
 rsvp_f3Clock = core.Clock()
@@ -1503,7 +1489,6 @@ Presentation_image_f3_12 = visual.ImageStim(
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
     texRes=128, interpolate=True, depth=-11.0)
-EEG_trigger_f3 = parallel.ParallelPort(address='0xD010')
 
 # Initialize components for Routine "rsvp_f4"
 rsvp_f4Clock = core.Clock()
@@ -1635,7 +1620,6 @@ Presentation_image_f4_16 = visual.ImageStim(
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
     texRes=128, interpolate=True, depth=-15.0)
-EEG_trigger_f4 = parallel.ParallelPort(address='0xD010')
 
 # Initialize components for Routine "choice"
 choiceClock = core.Clock()
@@ -1920,7 +1904,7 @@ for thisBlock_one in block_one:
         Presentation_image_f1_3.setImage(imagethree)
         Presentation_image_f1_4.setImage(imagefour)
         # keep track of which components have finished
-        rsvp_f1Components = [Presentation_image_f1_1, Presentation_image_f1_2, Presentation_image_f1_3, Presentation_image_f1_4, EEG_trigger_f1]
+        rsvp_f1Components = [Presentation_image_f1_1, Presentation_image_f1_2, Presentation_image_f1_3, Presentation_image_f1_4]
         for thisComponent in rsvp_f1Components:
             thisComponent.tStart = None
             thisComponent.tStop = None
@@ -2010,24 +1994,6 @@ for thisBlock_one in block_one:
                     Presentation_image_f1_4.frameNStop = frameN  # exact frame index
                     win.timeOnFlip(Presentation_image_f1_4, 'tStopRefresh')  # time at next scr refresh
                     Presentation_image_f1_4.setAutoDraw(False)
-            # *EEG_trigger_f1* updates
-            if EEG_trigger_f1.status == NOT_STARTED and tThisFlip >= 0-frameTolerance:
-                # keep track of start time/frame for later
-                EEG_trigger_f1.frameNStart = frameN  # exact frame index
-                EEG_trigger_f1.tStart = t  # local t and not account for scr refresh
-                EEG_trigger_f1.tStartRefresh = tThisFlipGlobal  # on global time
-                win.timeOnFlip(EEG_trigger_f1, 'tStartRefresh')  # time at next scr refresh
-                EEG_trigger_f1.status = STARTED
-                win.callOnFlip(EEG_trigger_f1.setData, int(condition_code))
-            if EEG_trigger_f1.status == STARTED:
-                # is it time to stop? (based on global clock, using actual start)
-                if tThisFlipGlobal > EEG_trigger_f1.tStartRefresh + 4-frameTolerance:
-                    # keep track of stop time/frame for later
-                    EEG_trigger_f1.tStop = t  # not accounting for scr refresh
-                    EEG_trigger_f1.frameNStop = frameN  # exact frame index
-                    win.timeOnFlip(EEG_trigger_f1, 'tStopRefresh')  # time at next scr refresh
-                    EEG_trigger_f1.status = FINISHED
-                    win.callOnFlip(EEG_trigger_f1.setData, int(0))
             
             # check for quit (typically the Esc key)
             if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
@@ -2058,10 +2024,6 @@ for thisBlock_one in block_one:
         fone_control_b1.addData('Presentation_image_f1_3.stopped', Presentation_image_f1_3.tStopRefresh)
         fone_control_b1.addData('Presentation_image_f1_4.started', Presentation_image_f1_4.tStartRefresh)
         fone_control_b1.addData('Presentation_image_f1_4.stopped', Presentation_image_f1_4.tStopRefresh)
-        if EEG_trigger_f1.status == STARTED:
-            win.callOnFlip(EEG_trigger_f1.setData, int(0))
-        fone_control_b1.addData('EEG_trigger_f1.started', EEG_trigger_f1.tStartRefresh)
-        fone_control_b1.addData('EEG_trigger_f1.stopped', EEG_trigger_f1.tStopRefresh)
         thisExp.nextEntry()
         
     # completed dofone repeats of 'fone_control_b1'
@@ -2088,7 +2050,7 @@ for thisBlock_one in block_one:
         
         # ------Prepare to start Routine "rsvp_f2"-------
         continueRoutine = True
-        routineTimer.add(4.000000)
+        routineTimer.add(3.950000)
         # update component parameters for each repeat
         Presentation_image_f2_1.setImage(imageone)
         Presentation_image_f2_2.setImage(imagetwo)
@@ -2099,7 +2061,7 @@ for thisBlock_one in block_one:
         Presentation_image_f2_7.setImage(imageseven)
         Presentation_image_f2_8.setImage(imageeight)
         # keep track of which components have finished
-        rsvp_f2Components = [Presentation_image_f2_1, Presentation_image_f2_2, Presentation_image_f2_3, Presentation_image_f2_4, Presentation_image_f2_5, Presentation_image_f2_6, Presentation_image_f2_7, Presentation_image_f2_8, EEG_trigger_f2]
+        rsvp_f2Components = [Presentation_image_f2_1, Presentation_image_f2_2, Presentation_image_f2_3, Presentation_image_f2_4, Presentation_image_f2_5, Presentation_image_f2_6, Presentation_image_f2_7, Presentation_image_f2_8]
         for thisComponent in rsvp_f2Components:
             thisComponent.tStart = None
             thisComponent.tStop = None
@@ -2257,24 +2219,6 @@ for thisBlock_one in block_one:
                     Presentation_image_f2_8.frameNStop = frameN  # exact frame index
                     win.timeOnFlip(Presentation_image_f2_8, 'tStopRefresh')  # time at next scr refresh
                     Presentation_image_f2_8.setAutoDraw(False)
-            # *EEG_trigger_f2* updates
-            if EEG_trigger_f2.status == NOT_STARTED and tThisFlip >= 0-frameTolerance:
-                # keep track of start time/frame for later
-                EEG_trigger_f2.frameNStart = frameN  # exact frame index
-                EEG_trigger_f2.tStart = t  # local t and not account for scr refresh
-                EEG_trigger_f2.tStartRefresh = tThisFlipGlobal  # on global time
-                win.timeOnFlip(EEG_trigger_f2, 'tStartRefresh')  # time at next scr refresh
-                EEG_trigger_f2.status = STARTED
-                win.callOnFlip(EEG_trigger_f2.setData, int(condition_code))
-            if EEG_trigger_f2.status == STARTED:
-                # is it time to stop? (based on global clock, using actual start)
-                if tThisFlipGlobal > EEG_trigger_f2.tStartRefresh + 4-frameTolerance:
-                    # keep track of stop time/frame for later
-                    EEG_trigger_f2.tStop = t  # not accounting for scr refresh
-                    EEG_trigger_f2.frameNStop = frameN  # exact frame index
-                    win.timeOnFlip(EEG_trigger_f2, 'tStopRefresh')  # time at next scr refresh
-                    EEG_trigger_f2.status = FINISHED
-                    win.callOnFlip(EEG_trigger_f2.setData, int(0))
             
             # check for quit (typically the Esc key)
             if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
@@ -2313,10 +2257,6 @@ for thisBlock_one in block_one:
         ftwo_control_b1.addData('Presentation_image_f2_7.stopped', Presentation_image_f2_7.tStopRefresh)
         ftwo_control_b1.addData('Presentation_image_f2_8.started', Presentation_image_f2_8.tStartRefresh)
         ftwo_control_b1.addData('Presentation_image_f2_8.stopped', Presentation_image_f2_8.tStopRefresh)
-        if EEG_trigger_f2.status == STARTED:
-            win.callOnFlip(EEG_trigger_f2.setData, int(0))
-        ftwo_control_b1.addData('EEG_trigger_f2.started', EEG_trigger_f2.tStartRefresh)
-        ftwo_control_b1.addData('EEG_trigger_f2.stopped', EEG_trigger_f2.tStopRefresh)
         thisExp.nextEntry()
         
     # completed doftwo repeats of 'ftwo_control_b1'
@@ -2358,7 +2298,7 @@ for thisBlock_one in block_one:
         Presentation_image_f3_11.setImage(imageeleven)
         Presentation_image_f3_12.setImage(imagetwelve)
         # keep track of which components have finished
-        rsvp_f3Components = [Presentation_image_f3_1, Presentation_image_f3_2, Presentation_image_f3_3, Presentation_image_f3_4, Presentation_image_f3_5, Presentation_image_f3_6, Presentation_image_f3_7, Presentation_image_f3_8, Presentation_image_f3_9, Presentation_image_f3_10, Presentation_image_f3_11, Presentation_image_f3_12, EEG_trigger_f3]
+        rsvp_f3Components = [Presentation_image_f3_1, Presentation_image_f3_2, Presentation_image_f3_3, Presentation_image_f3_4, Presentation_image_f3_5, Presentation_image_f3_6, Presentation_image_f3_7, Presentation_image_f3_8, Presentation_image_f3_9, Presentation_image_f3_10, Presentation_image_f3_11, Presentation_image_f3_12]
         for thisComponent in rsvp_f3Components:
             thisComponent.tStart = None
             thisComponent.tStop = None
@@ -2584,24 +2524,6 @@ for thisBlock_one in block_one:
                     Presentation_image_f3_12.frameNStop = frameN  # exact frame index
                     win.timeOnFlip(Presentation_image_f3_12, 'tStopRefresh')  # time at next scr refresh
                     Presentation_image_f3_12.setAutoDraw(False)
-            # *EEG_trigger_f3* updates
-            if EEG_trigger_f3.status == NOT_STARTED and tThisFlip >= 0-frameTolerance:
-                # keep track of start time/frame for later
-                EEG_trigger_f3.frameNStart = frameN  # exact frame index
-                EEG_trigger_f3.tStart = t  # local t and not account for scr refresh
-                EEG_trigger_f3.tStartRefresh = tThisFlipGlobal  # on global time
-                win.timeOnFlip(EEG_trigger_f3, 'tStartRefresh')  # time at next scr refresh
-                EEG_trigger_f3.status = STARTED
-                win.callOnFlip(EEG_trigger_f3.setData, int(condition_code))
-            if EEG_trigger_f3.status == STARTED:
-                # is it time to stop? (based on global clock, using actual start)
-                if tThisFlipGlobal > EEG_trigger_f3.tStartRefresh + 4-frameTolerance:
-                    # keep track of stop time/frame for later
-                    EEG_trigger_f3.tStop = t  # not accounting for scr refresh
-                    EEG_trigger_f3.frameNStop = frameN  # exact frame index
-                    win.timeOnFlip(EEG_trigger_f3, 'tStopRefresh')  # time at next scr refresh
-                    EEG_trigger_f3.status = FINISHED
-                    win.callOnFlip(EEG_trigger_f3.setData, int(0))
             
             # check for quit (typically the Esc key)
             if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
@@ -2648,10 +2570,6 @@ for thisBlock_one in block_one:
         fthree_control_b1.addData('Presentation_image_f3_11.stopped', Presentation_image_f3_11.tStopRefresh)
         fthree_control_b1.addData('Presentation_image_f3_12.started', Presentation_image_f3_12.tStartRefresh)
         fthree_control_b1.addData('Presentation_image_f3_12.stopped', Presentation_image_f3_12.tStopRefresh)
-        if EEG_trigger_f3.status == STARTED:
-            win.callOnFlip(EEG_trigger_f3.setData, int(0))
-        fthree_control_b1.addData('EEG_trigger_f3.started', EEG_trigger_f3.tStartRefresh)
-        fthree_control_b1.addData('EEG_trigger_f3.stopped', EEG_trigger_f3.tStopRefresh)
         thisExp.nextEntry()
         
     # completed dofthree repeats of 'fthree_control_b1'
@@ -2678,7 +2596,7 @@ for thisBlock_one in block_one:
         
         # ------Prepare to start Routine "rsvp_f4"-------
         continueRoutine = True
-        routineTimer.add(4.000000)
+        routineTimer.add(3.950000)
         # update component parameters for each repeat
         Presentation_image_f4_1.setImage(imageone)
         Presentation_image_f4_2.setImage(imagetwo)
@@ -2697,7 +2615,7 @@ for thisBlock_one in block_one:
         Presentation_image_f4_15.setImage(imagefifteen)
         Presentation_image_f4_16.setImage(imagesixteen)
         # keep track of which components have finished
-        rsvp_f4Components = [Presentation_image_f4_1, Presentation_image_f4_2, Presentation_image_f4_3, Presentation_image_f4_4, Presentation_image_f4_5, Presentation_image_f4_6, Presentation_image_f4_7, Presentation_image_f4_8, Presentation_image_f4_9, Presentation_image_f4_10, Presentation_image_f4_11, Presentation_image_f4_12, Presentation_image_f4_13, Presentation_image_f3_14, Presentation_image_f4_15, Presentation_image_f4_16, EEG_trigger_f4]
+        rsvp_f4Components = [Presentation_image_f4_1, Presentation_image_f4_2, Presentation_image_f4_3, Presentation_image_f4_4, Presentation_image_f4_5, Presentation_image_f4_6, Presentation_image_f4_7, Presentation_image_f4_8, Presentation_image_f4_9, Presentation_image_f4_10, Presentation_image_f4_11, Presentation_image_f4_12, Presentation_image_f4_13, Presentation_image_f3_14, Presentation_image_f4_15, Presentation_image_f4_16]
         for thisComponent in rsvp_f4Components:
             thisComponent.tStart = None
             thisComponent.tStop = None
@@ -2991,24 +2909,6 @@ for thisBlock_one in block_one:
                     Presentation_image_f4_16.frameNStop = frameN  # exact frame index
                     win.timeOnFlip(Presentation_image_f4_16, 'tStopRefresh')  # time at next scr refresh
                     Presentation_image_f4_16.setAutoDraw(False)
-            # *EEG_trigger_f4* updates
-            if EEG_trigger_f4.status == NOT_STARTED and tThisFlip >= 0-frameTolerance:
-                # keep track of start time/frame for later
-                EEG_trigger_f4.frameNStart = frameN  # exact frame index
-                EEG_trigger_f4.tStart = t  # local t and not account for scr refresh
-                EEG_trigger_f4.tStartRefresh = tThisFlipGlobal  # on global time
-                win.timeOnFlip(EEG_trigger_f4, 'tStartRefresh')  # time at next scr refresh
-                EEG_trigger_f4.status = STARTED
-                win.callOnFlip(EEG_trigger_f4.setData, int(condition_code))
-            if EEG_trigger_f4.status == STARTED:
-                # is it time to stop? (based on global clock, using actual start)
-                if tThisFlipGlobal > EEG_trigger_f4.tStartRefresh + 4-frameTolerance:
-                    # keep track of stop time/frame for later
-                    EEG_trigger_f4.tStop = t  # not accounting for scr refresh
-                    EEG_trigger_f4.frameNStop = frameN  # exact frame index
-                    win.timeOnFlip(EEG_trigger_f4, 'tStopRefresh')  # time at next scr refresh
-                    EEG_trigger_f4.status = FINISHED
-                    win.callOnFlip(EEG_trigger_f4.setData, int(0))
             
             # check for quit (typically the Esc key)
             if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
@@ -3063,10 +2963,6 @@ for thisBlock_one in block_one:
         ffour_control_b1.addData('Presentation_image_f4_15.stopped', Presentation_image_f4_15.tStopRefresh)
         ffour_control_b1.addData('Presentation_image_f4_16.started', Presentation_image_f4_16.tStartRefresh)
         ffour_control_b1.addData('Presentation_image_f4_16.stopped', Presentation_image_f4_16.tStopRefresh)
-        if EEG_trigger_f4.status == STARTED:
-            win.callOnFlip(EEG_trigger_f4.setData, int(0))
-        ffour_control_b1.addData('EEG_trigger_f4.started', EEG_trigger_f4.tStartRefresh)
-        ffour_control_b1.addData('EEG_trigger_f4.stopped', EEG_trigger_f4.tStopRefresh)
         thisExp.nextEntry()
         
     # completed doffour repeats of 'ffour_control_b1'
@@ -3495,7 +3391,7 @@ for thisBlock_two in block_two:
         Presentation_image_f1_3.setImage(imagethree)
         Presentation_image_f1_4.setImage(imagefour)
         # keep track of which components have finished
-        rsvp_f1Components = [Presentation_image_f1_1, Presentation_image_f1_2, Presentation_image_f1_3, Presentation_image_f1_4, EEG_trigger_f1]
+        rsvp_f1Components = [Presentation_image_f1_1, Presentation_image_f1_2, Presentation_image_f1_3, Presentation_image_f1_4]
         for thisComponent in rsvp_f1Components:
             thisComponent.tStart = None
             thisComponent.tStop = None
@@ -3585,24 +3481,6 @@ for thisBlock_two in block_two:
                     Presentation_image_f1_4.frameNStop = frameN  # exact frame index
                     win.timeOnFlip(Presentation_image_f1_4, 'tStopRefresh')  # time at next scr refresh
                     Presentation_image_f1_4.setAutoDraw(False)
-            # *EEG_trigger_f1* updates
-            if EEG_trigger_f1.status == NOT_STARTED and tThisFlip >= 0-frameTolerance:
-                # keep track of start time/frame for later
-                EEG_trigger_f1.frameNStart = frameN  # exact frame index
-                EEG_trigger_f1.tStart = t  # local t and not account for scr refresh
-                EEG_trigger_f1.tStartRefresh = tThisFlipGlobal  # on global time
-                win.timeOnFlip(EEG_trigger_f1, 'tStartRefresh')  # time at next scr refresh
-                EEG_trigger_f1.status = STARTED
-                win.callOnFlip(EEG_trigger_f1.setData, int(condition_code))
-            if EEG_trigger_f1.status == STARTED:
-                # is it time to stop? (based on global clock, using actual start)
-                if tThisFlipGlobal > EEG_trigger_f1.tStartRefresh + 4-frameTolerance:
-                    # keep track of stop time/frame for later
-                    EEG_trigger_f1.tStop = t  # not accounting for scr refresh
-                    EEG_trigger_f1.frameNStop = frameN  # exact frame index
-                    win.timeOnFlip(EEG_trigger_f1, 'tStopRefresh')  # time at next scr refresh
-                    EEG_trigger_f1.status = FINISHED
-                    win.callOnFlip(EEG_trigger_f1.setData, int(0))
             
             # check for quit (typically the Esc key)
             if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
@@ -3633,10 +3511,6 @@ for thisBlock_two in block_two:
         fone_control_b2.addData('Presentation_image_f1_3.stopped', Presentation_image_f1_3.tStopRefresh)
         fone_control_b2.addData('Presentation_image_f1_4.started', Presentation_image_f1_4.tStartRefresh)
         fone_control_b2.addData('Presentation_image_f1_4.stopped', Presentation_image_f1_4.tStopRefresh)
-        if EEG_trigger_f1.status == STARTED:
-            win.callOnFlip(EEG_trigger_f1.setData, int(0))
-        fone_control_b2.addData('EEG_trigger_f1.started', EEG_trigger_f1.tStartRefresh)
-        fone_control_b2.addData('EEG_trigger_f1.stopped', EEG_trigger_f1.tStopRefresh)
         thisExp.nextEntry()
         
     # completed dofone repeats of 'fone_control_b2'
@@ -3663,7 +3537,7 @@ for thisBlock_two in block_two:
         
         # ------Prepare to start Routine "rsvp_f2"-------
         continueRoutine = True
-        routineTimer.add(4.000000)
+        routineTimer.add(3.950000)
         # update component parameters for each repeat
         Presentation_image_f2_1.setImage(imageone)
         Presentation_image_f2_2.setImage(imagetwo)
@@ -3674,7 +3548,7 @@ for thisBlock_two in block_two:
         Presentation_image_f2_7.setImage(imageseven)
         Presentation_image_f2_8.setImage(imageeight)
         # keep track of which components have finished
-        rsvp_f2Components = [Presentation_image_f2_1, Presentation_image_f2_2, Presentation_image_f2_3, Presentation_image_f2_4, Presentation_image_f2_5, Presentation_image_f2_6, Presentation_image_f2_7, Presentation_image_f2_8, EEG_trigger_f2]
+        rsvp_f2Components = [Presentation_image_f2_1, Presentation_image_f2_2, Presentation_image_f2_3, Presentation_image_f2_4, Presentation_image_f2_5, Presentation_image_f2_6, Presentation_image_f2_7, Presentation_image_f2_8]
         for thisComponent in rsvp_f2Components:
             thisComponent.tStart = None
             thisComponent.tStop = None
@@ -3832,24 +3706,6 @@ for thisBlock_two in block_two:
                     Presentation_image_f2_8.frameNStop = frameN  # exact frame index
                     win.timeOnFlip(Presentation_image_f2_8, 'tStopRefresh')  # time at next scr refresh
                     Presentation_image_f2_8.setAutoDraw(False)
-            # *EEG_trigger_f2* updates
-            if EEG_trigger_f2.status == NOT_STARTED and tThisFlip >= 0-frameTolerance:
-                # keep track of start time/frame for later
-                EEG_trigger_f2.frameNStart = frameN  # exact frame index
-                EEG_trigger_f2.tStart = t  # local t and not account for scr refresh
-                EEG_trigger_f2.tStartRefresh = tThisFlipGlobal  # on global time
-                win.timeOnFlip(EEG_trigger_f2, 'tStartRefresh')  # time at next scr refresh
-                EEG_trigger_f2.status = STARTED
-                win.callOnFlip(EEG_trigger_f2.setData, int(condition_code))
-            if EEG_trigger_f2.status == STARTED:
-                # is it time to stop? (based on global clock, using actual start)
-                if tThisFlipGlobal > EEG_trigger_f2.tStartRefresh + 4-frameTolerance:
-                    # keep track of stop time/frame for later
-                    EEG_trigger_f2.tStop = t  # not accounting for scr refresh
-                    EEG_trigger_f2.frameNStop = frameN  # exact frame index
-                    win.timeOnFlip(EEG_trigger_f2, 'tStopRefresh')  # time at next scr refresh
-                    EEG_trigger_f2.status = FINISHED
-                    win.callOnFlip(EEG_trigger_f2.setData, int(0))
             
             # check for quit (typically the Esc key)
             if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
@@ -3888,10 +3744,6 @@ for thisBlock_two in block_two:
         ftwo_control_b2.addData('Presentation_image_f2_7.stopped', Presentation_image_f2_7.tStopRefresh)
         ftwo_control_b2.addData('Presentation_image_f2_8.started', Presentation_image_f2_8.tStartRefresh)
         ftwo_control_b2.addData('Presentation_image_f2_8.stopped', Presentation_image_f2_8.tStopRefresh)
-        if EEG_trigger_f2.status == STARTED:
-            win.callOnFlip(EEG_trigger_f2.setData, int(0))
-        ftwo_control_b2.addData('EEG_trigger_f2.started', EEG_trigger_f2.tStartRefresh)
-        ftwo_control_b2.addData('EEG_trigger_f2.stopped', EEG_trigger_f2.tStopRefresh)
         thisExp.nextEntry()
         
     # completed doftwo repeats of 'ftwo_control_b2'
@@ -3933,7 +3785,7 @@ for thisBlock_two in block_two:
         Presentation_image_f3_11.setImage(imageeleven)
         Presentation_image_f3_12.setImage(imagetwelve)
         # keep track of which components have finished
-        rsvp_f3Components = [Presentation_image_f3_1, Presentation_image_f3_2, Presentation_image_f3_3, Presentation_image_f3_4, Presentation_image_f3_5, Presentation_image_f3_6, Presentation_image_f3_7, Presentation_image_f3_8, Presentation_image_f3_9, Presentation_image_f3_10, Presentation_image_f3_11, Presentation_image_f3_12, EEG_trigger_f3]
+        rsvp_f3Components = [Presentation_image_f3_1, Presentation_image_f3_2, Presentation_image_f3_3, Presentation_image_f3_4, Presentation_image_f3_5, Presentation_image_f3_6, Presentation_image_f3_7, Presentation_image_f3_8, Presentation_image_f3_9, Presentation_image_f3_10, Presentation_image_f3_11, Presentation_image_f3_12]
         for thisComponent in rsvp_f3Components:
             thisComponent.tStart = None
             thisComponent.tStop = None
@@ -4159,24 +4011,6 @@ for thisBlock_two in block_two:
                     Presentation_image_f3_12.frameNStop = frameN  # exact frame index
                     win.timeOnFlip(Presentation_image_f3_12, 'tStopRefresh')  # time at next scr refresh
                     Presentation_image_f3_12.setAutoDraw(False)
-            # *EEG_trigger_f3* updates
-            if EEG_trigger_f3.status == NOT_STARTED and tThisFlip >= 0-frameTolerance:
-                # keep track of start time/frame for later
-                EEG_trigger_f3.frameNStart = frameN  # exact frame index
-                EEG_trigger_f3.tStart = t  # local t and not account for scr refresh
-                EEG_trigger_f3.tStartRefresh = tThisFlipGlobal  # on global time
-                win.timeOnFlip(EEG_trigger_f3, 'tStartRefresh')  # time at next scr refresh
-                EEG_trigger_f3.status = STARTED
-                win.callOnFlip(EEG_trigger_f3.setData, int(condition_code))
-            if EEG_trigger_f3.status == STARTED:
-                # is it time to stop? (based on global clock, using actual start)
-                if tThisFlipGlobal > EEG_trigger_f3.tStartRefresh + 4-frameTolerance:
-                    # keep track of stop time/frame for later
-                    EEG_trigger_f3.tStop = t  # not accounting for scr refresh
-                    EEG_trigger_f3.frameNStop = frameN  # exact frame index
-                    win.timeOnFlip(EEG_trigger_f3, 'tStopRefresh')  # time at next scr refresh
-                    EEG_trigger_f3.status = FINISHED
-                    win.callOnFlip(EEG_trigger_f3.setData, int(0))
             
             # check for quit (typically the Esc key)
             if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
@@ -4223,10 +4057,6 @@ for thisBlock_two in block_two:
         fthree_control_b2.addData('Presentation_image_f3_11.stopped', Presentation_image_f3_11.tStopRefresh)
         fthree_control_b2.addData('Presentation_image_f3_12.started', Presentation_image_f3_12.tStartRefresh)
         fthree_control_b2.addData('Presentation_image_f3_12.stopped', Presentation_image_f3_12.tStopRefresh)
-        if EEG_trigger_f3.status == STARTED:
-            win.callOnFlip(EEG_trigger_f3.setData, int(0))
-        fthree_control_b2.addData('EEG_trigger_f3.started', EEG_trigger_f3.tStartRefresh)
-        fthree_control_b2.addData('EEG_trigger_f3.stopped', EEG_trigger_f3.tStopRefresh)
         thisExp.nextEntry()
         
     # completed dofthree repeats of 'fthree_control_b2'
@@ -4253,7 +4083,7 @@ for thisBlock_two in block_two:
         
         # ------Prepare to start Routine "rsvp_f4"-------
         continueRoutine = True
-        routineTimer.add(4.000000)
+        routineTimer.add(3.950000)
         # update component parameters for each repeat
         Presentation_image_f4_1.setImage(imageone)
         Presentation_image_f4_2.setImage(imagetwo)
@@ -4272,7 +4102,7 @@ for thisBlock_two in block_two:
         Presentation_image_f4_15.setImage(imagefifteen)
         Presentation_image_f4_16.setImage(imagesixteen)
         # keep track of which components have finished
-        rsvp_f4Components = [Presentation_image_f4_1, Presentation_image_f4_2, Presentation_image_f4_3, Presentation_image_f4_4, Presentation_image_f4_5, Presentation_image_f4_6, Presentation_image_f4_7, Presentation_image_f4_8, Presentation_image_f4_9, Presentation_image_f4_10, Presentation_image_f4_11, Presentation_image_f4_12, Presentation_image_f4_13, Presentation_image_f3_14, Presentation_image_f4_15, Presentation_image_f4_16, EEG_trigger_f4]
+        rsvp_f4Components = [Presentation_image_f4_1, Presentation_image_f4_2, Presentation_image_f4_3, Presentation_image_f4_4, Presentation_image_f4_5, Presentation_image_f4_6, Presentation_image_f4_7, Presentation_image_f4_8, Presentation_image_f4_9, Presentation_image_f4_10, Presentation_image_f4_11, Presentation_image_f4_12, Presentation_image_f4_13, Presentation_image_f3_14, Presentation_image_f4_15, Presentation_image_f4_16]
         for thisComponent in rsvp_f4Components:
             thisComponent.tStart = None
             thisComponent.tStop = None
@@ -4566,24 +4396,6 @@ for thisBlock_two in block_two:
                     Presentation_image_f4_16.frameNStop = frameN  # exact frame index
                     win.timeOnFlip(Presentation_image_f4_16, 'tStopRefresh')  # time at next scr refresh
                     Presentation_image_f4_16.setAutoDraw(False)
-            # *EEG_trigger_f4* updates
-            if EEG_trigger_f4.status == NOT_STARTED and tThisFlip >= 0-frameTolerance:
-                # keep track of start time/frame for later
-                EEG_trigger_f4.frameNStart = frameN  # exact frame index
-                EEG_trigger_f4.tStart = t  # local t and not account for scr refresh
-                EEG_trigger_f4.tStartRefresh = tThisFlipGlobal  # on global time
-                win.timeOnFlip(EEG_trigger_f4, 'tStartRefresh')  # time at next scr refresh
-                EEG_trigger_f4.status = STARTED
-                win.callOnFlip(EEG_trigger_f4.setData, int(condition_code))
-            if EEG_trigger_f4.status == STARTED:
-                # is it time to stop? (based on global clock, using actual start)
-                if tThisFlipGlobal > EEG_trigger_f4.tStartRefresh + 4-frameTolerance:
-                    # keep track of stop time/frame for later
-                    EEG_trigger_f4.tStop = t  # not accounting for scr refresh
-                    EEG_trigger_f4.frameNStop = frameN  # exact frame index
-                    win.timeOnFlip(EEG_trigger_f4, 'tStopRefresh')  # time at next scr refresh
-                    EEG_trigger_f4.status = FINISHED
-                    win.callOnFlip(EEG_trigger_f4.setData, int(0))
             
             # check for quit (typically the Esc key)
             if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
@@ -4638,10 +4450,6 @@ for thisBlock_two in block_two:
         ffour_control_b2.addData('Presentation_image_f4_15.stopped', Presentation_image_f4_15.tStopRefresh)
         ffour_control_b2.addData('Presentation_image_f4_16.started', Presentation_image_f4_16.tStartRefresh)
         ffour_control_b2.addData('Presentation_image_f4_16.stopped', Presentation_image_f4_16.tStopRefresh)
-        if EEG_trigger_f4.status == STARTED:
-            win.callOnFlip(EEG_trigger_f4.setData, int(0))
-        ffour_control_b2.addData('EEG_trigger_f4.started', EEG_trigger_f4.tStartRefresh)
-        ffour_control_b2.addData('EEG_trigger_f4.stopped', EEG_trigger_f4.tStopRefresh)
         thisExp.nextEntry()
         
     # completed doffour repeats of 'ffour_control_b2'
@@ -5070,7 +4878,7 @@ for thisBlock_three in block_three:
         Presentation_image_f1_3.setImage(imagethree)
         Presentation_image_f1_4.setImage(imagefour)
         # keep track of which components have finished
-        rsvp_f1Components = [Presentation_image_f1_1, Presentation_image_f1_2, Presentation_image_f1_3, Presentation_image_f1_4, EEG_trigger_f1]
+        rsvp_f1Components = [Presentation_image_f1_1, Presentation_image_f1_2, Presentation_image_f1_3, Presentation_image_f1_4]
         for thisComponent in rsvp_f1Components:
             thisComponent.tStart = None
             thisComponent.tStop = None
@@ -5160,24 +4968,6 @@ for thisBlock_three in block_three:
                     Presentation_image_f1_4.frameNStop = frameN  # exact frame index
                     win.timeOnFlip(Presentation_image_f1_4, 'tStopRefresh')  # time at next scr refresh
                     Presentation_image_f1_4.setAutoDraw(False)
-            # *EEG_trigger_f1* updates
-            if EEG_trigger_f1.status == NOT_STARTED and tThisFlip >= 0-frameTolerance:
-                # keep track of start time/frame for later
-                EEG_trigger_f1.frameNStart = frameN  # exact frame index
-                EEG_trigger_f1.tStart = t  # local t and not account for scr refresh
-                EEG_trigger_f1.tStartRefresh = tThisFlipGlobal  # on global time
-                win.timeOnFlip(EEG_trigger_f1, 'tStartRefresh')  # time at next scr refresh
-                EEG_trigger_f1.status = STARTED
-                win.callOnFlip(EEG_trigger_f1.setData, int(condition_code))
-            if EEG_trigger_f1.status == STARTED:
-                # is it time to stop? (based on global clock, using actual start)
-                if tThisFlipGlobal > EEG_trigger_f1.tStartRefresh + 4-frameTolerance:
-                    # keep track of stop time/frame for later
-                    EEG_trigger_f1.tStop = t  # not accounting for scr refresh
-                    EEG_trigger_f1.frameNStop = frameN  # exact frame index
-                    win.timeOnFlip(EEG_trigger_f1, 'tStopRefresh')  # time at next scr refresh
-                    EEG_trigger_f1.status = FINISHED
-                    win.callOnFlip(EEG_trigger_f1.setData, int(0))
             
             # check for quit (typically the Esc key)
             if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
@@ -5208,10 +4998,6 @@ for thisBlock_three in block_three:
         fone_control_b3.addData('Presentation_image_f1_3.stopped', Presentation_image_f1_3.tStopRefresh)
         fone_control_b3.addData('Presentation_image_f1_4.started', Presentation_image_f1_4.tStartRefresh)
         fone_control_b3.addData('Presentation_image_f1_4.stopped', Presentation_image_f1_4.tStopRefresh)
-        if EEG_trigger_f1.status == STARTED:
-            win.callOnFlip(EEG_trigger_f1.setData, int(0))
-        fone_control_b3.addData('EEG_trigger_f1.started', EEG_trigger_f1.tStartRefresh)
-        fone_control_b3.addData('EEG_trigger_f1.stopped', EEG_trigger_f1.tStopRefresh)
         thisExp.nextEntry()
         
     # completed dofone repeats of 'fone_control_b3'
@@ -5238,7 +5024,7 @@ for thisBlock_three in block_three:
         
         # ------Prepare to start Routine "rsvp_f2"-------
         continueRoutine = True
-        routineTimer.add(4.000000)
+        routineTimer.add(3.950000)
         # update component parameters for each repeat
         Presentation_image_f2_1.setImage(imageone)
         Presentation_image_f2_2.setImage(imagetwo)
@@ -5249,7 +5035,7 @@ for thisBlock_three in block_three:
         Presentation_image_f2_7.setImage(imageseven)
         Presentation_image_f2_8.setImage(imageeight)
         # keep track of which components have finished
-        rsvp_f2Components = [Presentation_image_f2_1, Presentation_image_f2_2, Presentation_image_f2_3, Presentation_image_f2_4, Presentation_image_f2_5, Presentation_image_f2_6, Presentation_image_f2_7, Presentation_image_f2_8, EEG_trigger_f2]
+        rsvp_f2Components = [Presentation_image_f2_1, Presentation_image_f2_2, Presentation_image_f2_3, Presentation_image_f2_4, Presentation_image_f2_5, Presentation_image_f2_6, Presentation_image_f2_7, Presentation_image_f2_8]
         for thisComponent in rsvp_f2Components:
             thisComponent.tStart = None
             thisComponent.tStop = None
@@ -5407,24 +5193,6 @@ for thisBlock_three in block_three:
                     Presentation_image_f2_8.frameNStop = frameN  # exact frame index
                     win.timeOnFlip(Presentation_image_f2_8, 'tStopRefresh')  # time at next scr refresh
                     Presentation_image_f2_8.setAutoDraw(False)
-            # *EEG_trigger_f2* updates
-            if EEG_trigger_f2.status == NOT_STARTED and tThisFlip >= 0-frameTolerance:
-                # keep track of start time/frame for later
-                EEG_trigger_f2.frameNStart = frameN  # exact frame index
-                EEG_trigger_f2.tStart = t  # local t and not account for scr refresh
-                EEG_trigger_f2.tStartRefresh = tThisFlipGlobal  # on global time
-                win.timeOnFlip(EEG_trigger_f2, 'tStartRefresh')  # time at next scr refresh
-                EEG_trigger_f2.status = STARTED
-                win.callOnFlip(EEG_trigger_f2.setData, int(condition_code))
-            if EEG_trigger_f2.status == STARTED:
-                # is it time to stop? (based on global clock, using actual start)
-                if tThisFlipGlobal > EEG_trigger_f2.tStartRefresh + 4-frameTolerance:
-                    # keep track of stop time/frame for later
-                    EEG_trigger_f2.tStop = t  # not accounting for scr refresh
-                    EEG_trigger_f2.frameNStop = frameN  # exact frame index
-                    win.timeOnFlip(EEG_trigger_f2, 'tStopRefresh')  # time at next scr refresh
-                    EEG_trigger_f2.status = FINISHED
-                    win.callOnFlip(EEG_trigger_f2.setData, int(0))
             
             # check for quit (typically the Esc key)
             if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
@@ -5463,10 +5231,6 @@ for thisBlock_three in block_three:
         ftwo_control_b3.addData('Presentation_image_f2_7.stopped', Presentation_image_f2_7.tStopRefresh)
         ftwo_control_b3.addData('Presentation_image_f2_8.started', Presentation_image_f2_8.tStartRefresh)
         ftwo_control_b3.addData('Presentation_image_f2_8.stopped', Presentation_image_f2_8.tStopRefresh)
-        if EEG_trigger_f2.status == STARTED:
-            win.callOnFlip(EEG_trigger_f2.setData, int(0))
-        ftwo_control_b3.addData('EEG_trigger_f2.started', EEG_trigger_f2.tStartRefresh)
-        ftwo_control_b3.addData('EEG_trigger_f2.stopped', EEG_trigger_f2.tStopRefresh)
         thisExp.nextEntry()
         
     # completed doftwo repeats of 'ftwo_control_b3'
@@ -5508,7 +5272,7 @@ for thisBlock_three in block_three:
         Presentation_image_f3_11.setImage(imageeleven)
         Presentation_image_f3_12.setImage(imagetwelve)
         # keep track of which components have finished
-        rsvp_f3Components = [Presentation_image_f3_1, Presentation_image_f3_2, Presentation_image_f3_3, Presentation_image_f3_4, Presentation_image_f3_5, Presentation_image_f3_6, Presentation_image_f3_7, Presentation_image_f3_8, Presentation_image_f3_9, Presentation_image_f3_10, Presentation_image_f3_11, Presentation_image_f3_12, EEG_trigger_f3]
+        rsvp_f3Components = [Presentation_image_f3_1, Presentation_image_f3_2, Presentation_image_f3_3, Presentation_image_f3_4, Presentation_image_f3_5, Presentation_image_f3_6, Presentation_image_f3_7, Presentation_image_f3_8, Presentation_image_f3_9, Presentation_image_f3_10, Presentation_image_f3_11, Presentation_image_f3_12]
         for thisComponent in rsvp_f3Components:
             thisComponent.tStart = None
             thisComponent.tStop = None
@@ -5734,24 +5498,6 @@ for thisBlock_three in block_three:
                     Presentation_image_f3_12.frameNStop = frameN  # exact frame index
                     win.timeOnFlip(Presentation_image_f3_12, 'tStopRefresh')  # time at next scr refresh
                     Presentation_image_f3_12.setAutoDraw(False)
-            # *EEG_trigger_f3* updates
-            if EEG_trigger_f3.status == NOT_STARTED and tThisFlip >= 0-frameTolerance:
-                # keep track of start time/frame for later
-                EEG_trigger_f3.frameNStart = frameN  # exact frame index
-                EEG_trigger_f3.tStart = t  # local t and not account for scr refresh
-                EEG_trigger_f3.tStartRefresh = tThisFlipGlobal  # on global time
-                win.timeOnFlip(EEG_trigger_f3, 'tStartRefresh')  # time at next scr refresh
-                EEG_trigger_f3.status = STARTED
-                win.callOnFlip(EEG_trigger_f3.setData, int(condition_code))
-            if EEG_trigger_f3.status == STARTED:
-                # is it time to stop? (based on global clock, using actual start)
-                if tThisFlipGlobal > EEG_trigger_f3.tStartRefresh + 4-frameTolerance:
-                    # keep track of stop time/frame for later
-                    EEG_trigger_f3.tStop = t  # not accounting for scr refresh
-                    EEG_trigger_f3.frameNStop = frameN  # exact frame index
-                    win.timeOnFlip(EEG_trigger_f3, 'tStopRefresh')  # time at next scr refresh
-                    EEG_trigger_f3.status = FINISHED
-                    win.callOnFlip(EEG_trigger_f3.setData, int(0))
             
             # check for quit (typically the Esc key)
             if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
@@ -5798,10 +5544,6 @@ for thisBlock_three in block_three:
         fthree_control_b3.addData('Presentation_image_f3_11.stopped', Presentation_image_f3_11.tStopRefresh)
         fthree_control_b3.addData('Presentation_image_f3_12.started', Presentation_image_f3_12.tStartRefresh)
         fthree_control_b3.addData('Presentation_image_f3_12.stopped', Presentation_image_f3_12.tStopRefresh)
-        if EEG_trigger_f3.status == STARTED:
-            win.callOnFlip(EEG_trigger_f3.setData, int(0))
-        fthree_control_b3.addData('EEG_trigger_f3.started', EEG_trigger_f3.tStartRefresh)
-        fthree_control_b3.addData('EEG_trigger_f3.stopped', EEG_trigger_f3.tStopRefresh)
         thisExp.nextEntry()
         
     # completed dofthree repeats of 'fthree_control_b3'
@@ -5828,7 +5570,7 @@ for thisBlock_three in block_three:
         
         # ------Prepare to start Routine "rsvp_f4"-------
         continueRoutine = True
-        routineTimer.add(4.000000)
+        routineTimer.add(3.950000)
         # update component parameters for each repeat
         Presentation_image_f4_1.setImage(imageone)
         Presentation_image_f4_2.setImage(imagetwo)
@@ -5847,7 +5589,7 @@ for thisBlock_three in block_three:
         Presentation_image_f4_15.setImage(imagefifteen)
         Presentation_image_f4_16.setImage(imagesixteen)
         # keep track of which components have finished
-        rsvp_f4Components = [Presentation_image_f4_1, Presentation_image_f4_2, Presentation_image_f4_3, Presentation_image_f4_4, Presentation_image_f4_5, Presentation_image_f4_6, Presentation_image_f4_7, Presentation_image_f4_8, Presentation_image_f4_9, Presentation_image_f4_10, Presentation_image_f4_11, Presentation_image_f4_12, Presentation_image_f4_13, Presentation_image_f3_14, Presentation_image_f4_15, Presentation_image_f4_16, EEG_trigger_f4]
+        rsvp_f4Components = [Presentation_image_f4_1, Presentation_image_f4_2, Presentation_image_f4_3, Presentation_image_f4_4, Presentation_image_f4_5, Presentation_image_f4_6, Presentation_image_f4_7, Presentation_image_f4_8, Presentation_image_f4_9, Presentation_image_f4_10, Presentation_image_f4_11, Presentation_image_f4_12, Presentation_image_f4_13, Presentation_image_f3_14, Presentation_image_f4_15, Presentation_image_f4_16]
         for thisComponent in rsvp_f4Components:
             thisComponent.tStart = None
             thisComponent.tStop = None
@@ -6141,24 +5883,6 @@ for thisBlock_three in block_three:
                     Presentation_image_f4_16.frameNStop = frameN  # exact frame index
                     win.timeOnFlip(Presentation_image_f4_16, 'tStopRefresh')  # time at next scr refresh
                     Presentation_image_f4_16.setAutoDraw(False)
-            # *EEG_trigger_f4* updates
-            if EEG_trigger_f4.status == NOT_STARTED and tThisFlip >= 0-frameTolerance:
-                # keep track of start time/frame for later
-                EEG_trigger_f4.frameNStart = frameN  # exact frame index
-                EEG_trigger_f4.tStart = t  # local t and not account for scr refresh
-                EEG_trigger_f4.tStartRefresh = tThisFlipGlobal  # on global time
-                win.timeOnFlip(EEG_trigger_f4, 'tStartRefresh')  # time at next scr refresh
-                EEG_trigger_f4.status = STARTED
-                win.callOnFlip(EEG_trigger_f4.setData, int(condition_code))
-            if EEG_trigger_f4.status == STARTED:
-                # is it time to stop? (based on global clock, using actual start)
-                if tThisFlipGlobal > EEG_trigger_f4.tStartRefresh + 4-frameTolerance:
-                    # keep track of stop time/frame for later
-                    EEG_trigger_f4.tStop = t  # not accounting for scr refresh
-                    EEG_trigger_f4.frameNStop = frameN  # exact frame index
-                    win.timeOnFlip(EEG_trigger_f4, 'tStopRefresh')  # time at next scr refresh
-                    EEG_trigger_f4.status = FINISHED
-                    win.callOnFlip(EEG_trigger_f4.setData, int(0))
             
             # check for quit (typically the Esc key)
             if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
@@ -6213,10 +5937,6 @@ for thisBlock_three in block_three:
         ffour_control_b3.addData('Presentation_image_f4_15.stopped', Presentation_image_f4_15.tStopRefresh)
         ffour_control_b3.addData('Presentation_image_f4_16.started', Presentation_image_f4_16.tStartRefresh)
         ffour_control_b3.addData('Presentation_image_f4_16.stopped', Presentation_image_f4_16.tStopRefresh)
-        if EEG_trigger_f4.status == STARTED:
-            win.callOnFlip(EEG_trigger_f4.setData, int(0))
-        ffour_control_b3.addData('EEG_trigger_f4.started', EEG_trigger_f4.tStartRefresh)
-        ffour_control_b3.addData('EEG_trigger_f4.stopped', EEG_trigger_f4.tStopRefresh)
         thisExp.nextEntry()
         
     # completed doffour repeats of 'ffour_control_b3'
@@ -6645,7 +6365,7 @@ for thisBlock_four in block_four:
         Presentation_image_f1_3.setImage(imagethree)
         Presentation_image_f1_4.setImage(imagefour)
         # keep track of which components have finished
-        rsvp_f1Components = [Presentation_image_f1_1, Presentation_image_f1_2, Presentation_image_f1_3, Presentation_image_f1_4, EEG_trigger_f1]
+        rsvp_f1Components = [Presentation_image_f1_1, Presentation_image_f1_2, Presentation_image_f1_3, Presentation_image_f1_4]
         for thisComponent in rsvp_f1Components:
             thisComponent.tStart = None
             thisComponent.tStop = None
@@ -6735,24 +6455,6 @@ for thisBlock_four in block_four:
                     Presentation_image_f1_4.frameNStop = frameN  # exact frame index
                     win.timeOnFlip(Presentation_image_f1_4, 'tStopRefresh')  # time at next scr refresh
                     Presentation_image_f1_4.setAutoDraw(False)
-            # *EEG_trigger_f1* updates
-            if EEG_trigger_f1.status == NOT_STARTED and tThisFlip >= 0-frameTolerance:
-                # keep track of start time/frame for later
-                EEG_trigger_f1.frameNStart = frameN  # exact frame index
-                EEG_trigger_f1.tStart = t  # local t and not account for scr refresh
-                EEG_trigger_f1.tStartRefresh = tThisFlipGlobal  # on global time
-                win.timeOnFlip(EEG_trigger_f1, 'tStartRefresh')  # time at next scr refresh
-                EEG_trigger_f1.status = STARTED
-                win.callOnFlip(EEG_trigger_f1.setData, int(condition_code))
-            if EEG_trigger_f1.status == STARTED:
-                # is it time to stop? (based on global clock, using actual start)
-                if tThisFlipGlobal > EEG_trigger_f1.tStartRefresh + 4-frameTolerance:
-                    # keep track of stop time/frame for later
-                    EEG_trigger_f1.tStop = t  # not accounting for scr refresh
-                    EEG_trigger_f1.frameNStop = frameN  # exact frame index
-                    win.timeOnFlip(EEG_trigger_f1, 'tStopRefresh')  # time at next scr refresh
-                    EEG_trigger_f1.status = FINISHED
-                    win.callOnFlip(EEG_trigger_f1.setData, int(0))
             
             # check for quit (typically the Esc key)
             if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
@@ -6783,10 +6485,6 @@ for thisBlock_four in block_four:
         fone_control_b4.addData('Presentation_image_f1_3.stopped', Presentation_image_f1_3.tStopRefresh)
         fone_control_b4.addData('Presentation_image_f1_4.started', Presentation_image_f1_4.tStartRefresh)
         fone_control_b4.addData('Presentation_image_f1_4.stopped', Presentation_image_f1_4.tStopRefresh)
-        if EEG_trigger_f1.status == STARTED:
-            win.callOnFlip(EEG_trigger_f1.setData, int(0))
-        fone_control_b4.addData('EEG_trigger_f1.started', EEG_trigger_f1.tStartRefresh)
-        fone_control_b4.addData('EEG_trigger_f1.stopped', EEG_trigger_f1.tStopRefresh)
         thisExp.nextEntry()
         
     # completed dofone repeats of 'fone_control_b4'
@@ -6813,7 +6511,7 @@ for thisBlock_four in block_four:
         
         # ------Prepare to start Routine "rsvp_f2"-------
         continueRoutine = True
-        routineTimer.add(4.000000)
+        routineTimer.add(3.950000)
         # update component parameters for each repeat
         Presentation_image_f2_1.setImage(imageone)
         Presentation_image_f2_2.setImage(imagetwo)
@@ -6824,7 +6522,7 @@ for thisBlock_four in block_four:
         Presentation_image_f2_7.setImage(imageseven)
         Presentation_image_f2_8.setImage(imageeight)
         # keep track of which components have finished
-        rsvp_f2Components = [Presentation_image_f2_1, Presentation_image_f2_2, Presentation_image_f2_3, Presentation_image_f2_4, Presentation_image_f2_5, Presentation_image_f2_6, Presentation_image_f2_7, Presentation_image_f2_8, EEG_trigger_f2]
+        rsvp_f2Components = [Presentation_image_f2_1, Presentation_image_f2_2, Presentation_image_f2_3, Presentation_image_f2_4, Presentation_image_f2_5, Presentation_image_f2_6, Presentation_image_f2_7, Presentation_image_f2_8]
         for thisComponent in rsvp_f2Components:
             thisComponent.tStart = None
             thisComponent.tStop = None
@@ -6982,24 +6680,6 @@ for thisBlock_four in block_four:
                     Presentation_image_f2_8.frameNStop = frameN  # exact frame index
                     win.timeOnFlip(Presentation_image_f2_8, 'tStopRefresh')  # time at next scr refresh
                     Presentation_image_f2_8.setAutoDraw(False)
-            # *EEG_trigger_f2* updates
-            if EEG_trigger_f2.status == NOT_STARTED and tThisFlip >= 0-frameTolerance:
-                # keep track of start time/frame for later
-                EEG_trigger_f2.frameNStart = frameN  # exact frame index
-                EEG_trigger_f2.tStart = t  # local t and not account for scr refresh
-                EEG_trigger_f2.tStartRefresh = tThisFlipGlobal  # on global time
-                win.timeOnFlip(EEG_trigger_f2, 'tStartRefresh')  # time at next scr refresh
-                EEG_trigger_f2.status = STARTED
-                win.callOnFlip(EEG_trigger_f2.setData, int(condition_code))
-            if EEG_trigger_f2.status == STARTED:
-                # is it time to stop? (based on global clock, using actual start)
-                if tThisFlipGlobal > EEG_trigger_f2.tStartRefresh + 4-frameTolerance:
-                    # keep track of stop time/frame for later
-                    EEG_trigger_f2.tStop = t  # not accounting for scr refresh
-                    EEG_trigger_f2.frameNStop = frameN  # exact frame index
-                    win.timeOnFlip(EEG_trigger_f2, 'tStopRefresh')  # time at next scr refresh
-                    EEG_trigger_f2.status = FINISHED
-                    win.callOnFlip(EEG_trigger_f2.setData, int(0))
             
             # check for quit (typically the Esc key)
             if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
@@ -7038,10 +6718,6 @@ for thisBlock_four in block_four:
         ftwo_control_b4.addData('Presentation_image_f2_7.stopped', Presentation_image_f2_7.tStopRefresh)
         ftwo_control_b4.addData('Presentation_image_f2_8.started', Presentation_image_f2_8.tStartRefresh)
         ftwo_control_b4.addData('Presentation_image_f2_8.stopped', Presentation_image_f2_8.tStopRefresh)
-        if EEG_trigger_f2.status == STARTED:
-            win.callOnFlip(EEG_trigger_f2.setData, int(0))
-        ftwo_control_b4.addData('EEG_trigger_f2.started', EEG_trigger_f2.tStartRefresh)
-        ftwo_control_b4.addData('EEG_trigger_f2.stopped', EEG_trigger_f2.tStopRefresh)
         thisExp.nextEntry()
         
     # completed doftwo repeats of 'ftwo_control_b4'
@@ -7083,7 +6759,7 @@ for thisBlock_four in block_four:
         Presentation_image_f3_11.setImage(imageeleven)
         Presentation_image_f3_12.setImage(imagetwelve)
         # keep track of which components have finished
-        rsvp_f3Components = [Presentation_image_f3_1, Presentation_image_f3_2, Presentation_image_f3_3, Presentation_image_f3_4, Presentation_image_f3_5, Presentation_image_f3_6, Presentation_image_f3_7, Presentation_image_f3_8, Presentation_image_f3_9, Presentation_image_f3_10, Presentation_image_f3_11, Presentation_image_f3_12, EEG_trigger_f3]
+        rsvp_f3Components = [Presentation_image_f3_1, Presentation_image_f3_2, Presentation_image_f3_3, Presentation_image_f3_4, Presentation_image_f3_5, Presentation_image_f3_6, Presentation_image_f3_7, Presentation_image_f3_8, Presentation_image_f3_9, Presentation_image_f3_10, Presentation_image_f3_11, Presentation_image_f3_12]
         for thisComponent in rsvp_f3Components:
             thisComponent.tStart = None
             thisComponent.tStop = None
@@ -7309,24 +6985,6 @@ for thisBlock_four in block_four:
                     Presentation_image_f3_12.frameNStop = frameN  # exact frame index
                     win.timeOnFlip(Presentation_image_f3_12, 'tStopRefresh')  # time at next scr refresh
                     Presentation_image_f3_12.setAutoDraw(False)
-            # *EEG_trigger_f3* updates
-            if EEG_trigger_f3.status == NOT_STARTED and tThisFlip >= 0-frameTolerance:
-                # keep track of start time/frame for later
-                EEG_trigger_f3.frameNStart = frameN  # exact frame index
-                EEG_trigger_f3.tStart = t  # local t and not account for scr refresh
-                EEG_trigger_f3.tStartRefresh = tThisFlipGlobal  # on global time
-                win.timeOnFlip(EEG_trigger_f3, 'tStartRefresh')  # time at next scr refresh
-                EEG_trigger_f3.status = STARTED
-                win.callOnFlip(EEG_trigger_f3.setData, int(condition_code))
-            if EEG_trigger_f3.status == STARTED:
-                # is it time to stop? (based on global clock, using actual start)
-                if tThisFlipGlobal > EEG_trigger_f3.tStartRefresh + 4-frameTolerance:
-                    # keep track of stop time/frame for later
-                    EEG_trigger_f3.tStop = t  # not accounting for scr refresh
-                    EEG_trigger_f3.frameNStop = frameN  # exact frame index
-                    win.timeOnFlip(EEG_trigger_f3, 'tStopRefresh')  # time at next scr refresh
-                    EEG_trigger_f3.status = FINISHED
-                    win.callOnFlip(EEG_trigger_f3.setData, int(0))
             
             # check for quit (typically the Esc key)
             if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
@@ -7373,10 +7031,6 @@ for thisBlock_four in block_four:
         fthree_control_b4.addData('Presentation_image_f3_11.stopped', Presentation_image_f3_11.tStopRefresh)
         fthree_control_b4.addData('Presentation_image_f3_12.started', Presentation_image_f3_12.tStartRefresh)
         fthree_control_b4.addData('Presentation_image_f3_12.stopped', Presentation_image_f3_12.tStopRefresh)
-        if EEG_trigger_f3.status == STARTED:
-            win.callOnFlip(EEG_trigger_f3.setData, int(0))
-        fthree_control_b4.addData('EEG_trigger_f3.started', EEG_trigger_f3.tStartRefresh)
-        fthree_control_b4.addData('EEG_trigger_f3.stopped', EEG_trigger_f3.tStopRefresh)
         thisExp.nextEntry()
         
     # completed dofthree repeats of 'fthree_control_b4'
@@ -7403,7 +7057,7 @@ for thisBlock_four in block_four:
         
         # ------Prepare to start Routine "rsvp_f4"-------
         continueRoutine = True
-        routineTimer.add(4.000000)
+        routineTimer.add(3.950000)
         # update component parameters for each repeat
         Presentation_image_f4_1.setImage(imageone)
         Presentation_image_f4_2.setImage(imagetwo)
@@ -7422,7 +7076,7 @@ for thisBlock_four in block_four:
         Presentation_image_f4_15.setImage(imagefifteen)
         Presentation_image_f4_16.setImage(imagesixteen)
         # keep track of which components have finished
-        rsvp_f4Components = [Presentation_image_f4_1, Presentation_image_f4_2, Presentation_image_f4_3, Presentation_image_f4_4, Presentation_image_f4_5, Presentation_image_f4_6, Presentation_image_f4_7, Presentation_image_f4_8, Presentation_image_f4_9, Presentation_image_f4_10, Presentation_image_f4_11, Presentation_image_f4_12, Presentation_image_f4_13, Presentation_image_f3_14, Presentation_image_f4_15, Presentation_image_f4_16, EEG_trigger_f4]
+        rsvp_f4Components = [Presentation_image_f4_1, Presentation_image_f4_2, Presentation_image_f4_3, Presentation_image_f4_4, Presentation_image_f4_5, Presentation_image_f4_6, Presentation_image_f4_7, Presentation_image_f4_8, Presentation_image_f4_9, Presentation_image_f4_10, Presentation_image_f4_11, Presentation_image_f4_12, Presentation_image_f4_13, Presentation_image_f3_14, Presentation_image_f4_15, Presentation_image_f4_16]
         for thisComponent in rsvp_f4Components:
             thisComponent.tStart = None
             thisComponent.tStop = None
@@ -7716,24 +7370,6 @@ for thisBlock_four in block_four:
                     Presentation_image_f4_16.frameNStop = frameN  # exact frame index
                     win.timeOnFlip(Presentation_image_f4_16, 'tStopRefresh')  # time at next scr refresh
                     Presentation_image_f4_16.setAutoDraw(False)
-            # *EEG_trigger_f4* updates
-            if EEG_trigger_f4.status == NOT_STARTED and tThisFlip >= 0-frameTolerance:
-                # keep track of start time/frame for later
-                EEG_trigger_f4.frameNStart = frameN  # exact frame index
-                EEG_trigger_f4.tStart = t  # local t and not account for scr refresh
-                EEG_trigger_f4.tStartRefresh = tThisFlipGlobal  # on global time
-                win.timeOnFlip(EEG_trigger_f4, 'tStartRefresh')  # time at next scr refresh
-                EEG_trigger_f4.status = STARTED
-                win.callOnFlip(EEG_trigger_f4.setData, int(condition_code))
-            if EEG_trigger_f4.status == STARTED:
-                # is it time to stop? (based on global clock, using actual start)
-                if tThisFlipGlobal > EEG_trigger_f4.tStartRefresh + 4-frameTolerance:
-                    # keep track of stop time/frame for later
-                    EEG_trigger_f4.tStop = t  # not accounting for scr refresh
-                    EEG_trigger_f4.frameNStop = frameN  # exact frame index
-                    win.timeOnFlip(EEG_trigger_f4, 'tStopRefresh')  # time at next scr refresh
-                    EEG_trigger_f4.status = FINISHED
-                    win.callOnFlip(EEG_trigger_f4.setData, int(0))
             
             # check for quit (typically the Esc key)
             if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
@@ -7788,10 +7424,6 @@ for thisBlock_four in block_four:
         ffour_control_b4.addData('Presentation_image_f4_15.stopped', Presentation_image_f4_15.tStopRefresh)
         ffour_control_b4.addData('Presentation_image_f4_16.started', Presentation_image_f4_16.tStartRefresh)
         ffour_control_b4.addData('Presentation_image_f4_16.stopped', Presentation_image_f4_16.tStopRefresh)
-        if EEG_trigger_f4.status == STARTED:
-            win.callOnFlip(EEG_trigger_f4.setData, int(0))
-        ffour_control_b4.addData('EEG_trigger_f4.started', EEG_trigger_f4.tStartRefresh)
-        ffour_control_b4.addData('EEG_trigger_f4.stopped', EEG_trigger_f4.tStopRefresh)
         thisExp.nextEntry()
         
     # completed doffour repeats of 'ffour_control_b4'
