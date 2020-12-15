@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2020.2.10),
-    on December 14, 2020, at 02:09
+    on December 15, 2020, at 15:42
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -83,9 +83,9 @@ defaultKeyboard = keyboard.Keyboard()
 # Initialize components for Routine "Welcome"
 WelcomeClock = core.Clock()
 text = visual.TextStim(win=win, name='text',
-    text='Welcome to the experiment\n\nPress the Space key to start the experiment\n',
+    text="Welcome to the experiment\n\nPress the Space key to start the experiment\n\nDuring the choice section , Press the key 'a' for was present in stream and 'l' for was not present in stream\n",
     font='Arial',
-    pos=(0, 0), height=0.1, wrapWidth=None, ori=0, 
+    pos=(0, 0), height=0.05, wrapWidth=None, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=0.0);
