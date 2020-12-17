@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2020.2.10),
-    on December 09, 2020, at 15:12
+    on December 16, 2020, at 16:15
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -28,6 +28,12 @@ import sys  # to get file system encoding
 
 from psychopy.hardware import keyboard
 
+total_trials = 0
+count_acc = -1
+total_trials = 0
+count_acc = -1
+total_trials = 0
+count_acc = -1
 
 
 # Ensure that relative paths start from the same directory as this script
@@ -65,7 +71,7 @@ frameTolerance = 0.001  # how close to onset before 'same' frame
 
 # Setup the Window
 win = visual.Window(
-    size=[1920, 1080], fullscr=True, screen=0, 
+    size=[2560, 1440], fullscr=True, screen=0, 
     winType='pyglet', allowGUI=False, allowStencil=False,
     monitor='testMonitor', color=[0,0,0], colorSpace='rgb',
     blendMode='avg', useFBO=True, 
@@ -83,9 +89,9 @@ defaultKeyboard = keyboard.Keyboard()
 # Initialize components for Routine "Welcome"
 WelcomeClock = core.Clock()
 text = visual.TextStim(win=win, name='text',
-    text='Welcome to the experiment\n\nPress the Space key to start the experiment\n',
+    text="Welcome to the experiment\n\nPress the Space key to start the experiment\n\n\nDuring the choice section , Press the key 'a' for was present in stream and 'l' for was not present in stream",
     font='Arial',
-    pos=(0, 0), height=0.1, wrapWidth=None, ori=0, 
+    pos=(0, 0), height=0.05, wrapWidth=None, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=0.0);
@@ -311,38 +317,273 @@ Fixation_cross = visual.ShapeStim(
     lineWidth=1, lineColor=[1,1,1], lineColorSpace='rgb',
     fillColor=[1,1,1], fillColorSpace='rgb',
     opacity=1, depth=0.0, interpolate=True)
-Topleft = visual.ImageStim(
+displayed_choice_image = visual.ImageStim(
     win=win,
-    name='Topleft', 
+    name='displayed_choice_image', 
     image='sin', mask=None,
-    ori=0, pos=(-0.25, 0.25), size=(0.5, 0.5),
+    ori=0, pos=(0,0), size=(0.5, 0.5),
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
     texRes=128, interpolate=True, depth=-1.0)
-Topright = visual.ImageStim(
+key_resp = keyboard.Keyboard()
+
+# Initialize components for Routine "perf_review"
+perf_reviewClock = core.Clock()
+perf_review_accuracyval = visual.TextStim(win=win, name='perf_review_accuracyval',
+    text='default text',
+    font='Arial',
+    pos=(0,- 0.1), height=0.05, wrapWidth=None, ori=0, 
+    color='white', colorSpace='rgb', opacity=1, 
+    languageStyle='LTR',
+    depth=0.0);
+perf_key_resp_3 = keyboard.Keyboard()
+text_3 = visual.TextStim(win=win, name='text_3',
+    text='Accuracy in current block ',
+    font='Arial',
+    pos=(0, 0), height=0.05, wrapWidth=None, ori=0, 
+    color='white', colorSpace='rgb', opacity=1, 
+    languageStyle='LTR',
+    depth=-2.0);
+
+# Initialize components for Routine "Break"
+BreakClock = core.Clock()
+text_break = visual.TextStim(win=win, name='text_break',
+    text='Time for a break \n\nPress either of the keys "v" , "b" or "n" to continue when ready',
+    font='Arial',
+    pos=(0, 0), height=0.1, wrapWidth=None, ori=0, 
+    color='white', colorSpace='rgb', opacity=1, 
+    languageStyle='LTR',
+    depth=0.0);
+key_resp_2 = keyboard.Keyboard()
+
+# Initialize components for Routine "Cross_and_control"
+Cross_and_controlClock = core.Clock()
+Crossm = visual.ShapeStim(
+    win=win, name='Crossm', vertices='cross',
+    size=(0.05, 0.05),
+    ori=0, pos=(0, 0),
+    lineWidth=1, lineColor=[1,1,1], lineColorSpace='rgb',
+    fillColor=[1,1,1], fillColorSpace='rgb',
+    opacity=1, depth=0.0, interpolate=True)
+
+# Initialize components for Routine "rsvp_f1"
+rsvp_f1Clock = core.Clock()
+Presentation_image_f1_1 = visual.ImageStim(
     win=win,
-    name='Topright', 
+    name='Presentation_image_f1_1', 
     image='sin', mask=None,
-    ori=0, pos=(0.25 , 0.25), size=(0.5, 0.5),
+    ori=0, pos=(0, 0), size=(0.5, 0.5),
+    color=[1,1,1], colorSpace='rgb', opacity=1,
+    flipHoriz=False, flipVert=False,
+    texRes=128, interpolate=True, depth=0.0)
+Presentation_image_f1_2 = visual.ImageStim(
+    win=win,
+    name='Presentation_image_f1_2', 
+    image='sin', mask=None,
+    ori=0, pos=(0, 0), size=(0.5, 0.5),
+    color=[1,1,1], colorSpace='rgb', opacity=1,
+    flipHoriz=False, flipVert=False,
+    texRes=128, interpolate=True, depth=-1.0)
+Presentation_image_f1_3 = visual.ImageStim(
+    win=win,
+    name='Presentation_image_f1_3', 
+    image='sin', mask=None,
+    ori=0, pos=(0, 0), size=(0.5, 0.5),
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
     texRes=128, interpolate=True, depth=-2.0)
-Bottomleft = visual.ImageStim(
+Presentation_image_f1_4 = visual.ImageStim(
     win=win,
-    name='Bottomleft', 
+    name='Presentation_image_f1_4', 
     image='sin', mask=None,
-    ori=0, pos=(-0.25, -0.25), size=(0.5, 0.5),
+    ori=0, pos=(0, 0), size=(0.5, 0.5),
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
     texRes=128, interpolate=True, depth=-3.0)
-Bottomright = visual.ImageStim(
+
+# Initialize components for Routine "rsvp_f2"
+rsvp_f2Clock = core.Clock()
+Presentation_image_f2_1 = visual.ImageStim(
     win=win,
-    name='Bottomright', 
+    name='Presentation_image_f2_1', 
     image='sin', mask=None,
-    ori=0, pos=(0.25, -0.25), size=(0.5, 0.5),
+    ori=0, pos=(0, 0), size=(0.5, 0.5),
+    color=[1,1,1], colorSpace='rgb', opacity=1,
+    flipHoriz=False, flipVert=False,
+    texRes=128, interpolate=True, depth=0.0)
+Presentation_image_f2_2 = visual.ImageStim(
+    win=win,
+    name='Presentation_image_f2_2', 
+    image='sin', mask=None,
+    ori=0, pos=(0, 0), size=(0.5, 0.5),
+    color=[1,1,1], colorSpace='rgb', opacity=1,
+    flipHoriz=False, flipVert=False,
+    texRes=128, interpolate=True, depth=-1.0)
+Presentation_image_f2_3 = visual.ImageStim(
+    win=win,
+    name='Presentation_image_f2_3', 
+    image='sin', mask=None,
+    ori=0, pos=(0, 0), size=(0.5, 0.5),
+    color=[1,1,1], colorSpace='rgb', opacity=1,
+    flipHoriz=False, flipVert=False,
+    texRes=128, interpolate=True, depth=-2.0)
+Presentation_image_f2_4 = visual.ImageStim(
+    win=win,
+    name='Presentation_image_f2_4', 
+    image='sin', mask=None,
+    ori=0, pos=(0, 0), size=(0.5, 0.5),
+    color=[1,1,1], colorSpace='rgb', opacity=1,
+    flipHoriz=False, flipVert=False,
+    texRes=128, interpolate=True, depth=-3.0)
+Presentation_image_f2_5 = visual.ImageStim(
+    win=win,
+    name='Presentation_image_f2_5', 
+    image='sin', mask=None,
+    ori=0, pos=(0, 0), size=(0.5, 0.5),
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
     texRes=128, interpolate=True, depth=-4.0)
+Presentation_image_f2_6 = visual.ImageStim(
+    win=win,
+    name='Presentation_image_f2_6', 
+    image='sin', mask=None,
+    ori=0, pos=(0, 0), size=(0.5, 0.5),
+    color=[1,1,1], colorSpace='rgb', opacity=1,
+    flipHoriz=False, flipVert=False,
+    texRes=128, interpolate=True, depth=-5.0)
+Presentation_image_f2_7 = visual.ImageStim(
+    win=win,
+    name='Presentation_image_f2_7', 
+    image='sin', mask=None,
+    ori=0, pos=(0, 0), size=(0.5, 0.5),
+    color=[1,1,1], colorSpace='rgb', opacity=1,
+    flipHoriz=False, flipVert=False,
+    texRes=128, interpolate=True, depth=-6.0)
+Presentation_image_f2_8 = visual.ImageStim(
+    win=win,
+    name='Presentation_image_f2_8', 
+    image='sin', mask=None,
+    ori=0, pos=(0, 0), size=(0.5, 0.5),
+    color=[1,1,1], colorSpace='rgb', opacity=1,
+    flipHoriz=False, flipVert=False,
+    texRes=128, interpolate=True, depth=-7.0)
+
+# Initialize components for Routine "rsvp_f3"
+rsvp_f3Clock = core.Clock()
+Presentation_image_f3_1 = visual.ImageStim(
+    win=win,
+    name='Presentation_image_f3_1', 
+    image='sin', mask=None,
+    ori=0, pos=(0, 0), size=(0.5, 0.5),
+    color=[1,1,1], colorSpace='rgb', opacity=1,
+    flipHoriz=False, flipVert=False,
+    texRes=128, interpolate=True, depth=0.0)
+Presentation_image_f3_2 = visual.ImageStim(
+    win=win,
+    name='Presentation_image_f3_2', 
+    image='sin', mask=None,
+    ori=0, pos=(0, 0), size=(0.5, 0.5),
+    color=[1,1,1], colorSpace='rgb', opacity=1,
+    flipHoriz=False, flipVert=False,
+    texRes=128, interpolate=True, depth=-1.0)
+Presentation_image_f3_3 = visual.ImageStim(
+    win=win,
+    name='Presentation_image_f3_3', 
+    image='sin', mask=None,
+    ori=0, pos=(0, 0), size=(0.5, 0.5),
+    color=[1,1,1], colorSpace='rgb', opacity=1,
+    flipHoriz=False, flipVert=False,
+    texRes=128, interpolate=True, depth=-2.0)
+Presentation_image_f3_4 = visual.ImageStim(
+    win=win,
+    name='Presentation_image_f3_4', 
+    image='sin', mask=None,
+    ori=0, pos=(0, 0), size=(0.5, 0.5),
+    color=[1,1,1], colorSpace='rgb', opacity=1,
+    flipHoriz=False, flipVert=False,
+    texRes=128, interpolate=True, depth=-3.0)
+Presentation_image_f3_5 = visual.ImageStim(
+    win=win,
+    name='Presentation_image_f3_5', 
+    image='sin', mask=None,
+    ori=0, pos=(0, 0), size=(0.5, 0.5),
+    color=[1,1,1], colorSpace='rgb', opacity=1,
+    flipHoriz=False, flipVert=False,
+    texRes=128, interpolate=True, depth=-4.0)
+Presentation_image_f3_6 = visual.ImageStim(
+    win=win,
+    name='Presentation_image_f3_6', 
+    image='sin', mask=None,
+    ori=0, pos=(0, 0), size=(0.5, 0.5),
+    color=[1,1,1], colorSpace='rgb', opacity=1,
+    flipHoriz=False, flipVert=False,
+    texRes=128, interpolate=True, depth=-5.0)
+Presentation_image_f3_7 = visual.ImageStim(
+    win=win,
+    name='Presentation_image_f3_7', 
+    image='sin', mask=None,
+    ori=0, pos=(0, 0), size=(0.5, 0.5),
+    color=[1,1,1], colorSpace='rgb', opacity=1,
+    flipHoriz=False, flipVert=False,
+    texRes=128, interpolate=True, depth=-6.0)
+Presentation_image_f3_8 = visual.ImageStim(
+    win=win,
+    name='Presentation_image_f3_8', 
+    image='sin', mask=None,
+    ori=0, pos=(0, 0), size=(0.5, 0.5),
+    color=[1,1,1], colorSpace='rgb', opacity=1,
+    flipHoriz=False, flipVert=False,
+    texRes=128, interpolate=True, depth=-7.0)
+Presentation_image_f3_9 = visual.ImageStim(
+    win=win,
+    name='Presentation_image_f3_9', 
+    image='sin', mask=None,
+    ori=0, pos=(0, 0), size=(0.5, 0.5),
+    color=[1,1,1], colorSpace='rgb', opacity=1,
+    flipHoriz=False, flipVert=False,
+    texRes=128, interpolate=True, depth=-8.0)
+Presentation_image_f3_10 = visual.ImageStim(
+    win=win,
+    name='Presentation_image_f3_10', 
+    image='sin', mask=None,
+    ori=0, pos=(0, 0), size=(0.5, 0.5),
+    color=[1,1,1], colorSpace='rgb', opacity=1,
+    flipHoriz=False, flipVert=False,
+    texRes=128, interpolate=True, depth=-9.0)
+Presentation_image_f3_11 = visual.ImageStim(
+    win=win,
+    name='Presentation_image_f3_11', 
+    image='sin', mask=None,
+    ori=0, pos=(0, 0), size=(0.5, 0.5),
+    color=[1,1,1], colorSpace='rgb', opacity=1,
+    flipHoriz=False, flipVert=False,
+    texRes=128, interpolate=True, depth=-10.0)
+Presentation_image_f3_12 = visual.ImageStim(
+    win=win,
+    name='Presentation_image_f3_12', 
+    image='sin', mask=None,
+    ori=0, pos=(0, 0), size=(0.5, 0.5),
+    color=[1,1,1], colorSpace='rgb', opacity=1,
+    flipHoriz=False, flipVert=False,
+    texRes=128, interpolate=True, depth=-11.0)
+
+# Initialize components for Routine "choice"
+choiceClock = core.Clock()
+Fixation_cross = visual.ShapeStim(
+    win=win, name='Fixation_cross', vertices='cross',
+    size=(0.1, 0.1),
+    ori=0, pos=(0, 0),
+    lineWidth=1, lineColor=[1,1,1], lineColorSpace='rgb',
+    fillColor=[1,1,1], fillColorSpace='rgb',
+    opacity=1, depth=0.0, interpolate=True)
+displayed_choice_image = visual.ImageStim(
+    win=win,
+    name='displayed_choice_image', 
+    image='sin', mask=None,
+    ori=0, pos=(0,0), size=(0.5, 0.5),
+    color=[1,1,1], colorSpace='rgb', opacity=1,
+    flipHoriz=False, flipVert=False,
+    texRes=128, interpolate=True, depth=-1.0)
 key_resp = keyboard.Keyboard()
 
 # Initialize components for Routine "Break"
@@ -576,315 +817,15 @@ Fixation_cross = visual.ShapeStim(
     lineWidth=1, lineColor=[1,1,1], lineColorSpace='rgb',
     fillColor=[1,1,1], fillColorSpace='rgb',
     opacity=1, depth=0.0, interpolate=True)
-Topleft = visual.ImageStim(
+displayed_choice_image = visual.ImageStim(
     win=win,
-    name='Topleft', 
+    name='displayed_choice_image', 
     image='sin', mask=None,
-    ori=0, pos=(-0.25, 0.25), size=(0.5, 0.5),
+    ori=0, pos=(0,0), size=(0.5, 0.5),
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
     texRes=128, interpolate=True, depth=-1.0)
-Topright = visual.ImageStim(
-    win=win,
-    name='Topright', 
-    image='sin', mask=None,
-    ori=0, pos=(0.25 , 0.25), size=(0.5, 0.5),
-    color=[1,1,1], colorSpace='rgb', opacity=1,
-    flipHoriz=False, flipVert=False,
-    texRes=128, interpolate=True, depth=-2.0)
-Bottomleft = visual.ImageStim(
-    win=win,
-    name='Bottomleft', 
-    image='sin', mask=None,
-    ori=0, pos=(-0.25, -0.25), size=(0.5, 0.5),
-    color=[1,1,1], colorSpace='rgb', opacity=1,
-    flipHoriz=False, flipVert=False,
-    texRes=128, interpolate=True, depth=-3.0)
-Bottomright = visual.ImageStim(
-    win=win,
-    name='Bottomright', 
-    image='sin', mask=None,
-    ori=0, pos=(0.25, -0.25), size=(0.5, 0.5),
-    color=[1,1,1], colorSpace='rgb', opacity=1,
-    flipHoriz=False, flipVert=False,
-    texRes=128, interpolate=True, depth=-4.0)
 key_resp = keyboard.Keyboard()
-
-# Initialize components for Routine "Break"
-BreakClock = core.Clock()
-text_break = visual.TextStim(win=win, name='text_break',
-    text='Time for a break \n\nPress either of the keys "v" , "b" or "n" to continue when ready',
-    font='Arial',
-    pos=(0, 0), height=0.1, wrapWidth=None, ori=0, 
-    color='white', colorSpace='rgb', opacity=1, 
-    languageStyle='LTR',
-    depth=0.0);
-key_resp_2 = keyboard.Keyboard()
-
-# Initialize components for Routine "Cross_and_control"
-Cross_and_controlClock = core.Clock()
-Crossm = visual.ShapeStim(
-    win=win, name='Crossm', vertices='cross',
-    size=(0.05, 0.05),
-    ori=0, pos=(0, 0),
-    lineWidth=1, lineColor=[1,1,1], lineColorSpace='rgb',
-    fillColor=[1,1,1], fillColorSpace='rgb',
-    opacity=1, depth=0.0, interpolate=True)
-
-# Initialize components for Routine "rsvp_f1"
-rsvp_f1Clock = core.Clock()
-Presentation_image_f1_1 = visual.ImageStim(
-    win=win,
-    name='Presentation_image_f1_1', 
-    image='sin', mask=None,
-    ori=0, pos=(0, 0), size=(0.5, 0.5),
-    color=[1,1,1], colorSpace='rgb', opacity=1,
-    flipHoriz=False, flipVert=False,
-    texRes=128, interpolate=True, depth=0.0)
-Presentation_image_f1_2 = visual.ImageStim(
-    win=win,
-    name='Presentation_image_f1_2', 
-    image='sin', mask=None,
-    ori=0, pos=(0, 0), size=(0.5, 0.5),
-    color=[1,1,1], colorSpace='rgb', opacity=1,
-    flipHoriz=False, flipVert=False,
-    texRes=128, interpolate=True, depth=-1.0)
-Presentation_image_f1_3 = visual.ImageStim(
-    win=win,
-    name='Presentation_image_f1_3', 
-    image='sin', mask=None,
-    ori=0, pos=(0, 0), size=(0.5, 0.5),
-    color=[1,1,1], colorSpace='rgb', opacity=1,
-    flipHoriz=False, flipVert=False,
-    texRes=128, interpolate=True, depth=-2.0)
-Presentation_image_f1_4 = visual.ImageStim(
-    win=win,
-    name='Presentation_image_f1_4', 
-    image='sin', mask=None,
-    ori=0, pos=(0, 0), size=(0.5, 0.5),
-    color=[1,1,1], colorSpace='rgb', opacity=1,
-    flipHoriz=False, flipVert=False,
-    texRes=128, interpolate=True, depth=-3.0)
-
-# Initialize components for Routine "rsvp_f2"
-rsvp_f2Clock = core.Clock()
-Presentation_image_f2_1 = visual.ImageStim(
-    win=win,
-    name='Presentation_image_f2_1', 
-    image='sin', mask=None,
-    ori=0, pos=(0, 0), size=(0.5, 0.5),
-    color=[1,1,1], colorSpace='rgb', opacity=1,
-    flipHoriz=False, flipVert=False,
-    texRes=128, interpolate=True, depth=0.0)
-Presentation_image_f2_2 = visual.ImageStim(
-    win=win,
-    name='Presentation_image_f2_2', 
-    image='sin', mask=None,
-    ori=0, pos=(0, 0), size=(0.5, 0.5),
-    color=[1,1,1], colorSpace='rgb', opacity=1,
-    flipHoriz=False, flipVert=False,
-    texRes=128, interpolate=True, depth=-1.0)
-Presentation_image_f2_3 = visual.ImageStim(
-    win=win,
-    name='Presentation_image_f2_3', 
-    image='sin', mask=None,
-    ori=0, pos=(0, 0), size=(0.5, 0.5),
-    color=[1,1,1], colorSpace='rgb', opacity=1,
-    flipHoriz=False, flipVert=False,
-    texRes=128, interpolate=True, depth=-2.0)
-Presentation_image_f2_4 = visual.ImageStim(
-    win=win,
-    name='Presentation_image_f2_4', 
-    image='sin', mask=None,
-    ori=0, pos=(0, 0), size=(0.5, 0.5),
-    color=[1,1,1], colorSpace='rgb', opacity=1,
-    flipHoriz=False, flipVert=False,
-    texRes=128, interpolate=True, depth=-3.0)
-Presentation_image_f2_5 = visual.ImageStim(
-    win=win,
-    name='Presentation_image_f2_5', 
-    image='sin', mask=None,
-    ori=0, pos=(0, 0), size=(0.5, 0.5),
-    color=[1,1,1], colorSpace='rgb', opacity=1,
-    flipHoriz=False, flipVert=False,
-    texRes=128, interpolate=True, depth=-4.0)
-Presentation_image_f2_6 = visual.ImageStim(
-    win=win,
-    name='Presentation_image_f2_6', 
-    image='sin', mask=None,
-    ori=0, pos=(0, 0), size=(0.5, 0.5),
-    color=[1,1,1], colorSpace='rgb', opacity=1,
-    flipHoriz=False, flipVert=False,
-    texRes=128, interpolate=True, depth=-5.0)
-Presentation_image_f2_7 = visual.ImageStim(
-    win=win,
-    name='Presentation_image_f2_7', 
-    image='sin', mask=None,
-    ori=0, pos=(0, 0), size=(0.5, 0.5),
-    color=[1,1,1], colorSpace='rgb', opacity=1,
-    flipHoriz=False, flipVert=False,
-    texRes=128, interpolate=True, depth=-6.0)
-Presentation_image_f2_8 = visual.ImageStim(
-    win=win,
-    name='Presentation_image_f2_8', 
-    image='sin', mask=None,
-    ori=0, pos=(0, 0), size=(0.5, 0.5),
-    color=[1,1,1], colorSpace='rgb', opacity=1,
-    flipHoriz=False, flipVert=False,
-    texRes=128, interpolate=True, depth=-7.0)
-
-# Initialize components for Routine "rsvp_f3"
-rsvp_f3Clock = core.Clock()
-Presentation_image_f3_1 = visual.ImageStim(
-    win=win,
-    name='Presentation_image_f3_1', 
-    image='sin', mask=None,
-    ori=0, pos=(0, 0), size=(0.5, 0.5),
-    color=[1,1,1], colorSpace='rgb', opacity=1,
-    flipHoriz=False, flipVert=False,
-    texRes=128, interpolate=True, depth=0.0)
-Presentation_image_f3_2 = visual.ImageStim(
-    win=win,
-    name='Presentation_image_f3_2', 
-    image='sin', mask=None,
-    ori=0, pos=(0, 0), size=(0.5, 0.5),
-    color=[1,1,1], colorSpace='rgb', opacity=1,
-    flipHoriz=False, flipVert=False,
-    texRes=128, interpolate=True, depth=-1.0)
-Presentation_image_f3_3 = visual.ImageStim(
-    win=win,
-    name='Presentation_image_f3_3', 
-    image='sin', mask=None,
-    ori=0, pos=(0, 0), size=(0.5, 0.5),
-    color=[1,1,1], colorSpace='rgb', opacity=1,
-    flipHoriz=False, flipVert=False,
-    texRes=128, interpolate=True, depth=-2.0)
-Presentation_image_f3_4 = visual.ImageStim(
-    win=win,
-    name='Presentation_image_f3_4', 
-    image='sin', mask=None,
-    ori=0, pos=(0, 0), size=(0.5, 0.5),
-    color=[1,1,1], colorSpace='rgb', opacity=1,
-    flipHoriz=False, flipVert=False,
-    texRes=128, interpolate=True, depth=-3.0)
-Presentation_image_f3_5 = visual.ImageStim(
-    win=win,
-    name='Presentation_image_f3_5', 
-    image='sin', mask=None,
-    ori=0, pos=(0, 0), size=(0.5, 0.5),
-    color=[1,1,1], colorSpace='rgb', opacity=1,
-    flipHoriz=False, flipVert=False,
-    texRes=128, interpolate=True, depth=-4.0)
-Presentation_image_f3_6 = visual.ImageStim(
-    win=win,
-    name='Presentation_image_f3_6', 
-    image='sin', mask=None,
-    ori=0, pos=(0, 0), size=(0.5, 0.5),
-    color=[1,1,1], colorSpace='rgb', opacity=1,
-    flipHoriz=False, flipVert=False,
-    texRes=128, interpolate=True, depth=-5.0)
-Presentation_image_f3_7 = visual.ImageStim(
-    win=win,
-    name='Presentation_image_f3_7', 
-    image='sin', mask=None,
-    ori=0, pos=(0, 0), size=(0.5, 0.5),
-    color=[1,1,1], colorSpace='rgb', opacity=1,
-    flipHoriz=False, flipVert=False,
-    texRes=128, interpolate=True, depth=-6.0)
-Presentation_image_f3_8 = visual.ImageStim(
-    win=win,
-    name='Presentation_image_f3_8', 
-    image='sin', mask=None,
-    ori=0, pos=(0, 0), size=(0.5, 0.5),
-    color=[1,1,1], colorSpace='rgb', opacity=1,
-    flipHoriz=False, flipVert=False,
-    texRes=128, interpolate=True, depth=-7.0)
-Presentation_image_f3_9 = visual.ImageStim(
-    win=win,
-    name='Presentation_image_f3_9', 
-    image='sin', mask=None,
-    ori=0, pos=(0, 0), size=(0.5, 0.5),
-    color=[1,1,1], colorSpace='rgb', opacity=1,
-    flipHoriz=False, flipVert=False,
-    texRes=128, interpolate=True, depth=-8.0)
-Presentation_image_f3_10 = visual.ImageStim(
-    win=win,
-    name='Presentation_image_f3_10', 
-    image='sin', mask=None,
-    ori=0, pos=(0, 0), size=(0.5, 0.5),
-    color=[1,1,1], colorSpace='rgb', opacity=1,
-    flipHoriz=False, flipVert=False,
-    texRes=128, interpolate=True, depth=-9.0)
-Presentation_image_f3_11 = visual.ImageStim(
-    win=win,
-    name='Presentation_image_f3_11', 
-    image='sin', mask=None,
-    ori=0, pos=(0, 0), size=(0.5, 0.5),
-    color=[1,1,1], colorSpace='rgb', opacity=1,
-    flipHoriz=False, flipVert=False,
-    texRes=128, interpolate=True, depth=-10.0)
-Presentation_image_f3_12 = visual.ImageStim(
-    win=win,
-    name='Presentation_image_f3_12', 
-    image='sin', mask=None,
-    ori=0, pos=(0, 0), size=(0.5, 0.5),
-    color=[1,1,1], colorSpace='rgb', opacity=1,
-    flipHoriz=False, flipVert=False,
-    texRes=128, interpolate=True, depth=-11.0)
-
-# Initialize components for Routine "choice"
-choiceClock = core.Clock()
-Fixation_cross = visual.ShapeStim(
-    win=win, name='Fixation_cross', vertices='cross',
-    size=(0.1, 0.1),
-    ori=0, pos=(0, 0),
-    lineWidth=1, lineColor=[1,1,1], lineColorSpace='rgb',
-    fillColor=[1,1,1], fillColorSpace='rgb',
-    opacity=1, depth=0.0, interpolate=True)
-Topleft = visual.ImageStim(
-    win=win,
-    name='Topleft', 
-    image='sin', mask=None,
-    ori=0, pos=(-0.25, 0.25), size=(0.5, 0.5),
-    color=[1,1,1], colorSpace='rgb', opacity=1,
-    flipHoriz=False, flipVert=False,
-    texRes=128, interpolate=True, depth=-1.0)
-Topright = visual.ImageStim(
-    win=win,
-    name='Topright', 
-    image='sin', mask=None,
-    ori=0, pos=(0.25 , 0.25), size=(0.5, 0.5),
-    color=[1,1,1], colorSpace='rgb', opacity=1,
-    flipHoriz=False, flipVert=False,
-    texRes=128, interpolate=True, depth=-2.0)
-Bottomleft = visual.ImageStim(
-    win=win,
-    name='Bottomleft', 
-    image='sin', mask=None,
-    ori=0, pos=(-0.25, -0.25), size=(0.5, 0.5),
-    color=[1,1,1], colorSpace='rgb', opacity=1,
-    flipHoriz=False, flipVert=False,
-    texRes=128, interpolate=True, depth=-3.0)
-Bottomright = visual.ImageStim(
-    win=win,
-    name='Bottomright', 
-    image='sin', mask=None,
-    ori=0, pos=(0.25, -0.25), size=(0.5, 0.5),
-    color=[1,1,1], colorSpace='rgb', opacity=1,
-    flipHoriz=False, flipVert=False,
-    texRes=128, interpolate=True, depth=-4.0)
-key_resp = keyboard.Keyboard()
-
-# Initialize components for Routine "Break"
-BreakClock = core.Clock()
-text_break = visual.TextStim(win=win, name='text_break',
-    text='Time for a break \n\nPress either of the keys "v" , "b" or "n" to continue when ready',
-    font='Arial',
-    pos=(0, 0), height=0.1, wrapWidth=None, ori=0, 
-    color='white', colorSpace='rgb', opacity=1, 
-    languageStyle='LTR',
-    depth=0.0);
-key_resp_2 = keyboard.Keyboard()
 
 # Initialize components for Routine "End"
 EndClock = core.Clock()
@@ -1246,8 +1187,6 @@ for thisBlock_one in block_one:
         fone_control_b1.addData('Presentation_image_f1_3.stopped', Presentation_image_f1_3.tStopRefresh)
         fone_control_b1.addData('Presentation_image_f1_4.started', Presentation_image_f1_4.tStartRefresh)
         fone_control_b1.addData('Presentation_image_f1_4.stopped', Presentation_image_f1_4.tStopRefresh)
-        thisExp.nextEntry()
-        
     # completed dofone repeats of 'fone_control_b1'
     
     
@@ -1479,8 +1418,6 @@ for thisBlock_one in block_one:
         ftwo_control_b1.addData('Presentation_image_f2_7.stopped', Presentation_image_f2_7.tStopRefresh)
         ftwo_control_b1.addData('Presentation_image_f2_8.started', Presentation_image_f2_8.tStartRefresh)
         ftwo_control_b1.addData('Presentation_image_f2_8.stopped', Presentation_image_f2_8.tStopRefresh)
-        thisExp.nextEntry()
-        
     # completed doftwo repeats of 'ftwo_control_b1'
     
     
@@ -1792,23 +1729,18 @@ for thisBlock_one in block_one:
         fthree_control_b1.addData('Presentation_image_f3_11.stopped', Presentation_image_f3_11.tStopRefresh)
         fthree_control_b1.addData('Presentation_image_f3_12.started', Presentation_image_f3_12.tStartRefresh)
         fthree_control_b1.addData('Presentation_image_f3_12.stopped', Presentation_image_f3_12.tStopRefresh)
-        thisExp.nextEntry()
-        
     # completed dofthree repeats of 'fthree_control_b1'
     
     
     # ------Prepare to start Routine "choice"-------
     continueRoutine = True
     # update component parameters for each repeat
-    Topleft.setImage(imageTL)
-    Topright.setImage(imageTR)
-    Bottomleft.setImage(imageBL)
-    Bottomright.setImage(imageBR)
+    displayed_choice_image.setImage(choice_image)
     key_resp.keys = []
     key_resp.rt = []
     _key_resp_allKeys = []
     # keep track of which components have finished
-    choiceComponents = [Fixation_cross, Topleft, Topright, Bottomleft, Bottomright, key_resp]
+    choiceComponents = [Fixation_cross, displayed_choice_image, key_resp]
     for thisComponent in choiceComponents:
         thisComponent.tStart = None
         thisComponent.tStop = None
@@ -1848,73 +1780,22 @@ for thisBlock_one in block_one:
                 win.timeOnFlip(Fixation_cross, 'tStopRefresh')  # time at next scr refresh
                 Fixation_cross.setAutoDraw(False)
         
-        # *Topleft* updates
-        if Topleft.status == NOT_STARTED and tThisFlip >= 1.0-frameTolerance:
+        # *displayed_choice_image* updates
+        if displayed_choice_image.status == NOT_STARTED and tThisFlip >= 1.0-frameTolerance:
             # keep track of start time/frame for later
-            Topleft.frameNStart = frameN  # exact frame index
-            Topleft.tStart = t  # local t and not account for scr refresh
-            Topleft.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(Topleft, 'tStartRefresh')  # time at next scr refresh
-            Topleft.setAutoDraw(True)
-        if Topleft.status == STARTED:
+            displayed_choice_image.frameNStart = frameN  # exact frame index
+            displayed_choice_image.tStart = t  # local t and not account for scr refresh
+            displayed_choice_image.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(displayed_choice_image, 'tStartRefresh')  # time at next scr refresh
+            displayed_choice_image.setAutoDraw(True)
+        if displayed_choice_image.status == STARTED:
             # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > Topleft.tStartRefresh + 4.0-frameTolerance:
+            if tThisFlipGlobal > displayed_choice_image.tStartRefresh + 4.0-frameTolerance:
                 # keep track of stop time/frame for later
-                Topleft.tStop = t  # not accounting for scr refresh
-                Topleft.frameNStop = frameN  # exact frame index
-                win.timeOnFlip(Topleft, 'tStopRefresh')  # time at next scr refresh
-                Topleft.setAutoDraw(False)
-        
-        # *Topright* updates
-        if Topright.status == NOT_STARTED and tThisFlip >= 1.0-frameTolerance:
-            # keep track of start time/frame for later
-            Topright.frameNStart = frameN  # exact frame index
-            Topright.tStart = t  # local t and not account for scr refresh
-            Topright.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(Topright, 'tStartRefresh')  # time at next scr refresh
-            Topright.setAutoDraw(True)
-        if Topright.status == STARTED:
-            # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > Topright.tStartRefresh + 4.0-frameTolerance:
-                # keep track of stop time/frame for later
-                Topright.tStop = t  # not accounting for scr refresh
-                Topright.frameNStop = frameN  # exact frame index
-                win.timeOnFlip(Topright, 'tStopRefresh')  # time at next scr refresh
-                Topright.setAutoDraw(False)
-        
-        # *Bottomleft* updates
-        if Bottomleft.status == NOT_STARTED and tThisFlip >= 1.0-frameTolerance:
-            # keep track of start time/frame for later
-            Bottomleft.frameNStart = frameN  # exact frame index
-            Bottomleft.tStart = t  # local t and not account for scr refresh
-            Bottomleft.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(Bottomleft, 'tStartRefresh')  # time at next scr refresh
-            Bottomleft.setAutoDraw(True)
-        if Bottomleft.status == STARTED:
-            # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > Bottomleft.tStartRefresh + 4.0-frameTolerance:
-                # keep track of stop time/frame for later
-                Bottomleft.tStop = t  # not accounting for scr refresh
-                Bottomleft.frameNStop = frameN  # exact frame index
-                win.timeOnFlip(Bottomleft, 'tStopRefresh')  # time at next scr refresh
-                Bottomleft.setAutoDraw(False)
-        
-        # *Bottomright* updates
-        if Bottomright.status == NOT_STARTED and tThisFlip >= 1.0-frameTolerance:
-            # keep track of start time/frame for later
-            Bottomright.frameNStart = frameN  # exact frame index
-            Bottomright.tStart = t  # local t and not account for scr refresh
-            Bottomright.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(Bottomright, 'tStartRefresh')  # time at next scr refresh
-            Bottomright.setAutoDraw(True)
-        if Bottomright.status == STARTED:
-            # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > Bottomright.tStartRefresh + 4.0-frameTolerance:
-                # keep track of stop time/frame for later
-                Bottomright.tStop = t  # not accounting for scr refresh
-                Bottomright.frameNStop = frameN  # exact frame index
-                win.timeOnFlip(Bottomright, 'tStopRefresh')  # time at next scr refresh
-                Bottomright.setAutoDraw(False)
+                displayed_choice_image.tStop = t  # not accounting for scr refresh
+                displayed_choice_image.frameNStop = frameN  # exact frame index
+                win.timeOnFlip(displayed_choice_image, 'tStopRefresh')  # time at next scr refresh
+                displayed_choice_image.setAutoDraw(False)
         
         # *key_resp* updates
         if key_resp.status == NOT_STARTED and t >= 1.0-frameTolerance:
@@ -1928,7 +1809,7 @@ for thisBlock_one in block_one:
             key_resp.clock.reset()  # now t=0
             key_resp.clearEvents(eventType='keyboard')
         if key_resp.status == STARTED:
-            theseKeys = key_resp.getKeys(keyList=['a', 'z', 'k', 'm'], waitRelease=False)
+            theseKeys = key_resp.getKeys(keyList=['a', 'l'], waitRelease=False)
             _key_resp_allKeys.extend(theseKeys)
             if len(_key_resp_allKeys):
                 key_resp.keys = _key_resp_allKeys[0].name  # just the first key pressed
@@ -1964,14 +1845,8 @@ for thisBlock_one in block_one:
             thisComponent.setAutoDraw(False)
     block_one.addData('Fixation_cross.started', Fixation_cross.tStartRefresh)
     block_one.addData('Fixation_cross.stopped', Fixation_cross.tStopRefresh)
-    block_one.addData('Topleft.started', Topleft.tStartRefresh)
-    block_one.addData('Topleft.stopped', Topleft.tStopRefresh)
-    block_one.addData('Topright.started', Topright.tStartRefresh)
-    block_one.addData('Topright.stopped', Topright.tStopRefresh)
-    block_one.addData('Bottomleft.started', Bottomleft.tStartRefresh)
-    block_one.addData('Bottomleft.stopped', Bottomleft.tStopRefresh)
-    block_one.addData('Bottomright.started', Bottomright.tStartRefresh)
-    block_one.addData('Bottomright.stopped', Bottomright.tStopRefresh)
+    block_one.addData('displayed_choice_image.started', displayed_choice_image.tStartRefresh)
+    block_one.addData('displayed_choice_image.stopped', displayed_choice_image.tStopRefresh)
     # check responses
     if key_resp.keys in ['', [], None]:  # No response was made
         key_resp.keys = None
@@ -1987,12 +1862,135 @@ for thisBlock_one in block_one:
         block_one.addData('key_resp.rt', key_resp.rt)
     block_one.addData('key_resp.started', key_resp.tStart)
     block_one.addData('key_resp.stopped', key_resp.tStop)
+    total_trials = total_trials + 1
+    
+    count_acc = count_acc + key_resp.corr
+    
+    avg_acc = count_acc / total_trials
+    
     # the Routine "choice" was not non-slip safe, so reset the non-slip timer
     routineTimer.reset()
     thisExp.nextEntry()
     
 # completed 1 repeats of 'block_one'
 
+# get names of stimulus parameters
+if block_one.trialList in ([], [None], None):
+    params = []
+else:
+    params = block_one.trialList[0].keys()
+# save data for this loop
+block_one.saveAsText(filename + 'block_one.csv', delim=',',
+    stimOut=params,
+    dataOut=['n','all_mean','all_std', 'all_raw'])
+
+# ------Prepare to start Routine "perf_review"-------
+continueRoutine = True
+# update component parameters for each repeat
+perf_review_accuracyval.setText(avg_acc)
+perf_key_resp_3.keys = []
+perf_key_resp_3.rt = []
+_perf_key_resp_3_allKeys = []
+# keep track of which components have finished
+perf_reviewComponents = [perf_review_accuracyval, perf_key_resp_3, text_3]
+for thisComponent in perf_reviewComponents:
+    thisComponent.tStart = None
+    thisComponent.tStop = None
+    thisComponent.tStartRefresh = None
+    thisComponent.tStopRefresh = None
+    if hasattr(thisComponent, 'status'):
+        thisComponent.status = NOT_STARTED
+# reset timers
+t = 0
+_timeToFirstFrame = win.getFutureFlipTime(clock="now")
+perf_reviewClock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
+frameN = -1
+
+# -------Run Routine "perf_review"-------
+while continueRoutine:
+    # get current time
+    t = perf_reviewClock.getTime()
+    tThisFlip = win.getFutureFlipTime(clock=perf_reviewClock)
+    tThisFlipGlobal = win.getFutureFlipTime(clock=None)
+    frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+    # update/draw components on each frame
+    
+    # *perf_review_accuracyval* updates
+    if perf_review_accuracyval.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+        # keep track of start time/frame for later
+        perf_review_accuracyval.frameNStart = frameN  # exact frame index
+        perf_review_accuracyval.tStart = t  # local t and not account for scr refresh
+        perf_review_accuracyval.tStartRefresh = tThisFlipGlobal  # on global time
+        win.timeOnFlip(perf_review_accuracyval, 'tStartRefresh')  # time at next scr refresh
+        perf_review_accuracyval.setAutoDraw(True)
+    
+    # *perf_key_resp_3* updates
+    waitOnFlip = False
+    if perf_key_resp_3.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+        # keep track of start time/frame for later
+        perf_key_resp_3.frameNStart = frameN  # exact frame index
+        perf_key_resp_3.tStart = t  # local t and not account for scr refresh
+        perf_key_resp_3.tStartRefresh = tThisFlipGlobal  # on global time
+        win.timeOnFlip(perf_key_resp_3, 'tStartRefresh')  # time at next scr refresh
+        perf_key_resp_3.status = STARTED
+        # keyboard checking is just starting
+        waitOnFlip = True
+        win.callOnFlip(perf_key_resp_3.clock.reset)  # t=0 on next screen flip
+        win.callOnFlip(perf_key_resp_3.clearEvents, eventType='keyboard')  # clear events on next screen flip
+    if perf_key_resp_3.status == STARTED and not waitOnFlip:
+        theseKeys = perf_key_resp_3.getKeys(keyList=['space'], waitRelease=False)
+        _perf_key_resp_3_allKeys.extend(theseKeys)
+        if len(_perf_key_resp_3_allKeys):
+            perf_key_resp_3.keys = _perf_key_resp_3_allKeys[-1].name  # just the last key pressed
+            perf_key_resp_3.rt = _perf_key_resp_3_allKeys[-1].rt
+            # a response ends the routine
+            continueRoutine = False
+    
+    # *text_3* updates
+    if text_3.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+        # keep track of start time/frame for later
+        text_3.frameNStart = frameN  # exact frame index
+        text_3.tStart = t  # local t and not account for scr refresh
+        text_3.tStartRefresh = tThisFlipGlobal  # on global time
+        win.timeOnFlip(text_3, 'tStartRefresh')  # time at next scr refresh
+        text_3.setAutoDraw(True)
+    
+    # check for quit (typically the Esc key)
+    if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
+        core.quit()
+    
+    # check if all components have finished
+    if not continueRoutine:  # a component has requested a forced-end of Routine
+        break
+    continueRoutine = False  # will revert to True if at least one component still running
+    for thisComponent in perf_reviewComponents:
+        if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
+            continueRoutine = True
+            break  # at least one component has not yet finished
+    
+    # refresh the screen
+    if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
+        win.flip()
+
+# -------Ending Routine "perf_review"-------
+for thisComponent in perf_reviewComponents:
+    if hasattr(thisComponent, "setAutoDraw"):
+        thisComponent.setAutoDraw(False)
+thisExp.addData('perf_review_accuracyval.started', perf_review_accuracyval.tStartRefresh)
+thisExp.addData('perf_review_accuracyval.stopped', perf_review_accuracyval.tStopRefresh)
+# check responses
+if perf_key_resp_3.keys in ['', [], None]:  # No response was made
+    perf_key_resp_3.keys = None
+thisExp.addData('perf_key_resp_3.keys',perf_key_resp_3.keys)
+if perf_key_resp_3.keys != None:  # we had a response
+    thisExp.addData('perf_key_resp_3.rt', perf_key_resp_3.rt)
+thisExp.addData('perf_key_resp_3.started', perf_key_resp_3.tStartRefresh)
+thisExp.addData('perf_key_resp_3.stopped', perf_key_resp_3.tStopRefresh)
+thisExp.nextEntry()
+thisExp.addData('text_3.started', text_3.tStartRefresh)
+thisExp.addData('text_3.stopped', text_3.tStopRefresh)
+# the Routine "perf_review" was not non-slip safe, so reset the non-slip timer
+routineTimer.reset()
 
 # ------Prepare to start Routine "Break"-------
 continueRoutine = True
@@ -2344,6 +2342,15 @@ for thisBlock_two in block_two:
         
     # completed dofone repeats of 'fone_control_b2'
     
+    # get names of stimulus parameters
+    if fone_control_b2.trialList in ([], [None], None):
+        params = []
+    else:
+        params = fone_control_b2.trialList[0].keys()
+    # save data for this loop
+    fone_control_b2.saveAsText(filename + 'fone_control_b2.csv', delim=',',
+        stimOut=params,
+        dataOut=['n','all_mean','all_std', 'all_raw'])
     
     # set up handler to look after randomisation of conditions etc
     ftwo_control_b2 = data.TrialHandler(nReps=doftwo, method='sequential', 
@@ -2577,6 +2584,15 @@ for thisBlock_two in block_two:
         
     # completed doftwo repeats of 'ftwo_control_b2'
     
+    # get names of stimulus parameters
+    if ftwo_control_b2.trialList in ([], [None], None):
+        params = []
+    else:
+        params = ftwo_control_b2.trialList[0].keys()
+    # save data for this loop
+    ftwo_control_b2.saveAsText(filename + 'ftwo_control_b2.csv', delim=',',
+        stimOut=params,
+        dataOut=['n','all_mean','all_std', 'all_raw'])
     
     # set up handler to look after randomisation of conditions etc
     fthree_control_b2 = data.TrialHandler(nReps=dofthree, method='sequential', 
@@ -2890,19 +2906,25 @@ for thisBlock_two in block_two:
         
     # completed dofthree repeats of 'fthree_control_b2'
     
+    # get names of stimulus parameters
+    if fthree_control_b2.trialList in ([], [None], None):
+        params = []
+    else:
+        params = fthree_control_b2.trialList[0].keys()
+    # save data for this loop
+    fthree_control_b2.saveAsText(filename + 'fthree_control_b2.csv', delim=',',
+        stimOut=params,
+        dataOut=['n','all_mean','all_std', 'all_raw'])
     
     # ------Prepare to start Routine "choice"-------
     continueRoutine = True
     # update component parameters for each repeat
-    Topleft.setImage(imageTL)
-    Topright.setImage(imageTR)
-    Bottomleft.setImage(imageBL)
-    Bottomright.setImage(imageBR)
+    displayed_choice_image.setImage(choice_image)
     key_resp.keys = []
     key_resp.rt = []
     _key_resp_allKeys = []
     # keep track of which components have finished
-    choiceComponents = [Fixation_cross, Topleft, Topright, Bottomleft, Bottomright, key_resp]
+    choiceComponents = [Fixation_cross, displayed_choice_image, key_resp]
     for thisComponent in choiceComponents:
         thisComponent.tStart = None
         thisComponent.tStop = None
@@ -2942,73 +2964,22 @@ for thisBlock_two in block_two:
                 win.timeOnFlip(Fixation_cross, 'tStopRefresh')  # time at next scr refresh
                 Fixation_cross.setAutoDraw(False)
         
-        # *Topleft* updates
-        if Topleft.status == NOT_STARTED and tThisFlip >= 1.0-frameTolerance:
+        # *displayed_choice_image* updates
+        if displayed_choice_image.status == NOT_STARTED and tThisFlip >= 1.0-frameTolerance:
             # keep track of start time/frame for later
-            Topleft.frameNStart = frameN  # exact frame index
-            Topleft.tStart = t  # local t and not account for scr refresh
-            Topleft.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(Topleft, 'tStartRefresh')  # time at next scr refresh
-            Topleft.setAutoDraw(True)
-        if Topleft.status == STARTED:
+            displayed_choice_image.frameNStart = frameN  # exact frame index
+            displayed_choice_image.tStart = t  # local t and not account for scr refresh
+            displayed_choice_image.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(displayed_choice_image, 'tStartRefresh')  # time at next scr refresh
+            displayed_choice_image.setAutoDraw(True)
+        if displayed_choice_image.status == STARTED:
             # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > Topleft.tStartRefresh + 4.0-frameTolerance:
+            if tThisFlipGlobal > displayed_choice_image.tStartRefresh + 4.0-frameTolerance:
                 # keep track of stop time/frame for later
-                Topleft.tStop = t  # not accounting for scr refresh
-                Topleft.frameNStop = frameN  # exact frame index
-                win.timeOnFlip(Topleft, 'tStopRefresh')  # time at next scr refresh
-                Topleft.setAutoDraw(False)
-        
-        # *Topright* updates
-        if Topright.status == NOT_STARTED and tThisFlip >= 1.0-frameTolerance:
-            # keep track of start time/frame for later
-            Topright.frameNStart = frameN  # exact frame index
-            Topright.tStart = t  # local t and not account for scr refresh
-            Topright.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(Topright, 'tStartRefresh')  # time at next scr refresh
-            Topright.setAutoDraw(True)
-        if Topright.status == STARTED:
-            # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > Topright.tStartRefresh + 4.0-frameTolerance:
-                # keep track of stop time/frame for later
-                Topright.tStop = t  # not accounting for scr refresh
-                Topright.frameNStop = frameN  # exact frame index
-                win.timeOnFlip(Topright, 'tStopRefresh')  # time at next scr refresh
-                Topright.setAutoDraw(False)
-        
-        # *Bottomleft* updates
-        if Bottomleft.status == NOT_STARTED and tThisFlip >= 1.0-frameTolerance:
-            # keep track of start time/frame for later
-            Bottomleft.frameNStart = frameN  # exact frame index
-            Bottomleft.tStart = t  # local t and not account for scr refresh
-            Bottomleft.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(Bottomleft, 'tStartRefresh')  # time at next scr refresh
-            Bottomleft.setAutoDraw(True)
-        if Bottomleft.status == STARTED:
-            # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > Bottomleft.tStartRefresh + 4.0-frameTolerance:
-                # keep track of stop time/frame for later
-                Bottomleft.tStop = t  # not accounting for scr refresh
-                Bottomleft.frameNStop = frameN  # exact frame index
-                win.timeOnFlip(Bottomleft, 'tStopRefresh')  # time at next scr refresh
-                Bottomleft.setAutoDraw(False)
-        
-        # *Bottomright* updates
-        if Bottomright.status == NOT_STARTED and tThisFlip >= 1.0-frameTolerance:
-            # keep track of start time/frame for later
-            Bottomright.frameNStart = frameN  # exact frame index
-            Bottomright.tStart = t  # local t and not account for scr refresh
-            Bottomright.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(Bottomright, 'tStartRefresh')  # time at next scr refresh
-            Bottomright.setAutoDraw(True)
-        if Bottomright.status == STARTED:
-            # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > Bottomright.tStartRefresh + 4.0-frameTolerance:
-                # keep track of stop time/frame for later
-                Bottomright.tStop = t  # not accounting for scr refresh
-                Bottomright.frameNStop = frameN  # exact frame index
-                win.timeOnFlip(Bottomright, 'tStopRefresh')  # time at next scr refresh
-                Bottomright.setAutoDraw(False)
+                displayed_choice_image.tStop = t  # not accounting for scr refresh
+                displayed_choice_image.frameNStop = frameN  # exact frame index
+                win.timeOnFlip(displayed_choice_image, 'tStopRefresh')  # time at next scr refresh
+                displayed_choice_image.setAutoDraw(False)
         
         # *key_resp* updates
         if key_resp.status == NOT_STARTED and t >= 1.0-frameTolerance:
@@ -3022,7 +2993,7 @@ for thisBlock_two in block_two:
             key_resp.clock.reset()  # now t=0
             key_resp.clearEvents(eventType='keyboard')
         if key_resp.status == STARTED:
-            theseKeys = key_resp.getKeys(keyList=['a', 'z', 'k', 'm'], waitRelease=False)
+            theseKeys = key_resp.getKeys(keyList=['a', 'l'], waitRelease=False)
             _key_resp_allKeys.extend(theseKeys)
             if len(_key_resp_allKeys):
                 key_resp.keys = _key_resp_allKeys[0].name  # just the first key pressed
@@ -3058,14 +3029,8 @@ for thisBlock_two in block_two:
             thisComponent.setAutoDraw(False)
     block_two.addData('Fixation_cross.started', Fixation_cross.tStartRefresh)
     block_two.addData('Fixation_cross.stopped', Fixation_cross.tStopRefresh)
-    block_two.addData('Topleft.started', Topleft.tStartRefresh)
-    block_two.addData('Topleft.stopped', Topleft.tStopRefresh)
-    block_two.addData('Topright.started', Topright.tStartRefresh)
-    block_two.addData('Topright.stopped', Topright.tStopRefresh)
-    block_two.addData('Bottomleft.started', Bottomleft.tStartRefresh)
-    block_two.addData('Bottomleft.stopped', Bottomleft.tStopRefresh)
-    block_two.addData('Bottomright.started', Bottomright.tStartRefresh)
-    block_two.addData('Bottomright.stopped', Bottomright.tStopRefresh)
+    block_two.addData('displayed_choice_image.started', displayed_choice_image.tStartRefresh)
+    block_two.addData('displayed_choice_image.stopped', displayed_choice_image.tStopRefresh)
     # check responses
     if key_resp.keys in ['', [], None]:  # No response was made
         key_resp.keys = None
@@ -3081,12 +3046,27 @@ for thisBlock_two in block_two:
         block_two.addData('key_resp.rt', key_resp.rt)
     block_two.addData('key_resp.started', key_resp.tStart)
     block_two.addData('key_resp.stopped', key_resp.tStop)
+    total_trials = total_trials + 1
+    
+    count_acc = count_acc + key_resp.corr
+    
+    avg_acc = count_acc / total_trials
+    
     # the Routine "choice" was not non-slip safe, so reset the non-slip timer
     routineTimer.reset()
     thisExp.nextEntry()
     
 # completed 1 repeats of 'block_two'
 
+# get names of stimulus parameters
+if block_two.trialList in ([], [None], None):
+    params = []
+else:
+    params = block_two.trialList[0].keys()
+# save data for this loop
+block_two.saveAsText(filename + 'block_two.csv', delim=',',
+    stimOut=params,
+    dataOut=['n','all_mean','all_std', 'all_raw'])
 
 # ------Prepare to start Routine "Break"-------
 continueRoutine = True
@@ -3438,6 +3418,15 @@ for thisBlock_three in block_three:
         
     # completed dofone repeats of 'fone_control_b3'
     
+    # get names of stimulus parameters
+    if fone_control_b3.trialList in ([], [None], None):
+        params = []
+    else:
+        params = fone_control_b3.trialList[0].keys()
+    # save data for this loop
+    fone_control_b3.saveAsText(filename + 'fone_control_b3.csv', delim=',',
+        stimOut=params,
+        dataOut=['n','all_mean','all_std', 'all_raw'])
     
     # set up handler to look after randomisation of conditions etc
     ftwo_control_b3 = data.TrialHandler(nReps=doftwo, method='sequential', 
@@ -3671,6 +3660,15 @@ for thisBlock_three in block_three:
         
     # completed doftwo repeats of 'ftwo_control_b3'
     
+    # get names of stimulus parameters
+    if ftwo_control_b3.trialList in ([], [None], None):
+        params = []
+    else:
+        params = ftwo_control_b3.trialList[0].keys()
+    # save data for this loop
+    ftwo_control_b3.saveAsText(filename + 'ftwo_control_b3.csv', delim=',',
+        stimOut=params,
+        dataOut=['n','all_mean','all_std', 'all_raw'])
     
     # set up handler to look after randomisation of conditions etc
     fthree_control_b3 = data.TrialHandler(nReps=dofthree, method='random', 
@@ -3984,19 +3982,25 @@ for thisBlock_three in block_three:
         
     # completed dofthree repeats of 'fthree_control_b3'
     
+    # get names of stimulus parameters
+    if fthree_control_b3.trialList in ([], [None], None):
+        params = []
+    else:
+        params = fthree_control_b3.trialList[0].keys()
+    # save data for this loop
+    fthree_control_b3.saveAsText(filename + 'fthree_control_b3.csv', delim=',',
+        stimOut=params,
+        dataOut=['n','all_mean','all_std', 'all_raw'])
     
     # ------Prepare to start Routine "choice"-------
     continueRoutine = True
     # update component parameters for each repeat
-    Topleft.setImage(imageTL)
-    Topright.setImage(imageTR)
-    Bottomleft.setImage(imageBL)
-    Bottomright.setImage(imageBR)
+    displayed_choice_image.setImage(choice_image)
     key_resp.keys = []
     key_resp.rt = []
     _key_resp_allKeys = []
     # keep track of which components have finished
-    choiceComponents = [Fixation_cross, Topleft, Topright, Bottomleft, Bottomright, key_resp]
+    choiceComponents = [Fixation_cross, displayed_choice_image, key_resp]
     for thisComponent in choiceComponents:
         thisComponent.tStart = None
         thisComponent.tStop = None
@@ -4036,73 +4040,22 @@ for thisBlock_three in block_three:
                 win.timeOnFlip(Fixation_cross, 'tStopRefresh')  # time at next scr refresh
                 Fixation_cross.setAutoDraw(False)
         
-        # *Topleft* updates
-        if Topleft.status == NOT_STARTED and tThisFlip >= 1.0-frameTolerance:
+        # *displayed_choice_image* updates
+        if displayed_choice_image.status == NOT_STARTED and tThisFlip >= 1.0-frameTolerance:
             # keep track of start time/frame for later
-            Topleft.frameNStart = frameN  # exact frame index
-            Topleft.tStart = t  # local t and not account for scr refresh
-            Topleft.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(Topleft, 'tStartRefresh')  # time at next scr refresh
-            Topleft.setAutoDraw(True)
-        if Topleft.status == STARTED:
+            displayed_choice_image.frameNStart = frameN  # exact frame index
+            displayed_choice_image.tStart = t  # local t and not account for scr refresh
+            displayed_choice_image.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(displayed_choice_image, 'tStartRefresh')  # time at next scr refresh
+            displayed_choice_image.setAutoDraw(True)
+        if displayed_choice_image.status == STARTED:
             # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > Topleft.tStartRefresh + 4.0-frameTolerance:
+            if tThisFlipGlobal > displayed_choice_image.tStartRefresh + 4.0-frameTolerance:
                 # keep track of stop time/frame for later
-                Topleft.tStop = t  # not accounting for scr refresh
-                Topleft.frameNStop = frameN  # exact frame index
-                win.timeOnFlip(Topleft, 'tStopRefresh')  # time at next scr refresh
-                Topleft.setAutoDraw(False)
-        
-        # *Topright* updates
-        if Topright.status == NOT_STARTED and tThisFlip >= 1.0-frameTolerance:
-            # keep track of start time/frame for later
-            Topright.frameNStart = frameN  # exact frame index
-            Topright.tStart = t  # local t and not account for scr refresh
-            Topright.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(Topright, 'tStartRefresh')  # time at next scr refresh
-            Topright.setAutoDraw(True)
-        if Topright.status == STARTED:
-            # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > Topright.tStartRefresh + 4.0-frameTolerance:
-                # keep track of stop time/frame for later
-                Topright.tStop = t  # not accounting for scr refresh
-                Topright.frameNStop = frameN  # exact frame index
-                win.timeOnFlip(Topright, 'tStopRefresh')  # time at next scr refresh
-                Topright.setAutoDraw(False)
-        
-        # *Bottomleft* updates
-        if Bottomleft.status == NOT_STARTED and tThisFlip >= 1.0-frameTolerance:
-            # keep track of start time/frame for later
-            Bottomleft.frameNStart = frameN  # exact frame index
-            Bottomleft.tStart = t  # local t and not account for scr refresh
-            Bottomleft.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(Bottomleft, 'tStartRefresh')  # time at next scr refresh
-            Bottomleft.setAutoDraw(True)
-        if Bottomleft.status == STARTED:
-            # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > Bottomleft.tStartRefresh + 4.0-frameTolerance:
-                # keep track of stop time/frame for later
-                Bottomleft.tStop = t  # not accounting for scr refresh
-                Bottomleft.frameNStop = frameN  # exact frame index
-                win.timeOnFlip(Bottomleft, 'tStopRefresh')  # time at next scr refresh
-                Bottomleft.setAutoDraw(False)
-        
-        # *Bottomright* updates
-        if Bottomright.status == NOT_STARTED and tThisFlip >= 1.0-frameTolerance:
-            # keep track of start time/frame for later
-            Bottomright.frameNStart = frameN  # exact frame index
-            Bottomright.tStart = t  # local t and not account for scr refresh
-            Bottomright.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(Bottomright, 'tStartRefresh')  # time at next scr refresh
-            Bottomright.setAutoDraw(True)
-        if Bottomright.status == STARTED:
-            # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > Bottomright.tStartRefresh + 4.0-frameTolerance:
-                # keep track of stop time/frame for later
-                Bottomright.tStop = t  # not accounting for scr refresh
-                Bottomright.frameNStop = frameN  # exact frame index
-                win.timeOnFlip(Bottomright, 'tStopRefresh')  # time at next scr refresh
-                Bottomright.setAutoDraw(False)
+                displayed_choice_image.tStop = t  # not accounting for scr refresh
+                displayed_choice_image.frameNStop = frameN  # exact frame index
+                win.timeOnFlip(displayed_choice_image, 'tStopRefresh')  # time at next scr refresh
+                displayed_choice_image.setAutoDraw(False)
         
         # *key_resp* updates
         if key_resp.status == NOT_STARTED and t >= 1.0-frameTolerance:
@@ -4116,7 +4069,7 @@ for thisBlock_three in block_three:
             key_resp.clock.reset()  # now t=0
             key_resp.clearEvents(eventType='keyboard')
         if key_resp.status == STARTED:
-            theseKeys = key_resp.getKeys(keyList=['a', 'z', 'k', 'm'], waitRelease=False)
+            theseKeys = key_resp.getKeys(keyList=['a', 'l'], waitRelease=False)
             _key_resp_allKeys.extend(theseKeys)
             if len(_key_resp_allKeys):
                 key_resp.keys = _key_resp_allKeys[0].name  # just the first key pressed
@@ -4152,14 +4105,8 @@ for thisBlock_three in block_three:
             thisComponent.setAutoDraw(False)
     block_three.addData('Fixation_cross.started', Fixation_cross.tStartRefresh)
     block_three.addData('Fixation_cross.stopped', Fixation_cross.tStopRefresh)
-    block_three.addData('Topleft.started', Topleft.tStartRefresh)
-    block_three.addData('Topleft.stopped', Topleft.tStopRefresh)
-    block_three.addData('Topright.started', Topright.tStartRefresh)
-    block_three.addData('Topright.stopped', Topright.tStopRefresh)
-    block_three.addData('Bottomleft.started', Bottomleft.tStartRefresh)
-    block_three.addData('Bottomleft.stopped', Bottomleft.tStopRefresh)
-    block_three.addData('Bottomright.started', Bottomright.tStartRefresh)
-    block_three.addData('Bottomright.stopped', Bottomright.tStopRefresh)
+    block_three.addData('displayed_choice_image.started', displayed_choice_image.tStartRefresh)
+    block_three.addData('displayed_choice_image.stopped', displayed_choice_image.tStopRefresh)
     # check responses
     if key_resp.keys in ['', [], None]:  # No response was made
         key_resp.keys = None
@@ -4175,99 +4122,27 @@ for thisBlock_three in block_three:
         block_three.addData('key_resp.rt', key_resp.rt)
     block_three.addData('key_resp.started', key_resp.tStart)
     block_three.addData('key_resp.stopped', key_resp.tStop)
+    total_trials = total_trials + 1
+    
+    count_acc = count_acc + key_resp.corr
+    
+    avg_acc = count_acc / total_trials
+    
     # the Routine "choice" was not non-slip safe, so reset the non-slip timer
     routineTimer.reset()
     thisExp.nextEntry()
     
 # completed 1 repeats of 'block_three'
 
-
-# ------Prepare to start Routine "Break"-------
-continueRoutine = True
-# update component parameters for each repeat
-key_resp_2.keys = []
-key_resp_2.rt = []
-_key_resp_2_allKeys = []
-# keep track of which components have finished
-BreakComponents = [text_break, key_resp_2]
-for thisComponent in BreakComponents:
-    thisComponent.tStart = None
-    thisComponent.tStop = None
-    thisComponent.tStartRefresh = None
-    thisComponent.tStopRefresh = None
-    if hasattr(thisComponent, 'status'):
-        thisComponent.status = NOT_STARTED
-# reset timers
-t = 0
-_timeToFirstFrame = win.getFutureFlipTime(clock="now")
-BreakClock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
-frameN = -1
-
-# -------Run Routine "Break"-------
-while continueRoutine:
-    # get current time
-    t = BreakClock.getTime()
-    tThisFlip = win.getFutureFlipTime(clock=BreakClock)
-    tThisFlipGlobal = win.getFutureFlipTime(clock=None)
-    frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
-    # update/draw components on each frame
-    
-    # *text_break* updates
-    if text_break.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
-        # keep track of start time/frame for later
-        text_break.frameNStart = frameN  # exact frame index
-        text_break.tStart = t  # local t and not account for scr refresh
-        text_break.tStartRefresh = tThisFlipGlobal  # on global time
-        win.timeOnFlip(text_break, 'tStartRefresh')  # time at next scr refresh
-        text_break.setAutoDraw(True)
-    
-    # *key_resp_2* updates
-    waitOnFlip = False
-    if key_resp_2.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
-        # keep track of start time/frame for later
-        key_resp_2.frameNStart = frameN  # exact frame index
-        key_resp_2.tStart = t  # local t and not account for scr refresh
-        key_resp_2.tStartRefresh = tThisFlipGlobal  # on global time
-        win.timeOnFlip(key_resp_2, 'tStartRefresh')  # time at next scr refresh
-        key_resp_2.status = STARTED
-        # keyboard checking is just starting
-        waitOnFlip = True
-        win.callOnFlip(key_resp_2.clock.reset)  # t=0 on next screen flip
-        win.callOnFlip(key_resp_2.clearEvents, eventType='keyboard')  # clear events on next screen flip
-    if key_resp_2.status == STARTED and not waitOnFlip:
-        theseKeys = key_resp_2.getKeys(keyList=['v', 'n', 'b'], waitRelease=False)
-        _key_resp_2_allKeys.extend(theseKeys)
-        if len(_key_resp_2_allKeys):
-            key_resp_2.keys = _key_resp_2_allKeys[-1].name  # just the last key pressed
-            key_resp_2.rt = _key_resp_2_allKeys[-1].rt
-            # a response ends the routine
-            continueRoutine = False
-    
-    # check for quit (typically the Esc key)
-    if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
-        core.quit()
-    
-    # check if all components have finished
-    if not continueRoutine:  # a component has requested a forced-end of Routine
-        break
-    continueRoutine = False  # will revert to True if at least one component still running
-    for thisComponent in BreakComponents:
-        if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
-            continueRoutine = True
-            break  # at least one component has not yet finished
-    
-    # refresh the screen
-    if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
-        win.flip()
-
-# -------Ending Routine "Break"-------
-for thisComponent in BreakComponents:
-    if hasattr(thisComponent, "setAutoDraw"):
-        thisComponent.setAutoDraw(False)
-thisExp.addData('text_break.started', text_break.tStartRefresh)
-thisExp.addData('text_break.stopped', text_break.tStopRefresh)
-# the Routine "Break" was not non-slip safe, so reset the non-slip timer
-routineTimer.reset()
+# get names of stimulus parameters
+if block_three.trialList in ([], [None], None):
+    params = []
+else:
+    params = block_three.trialList[0].keys()
+# save data for this loop
+block_three.saveAsText(filename + 'block_three.csv', delim=',',
+    stimOut=params,
+    dataOut=['n','all_mean','all_std', 'all_raw'])
 
 # ------Prepare to start Routine "End"-------
 continueRoutine = True

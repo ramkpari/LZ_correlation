@@ -1,0 +1,802 @@
+1.5562 	WARNING 	We strongly recommend you activate the PTB sound engine in PsychoPy prefs as the preferred audio engine. Its timing is vastly superior. Your prefs are currently set to use ['sounddevice', 'PTB', 'pyo', 'pygame'] (in that order).
+3.5872 	WARNING 	psychopy.parallel has been imported but no parallel port driver found. Install either inpout32, inpoutx64 or dlportio
+10.7964 	WARNING 	User requested fullscreen with size [1680 1050], but screen is actually [1920, 1080]. Using actual size
+15.3515 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=False, args=UNKNOWN, autoLog=True, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([0., 0., 0.]), colorSpace='rgb', depthBits=8, fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x000002384FBEB898>, gamma=None, gammaErrorPolicy='raise', kwargs=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x000002384FC1D2B0>, multiSample=False, name='window1', numSamples=2, pos=[0.0, 0.0], screen=0, size=array([1920, 1080]), stencilBits=0, stereo=False, units='height', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+15.3518 	EXP 	window1: mouseVisible = True
+15.3518 	EXP 	window1: recordFrameIntervals = False
+15.4206 	EXP 	window1: recordFrameIntervals = True
+15.4971 	EXP 	window1: recordFrameIntervals = False
+16.0761 	EXP 	Created text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='text', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text=str(...), units='height', win=Window(...), wrapWidth=1)
+16.0776 	EXP 	Created Crossm = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, autoDraw=False, autoLog=True, closeShape=True, contrast=1.0, depth=0.0, fillColor=array([1., 1., 1.]), fillColorSpace='rgb', interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineWidth=1, name='Crossm', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([0.05, 0.05]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+16.0802 	EXP 	Created Presentation_image_f1_1 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Presentation_image_f1_1', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128, units='height', win=Window(...))
+16.0825 	EXP 	Created Presentation_image_f1_2 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Presentation_image_f1_2', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128, units='height', win=Window(...))
+16.0847 	EXP 	Created Presentation_image_f1_3 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Presentation_image_f1_3', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128, units='height', win=Window(...))
+16.0868 	EXP 	Created Presentation_image_f1_4 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-3.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Presentation_image_f1_4', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128, units='height', win=Window(...))
+16.0885 	EXP 	Created Presentation_image_f2_1 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Presentation_image_f2_1', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128, units='height', win=Window(...))
+16.0904 	EXP 	Created Presentation_image_f2_2 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Presentation_image_f2_2', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128, units='height', win=Window(...))
+16.0926 	EXP 	Created Presentation_image_f2_3 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Presentation_image_f2_3', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128, units='height', win=Window(...))
+16.0944 	EXP 	Created Presentation_image_f2_4 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-3.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Presentation_image_f2_4', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128, units='height', win=Window(...))
+16.0961 	EXP 	Created Presentation_image_f2_5 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-4.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Presentation_image_f2_5', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128, units='height', win=Window(...))
+16.0981 	EXP 	Created Presentation_image_f2_6 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-5.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Presentation_image_f2_6', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128, units='height', win=Window(...))
+16.0999 	EXP 	Created Presentation_image_f2_7 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-6.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Presentation_image_f2_7', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128, units='height', win=Window(...))
+16.1016 	EXP 	Created Presentation_image_f2_8 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-7.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Presentation_image_f2_8', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128, units='height', win=Window(...))
+16.1044 	EXP 	Created Presentation_image_f3_1 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Presentation_image_f3_1', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128, units='height', win=Window(...))
+16.1066 	EXP 	Created Presentation_image_f3_2 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Presentation_image_f3_2', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128, units='height', win=Window(...))
+16.1088 	EXP 	Created Presentation_image_f3_3 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Presentation_image_f3_3', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128, units='height', win=Window(...))
+16.1108 	EXP 	Created Presentation_image_f3_4 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-3.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Presentation_image_f3_4', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128, units='height', win=Window(...))
+16.1124 	EXP 	Created Presentation_image_f3_5 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-4.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Presentation_image_f3_5', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128, units='height', win=Window(...))
+16.1143 	EXP 	Created Presentation_image_f3_6 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-5.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Presentation_image_f3_6', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128, units='height', win=Window(...))
+16.1164 	EXP 	Created Presentation_image_f3_7 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-6.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Presentation_image_f3_7', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128, units='height', win=Window(...))
+16.1182 	EXP 	Created Presentation_image_f3_8 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-7.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Presentation_image_f3_8', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128, units='height', win=Window(...))
+16.1203 	EXP 	Created Presentation_image_f3_9 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-8.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Presentation_image_f3_9', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128, units='height', win=Window(...))
+16.1225 	EXP 	Created Presentation_image_f3_10 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-9.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Presentation_image_f3_10', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128, units='height', win=Window(...))
+16.1247 	EXP 	Created Presentation_image_f3_11 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-10.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Presentation_image_f3_11', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128, units='height', win=Window(...))
+16.1269 	EXP 	Created Presentation_image_f3_12 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-11.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Presentation_image_f3_12', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128, units='height', win=Window(...))
+16.1290 	EXP 	Created Presentation_image_f4_1 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Presentation_image_f4_1', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128, units='height', win=Window(...))
+16.1307 	EXP 	Created Presentation_image_f4_2 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Presentation_image_f4_2', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128, units='height', win=Window(...))
+16.1324 	EXP 	Created Presentation_image_f4_3 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Presentation_image_f4_3', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128, units='height', win=Window(...))
+16.1341 	EXP 	Created Presentation_image_f4_4 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-3.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Presentation_image_f4_4', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128, units='height', win=Window(...))
+16.1359 	EXP 	Created Presentation_image_f4_5 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-4.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Presentation_image_f4_5', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128, units='height', win=Window(...))
+16.1376 	EXP 	Created Presentation_image_f4_6 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-5.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Presentation_image_f4_6', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128, units='height', win=Window(...))
+16.1393 	EXP 	Created Presentation_image_f4_7 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-6.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Presentation_image_f4_7', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128, units='height', win=Window(...))
+16.1411 	EXP 	Created Presentation_image_f4_8 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-7.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Presentation_image_f4_8', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128, units='height', win=Window(...))
+16.1428 	EXP 	Created Presentation_image_f4_9 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-8.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Presentation_image_f4_9', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128, units='height', win=Window(...))
+16.1445 	EXP 	Created Presentation_image_f4_10 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-9.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Presentation_image_f4_10', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128, units='height', win=Window(...))
+16.1463 	EXP 	Created Presentation_image_f4_11 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-10.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Presentation_image_f4_11', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128, units='height', win=Window(...))
+16.1482 	EXP 	Created Presentation_image_f4_12 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-11.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Presentation_image_f4_12', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128, units='height', win=Window(...))
+16.1503 	EXP 	Created Presentation_image_f4_13 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-12.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Presentation_image_f4_13', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128, units='height', win=Window(...))
+16.1524 	EXP 	Created Presentation_image_f3_14 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-13.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Presentation_image_f3_14', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128, units='height', win=Window(...))
+16.1546 	EXP 	Created Presentation_image_f4_15 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-14.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Presentation_image_f4_15', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128, units='height', win=Window(...))
+16.1568 	EXP 	Created Presentation_image_f4_16 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-15.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Presentation_image_f4_16', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128, units='height', win=Window(...))
+16.1583 	EXP 	Created Fixation_cross = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, autoDraw=False, autoLog=True, closeShape=True, contrast=1.0, depth=0.0, fillColor=array([1., 1., 1.]), fillColorSpace='rgb', interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineWidth=1, name='Fixation_cross', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([0.1, 0.1]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+16.1606 	EXP 	Created displayed_choice_image = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='displayed_choice_image', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128, units='height', win=Window(...))
+16.2064 	EXP 	Created text_break = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='text_break', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text=str(...), units='height', win=Window(...), wrapWidth=1)
+16.2079 	EXP 	Created Crossm = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, autoDraw=False, autoLog=True, closeShape=True, contrast=1.0, depth=0.0, fillColor=array([1., 1., 1.]), fillColorSpace='rgb', interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineWidth=1, name='Crossm', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([0.05, 0.05]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+16.2095 	EXP 	Created Presentation_image_f1_1 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Presentation_image_f1_1', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128, units='height', win=Window(...))
+16.2110 	EXP 	Created Presentation_image_f1_2 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Presentation_image_f1_2', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128, units='height', win=Window(...))
+16.2125 	EXP 	Created Presentation_image_f1_3 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Presentation_image_f1_3', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128, units='height', win=Window(...))
+16.2141 	EXP 	Created Presentation_image_f1_4 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-3.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Presentation_image_f1_4', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128, units='height', win=Window(...))
+16.2156 	EXP 	Created Presentation_image_f2_1 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Presentation_image_f2_1', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128, units='height', win=Window(...))
+16.2170 	EXP 	Created Presentation_image_f2_2 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Presentation_image_f2_2', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128, units='height', win=Window(...))
+16.2185 	EXP 	Created Presentation_image_f2_3 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Presentation_image_f2_3', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128, units='height', win=Window(...))
+16.2200 	EXP 	Created Presentation_image_f2_4 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-3.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Presentation_image_f2_4', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128, units='height', win=Window(...))
+16.2214 	EXP 	Created Presentation_image_f2_5 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-4.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Presentation_image_f2_5', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128, units='height', win=Window(...))
+16.2229 	EXP 	Created Presentation_image_f2_6 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-5.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Presentation_image_f2_6', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128, units='height', win=Window(...))
+16.2245 	EXP 	Created Presentation_image_f2_7 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-6.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Presentation_image_f2_7', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128, units='height', win=Window(...))
+16.2261 	EXP 	Created Presentation_image_f2_8 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-7.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Presentation_image_f2_8', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128, units='height', win=Window(...))
+16.2277 	EXP 	Created Presentation_image_f3_1 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Presentation_image_f3_1', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128, units='height', win=Window(...))
+16.2292 	EXP 	Created Presentation_image_f3_2 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Presentation_image_f3_2', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128, units='height', win=Window(...))
+16.2308 	EXP 	Created Presentation_image_f3_3 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Presentation_image_f3_3', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128, units='height', win=Window(...))
+16.2322 	EXP 	Created Presentation_image_f3_4 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-3.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Presentation_image_f3_4', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128, units='height', win=Window(...))
+16.2337 	EXP 	Created Presentation_image_f3_5 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-4.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Presentation_image_f3_5', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128, units='height', win=Window(...))
+16.2351 	EXP 	Created Presentation_image_f3_6 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-5.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Presentation_image_f3_6', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128, units='height', win=Window(...))
+16.2365 	EXP 	Created Presentation_image_f3_7 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-6.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Presentation_image_f3_7', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128, units='height', win=Window(...))
+16.2379 	EXP 	Created Presentation_image_f3_8 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-7.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Presentation_image_f3_8', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128, units='height', win=Window(...))
+16.2394 	EXP 	Created Presentation_image_f3_9 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-8.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Presentation_image_f3_9', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128, units='height', win=Window(...))
+16.2409 	EXP 	Created Presentation_image_f3_10 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-9.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Presentation_image_f3_10', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128, units='height', win=Window(...))
+16.2424 	EXP 	Created Presentation_image_f3_11 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-10.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Presentation_image_f3_11', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128, units='height', win=Window(...))
+16.2438 	EXP 	Created Presentation_image_f3_12 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-11.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Presentation_image_f3_12', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128, units='height', win=Window(...))
+16.2453 	EXP 	Created Presentation_image_f4_1 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Presentation_image_f4_1', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128, units='height', win=Window(...))
+16.2467 	EXP 	Created Presentation_image_f4_2 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Presentation_image_f4_2', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128, units='height', win=Window(...))
+16.2482 	EXP 	Created Presentation_image_f4_3 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Presentation_image_f4_3', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128, units='height', win=Window(...))
+16.2496 	EXP 	Created Presentation_image_f4_4 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-3.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Presentation_image_f4_4', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128, units='height', win=Window(...))
+16.2513 	EXP 	Created Presentation_image_f4_5 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-4.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Presentation_image_f4_5', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128, units='height', win=Window(...))
+16.2527 	EXP 	Created Presentation_image_f4_6 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-5.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Presentation_image_f4_6', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128, units='height', win=Window(...))
+16.2542 	EXP 	Created Presentation_image_f4_7 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-6.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Presentation_image_f4_7', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128, units='height', win=Window(...))
+16.2557 	EXP 	Created Presentation_image_f4_8 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-7.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Presentation_image_f4_8', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128, units='height', win=Window(...))
+16.2571 	EXP 	Created Presentation_image_f4_9 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-8.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Presentation_image_f4_9', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128, units='height', win=Window(...))
+16.2586 	EXP 	Created Presentation_image_f4_10 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-9.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Presentation_image_f4_10', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128, units='height', win=Window(...))
+16.2601 	EXP 	Created Presentation_image_f4_11 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-10.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Presentation_image_f4_11', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128, units='height', win=Window(...))
+16.2616 	EXP 	Created Presentation_image_f4_12 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-11.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Presentation_image_f4_12', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128, units='height', win=Window(...))
+16.2630 	EXP 	Created Presentation_image_f4_13 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-12.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Presentation_image_f4_13', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128, units='height', win=Window(...))
+16.2645 	EXP 	Created Presentation_image_f3_14 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-13.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Presentation_image_f3_14', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128, units='height', win=Window(...))
+16.2659 	EXP 	Created Presentation_image_f4_15 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-14.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Presentation_image_f4_15', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128, units='height', win=Window(...))
+16.2674 	EXP 	Created Presentation_image_f4_16 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-15.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Presentation_image_f4_16', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128, units='height', win=Window(...))
+16.2689 	EXP 	Created Fixation_cross = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, autoDraw=False, autoLog=True, closeShape=True, contrast=1.0, depth=0.0, fillColor=array([1., 1., 1.]), fillColorSpace='rgb', interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineWidth=1, name='Fixation_cross', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([0.1, 0.1]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+16.2703 	EXP 	Created displayed_choice_image = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='displayed_choice_image', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128, units='height', win=Window(...))
+16.2789 	EXP 	Created text_break = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='text_break', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text=str(...), units='height', win=Window(...), wrapWidth=1)
+16.2803 	EXP 	Created Crossm = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, autoDraw=False, autoLog=True, closeShape=True, contrast=1.0, depth=0.0, fillColor=array([1., 1., 1.]), fillColorSpace='rgb', interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineWidth=1, name='Crossm', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([0.05, 0.05]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+16.2826 	EXP 	Created Presentation_image_f1_1 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Presentation_image_f1_1', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128, units='height', win=Window(...))
+16.2848 	EXP 	Created Presentation_image_f1_2 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Presentation_image_f1_2', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128, units='height', win=Window(...))
+16.2871 	EXP 	Created Presentation_image_f1_3 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Presentation_image_f1_3', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128, units='height', win=Window(...))
+16.2891 	EXP 	Created Presentation_image_f1_4 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-3.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Presentation_image_f1_4', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128, units='height', win=Window(...))
+16.2909 	EXP 	Created Presentation_image_f2_1 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Presentation_image_f2_1', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128, units='height', win=Window(...))
+16.2925 	EXP 	Created Presentation_image_f2_2 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Presentation_image_f2_2', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128, units='height', win=Window(...))
+16.2940 	EXP 	Created Presentation_image_f2_3 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Presentation_image_f2_3', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128, units='height', win=Window(...))
+16.2956 	EXP 	Created Presentation_image_f2_4 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-3.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Presentation_image_f2_4', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128, units='height', win=Window(...))
+16.2972 	EXP 	Created Presentation_image_f2_5 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-4.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Presentation_image_f2_5', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128, units='height', win=Window(...))
+16.2988 	EXP 	Created Presentation_image_f2_6 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-5.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Presentation_image_f2_6', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128, units='height', win=Window(...))
+16.3004 	EXP 	Created Presentation_image_f2_7 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-6.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Presentation_image_f2_7', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128, units='height', win=Window(...))
+16.3021 	EXP 	Created Presentation_image_f2_8 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-7.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Presentation_image_f2_8', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128, units='height', win=Window(...))
+16.3039 	EXP 	Created Presentation_image_f3_1 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Presentation_image_f3_1', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128, units='height', win=Window(...))
+16.3055 	EXP 	Created Presentation_image_f3_2 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Presentation_image_f3_2', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128, units='height', win=Window(...))
+16.3070 	EXP 	Created Presentation_image_f3_3 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Presentation_image_f3_3', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128, units='height', win=Window(...))
+16.3086 	EXP 	Created Presentation_image_f3_4 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-3.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Presentation_image_f3_4', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128, units='height', win=Window(...))
+16.3103 	EXP 	Created Presentation_image_f3_5 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-4.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Presentation_image_f3_5', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128, units='height', win=Window(...))
+16.3118 	EXP 	Created Presentation_image_f3_6 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-5.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Presentation_image_f3_6', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128, units='height', win=Window(...))
+16.3134 	EXP 	Created Presentation_image_f3_7 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-6.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Presentation_image_f3_7', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128, units='height', win=Window(...))
+16.3151 	EXP 	Created Presentation_image_f3_8 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-7.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Presentation_image_f3_8', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128, units='height', win=Window(...))
+16.3171 	EXP 	Created Presentation_image_f3_9 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-8.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Presentation_image_f3_9', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128, units='height', win=Window(...))
+16.3192 	EXP 	Created Presentation_image_f3_10 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-9.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Presentation_image_f3_10', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128, units='height', win=Window(...))
+16.3215 	EXP 	Created Presentation_image_f3_11 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-10.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Presentation_image_f3_11', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128, units='height', win=Window(...))
+16.3237 	EXP 	Created Presentation_image_f3_12 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-11.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Presentation_image_f3_12', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128, units='height', win=Window(...))
+16.3260 	EXP 	Created Presentation_image_f4_1 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Presentation_image_f4_1', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128, units='height', win=Window(...))
+16.3284 	EXP 	Created Presentation_image_f4_2 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Presentation_image_f4_2', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128, units='height', win=Window(...))
+16.3306 	EXP 	Created Presentation_image_f4_3 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Presentation_image_f4_3', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128, units='height', win=Window(...))
+16.3326 	EXP 	Created Presentation_image_f4_4 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-3.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Presentation_image_f4_4', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128, units='height', win=Window(...))
+16.3347 	EXP 	Created Presentation_image_f4_5 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-4.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Presentation_image_f4_5', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128, units='height', win=Window(...))
+16.3369 	EXP 	Created Presentation_image_f4_6 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-5.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Presentation_image_f4_6', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128, units='height', win=Window(...))
+16.3390 	EXP 	Created Presentation_image_f4_7 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-6.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Presentation_image_f4_7', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128, units='height', win=Window(...))
+16.3409 	EXP 	Created Presentation_image_f4_8 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-7.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Presentation_image_f4_8', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128, units='height', win=Window(...))
+16.3431 	EXP 	Created Presentation_image_f4_9 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-8.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Presentation_image_f4_9', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128, units='height', win=Window(...))
+16.3448 	EXP 	Created Presentation_image_f4_10 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-9.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Presentation_image_f4_10', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128, units='height', win=Window(...))
+16.3465 	EXP 	Created Presentation_image_f4_11 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-10.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Presentation_image_f4_11', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128, units='height', win=Window(...))
+16.3482 	EXP 	Created Presentation_image_f4_12 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-11.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Presentation_image_f4_12', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128, units='height', win=Window(...))
+16.3499 	EXP 	Created Presentation_image_f4_13 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-12.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Presentation_image_f4_13', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128, units='height', win=Window(...))
+16.3517 	EXP 	Created Presentation_image_f3_14 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-13.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Presentation_image_f3_14', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128, units='height', win=Window(...))
+16.3535 	EXP 	Created Presentation_image_f4_15 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-14.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Presentation_image_f4_15', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128, units='height', win=Window(...))
+16.3552 	EXP 	Created Presentation_image_f4_16 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-15.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Presentation_image_f4_16', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128, units='height', win=Window(...))
+16.3567 	EXP 	Created Fixation_cross = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, autoDraw=False, autoLog=True, closeShape=True, contrast=1.0, depth=0.0, fillColor=array([1., 1., 1.]), fillColorSpace='rgb', interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineWidth=1, name='Fixation_cross', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([0.1, 0.1]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+16.3587 	EXP 	Created displayed_choice_image = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='displayed_choice_image', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128, units='height', win=Window(...))
+16.3636 	EXP 	Created text_2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='text_2', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='End\n\n', units='height', win=Window(...), wrapWidth=1)
+16.3946 	EXP 	text: autoDraw = True
+28.8758 	DATA 	Keypress: a
+30.5871 	DATA 	Keypress: space
+30.7291 	EXP 	Imported stim_present_data_block_1.csv as conditions, 180 conditions, 22 params
+30.7296 	EXP 	Created sequence: sequential, trialTypes=180, nReps=1, seed=None
+30.7301 	EXP 	New trial (rep=0, index=0): OrderedDict([('imageone', 'LZ_scrambled\\LZ_scrambled_190.jpg'), ('imagetwo', 'LZ_scrambled\\LZ_scrambled_7.jpg'), ('imagethree', 'LZ_scrambled\\LZ_scrambled_85.jpg'), ('imagefour', 'LZ_scrambled\\LZ_scrambled_220.jpg'), ('imagefive', None), ('imagesix', None), ('imageseven', None), ('imageeight', None), ('imagenine', None), ('imageten', None), ('imageeleven', None), ('imagetwelve', None), ('imagethirteen', None), ('imagefourteen', None), ('imagefifteen', None), ('imagesixteen', None), ('frequency', 1), ('choice_image', 'LZ_scrambled\\LZ_scrambled_7.jpg'), ('choice_type', 1), ('correct_answer', 'a'), ('stimulus_type', 2), ('condition_code', 21)])
+30.7351 	EXP 	text: autoDraw = False
+30.7351 	EXP 	Crossm: autoDraw = True
+31.5950 	EXP 	Created sequence: sequential, trialTypes=1, nReps=1, seed=None
+31.5952 	EXP 	New trial (rep=0, index=0): None
+31.7754 	EXP 	Crossm: autoDraw = False
+31.7754 	EXP 	Presentation_image_f1_1: image = 'LZ_scrambled\\LZ_scrambled_190.jpg'
+31.7754 	EXP 	Presentation_image_f1_2: image = 'LZ_scrambled\\LZ_scrambled_7.jpg'
+31.7754 	EXP 	Presentation_image_f1_3: image = 'LZ_scrambled\\LZ_scrambled_85.jpg'
+31.7754 	EXP 	Presentation_image_f1_4: image = 'LZ_scrambled\\LZ_scrambled_220.jpg'
+31.7754 	EXP 	Presentation_image_f1_1: autoDraw = True
+32.7416 	EXP 	Presentation_image_f1_2: autoDraw = True
+32.7754 	EXP 	Presentation_image_f1_1: autoDraw = False
+33.7413 	EXP 	Presentation_image_f1_2: autoDraw = False
+33.7413 	EXP 	Presentation_image_f1_3: autoDraw = True
+34.7413 	EXP 	Presentation_image_f1_3: autoDraw = False
+34.7413 	EXP 	Presentation_image_f1_4: autoDraw = True
+35.8417 	EXP 	Created sequence: sequential, trialTypes=1, nReps=0, seed=None
+35.8421 	EXP 	Created sequence: sequential, trialTypes=1, nReps=0, seed=None
+35.8424 	EXP 	Created sequence: sequential, trialTypes=1, nReps=0, seed=None
+35.8697 	EXP 	Presentation_image_f1_1: autoDraw = False
+35.8697 	EXP 	Presentation_image_f1_2: autoDraw = False
+35.8697 	EXP 	Presentation_image_f1_3: autoDraw = False
+35.8697 	EXP 	Presentation_image_f1_4: autoDraw = False
+35.8697 	EXP 	displayed_choice_image: image = 'LZ_scrambled\\LZ_scrambled_7.jpg'
+35.8697 	EXP 	Fixation_cross: autoDraw = True
+37.7063 	EXP 	Fixation_cross: autoDraw = False
+37.7063 	EXP 	displayed_choice_image: autoDraw = True
+41.5150 	EXP 	New trial (rep=0, index=1): OrderedDict([('imageone', 'LZ_noise\\LZ_noise_195.jpg'), ('imagetwo', 'LZ_noise\\LZ_noise_173.jpg'), ('imagethree', 'LZ_noise\\LZ_noise_119.jpg'), ('imagefour', 'LZ_noise\\LZ_noise_85.jpg'), ('imagefive', None), ('imagesix', None), ('imageseven', None), ('imageeight', None), ('imagenine', None), ('imageten', None), ('imageeleven', None), ('imagetwelve', None), ('imagethirteen', None), ('imagefourteen', None), ('imagefifteen', None), ('imagesixteen', None), ('frequency', 1), ('choice_image', 'LZ_noise\\LZ_noise_102.jpg'), ('choice_type', 0), ('correct_answer', 'l'), ('stimulus_type', 3), ('condition_code', 31)])
+41.5173 	DATA 	Keypress: a
+41.5209 	EXP 	Fixation_cross: autoDraw = False
+41.5209 	EXP 	displayed_choice_image: autoDraw = False
+41.5209 	EXP 	Crossm: autoDraw = True
+42.5167 	EXP 	Created sequence: sequential, trialTypes=1, nReps=1, seed=None
+42.5168 	EXP 	New trial (rep=0, index=0): None
+42.5954 	EXP 	Crossm: autoDraw = False
+42.5954 	EXP 	Presentation_image_f1_1: image = 'LZ_noise\\LZ_noise_195.jpg'
+42.5954 	EXP 	Presentation_image_f1_2: image = 'LZ_noise\\LZ_noise_173.jpg'
+42.5954 	EXP 	Presentation_image_f1_3: image = 'LZ_noise\\LZ_noise_119.jpg'
+42.5954 	EXP 	Presentation_image_f1_4: image = 'LZ_noise\\LZ_noise_85.jpg'
+42.5954 	EXP 	Presentation_image_f1_1: autoDraw = True
+45.9672 	EXP 	Presentation_image_f1_1: autoDraw = False
+45.9672 	EXP 	Presentation_image_f1_2: autoDraw = True
+45.9672 	EXP 	Presentation_image_f1_3: autoDraw = True
+45.9672 	EXP 	Presentation_image_f1_4: autoDraw = True
+46.8058 	EXP 	Created sequence: sequential, trialTypes=1, nReps=0, seed=None
+46.8059 	EXP 	Created sequence: sequential, trialTypes=1, nReps=0, seed=None
+46.8061 	EXP 	Created sequence: sequential, trialTypes=1, nReps=0, seed=None
+46.8277 	EXP 	Presentation_image_f1_1: autoDraw = False
+46.8277 	EXP 	Presentation_image_f1_2: autoDraw = False
+46.8277 	EXP 	Presentation_image_f1_3: autoDraw = False
+46.8277 	EXP 	Presentation_image_f1_4: autoDraw = False
+46.8277 	EXP 	displayed_choice_image: image = 'LZ_noise\\LZ_noise_102.jpg'
+46.8277 	EXP 	Fixation_cross: autoDraw = True
+47.8248 	EXP 	displayed_choice_image: autoDraw = True
+47.8333 	EXP 	Fixation_cross: autoDraw = False
+49.7413 	EXP 	New trial (rep=0, index=2): OrderedDict([('imageone', 'LZ_natural\\LZ_natural_173.jpg'), ('imagetwo', 'LZ_natural\\LZ_natural_79.jpg'), ('imagethree', 'LZ_natural\\LZ_natural_35.jpg'), ('imagefour', 'LZ_natural\\LZ_natural_143.jpg'), ('imagefive', 'LZ_natural\\LZ_natural_39.jpg'), ('imagesix', 'LZ_natural\\LZ_natural_25.jpg'), ('imageseven', 'LZ_natural\\LZ_natural_206.jpg'), ('imageeight', 'LZ_natural\\LZ_natural_80.jpg'), ('imagenine', 'LZ_natural\\LZ_natural_112.jpg'), ('imageten', 'LZ_natural\\LZ_natural_235.jpg'), ('imageeleven', 'LZ_natural\\LZ_natural_115.jpg'), ('imagetwelve', 'LZ_natural\\LZ_natural_207.jpg'), ('imagethirteen', None), ('imagefourteen', None), ('imagefifteen', None), ('imagesixteen', None), ('frequency', 3), ('choice_image', 'LZ_natural\\LZ_natural_206.jpg'), ('choice_type', 1), ('correct_answer', 'a'), ('stimulus_type', 1), ('condition_code', 13)])
+49.7449 	DATA 	Keypress: l
+49.7475 	EXP 	Fixation_cross: autoDraw = False
+49.7475 	EXP 	displayed_choice_image: autoDraw = False
+49.7475 	EXP 	Crossm: autoDraw = True
+50.7420 	EXP 	Created sequence: sequential, trialTypes=1, nReps=0, seed=None
+50.7423 	EXP 	Created sequence: sequential, trialTypes=1, nReps=0, seed=None
+50.7425 	EXP 	Created sequence: sequential, trialTypes=1, nReps=1, seed=None
+50.7428 	EXP 	New trial (rep=0, index=0): None
+50.8951 	EXP 	Crossm: autoDraw = False
+50.8951 	EXP 	Presentation_image_f3_1: image = 'LZ_natural\\LZ_natural_173.jpg'
+50.8951 	EXP 	Presentation_image_f3_2: image = 'LZ_natural\\LZ_natural_79.jpg'
+50.8951 	EXP 	Presentation_image_f3_3: image = 'LZ_natural\\LZ_natural_35.jpg'
+50.8951 	EXP 	Presentation_image_f3_4: image = 'LZ_natural\\LZ_natural_143.jpg'
+50.8951 	EXP 	Presentation_image_f3_5: image = 'LZ_natural\\LZ_natural_39.jpg'
+50.8951 	EXP 	Presentation_image_f3_6: image = 'LZ_natural\\LZ_natural_25.jpg'
+50.8951 	EXP 	Presentation_image_f3_7: image = 'LZ_natural\\LZ_natural_206.jpg'
+50.8951 	EXP 	Presentation_image_f3_8: image = 'LZ_natural\\LZ_natural_80.jpg'
+50.8951 	EXP 	Presentation_image_f3_9: image = 'LZ_natural\\LZ_natural_112.jpg'
+50.8951 	EXP 	Presentation_image_f3_10: image = 'LZ_natural\\LZ_natural_235.jpg'
+50.8951 	EXP 	Presentation_image_f3_11: image = 'LZ_natural\\LZ_natural_115.jpg'
+50.8951 	EXP 	Presentation_image_f3_12: image = 'LZ_natural\\LZ_natural_207.jpg'
+50.8951 	EXP 	Presentation_image_f3_1: autoDraw = True
+51.1994 	EXP 	Presentation_image_f3_1: autoDraw = False
+51.2347 	EXP 	Presentation_image_f3_2: autoDraw = True
+51.5394 	EXP 	Presentation_image_f3_2: autoDraw = False
+51.5819 	EXP 	Presentation_image_f3_3: autoDraw = True
+51.8810 	EXP 	Presentation_image_f3_4: autoDraw = True
+51.8871 	EXP 	Presentation_image_f3_3: autoDraw = False
+52.1855 	EXP 	Presentation_image_f3_4: autoDraw = False
+52.2344 	EXP 	Presentation_image_f3_5: autoDraw = True
+52.5396 	EXP 	Presentation_image_f3_5: autoDraw = False
+52.5818 	EXP 	Presentation_image_f3_6: autoDraw = True
+52.8806 	EXP 	Presentation_image_f3_7: autoDraw = True
+52.8874 	EXP 	Presentation_image_f3_6: autoDraw = False
+53.1856 	EXP 	Presentation_image_f3_7: autoDraw = False
+53.2344 	EXP 	Presentation_image_f3_8: autoDraw = True
+53.5394 	EXP 	Presentation_image_f3_8: autoDraw = False
+53.5816 	EXP 	Presentation_image_f3_9: autoDraw = True
+53.8807 	EXP 	Presentation_image_f3_10: autoDraw = True
+53.8871 	EXP 	Presentation_image_f3_9: autoDraw = False
+54.1852 	EXP 	Presentation_image_f3_10: autoDraw = False
+54.2348 	EXP 	Presentation_image_f3_11: autoDraw = True
+54.5393 	EXP 	Presentation_image_f3_11: autoDraw = False
+54.5818 	EXP 	Presentation_image_f3_12: autoDraw = True
+54.7443 	EXP 	Created sequence: sequential, trialTypes=1, nReps=0, seed=None
+54.7518 	EXP 	Presentation_image_f3_1: autoDraw = False
+54.7518 	EXP 	Presentation_image_f3_2: autoDraw = False
+54.7518 	EXP 	Presentation_image_f3_3: autoDraw = False
+54.7518 	EXP 	Presentation_image_f3_4: autoDraw = False
+54.7518 	EXP 	Presentation_image_f3_5: autoDraw = False
+54.7518 	EXP 	Presentation_image_f3_6: autoDraw = False
+54.7518 	EXP 	Presentation_image_f3_7: autoDraw = False
+54.7518 	EXP 	Presentation_image_f3_8: autoDraw = False
+54.7518 	EXP 	Presentation_image_f3_9: autoDraw = False
+54.7518 	EXP 	Presentation_image_f3_10: autoDraw = False
+54.7518 	EXP 	Presentation_image_f3_11: autoDraw = False
+54.7518 	EXP 	Presentation_image_f3_12: autoDraw = False
+54.7518 	EXP 	displayed_choice_image: image = 'LZ_natural\\LZ_natural_206.jpg'
+54.7518 	EXP 	Fixation_cross: autoDraw = True
+55.7488 	EXP 	displayed_choice_image: autoDraw = True
+55.7581 	EXP 	Fixation_cross: autoDraw = False
+56.7822 	EXP 	New trial (rep=0, index=3): OrderedDict([('imageone', 'LZ_scrambled\\LZ_scrambled_13.jpg'), ('imagetwo', 'LZ_scrambled\\LZ_scrambled_234.jpg'), ('imagethree', 'LZ_scrambled\\LZ_scrambled_21.jpg'), ('imagefour', 'LZ_scrambled\\LZ_scrambled_208.jpg'), ('imagefive', 'LZ_scrambled\\LZ_scrambled_189.jpg'), ('imagesix', 'LZ_scrambled\\LZ_scrambled_29.jpg'), ('imageseven', 'LZ_scrambled\\LZ_scrambled_117.jpg'), ('imageeight', 'LZ_scrambled\\LZ_scrambled_54.jpg'), ('imagenine', 'LZ_scrambled\\LZ_scrambled_198.jpg'), ('imageten', 'LZ_scrambled\\LZ_scrambled_222.jpg'), ('imageeleven', 'LZ_scrambled\\LZ_scrambled_126.jpg'), ('imagetwelve', 'LZ_scrambled\\LZ_scrambled_180.jpg'), ('imagethirteen', None), ('imagefourteen', None), ('imagefifteen', None), ('imagesixteen', None), ('frequency', 3), ('choice_image', 'LZ_scrambled\\LZ_scrambled_96.jpg'), ('choice_type', 0), ('correct_answer', 'l'), ('stimulus_type', 2), ('condition_code', 23)])
+56.7849 	DATA 	Keypress: a
+56.7876 	EXP 	Fixation_cross: autoDraw = False
+56.7876 	EXP 	displayed_choice_image: autoDraw = False
+56.7876 	EXP 	Crossm: autoDraw = True
+57.7834 	EXP 	Created sequence: sequential, trialTypes=1, nReps=0, seed=None
+57.7837 	EXP 	Created sequence: sequential, trialTypes=1, nReps=0, seed=None
+57.7840 	EXP 	Created sequence: sequential, trialTypes=1, nReps=1, seed=None
+57.7842 	EXP 	New trial (rep=0, index=0): None
+58.2236 	EXP 	Crossm: autoDraw = False
+58.2236 	EXP 	Presentation_image_f3_1: image = 'LZ_scrambled\\LZ_scrambled_13.jpg'
+58.2236 	EXP 	Presentation_image_f3_2: image = 'LZ_scrambled\\LZ_scrambled_234.jpg'
+58.2236 	EXP 	Presentation_image_f3_3: image = 'LZ_scrambled\\LZ_scrambled_21.jpg'
+58.2236 	EXP 	Presentation_image_f3_4: image = 'LZ_scrambled\\LZ_scrambled_208.jpg'
+58.2236 	EXP 	Presentation_image_f3_5: image = 'LZ_scrambled\\LZ_scrambled_189.jpg'
+58.2236 	EXP 	Presentation_image_f3_6: image = 'LZ_scrambled\\LZ_scrambled_29.jpg'
+58.2236 	EXP 	Presentation_image_f3_7: image = 'LZ_scrambled\\LZ_scrambled_117.jpg'
+58.2236 	EXP 	Presentation_image_f3_8: image = 'LZ_scrambled\\LZ_scrambled_54.jpg'
+58.2236 	EXP 	Presentation_image_f3_9: image = 'LZ_scrambled\\LZ_scrambled_198.jpg'
+58.2236 	EXP 	Presentation_image_f3_10: image = 'LZ_scrambled\\LZ_scrambled_222.jpg'
+58.2236 	EXP 	Presentation_image_f3_11: image = 'LZ_scrambled\\LZ_scrambled_126.jpg'
+58.2236 	EXP 	Presentation_image_f3_12: image = 'LZ_scrambled\\LZ_scrambled_180.jpg'
+58.2236 	EXP 	Presentation_image_f3_1: autoDraw = True
+58.5259 	EXP 	Presentation_image_f3_1: autoDraw = False
+58.5614 	EXP 	Presentation_image_f3_2: autoDraw = True
+58.8659 	EXP 	Presentation_image_f3_2: autoDraw = False
+58.9084 	EXP 	Presentation_image_f3_3: autoDraw = True
+59.2077 	EXP 	Presentation_image_f3_4: autoDraw = True
+59.2138 	EXP 	Presentation_image_f3_3: autoDraw = False
+59.5119 	EXP 	Presentation_image_f3_4: autoDraw = False
+59.5612 	EXP 	Presentation_image_f3_5: autoDraw = True
+59.8660 	EXP 	Presentation_image_f3_5: autoDraw = False
+59.9083 	EXP 	Presentation_image_f3_6: autoDraw = True
+60.2076 	EXP 	Presentation_image_f3_7: autoDraw = True
+60.2139 	EXP 	Presentation_image_f3_6: autoDraw = False
+60.5119 	EXP 	Presentation_image_f3_7: autoDraw = False
+60.5612 	EXP 	Presentation_image_f3_8: autoDraw = True
+60.8662 	EXP 	Presentation_image_f3_8: autoDraw = False
+60.9087 	EXP 	Presentation_image_f3_9: autoDraw = True
+61.2077 	EXP 	Presentation_image_f3_10: autoDraw = True
+61.2137 	EXP 	Presentation_image_f3_9: autoDraw = False
+61.5122 	EXP 	Presentation_image_f3_10: autoDraw = False
+61.5613 	EXP 	Presentation_image_f3_11: autoDraw = True
+61.7872 	EXP 	Created sequence: sequential, trialTypes=1, nReps=0, seed=None
+61.8208 	EXP 	Presentation_image_f3_1: autoDraw = False
+61.8208 	EXP 	Presentation_image_f3_2: autoDraw = False
+61.8208 	EXP 	Presentation_image_f3_3: autoDraw = False
+61.8208 	EXP 	Presentation_image_f3_4: autoDraw = False
+61.8208 	EXP 	Presentation_image_f3_5: autoDraw = False
+61.8208 	EXP 	Presentation_image_f3_6: autoDraw = False
+61.8208 	EXP 	Presentation_image_f3_7: autoDraw = False
+61.8208 	EXP 	Presentation_image_f3_8: autoDraw = False
+61.8208 	EXP 	Presentation_image_f3_9: autoDraw = False
+61.8208 	EXP 	Presentation_image_f3_10: autoDraw = False
+61.8208 	EXP 	Presentation_image_f3_11: autoDraw = False
+61.8208 	EXP 	Presentation_image_f3_12: autoDraw = False
+61.8208 	EXP 	displayed_choice_image: image = 'LZ_scrambled\\LZ_scrambled_96.jpg'
+61.8208 	EXP 	Fixation_cross: autoDraw = True
+62.8181 	EXP 	displayed_choice_image: autoDraw = True
+62.8268 	EXP 	Fixation_cross: autoDraw = False
+63.8365 	DATA 	Keypress: a
+63.8443 	EXP 	New trial (rep=0, index=4): OrderedDict([('imageone', 'LZ_scrambled\\LZ_scrambled_95.jpg'), ('imagetwo', 'LZ_scrambled\\LZ_scrambled_45.jpg'), ('imagethree', 'LZ_scrambled\\LZ_scrambled_105.jpg'), ('imagefour', 'LZ_scrambled\\LZ_scrambled_100.jpg'), ('imagefive', 'LZ_scrambled\\LZ_scrambled_69.jpg'), ('imagesix', 'LZ_scrambled\\LZ_scrambled_120.jpg'), ('imageseven', 'LZ_scrambled\\LZ_scrambled_131.jpg'), ('imageeight', 'LZ_scrambled\\LZ_scrambled_68.jpg'), ('imagenine', None), ('imageten', None), ('imageeleven', None), ('imagetwelve', None), ('imagethirteen', None), ('imagefourteen', None), ('imagefifteen', None), ('imagesixteen', None), ('frequency', 2), ('choice_image', 'LZ_scrambled\\LZ_scrambled_131.jpg'), ('choice_type', 1), ('correct_answer', 'a'), ('stimulus_type', 2), ('condition_code', 22)])
+63.8498 	EXP 	Fixation_cross: autoDraw = False
+63.8498 	EXP 	displayed_choice_image: autoDraw = False
+63.8498 	EXP 	Crossm: autoDraw = True
+64.8462 	EXP 	Created sequence: sequential, trialTypes=1, nReps=0, seed=None
+64.8465 	EXP 	Created sequence: sequential, trialTypes=1, nReps=1, seed=None
+64.8467 	EXP 	New trial (rep=0, index=0): None
+65.0976 	EXP 	Crossm: autoDraw = False
+65.0976 	EXP 	Presentation_image_f2_1: image = 'LZ_scrambled\\LZ_scrambled_95.jpg'
+65.0976 	EXP 	Presentation_image_f2_2: image = 'LZ_scrambled\\LZ_scrambled_45.jpg'
+65.0976 	EXP 	Presentation_image_f2_3: image = 'LZ_scrambled\\LZ_scrambled_105.jpg'
+65.0976 	EXP 	Presentation_image_f2_4: image = 'LZ_scrambled\\LZ_scrambled_100.jpg'
+65.0976 	EXP 	Presentation_image_f2_5: image = 'LZ_scrambled\\LZ_scrambled_69.jpg'
+65.0976 	EXP 	Presentation_image_f2_6: image = 'LZ_scrambled\\LZ_scrambled_120.jpg'
+65.0976 	EXP 	Presentation_image_f2_7: image = 'LZ_scrambled\\LZ_scrambled_131.jpg'
+65.0976 	EXP 	Presentation_image_f2_8: image = 'LZ_scrambled\\LZ_scrambled_68.jpg'
+65.0976 	EXP 	Presentation_image_f2_1: autoDraw = True
+65.5469 	EXP 	Presentation_image_f2_1: autoDraw = False
+65.5894 	EXP 	Presentation_image_f2_2: autoDraw = True
+66.0395 	EXP 	Presentation_image_f2_2: autoDraw = False
+66.0895 	EXP 	Presentation_image_f2_3: autoDraw = True
+66.5399 	EXP 	Presentation_image_f2_3: autoDraw = False
+66.5895 	EXP 	Presentation_image_f2_4: autoDraw = True
+67.0400 	EXP 	Presentation_image_f2_4: autoDraw = False
+67.0894 	EXP 	Presentation_image_f2_5: autoDraw = True
+67.5399 	EXP 	Presentation_image_f2_5: autoDraw = False
+67.5899 	EXP 	Presentation_image_f2_6: autoDraw = True
+68.0399 	EXP 	Presentation_image_f2_6: autoDraw = False
+68.0892 	EXP 	Presentation_image_f2_7: autoDraw = True
+68.5400 	EXP 	Presentation_image_f2_7: autoDraw = False
+68.5894 	EXP 	Presentation_image_f2_8: autoDraw = True
+68.8004 	EXP 	Created sequence: sequential, trialTypes=1, nReps=0, seed=None
+68.8006 	EXP 	Created sequence: sequential, trialTypes=1, nReps=0, seed=None
+68.8257 	EXP 	Presentation_image_f2_1: autoDraw = False
+68.8257 	EXP 	Presentation_image_f2_2: autoDraw = False
+68.8257 	EXP 	Presentation_image_f2_3: autoDraw = False
+68.8257 	EXP 	Presentation_image_f2_4: autoDraw = False
+68.8257 	EXP 	Presentation_image_f2_5: autoDraw = False
+68.8257 	EXP 	Presentation_image_f2_6: autoDraw = False
+68.8257 	EXP 	Presentation_image_f2_7: autoDraw = False
+68.8257 	EXP 	Presentation_image_f2_8: autoDraw = False
+68.8257 	EXP 	displayed_choice_image: image = 'LZ_scrambled\\LZ_scrambled_131.jpg'
+68.8257 	EXP 	Fixation_cross: autoDraw = True
+69.8183 	EXP 	displayed_choice_image: autoDraw = True
+69.8262 	EXP 	Fixation_cross: autoDraw = False
+71.0672 	DATA 	Keypress: a
+71.0747 	EXP 	New trial (rep=0, index=5): OrderedDict([('imageone', 'LZ_noise\\LZ_noise_31.jpg'), ('imagetwo', 'LZ_noise\\LZ_noise_53.jpg'), ('imagethree', 'LZ_noise\\LZ_noise_231.jpg'), ('imagefour', 'LZ_noise\\LZ_noise_228.jpg'), ('imagefive', 'LZ_noise\\LZ_noise_151.jpg'), ('imagesix', 'LZ_noise\\LZ_noise_68.jpg'), ('imageseven', 'LZ_noise\\LZ_noise_59.jpg'), ('imageeight', 'LZ_noise\\LZ_noise_148.jpg'), ('imagenine', 'LZ_noise\\LZ_noise_163.jpg'), ('imageten', 'LZ_noise\\LZ_noise_108.jpg'), ('imageeleven', 'LZ_noise\\LZ_noise_109.jpg'), ('imagetwelve', 'LZ_noise\\LZ_noise_146.jpg'), ('imagethirteen', None), ('imagefourteen', None), ('imagefifteen', None), ('imagesixteen', None), ('frequency', 3), ('choice_image', 'LZ_noise\\LZ_noise_140.jpg'), ('choice_type', 0), ('correct_answer', 'l'), ('stimulus_type', 3), ('condition_code', 33)])
+71.0798 	EXP 	Fixation_cross: autoDraw = False
+71.0798 	EXP 	displayed_choice_image: autoDraw = False
+71.0798 	EXP 	Crossm: autoDraw = True
+72.0754 	EXP 	Created sequence: sequential, trialTypes=1, nReps=0, seed=None
+72.0757 	EXP 	Created sequence: sequential, trialTypes=1, nReps=0, seed=None
+72.0761 	EXP 	Created sequence: sequential, trialTypes=1, nReps=1, seed=None
+72.0763 	EXP 	New trial (rep=0, index=0): None
+72.2748 	EXP 	Crossm: autoDraw = False
+72.2748 	EXP 	Presentation_image_f3_1: image = 'LZ_noise\\LZ_noise_31.jpg'
+72.2748 	EXP 	Presentation_image_f3_2: image = 'LZ_noise\\LZ_noise_53.jpg'
+72.2748 	EXP 	Presentation_image_f3_3: image = 'LZ_noise\\LZ_noise_231.jpg'
+72.2748 	EXP 	Presentation_image_f3_4: image = 'LZ_noise\\LZ_noise_228.jpg'
+72.2748 	EXP 	Presentation_image_f3_5: image = 'LZ_noise\\LZ_noise_151.jpg'
+72.2748 	EXP 	Presentation_image_f3_6: image = 'LZ_noise\\LZ_noise_68.jpg'
+72.2748 	EXP 	Presentation_image_f3_7: image = 'LZ_noise\\LZ_noise_59.jpg'
+72.2748 	EXP 	Presentation_image_f3_8: image = 'LZ_noise\\LZ_noise_148.jpg'
+72.2748 	EXP 	Presentation_image_f3_9: image = 'LZ_noise\\LZ_noise_163.jpg'
+72.2748 	EXP 	Presentation_image_f3_10: image = 'LZ_noise\\LZ_noise_108.jpg'
+72.2748 	EXP 	Presentation_image_f3_11: image = 'LZ_noise\\LZ_noise_109.jpg'
+72.2748 	EXP 	Presentation_image_f3_12: image = 'LZ_noise\\LZ_noise_146.jpg'
+72.2748 	EXP 	Presentation_image_f3_1: autoDraw = True
+72.5748 	EXP 	Presentation_image_f3_1: autoDraw = False
+72.6171 	EXP 	Presentation_image_f3_2: autoDraw = True
+72.9217 	EXP 	Presentation_image_f3_2: autoDraw = False
+72.9713 	EXP 	Presentation_image_f3_3: autoDraw = True
+73.2700 	EXP 	Presentation_image_f3_4: autoDraw = True
+73.2767 	EXP 	Presentation_image_f3_3: autoDraw = False
+73.5743 	EXP 	Presentation_image_f3_4: autoDraw = False
+73.6169 	EXP 	Presentation_image_f3_5: autoDraw = True
+73.9218 	EXP 	Presentation_image_f3_5: autoDraw = False
+73.9712 	EXP 	Presentation_image_f3_6: autoDraw = True
+74.2699 	EXP 	Presentation_image_f3_7: autoDraw = True
+74.2767 	EXP 	Presentation_image_f3_6: autoDraw = False
+74.5743 	EXP 	Presentation_image_f3_7: autoDraw = False
+74.6167 	EXP 	Presentation_image_f3_8: autoDraw = True
+74.9218 	EXP 	Presentation_image_f3_8: autoDraw = False
+74.9712 	EXP 	Presentation_image_f3_9: autoDraw = True
+75.2697 	EXP 	Presentation_image_f3_10: autoDraw = True
+75.2765 	EXP 	Presentation_image_f3_9: autoDraw = False
+75.5743 	EXP 	Presentation_image_f3_10: autoDraw = False
+75.6166 	EXP 	Presentation_image_f3_11: autoDraw = True
+75.9218 	EXP 	Presentation_image_f3_11: autoDraw = False
+75.9644 	EXP 	Presentation_image_f3_12: autoDraw = True
+76.0784 	EXP 	Created sequence: sequential, trialTypes=1, nReps=0, seed=None
+76.0942 	EXP 	Presentation_image_f3_1: autoDraw = False
+76.0942 	EXP 	Presentation_image_f3_2: autoDraw = False
+76.0942 	EXP 	Presentation_image_f3_3: autoDraw = False
+76.0942 	EXP 	Presentation_image_f3_4: autoDraw = False
+76.0942 	EXP 	Presentation_image_f3_5: autoDraw = False
+76.0942 	EXP 	Presentation_image_f3_6: autoDraw = False
+76.0942 	EXP 	Presentation_image_f3_7: autoDraw = False
+76.0942 	EXP 	Presentation_image_f3_8: autoDraw = False
+76.0942 	EXP 	Presentation_image_f3_9: autoDraw = False
+76.0942 	EXP 	Presentation_image_f3_10: autoDraw = False
+76.0942 	EXP 	Presentation_image_f3_11: autoDraw = False
+76.0942 	EXP 	Presentation_image_f3_12: autoDraw = False
+76.0942 	EXP 	displayed_choice_image: image = 'LZ_noise\\LZ_noise_140.jpg'
+76.0942 	EXP 	Fixation_cross: autoDraw = True
+77.0887 	EXP 	displayed_choice_image: autoDraw = True
+77.0976 	EXP 	Fixation_cross: autoDraw = False
+77.5947 	DATA 	Keypress: a
+77.6019 	EXP 	New trial (rep=0, index=6): OrderedDict([('imageone', 'LZ_natural\\LZ_natural_232.jpg'), ('imagetwo', 'LZ_natural\\LZ_natural_165.jpg'), ('imagethree', 'LZ_natural\\LZ_natural_46.jpg'), ('imagefour', 'LZ_natural\\LZ_natural_226.jpg'), ('imagefive', 'LZ_natural\\LZ_natural_91.jpg'), ('imagesix', 'LZ_natural\\LZ_natural_78.jpg'), ('imageseven', 'LZ_natural\\LZ_natural_34.jpg'), ('imageeight', 'LZ_natural\\LZ_natural_100.jpg'), ('imagenine', 'LZ_natural\\LZ_natural_104.jpg'), ('imageten', 'LZ_natural\\LZ_natural_203.jpg'), ('imageeleven', 'LZ_natural\\LZ_natural_59.jpg'), ('imagetwelve', 'LZ_natural\\LZ_natural_57.jpg'), ('imagethirteen', None), ('imagefourteen', None), ('imagefifteen', None), ('imagesixteen', None), ('frequency', 3), ('choice_image', 'LZ_natural\\LZ_natural_100.jpg'), ('choice_type', 1), ('correct_answer', 'a'), ('stimulus_type', 1), ('condition_code', 13)])
+77.6066 	EXP 	Fixation_cross: autoDraw = False
+77.6066 	EXP 	displayed_choice_image: autoDraw = False
+77.6066 	EXP 	Crossm: autoDraw = True
+78.6026 	EXP 	Created sequence: sequential, trialTypes=1, nReps=0, seed=None
+78.6028 	EXP 	Created sequence: sequential, trialTypes=1, nReps=0, seed=None
+78.6029 	EXP 	Created sequence: sequential, trialTypes=1, nReps=1, seed=None
+78.6031 	EXP 	New trial (rep=0, index=0): None
+78.7056 	EXP 	Crossm: autoDraw = False
+78.7056 	EXP 	Presentation_image_f3_1: image = 'LZ_natural\\LZ_natural_232.jpg'
+78.7056 	EXP 	Presentation_image_f3_2: image = 'LZ_natural\\LZ_natural_165.jpg'
+78.7056 	EXP 	Presentation_image_f3_3: image = 'LZ_natural\\LZ_natural_46.jpg'
+78.7056 	EXP 	Presentation_image_f3_4: image = 'LZ_natural\\LZ_natural_226.jpg'
+78.7056 	EXP 	Presentation_image_f3_5: image = 'LZ_natural\\LZ_natural_91.jpg'
+78.7056 	EXP 	Presentation_image_f3_6: image = 'LZ_natural\\LZ_natural_78.jpg'
+78.7056 	EXP 	Presentation_image_f3_7: image = 'LZ_natural\\LZ_natural_34.jpg'
+78.7056 	EXP 	Presentation_image_f3_8: image = 'LZ_natural\\LZ_natural_100.jpg'
+78.7056 	EXP 	Presentation_image_f3_9: image = 'LZ_natural\\LZ_natural_104.jpg'
+78.7056 	EXP 	Presentation_image_f3_10: image = 'LZ_natural\\LZ_natural_203.jpg'
+78.7056 	EXP 	Presentation_image_f3_11: image = 'LZ_natural\\LZ_natural_59.jpg'
+78.7056 	EXP 	Presentation_image_f3_12: image = 'LZ_natural\\LZ_natural_57.jpg'
+78.7056 	EXP 	Presentation_image_f3_1: autoDraw = True
+79.0049 	EXP 	Presentation_image_f3_1: autoDraw = False
+79.0540 	EXP 	Presentation_image_f3_2: autoDraw = True
+79.3525 	EXP 	Presentation_image_f3_2: autoDraw = False
+79.4014 	EXP 	Presentation_image_f3_3: autoDraw = True
+79.7006 	EXP 	Presentation_image_f3_4: autoDraw = True
+79.7073 	EXP 	Presentation_image_f3_3: autoDraw = False
+80.0051 	EXP 	Presentation_image_f3_4: autoDraw = False
+80.0545 	EXP 	Presentation_image_f3_5: autoDraw = True
+80.3596 	EXP 	Presentation_image_f3_5: autoDraw = False
+80.4016 	EXP 	Presentation_image_f3_6: autoDraw = True
+80.7003 	EXP 	Presentation_image_f3_7: autoDraw = True
+80.7067 	EXP 	Presentation_image_f3_6: autoDraw = False
+81.0049 	EXP 	Presentation_image_f3_7: autoDraw = False
+81.0541 	EXP 	Presentation_image_f3_8: autoDraw = True
+81.3591 	EXP 	Presentation_image_f3_8: autoDraw = False
+81.4013 	EXP 	Presentation_image_f3_9: autoDraw = True
+81.7003 	EXP 	Presentation_image_f3_10: autoDraw = True
+81.7068 	EXP 	Presentation_image_f3_9: autoDraw = False
+82.0050 	EXP 	Presentation_image_f3_10: autoDraw = False
+82.0541 	EXP 	Presentation_image_f3_11: autoDraw = True
+82.3591 	EXP 	Presentation_image_f3_11: autoDraw = False
+82.4013 	EXP 	Presentation_image_f3_12: autoDraw = True
+82.6055 	EXP 	Created sequence: sequential, trialTypes=1, nReps=0, seed=None
+82.6138 	EXP 	Presentation_image_f3_1: autoDraw = False
+82.6138 	EXP 	Presentation_image_f3_2: autoDraw = False
+82.6138 	EXP 	Presentation_image_f3_3: autoDraw = False
+82.6138 	EXP 	Presentation_image_f3_4: autoDraw = False
+82.6138 	EXP 	Presentation_image_f3_5: autoDraw = False
+82.6138 	EXP 	Presentation_image_f3_6: autoDraw = False
+82.6138 	EXP 	Presentation_image_f3_7: autoDraw = False
+82.6138 	EXP 	Presentation_image_f3_8: autoDraw = False
+82.6138 	EXP 	Presentation_image_f3_9: autoDraw = False
+82.6138 	EXP 	Presentation_image_f3_10: autoDraw = False
+82.6138 	EXP 	Presentation_image_f3_11: autoDraw = False
+82.6138 	EXP 	Presentation_image_f3_12: autoDraw = False
+82.6138 	EXP 	displayed_choice_image: image = 'LZ_natural\\LZ_natural_100.jpg'
+82.6138 	EXP 	Fixation_cross: autoDraw = True
+83.6101 	EXP 	displayed_choice_image: autoDraw = True
+83.6189 	EXP 	Fixation_cross: autoDraw = False
+84.4557 	EXP 	New trial (rep=0, index=7): OrderedDict([('imageone', 'LZ_noise\\LZ_noise_226.jpg'), ('imagetwo', 'LZ_noise\\LZ_noise_235.jpg'), ('imagethree', 'LZ_noise\\LZ_noise_157.jpg'), ('imagefour', 'LZ_noise\\LZ_noise_3.jpg'), ('imagefive', None), ('imagesix', None), ('imageseven', None), ('imageeight', None), ('imagenine', None), ('imageten', None), ('imageeleven', None), ('imagetwelve', None), ('imagethirteen', None), ('imagefourteen', None), ('imagefifteen', None), ('imagesixteen', None), ('frequency', 1), ('choice_image', 'LZ_noise\\LZ_noise_226.jpg'), ('choice_type', 1), ('correct_answer', 'a'), ('stimulus_type', 3), ('condition_code', 31)])
+84.4584 	DATA 	Keypress: a
+84.4609 	EXP 	Fixation_cross: autoDraw = False
+84.4609 	EXP 	displayed_choice_image: autoDraw = False
+84.4609 	EXP 	Crossm: autoDraw = True
+85.4574 	EXP 	Created sequence: sequential, trialTypes=1, nReps=1, seed=None
+85.4577 	EXP 	New trial (rep=0, index=0): None
+85.5059 	EXP 	Crossm: autoDraw = False
+85.5059 	EXP 	Presentation_image_f1_1: image = 'LZ_noise\\LZ_noise_226.jpg'
+85.5059 	EXP 	Presentation_image_f1_2: image = 'LZ_noise\\LZ_noise_235.jpg'
+85.5059 	EXP 	Presentation_image_f1_3: image = 'LZ_noise\\LZ_noise_157.jpg'
+85.5059 	EXP 	Presentation_image_f1_4: image = 'LZ_noise\\LZ_noise_3.jpg'
+85.5059 	EXP 	Presentation_image_f1_1: autoDraw = True
+86.4996 	EXP 	Presentation_image_f1_2: autoDraw = True
+86.5057 	EXP 	Presentation_image_f1_1: autoDraw = False
+87.4989 	EXP 	Presentation_image_f1_2: autoDraw = False
+87.4989 	EXP 	Presentation_image_f1_3: autoDraw = True
+88.4991 	EXP 	Presentation_image_f1_3: autoDraw = False
+88.4991 	EXP 	Presentation_image_f1_4: autoDraw = True
+89.4589 	EXP 	Created sequence: sequential, trialTypes=1, nReps=0, seed=None
+89.4592 	EXP 	Created sequence: sequential, trialTypes=1, nReps=0, seed=None
+89.4595 	EXP 	Created sequence: sequential, trialTypes=1, nReps=0, seed=None
+89.4679 	EXP 	Presentation_image_f1_1: autoDraw = False
+89.4679 	EXP 	Presentation_image_f1_2: autoDraw = False
+89.4679 	EXP 	Presentation_image_f1_3: autoDraw = False
+89.4679 	EXP 	Presentation_image_f1_4: autoDraw = False
+89.4679 	EXP 	displayed_choice_image: image = 'LZ_noise\\LZ_noise_226.jpg'
+89.4679 	EXP 	Fixation_cross: autoDraw = True
+90.4646 	EXP 	displayed_choice_image: autoDraw = True
+90.4732 	EXP 	Fixation_cross: autoDraw = False
+91.1190 	EXP 	New trial (rep=0, index=8): OrderedDict([('imageone', 'LZ_scrambled\\LZ_scrambled_80.jpg'), ('imagetwo', 'LZ_scrambled\\LZ_scrambled_200.jpg'), ('imagethree', 'LZ_scrambled\\LZ_scrambled_35.jpg'), ('imagefour', 'LZ_scrambled\\LZ_scrambled_144.jpg'), ('imagefive', 'LZ_scrambled\\LZ_scrambled_123.jpg'), ('imagesix', 'LZ_scrambled\\LZ_scrambled_97.jpg'), ('imageseven', 'LZ_scrambled\\LZ_scrambled_41.jpg'), ('imageeight', 'LZ_scrambled\\LZ_scrambled_79.jpg'), ('imagenine', None), ('imageten', None), ('imageeleven', None), ('imagetwelve', None), ('imagethirteen', None), ('imagefourteen', None), ('imagefifteen', None), ('imagesixteen', None), ('frequency', 2), ('choice_image', 'LZ_scrambled\\LZ_scrambled_41.jpg'), ('choice_type', 1), ('correct_answer', 'a'), ('stimulus_type', 2), ('condition_code', 22)])
+91.1224 	DATA 	Keypress: a
+91.1249 	EXP 	Fixation_cross: autoDraw = False
+91.1249 	EXP 	displayed_choice_image: autoDraw = False
+91.1249 	EXP 	Crossm: autoDraw = True
+92.1236 	EXP 	Created sequence: sequential, trialTypes=1, nReps=0, seed=None
+92.1239 	EXP 	Created sequence: sequential, trialTypes=1, nReps=1, seed=None
+92.1241 	EXP 	New trial (rep=0, index=0): None
+92.3770 	EXP 	Crossm: autoDraw = False
+92.3770 	EXP 	Presentation_image_f2_1: image = 'LZ_scrambled\\LZ_scrambled_80.jpg'
+92.3770 	EXP 	Presentation_image_f2_2: image = 'LZ_scrambled\\LZ_scrambled_200.jpg'
+92.3770 	EXP 	Presentation_image_f2_3: image = 'LZ_scrambled\\LZ_scrambled_35.jpg'
+92.3770 	EXP 	Presentation_image_f2_4: image = 'LZ_scrambled\\LZ_scrambled_144.jpg'
+92.3770 	EXP 	Presentation_image_f2_5: image = 'LZ_scrambled\\LZ_scrambled_123.jpg'
+92.3770 	EXP 	Presentation_image_f2_6: image = 'LZ_scrambled\\LZ_scrambled_97.jpg'
+92.3770 	EXP 	Presentation_image_f2_7: image = 'LZ_scrambled\\LZ_scrambled_41.jpg'
+92.3770 	EXP 	Presentation_image_f2_8: image = 'LZ_scrambled\\LZ_scrambled_79.jpg'
+92.3770 	EXP 	Presentation_image_f2_1: autoDraw = True
+92.8318 	EXP 	Presentation_image_f2_1: autoDraw = False
+92.8671 	EXP 	Presentation_image_f2_2: autoDraw = True
+93.3176 	EXP 	Presentation_image_f2_2: autoDraw = False
+93.3675 	EXP 	Presentation_image_f2_3: autoDraw = True
+93.8179 	EXP 	Presentation_image_f2_3: autoDraw = False
+93.8672 	EXP 	Presentation_image_f2_4: autoDraw = True
+94.3180 	EXP 	Presentation_image_f2_4: autoDraw = False
+94.3675 	EXP 	Presentation_image_f2_5: autoDraw = True
+94.8179 	EXP 	Presentation_image_f2_5: autoDraw = False
+94.8673 	EXP 	Presentation_image_f2_6: autoDraw = True
+95.3181 	EXP 	Presentation_image_f2_6: autoDraw = False
+95.3670 	EXP 	Presentation_image_f2_7: autoDraw = True
+95.8179 	EXP 	Presentation_image_f2_7: autoDraw = False
+95.8672 	EXP 	Presentation_image_f2_8: autoDraw = True
+96.0782 	EXP 	Created sequence: sequential, trialTypes=1, nReps=0, seed=None
+96.0785 	EXP 	Created sequence: sequential, trialTypes=1, nReps=0, seed=None
+96.1063 	EXP 	Presentation_image_f2_1: autoDraw = False
+96.1063 	EXP 	Presentation_image_f2_2: autoDraw = False
+96.1063 	EXP 	Presentation_image_f2_3: autoDraw = False
+96.1063 	EXP 	Presentation_image_f2_4: autoDraw = False
+96.1063 	EXP 	Presentation_image_f2_5: autoDraw = False
+96.1063 	EXP 	Presentation_image_f2_6: autoDraw = False
+96.1063 	EXP 	Presentation_image_f2_7: autoDraw = False
+96.1063 	EXP 	Presentation_image_f2_8: autoDraw = False
+96.1063 	EXP 	displayed_choice_image: image = 'LZ_scrambled\\LZ_scrambled_41.jpg'
+96.1063 	EXP 	Fixation_cross: autoDraw = True
+97.0967 	EXP 	displayed_choice_image: autoDraw = True
+97.1126 	EXP 	Fixation_cross: autoDraw = False
+97.9959 	DATA 	Keypress: l
+99.8949 	EXP 	New trial (rep=0, index=9): OrderedDict([('imageone', 'LZ_scrambled\\LZ_scrambled_145.jpg'), ('imagetwo', 'LZ_scrambled\\LZ_scrambled_118.jpg'), ('imagethree', 'LZ_scrambled\\LZ_scrambled_238.jpg'), ('imagefour', 'LZ_scrambled\\LZ_scrambled_235.jpg'), ('imagefive', 'LZ_scrambled\\LZ_scrambled_181.jpg'), ('imagesix', 'LZ_scrambled\\LZ_scrambled_139.jpg'), ('imageseven', 'LZ_scrambled\\LZ_scrambled_240.jpg'), ('imageeight', 'LZ_scrambled\\LZ_scrambled_228.jpg'), ('imagenine', 'LZ_scrambled\\LZ_scrambled_86.jpg'), ('imageten', 'LZ_scrambled\\LZ_scrambled_203.jpg'), ('imageeleven', 'LZ_scrambled\\LZ_scrambled_175.jpg'), ('imagetwelve', 'LZ_scrambled\\LZ_scrambled_218.jpg'), ('imagethirteen', None), ('imagefourteen', None), ('imagefifteen', None), ('imagesixteen', None), ('frequency', 3), ('choice_image', 'LZ_scrambled\\LZ_scrambled_238.jpg'), ('choice_type', 1), ('correct_answer', 'a'), ('stimulus_type', 2), ('condition_code', 23)])
+99.8973 	DATA 	Keypress: l
+99.8999 	EXP 	Fixation_cross: autoDraw = False
+99.8999 	EXP 	displayed_choice_image: autoDraw = False
+99.8999 	EXP 	Crossm: autoDraw = True
+100.8965 	EXP 	Created sequence: sequential, trialTypes=1, nReps=0, seed=None
+100.8967 	EXP 	Created sequence: sequential, trialTypes=1, nReps=0, seed=None
+100.8970 	EXP 	Created sequence: sequential, trialTypes=1, nReps=1, seed=None
+100.8972 	EXP 	New trial (rep=0, index=0): None
+101.2856 	EXP 	Crossm: autoDraw = False
+101.2856 	EXP 	Crossm: autoDraw = False
+101.2856 	EXP 	Presentation_image_f3_1: image = 'LZ_scrambled\\LZ_scrambled_145.jpg'
+101.2856 	EXP 	Presentation_image_f3_2: image = 'LZ_scrambled\\LZ_scrambled_118.jpg'
+101.2856 	EXP 	Presentation_image_f3_3: image = 'LZ_scrambled\\LZ_scrambled_238.jpg'
+101.2856 	EXP 	Presentation_image_f3_4: image = 'LZ_scrambled\\LZ_scrambled_235.jpg'
+101.2856 	EXP 	Presentation_image_f3_5: image = 'LZ_scrambled\\LZ_scrambled_181.jpg'
+101.2856 	EXP 	Presentation_image_f3_6: image = 'LZ_scrambled\\LZ_scrambled_139.jpg'
+101.2856 	EXP 	Presentation_image_f3_7: image = 'LZ_scrambled\\LZ_scrambled_240.jpg'
+101.2856 	EXP 	Presentation_image_f3_8: image = 'LZ_scrambled\\LZ_scrambled_228.jpg'
+101.2856 	EXP 	Presentation_image_f3_9: image = 'LZ_scrambled\\LZ_scrambled_86.jpg'
+101.2856 	EXP 	Presentation_image_f3_10: image = 'LZ_scrambled\\LZ_scrambled_203.jpg'
+101.2856 	EXP 	Presentation_image_f3_11: image = 'LZ_scrambled\\LZ_scrambled_175.jpg'
+101.2856 	EXP 	Presentation_image_f3_12: image = 'LZ_scrambled\\LZ_scrambled_218.jpg'
+101.2856 	EXP 	Presentation_image_f3_1: autoDraw = True
+101.5887 	EXP 	Presentation_image_f3_1: autoDraw = False
+101.6173 	EXP 	Presentation_image_f3_2: autoDraw = True
+101.9221 	EXP 	Presentation_image_f3_2: autoDraw = False
+101.9716 	EXP 	Presentation_image_f3_3: autoDraw = True
+102.2704 	EXP 	Presentation_image_f3_4: autoDraw = True
+102.2770 	EXP 	Presentation_image_f3_3: autoDraw = False
+102.5751 	EXP 	Presentation_image_f3_4: autoDraw = False
+102.6172 	EXP 	Presentation_image_f3_5: autoDraw = True
+102.9220 	EXP 	Presentation_image_f3_5: autoDraw = False
+102.9717 	EXP 	Presentation_image_f3_6: autoDraw = True
+103.2704 	EXP 	Presentation_image_f3_7: autoDraw = True
+103.2767 	EXP 	Presentation_image_f3_6: autoDraw = False
+103.5749 	EXP 	Presentation_image_f3_7: autoDraw = False
+103.6173 	EXP 	Presentation_image_f3_8: autoDraw = True
+103.9220 	EXP 	Presentation_image_f3_8: autoDraw = False
+103.9714 	EXP 	Presentation_image_f3_9: autoDraw = True
+104.2705 	EXP 	Presentation_image_f3_10: autoDraw = True
+104.2770 	EXP 	Presentation_image_f3_9: autoDraw = False
+104.5750 	EXP 	Presentation_image_f3_10: autoDraw = False
+104.6176 	EXP 	Presentation_image_f3_11: autoDraw = True
+104.8982 	EXP 	Created sequence: sequential, trialTypes=1, nReps=0, seed=None
+104.9185 	EXP 	Presentation_image_f3_1: autoDraw = False
+104.9185 	EXP 	Presentation_image_f3_2: autoDraw = False
+104.9185 	EXP 	Presentation_image_f3_3: autoDraw = False
+104.9185 	EXP 	Presentation_image_f3_4: autoDraw = False
+104.9185 	EXP 	Presentation_image_f3_5: autoDraw = False
+104.9185 	EXP 	Presentation_image_f3_6: autoDraw = False
+104.9185 	EXP 	Presentation_image_f3_7: autoDraw = False
+104.9185 	EXP 	Presentation_image_f3_8: autoDraw = False
+104.9185 	EXP 	Presentation_image_f3_9: autoDraw = False
+104.9185 	EXP 	Presentation_image_f3_10: autoDraw = False
+104.9185 	EXP 	Presentation_image_f3_11: autoDraw = False
+104.9185 	EXP 	Presentation_image_f3_12: autoDraw = False
+104.9185 	EXP 	displayed_choice_image: image = 'LZ_scrambled\\LZ_scrambled_238.jpg'
+104.9185 	EXP 	Fixation_cross: autoDraw = True
+105.9158 	EXP 	displayed_choice_image: autoDraw = True
+105.9249 	EXP 	Fixation_cross: autoDraw = False
+107.5962 	DATA 	Keypress: l
+107.6039 	EXP 	New trial (rep=0, index=10): OrderedDict([('imageone', 'LZ_natural\\LZ_natural_107.jpg'), ('imagetwo', 'LZ_natural\\LZ_natural_196.jpg'), ('imagethree', 'LZ_natural\\LZ_natural_157.jpg'), ('imagefour', 'LZ_natural\\LZ_natural_83.jpg'), ('imagefive', 'LZ_natural\\LZ_natural_212.jpg'), ('imagesix', 'LZ_natural\\LZ_natural_13.jpg'), ('imageseven', 'LZ_natural\\LZ_natural_131.jpg'), ('imageeight', 'LZ_natural\\LZ_natural_194.jpg'), ('imagenine', None), ('imageten', None), ('imageeleven', None), ('imagetwelve', None), ('imagethirteen', None), ('imagefourteen', None), ('imagefifteen', None), ('imagesixteen', None), ('frequency', 2), ('choice_image', 'LZ_natural\\LZ_natural_37.jpg'), ('choice_type', 0), ('correct_answer', 'l'), ('stimulus_type', 1), ('condition_code', 12)])
+107.6084 	EXP 	Fixation_cross: autoDraw = False
+107.6084 	EXP 	displayed_choice_image: autoDraw = False
+107.6084 	EXP 	Crossm: autoDraw = True
+108.6051 	EXP 	Created sequence: sequential, trialTypes=1, nReps=0, seed=None
+108.6055 	EXP 	Created sequence: sequential, trialTypes=1, nReps=1, seed=None
+108.6058 	EXP 	New trial (rep=0, index=0): None
+108.7366 	EXP 	Crossm: autoDraw = False
+108.7366 	EXP 	Crossm: autoDraw = False
+108.7366 	EXP 	Presentation_image_f2_1: image = 'LZ_natural\\LZ_natural_107.jpg'
+108.7366 	EXP 	Presentation_image_f2_2: image = 'LZ_natural\\LZ_natural_196.jpg'
+108.7366 	EXP 	Presentation_image_f2_3: image = 'LZ_natural\\LZ_natural_157.jpg'
+108.7366 	EXP 	Presentation_image_f2_4: image = 'LZ_natural\\LZ_natural_83.jpg'
+108.7366 	EXP 	Presentation_image_f2_5: image = 'LZ_natural\\LZ_natural_212.jpg'
+108.7366 	EXP 	Presentation_image_f2_6: image = 'LZ_natural\\LZ_natural_13.jpg'
+108.7366 	EXP 	Presentation_image_f2_7: image = 'LZ_natural\\LZ_natural_131.jpg'
+108.7366 	EXP 	Presentation_image_f2_8: image = 'LZ_natural\\LZ_natural_194.jpg'
+108.7366 	EXP 	Presentation_image_f2_1: autoDraw = True
+109.1865 	EXP 	Presentation_image_f2_1: autoDraw = False
+109.2285 	EXP 	Presentation_image_f2_2: autoDraw = True
+109.6791 	EXP 	Presentation_image_f2_2: autoDraw = False
+109.7285 	EXP 	Presentation_image_f2_3: autoDraw = True
+110.1791 	EXP 	Presentation_image_f2_3: autoDraw = False
+110.2286 	EXP 	Presentation_image_f2_4: autoDraw = True
+110.6794 	EXP 	Presentation_image_f2_4: autoDraw = False
+110.7288 	EXP 	Presentation_image_f2_5: autoDraw = True
+111.1791 	EXP 	Presentation_image_f2_5: autoDraw = False
+111.2285 	EXP 	Presentation_image_f2_6: autoDraw = True
+111.6790 	EXP 	Presentation_image_f2_6: autoDraw = False
+111.7282 	EXP 	Presentation_image_f2_7: autoDraw = True
+112.1791 	EXP 	Presentation_image_f2_7: autoDraw = False
+112.2284 	EXP 	Presentation_image_f2_8: autoDraw = True
+112.5575 	EXP 	Created sequence: sequential, trialTypes=1, nReps=0, seed=None
+112.5578 	EXP 	Created sequence: sequential, trialTypes=1, nReps=0, seed=None
+112.5839 	EXP 	Presentation_image_f2_1: autoDraw = False
+112.5839 	EXP 	Presentation_image_f2_2: autoDraw = False
+112.5839 	EXP 	Presentation_image_f2_3: autoDraw = False
+112.5839 	EXP 	Presentation_image_f2_4: autoDraw = False
+112.5839 	EXP 	Presentation_image_f2_5: autoDraw = False
+112.5839 	EXP 	Presentation_image_f2_6: autoDraw = False
+112.5839 	EXP 	Presentation_image_f2_7: autoDraw = False
+112.5839 	EXP 	Presentation_image_f2_8: autoDraw = False
+112.5839 	EXP 	displayed_choice_image: image = 'LZ_natural\\LZ_natural_37.jpg'
+112.5839 	EXP 	Fixation_cross: autoDraw = True
+113.5757 	EXP 	displayed_choice_image: autoDraw = True
+113.5931 	EXP 	Fixation_cross: autoDraw = False
+114.2752 	DATA 	Keypress: l
+114.2829 	EXP 	New trial (rep=0, index=11): OrderedDict([('imageone', 'LZ_scrambled\\LZ_scrambled_65.jpg'), ('imagetwo', 'LZ_scrambled\\LZ_scrambled_44.jpg'), ('imagethree', 'LZ_scrambled\\LZ_scrambled_217.jpg'), ('imagefour', 'LZ_scrambled\\LZ_scrambled_31.jpg'), ('imagefive', 'LZ_scrambled\\LZ_scrambled_134.jpg'), ('imagesix', 'LZ_scrambled\\LZ_scrambled_96.jpg'), ('imageseven', 'LZ_scrambled\\LZ_scrambled_169.jpg'), ('imageeight', 'LZ_scrambled\\LZ_scrambled_8.jpg'), ('imagenine', None), ('imageten', None), ('imageeleven', None), ('imagetwelve', None), ('imagethirteen', None), ('imagefourteen', None), ('imagefifteen', None), ('imagesixteen', None), ('frequency', 2), ('choice_image', 'LZ_scrambled\\LZ_scrambled_231.jpg'), ('choice_type', 0), ('correct_answer', 'l'), ('stimulus_type', 2), ('condition_code', 22)])
+114.2877 	EXP 	Fixation_cross: autoDraw = False
+114.2877 	EXP 	displayed_choice_image: autoDraw = False
+114.2877 	EXP 	Crossm: autoDraw = True
+115.2841 	EXP 	Created sequence: sequential, trialTypes=1, nReps=0, seed=None
+115.2844 	EXP 	Created sequence: sequential, trialTypes=1, nReps=1, seed=None
+115.2846 	EXP 	New trial (rep=0, index=0): None
+115.5214 	EXP 	Crossm: autoDraw = False
+115.5214 	EXP 	Presentation_image_f2_1: image = 'LZ_scrambled\\LZ_scrambled_65.jpg'
+115.5214 	EXP 	Presentation_image_f2_2: image = 'LZ_scrambled\\LZ_scrambled_44.jpg'
+115.5214 	EXP 	Presentation_image_f2_3: image = 'LZ_scrambled\\LZ_scrambled_217.jpg'
+115.5214 	EXP 	Presentation_image_f2_4: image = 'LZ_scrambled\\LZ_scrambled_31.jpg'
+115.5214 	EXP 	Presentation_image_f2_5: image = 'LZ_scrambled\\LZ_scrambled_134.jpg'
+115.5214 	EXP 	Presentation_image_f2_6: image = 'LZ_scrambled\\LZ_scrambled_96.jpg'
+115.5214 	EXP 	Presentation_image_f2_7: image = 'LZ_scrambled\\LZ_scrambled_169.jpg'
+115.5214 	EXP 	Presentation_image_f2_8: image = 'LZ_scrambled\\LZ_scrambled_8.jpg'
+115.5214 	EXP 	Presentation_image_f2_1: autoDraw = True
+115.9712 	EXP 	Presentation_image_f2_1: autoDraw = False
+116.0133 	EXP 	Presentation_image_f2_2: autoDraw = True
+116.4639 	EXP 	Presentation_image_f2_2: autoDraw = False
+116.5136 	EXP 	Presentation_image_f2_3: autoDraw = True
+116.9642 	EXP 	Presentation_image_f2_3: autoDraw = False
+117.0134 	EXP 	Presentation_image_f2_4: autoDraw = True
+117.4643 	EXP 	Presentation_image_f2_4: autoDraw = False
+117.5134 	EXP 	Presentation_image_f2_5: autoDraw = True
+117.9642 	EXP 	Presentation_image_f2_5: autoDraw = False
+118.0133 	EXP 	Presentation_image_f2_6: autoDraw = True
+118.4642 	EXP 	Presentation_image_f2_6: autoDraw = False
+118.5136 	EXP 	Presentation_image_f2_7: autoDraw = True
+118.9642 	EXP 	Presentation_image_f2_7: autoDraw = False
+119.0136 	EXP 	Presentation_image_f2_8: autoDraw = True
+119.2383 	EXP 	Created sequence: sequential, trialTypes=1, nReps=0, seed=None
+119.2386 	EXP 	Created sequence: sequential, trialTypes=1, nReps=0, seed=None
+119.2669 	EXP 	Presentation_image_f2_1: autoDraw = False
+119.2669 	EXP 	Presentation_image_f2_2: autoDraw = False
+119.2669 	EXP 	Presentation_image_f2_3: autoDraw = False
+119.2669 	EXP 	Presentation_image_f2_4: autoDraw = False
+119.2669 	EXP 	Presentation_image_f2_5: autoDraw = False
+119.2669 	EXP 	Presentation_image_f2_6: autoDraw = False
+119.2669 	EXP 	Presentation_image_f2_7: autoDraw = False
+119.2669 	EXP 	Presentation_image_f2_8: autoDraw = False
+119.2669 	EXP 	displayed_choice_image: image = 'LZ_scrambled\\LZ_scrambled_231.jpg'
+119.2669 	EXP 	Fixation_cross: autoDraw = True
+120.2636 	EXP 	displayed_choice_image: autoDraw = True
+120.2725 	EXP 	Fixation_cross: autoDraw = False
+121.1660 	EXP 	New trial (rep=0, index=12): OrderedDict([('imageone', 'LZ_scrambled\\LZ_scrambled_216.jpg'), ('imagetwo', 'LZ_scrambled\\LZ_scrambled_202.jpg'), ('imagethree', 'LZ_scrambled\\LZ_scrambled_66.jpg'), ('imagefour', 'LZ_scrambled\\LZ_scrambled_73.jpg'), ('imagefive', 'LZ_scrambled\\LZ_scrambled_92.jpg'), ('imagesix', 'LZ_scrambled\\LZ_scrambled_152.jpg'), ('imageseven', 'LZ_scrambled\\LZ_scrambled_158.jpg'), ('imageeight', 'LZ_scrambled\\LZ_scrambled_90.jpg'), ('imagenine', 'LZ_scrambled\\LZ_scrambled_156.jpg'), ('imageten', 'LZ_scrambled\\LZ_scrambled_18.jpg'), ('imageeleven', 'LZ_scrambled\\LZ_scrambled_128.jpg'), ('imagetwelve', 'LZ_scrambled\\LZ_scrambled_194.jpg'), ('imagethirteen', None), ('imagefourteen', None), ('imagefifteen', None), ('imagesixteen', None), ('frequency', 3), ('choice_image', 'LZ_scrambled\\LZ_scrambled_92.jpg'), ('choice_type', 1), ('correct_answer', 'a'), ('stimulus_type', 2), ('condition_code', 23)])
+121.1686 	DATA 	Keypress: l
+121.1711 	EXP 	Fixation_cross: autoDraw = False
+121.1711 	EXP 	displayed_choice_image: autoDraw = False
+121.1711 	EXP 	Crossm: autoDraw = True
+122.1674 	EXP 	Created sequence: sequential, trialTypes=1, nReps=0, seed=None
+122.1677 	EXP 	Created sequence: sequential, trialTypes=1, nReps=0, seed=None
+122.1680 	EXP 	Created sequence: sequential, trialTypes=1, nReps=1, seed=None
+122.1682 	EXP 	New trial (rep=0, index=0): None
+122.5032 	EXP 	Crossm: autoDraw = False
+122.5032 	EXP 	Crossm: autoDraw = False
+122.5032 	EXP 	Presentation_image_f3_1: image = 'LZ_scrambled\\LZ_scrambled_216.jpg'
+122.5032 	EXP 	Presentation_image_f3_2: image = 'LZ_scrambled\\LZ_scrambled_202.jpg'
+122.5032 	EXP 	Presentation_image_f3_3: image = 'LZ_scrambled\\LZ_scrambled_66.jpg'
+122.5032 	EXP 	Presentation_image_f3_4: image = 'LZ_scrambled\\LZ_scrambled_73.jpg'
+122.5032 	EXP 	Presentation_image_f3_5: image = 'LZ_scrambled\\LZ_scrambled_92.jpg'
+122.5032 	EXP 	Presentation_image_f3_6: image = 'LZ_scrambled\\LZ_scrambled_152.jpg'
+122.5032 	EXP 	Presentation_image_f3_7: image = 'LZ_scrambled\\LZ_scrambled_158.jpg'
+122.5032 	EXP 	Presentation_image_f3_8: image = 'LZ_scrambled\\LZ_scrambled_90.jpg'
+122.5032 	EXP 	Presentation_image_f3_9: image = 'LZ_scrambled\\LZ_scrambled_156.jpg'
+122.5032 	EXP 	Presentation_image_f3_10: image = 'LZ_scrambled\\LZ_scrambled_18.jpg'
+122.5032 	EXP 	Presentation_image_f3_11: image = 'LZ_scrambled\\LZ_scrambled_128.jpg'
+122.5032 	EXP 	Presentation_image_f3_12: image = 'LZ_scrambled\\LZ_scrambled_194.jpg'
+122.5032 	EXP 	Presentation_image_f3_1: autoDraw = True
+122.8041 	EXP 	Presentation_image_f3_1: autoDraw = False
+122.8398 	EXP 	Presentation_image_f3_2: autoDraw = True
+123.1448 	EXP 	Presentation_image_f3_2: autoDraw = False
+123.1939 	EXP 	Presentation_image_f3_3: autoDraw = True
+123.4932 	EXP 	Presentation_image_f3_4: autoDraw = True
+123.4995 	EXP 	Presentation_image_f3_3: autoDraw = False
+123.7975 	EXP 	Presentation_image_f3_4: autoDraw = False
+123.8400 	EXP 	Presentation_image_f3_5: autoDraw = True
+124.1444 	EXP 	Presentation_image_f3_5: autoDraw = False
+124.1940 	EXP 	Presentation_image_f3_6: autoDraw = True
+124.4930 	EXP 	Presentation_image_f3_7: autoDraw = True
+124.4995 	EXP 	Presentation_image_f3_6: autoDraw = False
+124.7976 	EXP 	Presentation_image_f3_7: autoDraw = False
+124.8400 	EXP 	Presentation_image_f3_8: autoDraw = True
+125.1447 	EXP 	Presentation_image_f3_8: autoDraw = False
+125.1942 	EXP 	Presentation_image_f3_9: autoDraw = True
+125.4931 	EXP 	Presentation_image_f3_10: autoDraw = True
+125.4995 	EXP 	Presentation_image_f3_9: autoDraw = False
+125.7975 	EXP 	Presentation_image_f3_10: autoDraw = False
+125.8399 	EXP 	Presentation_image_f3_11: autoDraw = True
+126.1448 	EXP 	Presentation_image_f3_11: autoDraw = False
+126.1764 	EXP 	Created sequence: sequential, trialTypes=1, nReps=0, seed=None
+126.2000 	EXP 	Presentation_image_f3_1: autoDraw = False
+126.2000 	EXP 	Presentation_image_f3_2: autoDraw = False
+126.2000 	EXP 	Presentation_image_f3_3: autoDraw = False
+126.2000 	EXP 	Presentation_image_f3_4: autoDraw = False
+126.2000 	EXP 	Presentation_image_f3_5: autoDraw = False
+126.2000 	EXP 	Presentation_image_f3_6: autoDraw = False
+126.2000 	EXP 	Presentation_image_f3_7: autoDraw = False
+126.2000 	EXP 	Presentation_image_f3_8: autoDraw = False
+126.2000 	EXP 	Presentation_image_f3_9: autoDraw = False
+126.2000 	EXP 	Presentation_image_f3_10: autoDraw = False
+126.2000 	EXP 	Presentation_image_f3_11: autoDraw = False
+126.2000 	EXP 	Presentation_image_f3_12: autoDraw = False
+126.2000 	EXP 	displayed_choice_image: image = 'LZ_scrambled\\LZ_scrambled_92.jpg'
+126.2000 	EXP 	Fixation_cross: autoDraw = True
+127.1944 	EXP 	displayed_choice_image: autoDraw = True
+127.2039 	EXP 	Fixation_cross: autoDraw = False
+128.1077 	DATA 	Keypress: l
+128.1159 	EXP 	New trial (rep=0, index=13): OrderedDict([('imageone', 'LZ_natural\\LZ_natural_73.jpg'), ('imagetwo', 'LZ_natural\\LZ_natural_130.jpg'), ('imagethree', 'LZ_natural\\LZ_natural_202.jpg'), ('imagefour', 'LZ_natural\\LZ_natural_95.jpg'), ('imagefive', None), ('imagesix', None), ('imageseven', None), ('imageeight', None), ('imagenine', None), ('imageten', None), ('imageeleven', None), ('imagetwelve', None), ('imagethirteen', None), ('imagefourteen', None), ('imagefifteen', None), ('imagesixteen', None), ('frequency', 1), ('choice_image', 'LZ_natural\\LZ_natural_73.jpg'), ('choice_type', 1), ('correct_answer', 'a'), ('stimulus_type', 1), ('condition_code', 11)])
+128.1210 	EXP 	Fixation_cross: autoDraw = False
+128.1210 	EXP 	displayed_choice_image: autoDraw = False
+128.1210 	EXP 	Crossm: autoDraw = True
+129.1179 	EXP 	Created sequence: sequential, trialTypes=1, nReps=1, seed=None
+129.1181 	EXP 	New trial (rep=0, index=0): None
+129.1710 	EXP 	Crossm: autoDraw = False
+129.1710 	EXP 	Presentation_image_f1_1: image = 'LZ_natural\\LZ_natural_73.jpg'
+129.1710 	EXP 	Presentation_image_f1_2: image = 'LZ_natural\\LZ_natural_130.jpg'
+129.1710 	EXP 	Presentation_image_f1_3: image = 'LZ_natural\\LZ_natural_202.jpg'
+129.1710 	EXP 	Presentation_image_f1_4: image = 'LZ_natural\\LZ_natural_95.jpg'
+129.1710 	EXP 	Presentation_image_f1_1: autoDraw = True
+129.5718 	DATA 	Keypress: escape
+131.8285 	EXP 	window1: mouseVisible = True
