@@ -1111,6 +1111,7 @@
     <LoopTerminator name="fthree_control_b2"/>
     <Routine name="choice"/>
     <LoopTerminator name="block_two"/>
+    <Routine name="perf_review"/>
     <Routine name="Break"/>
     <LoopInitiator loopType="TrialHandler" name="block_three">
       <Param name="Selected rows" updates="None" val="" valType="str"/>
@@ -1165,6 +1166,7 @@
     <LoopTerminator name="fthree_control_b3"/>
     <Routine name="choice"/>
     <LoopTerminator name="block_three"/>
+    <Routine name="perf_review"/>
     <Routine name="End"/>
   </Flow>
 </PsychoPy2experiment>
