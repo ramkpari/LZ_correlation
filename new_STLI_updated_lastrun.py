@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2020.2.10),
-    on December 16, 2020, at 01:02
+    on December 17, 2020, at 17:51
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -65,7 +65,7 @@ frameTolerance = 0.001  # how close to onset before 'same' frame
 
 # Setup the Window
 win = visual.Window(
-    size=[1680, 1050], fullscr=True, screen=0, 
+    size=[2560, 1440], fullscr=True, screen=0, 
     winType='pyglet', allowGUI=False, allowStencil=False,
     monitor='testMonitor', color=[0,0,0], colorSpace='rgb',
     blendMode='avg', useFBO=True, 
@@ -1556,8 +1556,6 @@ for thisBlock_one in block_one:
         fone_control_b1.addData('Presentation_image_f1_3.stopped', Presentation_image_f1_3.tStopRefresh)
         fone_control_b1.addData('Presentation_image_f1_4.started', Presentation_image_f1_4.tStartRefresh)
         fone_control_b1.addData('Presentation_image_f1_4.stopped', Presentation_image_f1_4.tStopRefresh)
-        thisExp.nextEntry()
-        
     # completed dofone repeats of 'fone_control_b1'
     
     
@@ -1789,8 +1787,6 @@ for thisBlock_one in block_one:
         ftwo_control_b1.addData('Presentation_image_f2_7.stopped', Presentation_image_f2_7.tStopRefresh)
         ftwo_control_b1.addData('Presentation_image_f2_8.started', Presentation_image_f2_8.tStartRefresh)
         ftwo_control_b1.addData('Presentation_image_f2_8.stopped', Presentation_image_f2_8.tStopRefresh)
-        thisExp.nextEntry()
-        
     # completed doftwo repeats of 'ftwo_control_b1'
     
     
@@ -2102,8 +2098,6 @@ for thisBlock_one in block_one:
         fthree_control_b1.addData('Presentation_image_f3_11.stopped', Presentation_image_f3_11.tStopRefresh)
         fthree_control_b1.addData('Presentation_image_f3_12.started', Presentation_image_f3_12.tStartRefresh)
         fthree_control_b1.addData('Presentation_image_f3_12.stopped', Presentation_image_f3_12.tStopRefresh)
-        thisExp.nextEntry()
-        
     # completed dofthree repeats of 'fthree_control_b1'
     
     
@@ -2495,8 +2489,6 @@ for thisBlock_one in block_one:
         ffour_control_b1.addData('Presentation_image_f4_15.stopped', Presentation_image_f4_15.tStopRefresh)
         ffour_control_b1.addData('Presentation_image_f4_16.started', Presentation_image_f4_16.tStartRefresh)
         ffour_control_b1.addData('Presentation_image_f4_16.stopped', Presentation_image_f4_16.tStopRefresh)
-        thisExp.nextEntry()
-        
     # completed doffour repeats of 'ffour_control_b1'
     
     
@@ -2836,7 +2828,7 @@ for thisBlock_two in block_two:
     block_two.addData('Crossm.stopped', Crossm.tStopRefresh)
     
     # set up handler to look after randomisation of conditions etc
-    fone_control_b2 = data.TrialHandler(nReps=dofone, method='random', 
+    fone_control_b2 = data.TrialHandler(nReps=dofone, method='sequential', 
         extraInfo=expInfo, originPath=-1,
         trialList=[None],
         seed=None, name='fone_control_b2')
@@ -2983,8 +2975,6 @@ for thisBlock_two in block_two:
         fone_control_b2.addData('Presentation_image_f1_3.stopped', Presentation_image_f1_3.tStopRefresh)
         fone_control_b2.addData('Presentation_image_f1_4.started', Presentation_image_f1_4.tStartRefresh)
         fone_control_b2.addData('Presentation_image_f1_4.stopped', Presentation_image_f1_4.tStopRefresh)
-        thisExp.nextEntry()
-        
     # completed dofone repeats of 'fone_control_b2'
     
     
@@ -3216,8 +3206,6 @@ for thisBlock_two in block_two:
         ftwo_control_b2.addData('Presentation_image_f2_7.stopped', Presentation_image_f2_7.tStopRefresh)
         ftwo_control_b2.addData('Presentation_image_f2_8.started', Presentation_image_f2_8.tStartRefresh)
         ftwo_control_b2.addData('Presentation_image_f2_8.stopped', Presentation_image_f2_8.tStopRefresh)
-        thisExp.nextEntry()
-        
     # completed doftwo repeats of 'ftwo_control_b2'
     
     
@@ -3529,8 +3517,6 @@ for thisBlock_two in block_two:
         fthree_control_b2.addData('Presentation_image_f3_11.stopped', Presentation_image_f3_11.tStopRefresh)
         fthree_control_b2.addData('Presentation_image_f3_12.started', Presentation_image_f3_12.tStartRefresh)
         fthree_control_b2.addData('Presentation_image_f3_12.stopped', Presentation_image_f3_12.tStopRefresh)
-        thisExp.nextEntry()
-        
     # completed dofthree repeats of 'fthree_control_b2'
     
     
@@ -3922,8 +3908,6 @@ for thisBlock_two in block_two:
         ffour_control_b2.addData('Presentation_image_f4_15.stopped', Presentation_image_f4_15.tStopRefresh)
         ffour_control_b2.addData('Presentation_image_f4_16.started', Presentation_image_f4_16.tStartRefresh)
         ffour_control_b2.addData('Presentation_image_f4_16.stopped', Presentation_image_f4_16.tStopRefresh)
-        thisExp.nextEntry()
-        
     # completed doffour repeats of 'ffour_control_b2'
     
     
@@ -4410,8 +4394,6 @@ for thisBlock_three in block_three:
         fone_control_b3.addData('Presentation_image_f1_3.stopped', Presentation_image_f1_3.tStopRefresh)
         fone_control_b3.addData('Presentation_image_f1_4.started', Presentation_image_f1_4.tStartRefresh)
         fone_control_b3.addData('Presentation_image_f1_4.stopped', Presentation_image_f1_4.tStopRefresh)
-        thisExp.nextEntry()
-        
     # completed dofone repeats of 'fone_control_b3'
     
     
@@ -4643,13 +4625,11 @@ for thisBlock_three in block_three:
         ftwo_control_b3.addData('Presentation_image_f2_7.stopped', Presentation_image_f2_7.tStopRefresh)
         ftwo_control_b3.addData('Presentation_image_f2_8.started', Presentation_image_f2_8.tStartRefresh)
         ftwo_control_b3.addData('Presentation_image_f2_8.stopped', Presentation_image_f2_8.tStopRefresh)
-        thisExp.nextEntry()
-        
     # completed doftwo repeats of 'ftwo_control_b3'
     
     
     # set up handler to look after randomisation of conditions etc
-    fthree_control_b3 = data.TrialHandler(nReps=dofthree, method='random', 
+    fthree_control_b3 = data.TrialHandler(nReps=dofthree, method='sequential', 
         extraInfo=expInfo, originPath=-1,
         trialList=[None],
         seed=None, name='fthree_control_b3')
@@ -4956,8 +4936,6 @@ for thisBlock_three in block_three:
         fthree_control_b3.addData('Presentation_image_f3_11.stopped', Presentation_image_f3_11.tStopRefresh)
         fthree_control_b3.addData('Presentation_image_f3_12.started', Presentation_image_f3_12.tStartRefresh)
         fthree_control_b3.addData('Presentation_image_f3_12.stopped', Presentation_image_f3_12.tStopRefresh)
-        thisExp.nextEntry()
-        
     # completed dofthree repeats of 'fthree_control_b3'
     
     
@@ -5349,8 +5327,6 @@ for thisBlock_three in block_three:
         ffour_control_b3.addData('Presentation_image_f4_15.stopped', Presentation_image_f4_15.tStopRefresh)
         ffour_control_b3.addData('Presentation_image_f4_16.started', Presentation_image_f4_16.tStartRefresh)
         ffour_control_b3.addData('Presentation_image_f4_16.stopped', Presentation_image_f4_16.tStopRefresh)
-        thisExp.nextEntry()
-        
     # completed doffour repeats of 'ffour_control_b3'
     
     
