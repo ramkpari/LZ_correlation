@@ -1,0 +1,870 @@
+3.8431 	WARNING 	We strongly recommend you activate the PTB sound engine in PsychoPy prefs as the preferred audio engine. Its timing is vastly superior. Your prefs are currently set to use ['sounddevice', 'PTB', 'pyo', 'pygame'] (in that order).
+11.5566 	WARNING 	psychopy.parallel has been imported but no parallel port driver found. Install either inpout32, inpoutx64 or dlportio
+18.2344 	WARNING 	User requested fullscreen with size [2560 1440], but screen is actually [1920, 1080]. Using actual size
+22.5432 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=False, args=UNKNOWN, autoLog=True, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([0., 0., 0.]), colorSpace='rgb', depthBits=8, fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x0000015AB3D69D68>, gamma=None, gammaErrorPolicy='raise', kwargs=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x0000015AB3DBC748>, multiSample=False, name='window1', numSamples=2, pos=[0.0, 0.0], screen=0, size=array([1920, 1080]), stencilBits=0, stereo=False, units='height', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+22.5435 	EXP 	window1: mouseVisible = True
+22.5435 	EXP 	window1: recordFrameIntervals = False
+22.6121 	EXP 	window1: recordFrameIntervals = True
+22.6883 	EXP 	window1: recordFrameIntervals = False
+23.2072 	EXP 	Created text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='text', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text=str(...), units='height', win=Window(...), wrapWidth=1)
+23.2085 	EXP 	Created Crossm = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, autoDraw=False, autoLog=True, closeShape=True, contrast=1.0, depth=0.0, fillColor=array([1., 1., 1.]), fillColorSpace='rgb', interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineWidth=1, name='Crossm', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([0.05, 0.05]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+23.2109 	EXP 	Created Presentation_image_f1_1 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Presentation_image_f1_1', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128, units='height', win=Window(...))
+23.2125 	EXP 	Created Presentation_image_f1_2 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Presentation_image_f1_2', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128, units='height', win=Window(...))
+23.2138 	EXP 	Created Presentation_image_f1_3 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Presentation_image_f1_3', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128, units='height', win=Window(...))
+23.2151 	EXP 	Created Presentation_image_f1_4 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-3.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Presentation_image_f1_4', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128, units='height', win=Window(...))
+23.2165 	EXP 	Created Presentation_image_f2_1 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Presentation_image_f2_1', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128, units='height', win=Window(...))
+23.2179 	EXP 	Created Presentation_image_f2_2 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Presentation_image_f2_2', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128, units='height', win=Window(...))
+23.2193 	EXP 	Created Presentation_image_f2_3 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Presentation_image_f2_3', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128, units='height', win=Window(...))
+23.2217 	EXP 	Created Presentation_image_f2_4 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-3.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Presentation_image_f2_4', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128, units='height', win=Window(...))
+23.2231 	EXP 	Created Presentation_image_f2_5 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-4.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Presentation_image_f2_5', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128, units='height', win=Window(...))
+23.2245 	EXP 	Created Presentation_image_f2_6 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-5.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Presentation_image_f2_6', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128, units='height', win=Window(...))
+23.2259 	EXP 	Created Presentation_image_f2_7 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-6.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Presentation_image_f2_7', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128, units='height', win=Window(...))
+23.2273 	EXP 	Created Presentation_image_f2_8 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-7.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Presentation_image_f2_8', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128, units='height', win=Window(...))
+23.2286 	EXP 	Created Presentation_image_f3_1 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Presentation_image_f3_1', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128, units='height', win=Window(...))
+23.2300 	EXP 	Created Presentation_image_f3_2 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Presentation_image_f3_2', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128, units='height', win=Window(...))
+23.2313 	EXP 	Created Presentation_image_f3_3 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Presentation_image_f3_3', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128, units='height', win=Window(...))
+23.2326 	EXP 	Created Presentation_image_f3_4 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-3.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Presentation_image_f3_4', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128, units='height', win=Window(...))
+23.2339 	EXP 	Created Presentation_image_f3_5 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-4.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Presentation_image_f3_5', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128, units='height', win=Window(...))
+23.2352 	EXP 	Created Presentation_image_f3_6 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-5.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Presentation_image_f3_6', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128, units='height', win=Window(...))
+23.2365 	EXP 	Created Presentation_image_f3_7 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-6.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Presentation_image_f3_7', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128, units='height', win=Window(...))
+23.2378 	EXP 	Created Presentation_image_f3_8 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-7.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Presentation_image_f3_8', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128, units='height', win=Window(...))
+23.2392 	EXP 	Created Presentation_image_f3_9 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-8.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Presentation_image_f3_9', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128, units='height', win=Window(...))
+23.2405 	EXP 	Created Presentation_image_f3_10 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-9.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Presentation_image_f3_10', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128, units='height', win=Window(...))
+23.2418 	EXP 	Created Presentation_image_f3_11 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-10.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Presentation_image_f3_11', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128, units='height', win=Window(...))
+23.2431 	EXP 	Created Presentation_image_f3_12 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-11.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Presentation_image_f3_12', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128, units='height', win=Window(...))
+23.2443 	EXP 	Created Fixation_cross = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, autoDraw=False, autoLog=True, closeShape=True, contrast=1.0, depth=0.0, fillColor=array([1., 1., 1.]), fillColorSpace='rgb', interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineWidth=1, name='Fixation_cross', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([0.1, 0.1]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+23.2457 	EXP 	Created displayed_choice_image = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='displayed_choice_image', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128, units='height', win=Window(...))
+23.2486 	EXP 	Created perf_review_accuracyval = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='perf_review_accuracyval', opacity=1.0, ori=0, pos=array([ 0. , -0.1]), rgb=array([255., 255., 255.]), text='default text', units='height', win=Window(...), wrapWidth=1)
+23.2540 	EXP 	Created text_3 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='text_3', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='Accuracy in current block ', units='height', win=Window(...), wrapWidth=1)
+23.2657 	EXP 	Created text_2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='text_2', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='End\n\n', units='height', win=Window(...), wrapWidth=1)
+23.2981 	EXP 	text: autoDraw = True
+24.7349 	EXP 	Imported stim_practise_data_block_1.csv as conditions, 18 conditions, 22 params
+24.7351 	EXP 	Created sequence: sequential, trialTypes=18, nReps=1, seed=None
+24.7354 	EXP 	New trial (rep=0, index=0): OrderedDict([('imageone', 'LZ_natural\\LZ_natural_191.jpg'), ('imagetwo', 'LZ_natural\\LZ_natural_103.jpg'), ('imagethree', 'LZ_natural\\LZ_natural_43.jpg'), ('imagefour', 'LZ_natural\\LZ_natural_142.jpg'), ('imagefive', None), ('imagesix', None), ('imageseven', None), ('imageeight', None), ('imagenine', None), ('imageten', None), ('imageeleven', None), ('imagetwelve', None), ('imagethirteen', None), ('imagefourteen', None), ('imagefifteen', None), ('imagesixteen', None), ('frequency', 1), ('choice_image', 'LZ_natural\\LZ_natural_103.jpg'), ('choice_type', 1), ('correct_answer', 'a'), ('stimulus_type', 1), ('condition_code', 11)])
+24.7388 	DATA 	Keypress: space
+24.7414 	EXP 	text: autoDraw = False
+24.7414 	EXP 	Crossm: autoDraw = True
+25.6399 	EXP 	Created sequence: sequential, trialTypes=1, nReps=1, seed=None
+25.6400 	EXP 	New trial (rep=0, index=0): None
+25.7182 	EXP 	Crossm: autoDraw = False
+25.7182 	EXP 	Presentation_image_f1_1: image = 'LZ_natural\\LZ_natural_191.jpg'
+25.7182 	EXP 	Presentation_image_f1_2: image = 'LZ_natural\\LZ_natural_103.jpg'
+25.7182 	EXP 	Presentation_image_f1_3: image = 'LZ_natural\\LZ_natural_43.jpg'
+25.7182 	EXP 	Presentation_image_f1_4: image = 'LZ_natural\\LZ_natural_142.jpg'
+25.7182 	EXP 	Presentation_image_f1_1: autoDraw = True
+26.6893 	EXP 	Presentation_image_f1_2: autoDraw = True
+26.7233 	EXP 	Presentation_image_f1_1: autoDraw = False
+27.6890 	EXP 	Presentation_image_f1_2: autoDraw = False
+27.6890 	EXP 	Presentation_image_f1_3: autoDraw = True
+28.6889 	EXP 	Presentation_image_f1_3: autoDraw = False
+28.6889 	EXP 	Presentation_image_f1_4: autoDraw = True
+29.6416 	EXP 	Created sequence: sequential, trialTypes=1, nReps=0, seed=None
+29.6419 	EXP 	Created sequence: sequential, trialTypes=1, nReps=0, seed=None
+29.6520 	EXP 	Presentation_image_f1_1: autoDraw = False
+29.6520 	EXP 	Presentation_image_f1_2: autoDraw = False
+29.6520 	EXP 	Presentation_image_f1_3: autoDraw = False
+29.6520 	EXP 	Presentation_image_f1_4: autoDraw = False
+29.6520 	EXP 	displayed_choice_image: image = 'LZ_natural\\LZ_natural_103.jpg'
+29.6520 	EXP 	Fixation_cross: autoDraw = True
+30.6473 	EXP 	displayed_choice_image: autoDraw = True
+30.6555 	EXP 	Fixation_cross: autoDraw = False
+30.9504 	DATA 	Keypress: a
+30.9582 	EXP 	New trial (rep=0, index=1): OrderedDict([('imageone', 'LZ_natural\\LZ_natural_230.jpg'), ('imagetwo', 'LZ_natural\\LZ_natural_122.jpg'), ('imagethree', 'LZ_natural\\LZ_natural_220.jpg'), ('imagefour', 'LZ_natural\\LZ_natural_155.jpg'), ('imagefive', None), ('imagesix', None), ('imageseven', None), ('imageeight', None), ('imagenine', None), ('imageten', None), ('imageeleven', None), ('imagetwelve', None), ('imagethirteen', None), ('imagefourteen', None), ('imagefifteen', None), ('imagesixteen', None), ('frequency', 1), ('choice_image', 'LZ_natural\\LZ_natural_122.jpg'), ('choice_type', 1), ('correct_answer', 'a'), ('stimulus_type', 1), ('condition_code', 11)])
+30.9629 	EXP 	Fixation_cross: autoDraw = False
+30.9629 	EXP 	displayed_choice_image: autoDraw = False
+30.9629 	EXP 	Crossm: autoDraw = True
+31.9596 	EXP 	Created sequence: sequential, trialTypes=1, nReps=1, seed=None
+31.9598 	EXP 	New trial (rep=0, index=0): None
+31.9949 	EXP 	Crossm: autoDraw = False
+31.9949 	EXP 	Presentation_image_f1_1: image = 'LZ_natural\\LZ_natural_230.jpg'
+31.9949 	EXP 	Presentation_image_f1_2: image = 'LZ_natural\\LZ_natural_122.jpg'
+31.9949 	EXP 	Presentation_image_f1_3: image = 'LZ_natural\\LZ_natural_220.jpg'
+31.9949 	EXP 	Presentation_image_f1_4: image = 'LZ_natural\\LZ_natural_155.jpg'
+31.9949 	EXP 	Presentation_image_f1_1: autoDraw = True
+32.9880 	EXP 	Presentation_image_f1_2: autoDraw = True
+32.9942 	EXP 	Presentation_image_f1_1: autoDraw = False
+33.9876 	EXP 	Presentation_image_f1_2: autoDraw = False
+33.9876 	EXP 	Presentation_image_f1_3: autoDraw = True
+34.9878 	EXP 	Presentation_image_f1_3: autoDraw = False
+34.9878 	EXP 	Presentation_image_f1_4: autoDraw = True
+35.9622 	EXP 	Created sequence: sequential, trialTypes=1, nReps=0, seed=None
+35.9627 	EXP 	Created sequence: sequential, trialTypes=1, nReps=0, seed=None
+35.9759 	EXP 	Presentation_image_f1_1: autoDraw = False
+35.9759 	EXP 	Presentation_image_f1_2: autoDraw = False
+35.9759 	EXP 	Presentation_image_f1_3: autoDraw = False
+35.9759 	EXP 	Presentation_image_f1_4: autoDraw = False
+35.9759 	EXP 	displayed_choice_image: image = 'LZ_natural\\LZ_natural_122.jpg'
+35.9759 	EXP 	Fixation_cross: autoDraw = True
+36.9667 	EXP 	displayed_choice_image: autoDraw = True
+36.9808 	EXP 	Fixation_cross: autoDraw = False
+37.7515 	DATA 	Keypress: a
+37.7591 	EXP 	New trial (rep=0, index=2): OrderedDict([('imageone', 'LZ_natural\\LZ_natural_102.jpg'), ('imagetwo', 'LZ_natural\\LZ_natural_164.jpg'), ('imagethree', 'LZ_natural\\LZ_natural_63.jpg'), ('imagefour', 'LZ_natural\\LZ_natural_2.jpg'), ('imagefive', None), ('imagesix', None), ('imageseven', None), ('imageeight', None), ('imagenine', None), ('imageten', None), ('imageeleven', None), ('imagetwelve', None), ('imagethirteen', None), ('imagefourteen', None), ('imagefifteen', None), ('imagesixteen', None), ('frequency', 1), ('choice_image', 'LZ_natural\\LZ_natural_102.jpg'), ('choice_type', 1), ('correct_answer', 'a'), ('stimulus_type', 1), ('condition_code', 11)])
+37.7649 	EXP 	Fixation_cross: autoDraw = False
+37.7649 	EXP 	displayed_choice_image: autoDraw = False
+37.7649 	EXP 	Crossm: autoDraw = True
+38.7601 	EXP 	Created sequence: sequential, trialTypes=1, nReps=1, seed=None
+38.7603 	EXP 	New trial (rep=0, index=0): None
+38.7941 	EXP 	Crossm: autoDraw = False
+38.7941 	EXP 	Crossm: autoDraw = False
+38.7941 	EXP 	Presentation_image_f1_1: image = 'LZ_natural\\LZ_natural_102.jpg'
+38.7941 	EXP 	Presentation_image_f1_2: image = 'LZ_natural\\LZ_natural_164.jpg'
+38.7941 	EXP 	Presentation_image_f1_3: image = 'LZ_natural\\LZ_natural_63.jpg'
+38.7941 	EXP 	Presentation_image_f1_4: image = 'LZ_natural\\LZ_natural_2.jpg'
+38.7941 	EXP 	Presentation_image_f1_1: autoDraw = True
+39.7863 	EXP 	Presentation_image_f1_2: autoDraw = True
+39.7926 	EXP 	Presentation_image_f1_1: autoDraw = False
+40.7863 	EXP 	Presentation_image_f1_2: autoDraw = False
+40.7863 	EXP 	Presentation_image_f1_3: autoDraw = True
+41.7863 	EXP 	Presentation_image_f1_3: autoDraw = False
+41.7863 	EXP 	Presentation_image_f1_4: autoDraw = True
+42.7659 	EXP 	Created sequence: sequential, trialTypes=1, nReps=0, seed=None
+42.7661 	EXP 	Created sequence: sequential, trialTypes=1, nReps=0, seed=None
+42.7735 	EXP 	Presentation_image_f1_1: autoDraw = False
+42.7735 	EXP 	Presentation_image_f1_2: autoDraw = False
+42.7735 	EXP 	Presentation_image_f1_3: autoDraw = False
+42.7735 	EXP 	Presentation_image_f1_4: autoDraw = False
+42.7735 	EXP 	displayed_choice_image: image = 'LZ_natural\\LZ_natural_102.jpg'
+42.7735 	EXP 	Fixation_cross: autoDraw = True
+43.7722 	EXP 	displayed_choice_image: autoDraw = True
+43.7800 	EXP 	Fixation_cross: autoDraw = False
+45.0033 	DATA 	Keypress: l
+45.0134 	EXP 	New trial (rep=0, index=3): OrderedDict([('imageone', 'LZ_natural\\LZ_natural_158.jpg'), ('imagetwo', 'LZ_natural\\LZ_natural_83.jpg'), ('imagethree', 'LZ_natural\\LZ_natural_187.jpg'), ('imagefour', 'LZ_natural\\LZ_natural_123.jpg'), ('imagefive', None), ('imagesix', None), ('imageseven', None), ('imageeight', None), ('imagenine', None), ('imageten', None), ('imageeleven', None), ('imagetwelve', None), ('imagethirteen', None), ('imagefourteen', None), ('imagefifteen', None), ('imagesixteen', None), ('frequency', 1), ('choice_image', 'LZ_natural\\LZ_natural_83.jpg'), ('choice_type', 1), ('correct_answer', 'a'), ('stimulus_type', 1), ('condition_code', 11)])
+45.0197 	EXP 	Fixation_cross: autoDraw = False
+45.0197 	EXP 	displayed_choice_image: autoDraw = False
+45.0197 	EXP 	Crossm: autoDraw = True
+46.0154 	EXP 	Created sequence: sequential, trialTypes=1, nReps=1, seed=None
+46.0157 	EXP 	New trial (rep=0, index=0): None
+46.0704 	EXP 	Crossm: autoDraw = False
+46.0704 	EXP 	Presentation_image_f1_1: image = 'LZ_natural\\LZ_natural_158.jpg'
+46.0704 	EXP 	Presentation_image_f1_2: image = 'LZ_natural\\LZ_natural_83.jpg'
+46.0704 	EXP 	Presentation_image_f1_3: image = 'LZ_natural\\LZ_natural_187.jpg'
+46.0704 	EXP 	Presentation_image_f1_4: image = 'LZ_natural\\LZ_natural_123.jpg'
+46.0704 	EXP 	Presentation_image_f1_1: autoDraw = True
+47.0644 	EXP 	Presentation_image_f1_2: autoDraw = True
+47.0706 	EXP 	Presentation_image_f1_1: autoDraw = False
+48.0641 	EXP 	Presentation_image_f1_2: autoDraw = False
+48.0641 	EXP 	Presentation_image_f1_3: autoDraw = True
+49.0642 	EXP 	Presentation_image_f1_3: autoDraw = False
+49.0642 	EXP 	Presentation_image_f1_4: autoDraw = True
+50.0163 	EXP 	Created sequence: sequential, trialTypes=1, nReps=0, seed=None
+50.0164 	EXP 	Created sequence: sequential, trialTypes=1, nReps=0, seed=None
+50.0234 	EXP 	Presentation_image_f1_1: autoDraw = False
+50.0234 	EXP 	Presentation_image_f1_2: autoDraw = False
+50.0234 	EXP 	Presentation_image_f1_3: autoDraw = False
+50.0234 	EXP 	Presentation_image_f1_4: autoDraw = False
+50.0234 	EXP 	displayed_choice_image: image = 'LZ_natural\\LZ_natural_83.jpg'
+50.0234 	EXP 	Fixation_cross: autoDraw = True
+51.0226 	EXP 	displayed_choice_image: autoDraw = True
+51.0314 	EXP 	Fixation_cross: autoDraw = False
+52.0067 	DATA 	Keypress: a
+52.0145 	EXP 	New trial (rep=0, index=4): OrderedDict([('imageone', 'LZ_natural\\LZ_natural_111.jpg'), ('imagetwo', 'LZ_natural\\LZ_natural_192.jpg'), ('imagethree', 'LZ_natural\\LZ_natural_170.jpg'), ('imagefour', 'LZ_natural\\LZ_natural_154.jpg'), ('imagefive', None), ('imagesix', None), ('imageseven', None), ('imageeight', None), ('imagenine', None), ('imageten', None), ('imageeleven', None), ('imagetwelve', None), ('imagethirteen', None), ('imagefourteen', None), ('imagefifteen', None), ('imagesixteen', None), ('frequency', 1), ('choice_image', 'LZ_natural\\LZ_natural_8.jpg'), ('choice_type', 0), ('correct_answer', 'l'), ('stimulus_type', 1), ('condition_code', 11)])
+52.0198 	EXP 	Fixation_cross: autoDraw = False
+52.0198 	EXP 	displayed_choice_image: autoDraw = False
+52.0198 	EXP 	Crossm: autoDraw = True
+53.0150 	EXP 	Created sequence: sequential, trialTypes=1, nReps=1, seed=None
+53.0152 	EXP 	New trial (rep=0, index=0): None
+53.0493 	EXP 	Crossm: autoDraw = False
+53.0493 	EXP 	Presentation_image_f1_1: image = 'LZ_natural\\LZ_natural_111.jpg'
+53.0493 	EXP 	Presentation_image_f1_2: image = 'LZ_natural\\LZ_natural_192.jpg'
+53.0493 	EXP 	Presentation_image_f1_3: image = 'LZ_natural\\LZ_natural_170.jpg'
+53.0493 	EXP 	Presentation_image_f1_4: image = 'LZ_natural\\LZ_natural_154.jpg'
+53.0493 	EXP 	Presentation_image_f1_1: autoDraw = True
+54.0436 	EXP 	Presentation_image_f1_2: autoDraw = True
+54.0502 	EXP 	Presentation_image_f1_1: autoDraw = False
+55.0432 	EXP 	Presentation_image_f1_2: autoDraw = False
+55.0432 	EXP 	Presentation_image_f1_3: autoDraw = True
+56.0433 	EXP 	Presentation_image_f1_3: autoDraw = False
+56.0433 	EXP 	Presentation_image_f1_4: autoDraw = True
+57.0163 	EXP 	Created sequence: sequential, trialTypes=1, nReps=0, seed=None
+57.0165 	EXP 	Created sequence: sequential, trialTypes=1, nReps=0, seed=None
+57.0284 	EXP 	Presentation_image_f1_1: autoDraw = False
+57.0284 	EXP 	Presentation_image_f1_2: autoDraw = False
+57.0284 	EXP 	Presentation_image_f1_3: autoDraw = False
+57.0284 	EXP 	Presentation_image_f1_4: autoDraw = False
+57.0284 	EXP 	displayed_choice_image: image = 'LZ_natural\\LZ_natural_8.jpg'
+57.0284 	EXP 	Fixation_cross: autoDraw = True
+58.0225 	EXP 	displayed_choice_image: autoDraw = True
+58.0310 	EXP 	Fixation_cross: autoDraw = False
+59.0764 	EXP 	New trial (rep=0, index=5): OrderedDict([('imageone', 'LZ_natural\\LZ_natural_235.jpg'), ('imagetwo', 'LZ_natural\\LZ_natural_15.jpg'), ('imagethree', 'LZ_natural\\LZ_natural_38.jpg'), ('imagefour', 'LZ_natural\\LZ_natural_47.jpg'), ('imagefive', None), ('imagesix', None), ('imageseven', None), ('imageeight', None), ('imagenine', None), ('imageten', None), ('imageeleven', None), ('imagetwelve', None), ('imagethirteen', None), ('imagefourteen', None), ('imagefifteen', None), ('imagesixteen', None), ('frequency', 1), ('choice_image', 'LZ_natural\\LZ_natural_141.jpg'), ('choice_type', 0), ('correct_answer', 'l'), ('stimulus_type', 1), ('condition_code', 11)])
+59.0796 	DATA 	Keypress: l
+59.0821 	EXP 	Fixation_cross: autoDraw = False
+59.0821 	EXP 	displayed_choice_image: autoDraw = False
+59.0821 	EXP 	Crossm: autoDraw = True
+60.0783 	EXP 	Created sequence: sequential, trialTypes=1, nReps=1, seed=None
+60.0784 	EXP 	New trial (rep=0, index=0): None
+60.1162 	EXP 	Crossm: autoDraw = False
+60.1162 	EXP 	Presentation_image_f1_1: image = 'LZ_natural\\LZ_natural_235.jpg'
+60.1162 	EXP 	Presentation_image_f1_2: image = 'LZ_natural\\LZ_natural_15.jpg'
+60.1162 	EXP 	Presentation_image_f1_3: image = 'LZ_natural\\LZ_natural_38.jpg'
+60.1162 	EXP 	Presentation_image_f1_4: image = 'LZ_natural\\LZ_natural_47.jpg'
+60.1162 	EXP 	Presentation_image_f1_1: autoDraw = True
+61.1133 	EXP 	Presentation_image_f1_2: autoDraw = True
+61.1196 	EXP 	Presentation_image_f1_1: autoDraw = False
+62.1127 	EXP 	Presentation_image_f1_2: autoDraw = False
+62.1127 	EXP 	Presentation_image_f1_3: autoDraw = True
+63.1130 	EXP 	Presentation_image_f1_3: autoDraw = False
+63.1130 	EXP 	Presentation_image_f1_4: autoDraw = True
+64.0789 	EXP 	Created sequence: sequential, trialTypes=1, nReps=0, seed=None
+64.0790 	EXP 	Created sequence: sequential, trialTypes=1, nReps=0, seed=None
+64.0905 	EXP 	Presentation_image_f1_1: autoDraw = False
+64.0905 	EXP 	Presentation_image_f1_2: autoDraw = False
+64.0905 	EXP 	Presentation_image_f1_3: autoDraw = False
+64.0905 	EXP 	Presentation_image_f1_4: autoDraw = False
+64.0905 	EXP 	displayed_choice_image: image = 'LZ_natural\\LZ_natural_141.jpg'
+64.0905 	EXP 	Fixation_cross: autoDraw = True
+65.0851 	EXP 	displayed_choice_image: autoDraw = True
+65.0942 	EXP 	Fixation_cross: autoDraw = False
+65.3074 	EXP 	New trial (rep=0, index=6): OrderedDict([('imageone', 'LZ_natural\\LZ_natural_52.jpg'), ('imagetwo', 'LZ_natural\\LZ_natural_156.jpg'), ('imagethree', 'LZ_natural\\LZ_natural_50.jpg'), ('imagefour', 'LZ_natural\\LZ_natural_183.jpg'), ('imagefive', 'LZ_natural\\LZ_natural_193.jpg'), ('imagesix', 'LZ_natural\\LZ_natural_18.jpg'), ('imageseven', 'LZ_natural\\LZ_natural_148.jpg'), ('imageeight', 'LZ_natural\\LZ_natural_217.jpg'), ('imagenine', None), ('imageten', None), ('imageeleven', None), ('imagetwelve', None), ('imagethirteen', None), ('imagefourteen', None), ('imagefifteen', None), ('imagesixteen', None), ('frequency', 2), ('choice_image', 'LZ_natural\\LZ_natural_18.jpg'), ('choice_type', 1), ('correct_answer', 'a'), ('stimulus_type', 1), ('condition_code', 12)])
+65.3101 	DATA 	Keypress: a
+65.3128 	EXP 	Fixation_cross: autoDraw = False
+65.3128 	EXP 	displayed_choice_image: autoDraw = False
+65.3128 	EXP 	Crossm: autoDraw = True
+66.3088 	EXP 	Created sequence: sequential, trialTypes=1, nReps=0, seed=None
+66.3089 	EXP 	Created sequence: sequential, trialTypes=1, nReps=1, seed=None
+66.3091 	EXP 	New trial (rep=0, index=0): None
+66.3995 	EXP 	Crossm: autoDraw = False
+66.3995 	EXP 	Crossm: autoDraw = False
+66.3995 	EXP 	Presentation_image_f2_1: image = 'LZ_natural\\LZ_natural_52.jpg'
+66.3995 	EXP 	Presentation_image_f2_2: image = 'LZ_natural\\LZ_natural_156.jpg'
+66.3995 	EXP 	Presentation_image_f2_3: image = 'LZ_natural\\LZ_natural_50.jpg'
+66.3995 	EXP 	Presentation_image_f2_4: image = 'LZ_natural\\LZ_natural_183.jpg'
+66.3995 	EXP 	Presentation_image_f2_5: image = 'LZ_natural\\LZ_natural_193.jpg'
+66.3995 	EXP 	Presentation_image_f2_6: image = 'LZ_natural\\LZ_natural_18.jpg'
+66.3995 	EXP 	Presentation_image_f2_7: image = 'LZ_natural\\LZ_natural_148.jpg'
+66.3995 	EXP 	Presentation_image_f2_8: image = 'LZ_natural\\LZ_natural_217.jpg'
+66.3995 	EXP 	Presentation_image_f2_1: autoDraw = True
+66.8483 	EXP 	Presentation_image_f2_1: autoDraw = False
+66.8907 	EXP 	Presentation_image_f2_2: autoDraw = True
+67.3414 	EXP 	Presentation_image_f2_2: autoDraw = False
+67.3906 	EXP 	Presentation_image_f2_3: autoDraw = True
+67.8412 	EXP 	Presentation_image_f2_3: autoDraw = False
+67.8907 	EXP 	Presentation_image_f2_4: autoDraw = True
+68.3413 	EXP 	Presentation_image_f2_4: autoDraw = False
+68.3906 	EXP 	Presentation_image_f2_5: autoDraw = True
+68.8416 	EXP 	Presentation_image_f2_5: autoDraw = False
+68.8907 	EXP 	Presentation_image_f2_6: autoDraw = True
+69.3411 	EXP 	Presentation_image_f2_6: autoDraw = False
+69.3907 	EXP 	Presentation_image_f2_7: autoDraw = True
+69.8416 	EXP 	Presentation_image_f2_7: autoDraw = False
+69.8908 	EXP 	Presentation_image_f2_8: autoDraw = True
+70.2615 	EXP 	Created sequence: sequential, trialTypes=1, nReps=0, seed=None
+70.2702 	EXP 	Presentation_image_f2_1: autoDraw = False
+70.2702 	EXP 	Presentation_image_f2_2: autoDraw = False
+70.2702 	EXP 	Presentation_image_f2_3: autoDraw = False
+70.2702 	EXP 	Presentation_image_f2_4: autoDraw = False
+70.2702 	EXP 	Presentation_image_f2_5: autoDraw = False
+70.2702 	EXP 	Presentation_image_f2_6: autoDraw = False
+70.2702 	EXP 	Presentation_image_f2_7: autoDraw = False
+70.2702 	EXP 	Presentation_image_f2_8: autoDraw = False
+70.2702 	EXP 	displayed_choice_image: image = 'LZ_natural\\LZ_natural_18.jpg'
+70.2702 	EXP 	Fixation_cross: autoDraw = True
+71.2586 	EXP 	displayed_choice_image: autoDraw = True
+71.2731 	EXP 	Fixation_cross: autoDraw = False
+71.9927 	EXP 	New trial (rep=0, index=7): OrderedDict([('imageone', 'LZ_natural\\LZ_natural_204.jpg'), ('imagetwo', 'LZ_natural\\LZ_natural_74.jpg'), ('imagethree', 'LZ_natural\\LZ_natural_98.jpg'), ('imagefour', 'LZ_natural\\LZ_natural_136.jpg'), ('imagefive', 'LZ_natural\\LZ_natural_229.jpg'), ('imagesix', 'LZ_natural\\LZ_natural_94.jpg'), ('imageseven', 'LZ_natural\\LZ_natural_19.jpg'), ('imageeight', 'LZ_natural\\LZ_natural_134.jpg'), ('imagenine', None), ('imageten', None), ('imageeleven', None), ('imagetwelve', None), ('imagethirteen', None), ('imagefourteen', None), ('imagefifteen', None), ('imagesixteen', None), ('frequency', 2), ('choice_image', 'LZ_natural\\LZ_natural_204.jpg'), ('choice_type', 1), ('correct_answer', 'a'), ('stimulus_type', 1), ('condition_code', 12)])
+71.9953 	DATA 	Keypress: a
+71.9977 	EXP 	Fixation_cross: autoDraw = False
+71.9977 	EXP 	displayed_choice_image: autoDraw = False
+71.9977 	EXP 	Crossm: autoDraw = True
+72.9951 	EXP 	Created sequence: sequential, trialTypes=1, nReps=0, seed=None
+72.9953 	EXP 	Created sequence: sequential, trialTypes=1, nReps=1, seed=None
+72.9954 	EXP 	New trial (rep=0, index=0): None
+73.0594 	EXP 	Crossm: autoDraw = False
+73.0594 	EXP 	Presentation_image_f2_1: image = 'LZ_natural\\LZ_natural_204.jpg'
+73.0594 	EXP 	Presentation_image_f2_2: image = 'LZ_natural\\LZ_natural_74.jpg'
+73.0594 	EXP 	Presentation_image_f2_3: image = 'LZ_natural\\LZ_natural_98.jpg'
+73.0594 	EXP 	Presentation_image_f2_4: image = 'LZ_natural\\LZ_natural_136.jpg'
+73.0594 	EXP 	Presentation_image_f2_5: image = 'LZ_natural\\LZ_natural_229.jpg'
+73.0594 	EXP 	Presentation_image_f2_6: image = 'LZ_natural\\LZ_natural_94.jpg'
+73.0594 	EXP 	Presentation_image_f2_7: image = 'LZ_natural\\LZ_natural_19.jpg'
+73.0594 	EXP 	Presentation_image_f2_8: image = 'LZ_natural\\LZ_natural_134.jpg'
+73.0594 	EXP 	Presentation_image_f2_1: autoDraw = True
+73.5079 	EXP 	Presentation_image_f2_1: autoDraw = False
+73.5507 	EXP 	Presentation_image_f2_2: autoDraw = True
+74.0014 	EXP 	Presentation_image_f2_2: autoDraw = False
+74.0508 	EXP 	Presentation_image_f2_3: autoDraw = True
+74.5015 	EXP 	Presentation_image_f2_3: autoDraw = False
+74.5501 	EXP 	Presentation_image_f2_4: autoDraw = True
+75.0010 	EXP 	Presentation_image_f2_4: autoDraw = False
+75.0507 	EXP 	Presentation_image_f2_5: autoDraw = True
+75.5015 	EXP 	Presentation_image_f2_5: autoDraw = False
+75.5504 	EXP 	Presentation_image_f2_6: autoDraw = True
+76.0013 	EXP 	Presentation_image_f2_6: autoDraw = False
+76.0508 	EXP 	Presentation_image_f2_7: autoDraw = True
+76.5016 	EXP 	Presentation_image_f2_7: autoDraw = False
+76.5506 	EXP 	Presentation_image_f2_8: autoDraw = True
+76.9493 	EXP 	Created sequence: sequential, trialTypes=1, nReps=0, seed=None
+76.9576 	EXP 	Presentation_image_f2_1: autoDraw = False
+76.9576 	EXP 	Presentation_image_f2_2: autoDraw = False
+76.9576 	EXP 	Presentation_image_f2_3: autoDraw = False
+76.9576 	EXP 	Presentation_image_f2_4: autoDraw = False
+76.9576 	EXP 	Presentation_image_f2_5: autoDraw = False
+76.9576 	EXP 	Presentation_image_f2_6: autoDraw = False
+76.9576 	EXP 	Presentation_image_f2_7: autoDraw = False
+76.9576 	EXP 	Presentation_image_f2_8: autoDraw = False
+76.9576 	EXP 	displayed_choice_image: image = 'LZ_natural\\LZ_natural_204.jpg'
+76.9576 	EXP 	Fixation_cross: autoDraw = True
+77.9461 	EXP 	displayed_choice_image: autoDraw = True
+77.9620 	EXP 	Fixation_cross: autoDraw = False
+78.6536 	DATA 	Keypress: a
+78.6602 	EXP 	New trial (rep=0, index=8): OrderedDict([('imageone', 'LZ_natural\\LZ_natural_55.jpg'), ('imagetwo', 'LZ_natural\\LZ_natural_116.jpg'), ('imagethree', 'LZ_natural\\LZ_natural_26.jpg'), ('imagefour', 'LZ_natural\\LZ_natural_77.jpg'), ('imagefive', 'LZ_natural\\LZ_natural_11.jpg'), ('imagesix', 'LZ_natural\\LZ_natural_14.jpg'), ('imageseven', 'LZ_natural\\LZ_natural_207.jpg'), ('imageeight', 'LZ_natural\\LZ_natural_140.jpg'), ('imagenine', None), ('imageten', None), ('imageeleven', None), ('imagetwelve', None), ('imagethirteen', None), ('imagefourteen', None), ('imagefifteen', None), ('imagesixteen', None), ('frequency', 2), ('choice_image', 'LZ_natural\\LZ_natural_60.jpg'), ('choice_type', 0), ('correct_answer', 'l'), ('stimulus_type', 1), ('condition_code', 12)])
+78.6652 	EXP 	Fixation_cross: autoDraw = False
+78.6652 	EXP 	displayed_choice_image: autoDraw = False
+78.6652 	EXP 	Crossm: autoDraw = True
+79.6618 	EXP 	Created sequence: sequential, trialTypes=1, nReps=0, seed=None
+79.6620 	EXP 	Created sequence: sequential, trialTypes=1, nReps=1, seed=None
+79.6621 	EXP 	New trial (rep=0, index=0): None
+79.7288 	EXP 	Crossm: autoDraw = False
+79.7288 	EXP 	Presentation_image_f2_1: image = 'LZ_natural\\LZ_natural_55.jpg'
+79.7288 	EXP 	Presentation_image_f2_2: image = 'LZ_natural\\LZ_natural_116.jpg'
+79.7288 	EXP 	Presentation_image_f2_3: image = 'LZ_natural\\LZ_natural_26.jpg'
+79.7288 	EXP 	Presentation_image_f2_4: image = 'LZ_natural\\LZ_natural_77.jpg'
+79.7288 	EXP 	Presentation_image_f2_5: image = 'LZ_natural\\LZ_natural_11.jpg'
+79.7288 	EXP 	Presentation_image_f2_6: image = 'LZ_natural\\LZ_natural_14.jpg'
+79.7288 	EXP 	Presentation_image_f2_7: image = 'LZ_natural\\LZ_natural_207.jpg'
+79.7288 	EXP 	Presentation_image_f2_8: image = 'LZ_natural\\LZ_natural_140.jpg'
+79.7288 	EXP 	Presentation_image_f2_1: autoDraw = True
+80.1820 	EXP 	Presentation_image_f2_1: autoDraw = False
+80.2240 	EXP 	Presentation_image_f2_2: autoDraw = True
+80.6752 	EXP 	Presentation_image_f2_2: autoDraw = False
+80.7243 	EXP 	Presentation_image_f2_3: autoDraw = True
+81.1748 	EXP 	Presentation_image_f2_3: autoDraw = False
+81.2241 	EXP 	Presentation_image_f2_4: autoDraw = True
+81.6752 	EXP 	Presentation_image_f2_4: autoDraw = False
+81.7244 	EXP 	Presentation_image_f2_5: autoDraw = True
+82.1751 	EXP 	Presentation_image_f2_5: autoDraw = False
+82.2244 	EXP 	Presentation_image_f2_6: autoDraw = True
+82.6750 	EXP 	Presentation_image_f2_6: autoDraw = False
+82.7246 	EXP 	Presentation_image_f2_7: autoDraw = True
+83.1755 	EXP 	Presentation_image_f2_7: autoDraw = False
+83.2243 	EXP 	Presentation_image_f2_8: autoDraw = True
+83.6145 	EXP 	Created sequence: sequential, trialTypes=1, nReps=0, seed=None
+83.6264 	EXP 	Presentation_image_f2_1: autoDraw = False
+83.6264 	EXP 	Presentation_image_f2_2: autoDraw = False
+83.6264 	EXP 	Presentation_image_f2_3: autoDraw = False
+83.6264 	EXP 	Presentation_image_f2_4: autoDraw = False
+83.6264 	EXP 	Presentation_image_f2_5: autoDraw = False
+83.6264 	EXP 	Presentation_image_f2_6: autoDraw = False
+83.6264 	EXP 	Presentation_image_f2_7: autoDraw = False
+83.6264 	EXP 	Presentation_image_f2_8: autoDraw = False
+83.6264 	EXP 	displayed_choice_image: image = 'LZ_natural\\LZ_natural_60.jpg'
+83.6264 	EXP 	Fixation_cross: autoDraw = True
+84.6204 	EXP 	displayed_choice_image: autoDraw = True
+84.6291 	EXP 	Fixation_cross: autoDraw = False
+85.1788 	EXP 	New trial (rep=0, index=9): OrderedDict([('imageone', 'LZ_natural\\LZ_natural_62.jpg'), ('imagetwo', 'LZ_natural\\LZ_natural_58.jpg'), ('imagethree', 'LZ_natural\\LZ_natural_175.jpg'), ('imagefour', 'LZ_natural\\LZ_natural_208.jpg'), ('imagefive', 'LZ_natural\\LZ_natural_233.jpg'), ('imagesix', 'LZ_natural\\LZ_natural_218.jpg'), ('imageseven', 'LZ_natural\\LZ_natural_127.jpg'), ('imageeight', 'LZ_natural\\LZ_natural_234.jpg'), ('imagenine', None), ('imageten', None), ('imageeleven', None), ('imagetwelve', None), ('imagethirteen', None), ('imagefourteen', None), ('imagefifteen', None), ('imagesixteen', None), ('frequency', 2), ('choice_image', 'LZ_natural\\LZ_natural_62.jpg'), ('choice_type', 1), ('correct_answer', 'a'), ('stimulus_type', 1), ('condition_code', 12)])
+85.1823 	DATA 	Keypress: l
+85.1849 	EXP 	Fixation_cross: autoDraw = False
+85.1849 	EXP 	displayed_choice_image: autoDraw = False
+85.1849 	EXP 	Crossm: autoDraw = True
+86.1826 	EXP 	Created sequence: sequential, trialTypes=1, nReps=0, seed=None
+86.1827 	EXP 	Created sequence: sequential, trialTypes=1, nReps=1, seed=None
+86.1829 	EXP 	New trial (rep=0, index=0): None
+86.2483 	EXP 	Crossm: autoDraw = False
+86.2483 	EXP 	Presentation_image_f2_1: image = 'LZ_natural\\LZ_natural_62.jpg'
+86.2483 	EXP 	Presentation_image_f2_2: image = 'LZ_natural\\LZ_natural_58.jpg'
+86.2483 	EXP 	Presentation_image_f2_3: image = 'LZ_natural\\LZ_natural_175.jpg'
+86.2483 	EXP 	Presentation_image_f2_4: image = 'LZ_natural\\LZ_natural_208.jpg'
+86.2483 	EXP 	Presentation_image_f2_5: image = 'LZ_natural\\LZ_natural_233.jpg'
+86.2483 	EXP 	Presentation_image_f2_6: image = 'LZ_natural\\LZ_natural_218.jpg'
+86.2483 	EXP 	Presentation_image_f2_7: image = 'LZ_natural\\LZ_natural_127.jpg'
+86.2483 	EXP 	Presentation_image_f2_8: image = 'LZ_natural\\LZ_natural_234.jpg'
+86.2483 	EXP 	Presentation_image_f2_1: autoDraw = True
+86.7028 	EXP 	Presentation_image_f2_1: autoDraw = False
+86.7452 	EXP 	Presentation_image_f2_2: autoDraw = True
+87.1959 	EXP 	Presentation_image_f2_2: autoDraw = False
+87.2450 	EXP 	Presentation_image_f2_3: autoDraw = True
+87.6960 	EXP 	Presentation_image_f2_3: autoDraw = False
+87.7448 	EXP 	Presentation_image_f2_4: autoDraw = True
+88.1961 	EXP 	Presentation_image_f2_4: autoDraw = False
+88.2452 	EXP 	Presentation_image_f2_5: autoDraw = True
+88.6960 	EXP 	Presentation_image_f2_5: autoDraw = False
+88.7450 	EXP 	Presentation_image_f2_6: autoDraw = True
+89.1961 	EXP 	Presentation_image_f2_6: autoDraw = False
+89.2452 	EXP 	Presentation_image_f2_7: autoDraw = True
+89.6958 	EXP 	Presentation_image_f2_7: autoDraw = False
+89.7450 	EXP 	Presentation_image_f2_8: autoDraw = True
+90.1356 	EXP 	Created sequence: sequential, trialTypes=1, nReps=0, seed=None
+90.1432 	EXP 	Presentation_image_f2_1: autoDraw = False
+90.1432 	EXP 	Presentation_image_f2_2: autoDraw = False
+90.1432 	EXP 	Presentation_image_f2_3: autoDraw = False
+90.1432 	EXP 	Presentation_image_f2_4: autoDraw = False
+90.1432 	EXP 	Presentation_image_f2_5: autoDraw = False
+90.1432 	EXP 	Presentation_image_f2_6: autoDraw = False
+90.1432 	EXP 	Presentation_image_f2_7: autoDraw = False
+90.1432 	EXP 	Presentation_image_f2_8: autoDraw = False
+90.1432 	EXP 	displayed_choice_image: image = 'LZ_natural\\LZ_natural_62.jpg'
+90.1432 	EXP 	Fixation_cross: autoDraw = True
+91.1408 	EXP 	displayed_choice_image: autoDraw = True
+91.1494 	EXP 	Fixation_cross: autoDraw = False
+91.9378 	EXP 	New trial (rep=0, index=10): OrderedDict([('imageone', 'LZ_natural\\LZ_natural_237.jpg'), ('imagetwo', 'LZ_natural\\LZ_natural_227.jpg'), ('imagethree', 'LZ_natural\\LZ_natural_44.jpg'), ('imagefour', 'LZ_natural\\LZ_natural_88.jpg'), ('imagefive', 'LZ_natural\\LZ_natural_13.jpg'), ('imagesix', 'LZ_natural\\LZ_natural_186.jpg'), ('imageseven', 'LZ_natural\\LZ_natural_180.jpg'), ('imageeight', 'LZ_natural\\LZ_natural_109.jpg'), ('imagenine', None), ('imageten', None), ('imageeleven', None), ('imagetwelve', None), ('imagethirteen', None), ('imagefourteen', None), ('imagefifteen', None), ('imagesixteen', None), ('frequency', 2), ('choice_image', 'LZ_natural\\LZ_natural_90.jpg'), ('choice_type', 0), ('correct_answer', 'l'), ('stimulus_type', 1), ('condition_code', 12)])
+91.9407 	DATA 	Keypress: a
+91.9432 	EXP 	Fixation_cross: autoDraw = False
+91.9432 	EXP 	displayed_choice_image: autoDraw = False
+91.9432 	EXP 	Crossm: autoDraw = True
+92.9397 	EXP 	Created sequence: sequential, trialTypes=1, nReps=0, seed=None
+92.9400 	EXP 	Created sequence: sequential, trialTypes=1, nReps=1, seed=None
+92.9402 	EXP 	New trial (rep=0, index=0): None
+93.0063 	EXP 	Crossm: autoDraw = False
+93.0063 	EXP 	Presentation_image_f2_1: image = 'LZ_natural\\LZ_natural_237.jpg'
+93.0063 	EXP 	Presentation_image_f2_2: image = 'LZ_natural\\LZ_natural_227.jpg'
+93.0063 	EXP 	Presentation_image_f2_3: image = 'LZ_natural\\LZ_natural_44.jpg'
+93.0063 	EXP 	Presentation_image_f2_4: image = 'LZ_natural\\LZ_natural_88.jpg'
+93.0063 	EXP 	Presentation_image_f2_5: image = 'LZ_natural\\LZ_natural_13.jpg'
+93.0063 	EXP 	Presentation_image_f2_6: image = 'LZ_natural\\LZ_natural_186.jpg'
+93.0063 	EXP 	Presentation_image_f2_7: image = 'LZ_natural\\LZ_natural_180.jpg'
+93.0063 	EXP 	Presentation_image_f2_8: image = 'LZ_natural\\LZ_natural_109.jpg'
+93.0063 	EXP 	Presentation_image_f2_1: autoDraw = True
+93.4599 	EXP 	Presentation_image_f2_1: autoDraw = False
+93.5024 	EXP 	Presentation_image_f2_2: autoDraw = True
+93.9526 	EXP 	Presentation_image_f2_2: autoDraw = False
+94.0018 	EXP 	Presentation_image_f2_3: autoDraw = True
+94.4532 	EXP 	Presentation_image_f2_3: autoDraw = False
+94.5020 	EXP 	Presentation_image_f2_4: autoDraw = True
+94.9528 	EXP 	Presentation_image_f2_4: autoDraw = False
+95.0022 	EXP 	Presentation_image_f2_5: autoDraw = True
+95.4533 	EXP 	Presentation_image_f2_5: autoDraw = False
+95.5022 	EXP 	Presentation_image_f2_6: autoDraw = True
+95.9528 	EXP 	Presentation_image_f2_6: autoDraw = False
+96.0023 	EXP 	Presentation_image_f2_7: autoDraw = True
+96.4530 	EXP 	Presentation_image_f2_7: autoDraw = False
+96.5018 	EXP 	Presentation_image_f2_8: autoDraw = True
+96.8925 	EXP 	Created sequence: sequential, trialTypes=1, nReps=0, seed=None
+96.9052 	EXP 	Presentation_image_f2_1: autoDraw = False
+96.9052 	EXP 	Presentation_image_f2_2: autoDraw = False
+96.9052 	EXP 	Presentation_image_f2_3: autoDraw = False
+96.9052 	EXP 	Presentation_image_f2_4: autoDraw = False
+96.9052 	EXP 	Presentation_image_f2_5: autoDraw = False
+96.9052 	EXP 	Presentation_image_f2_6: autoDraw = False
+96.9052 	EXP 	Presentation_image_f2_7: autoDraw = False
+96.9052 	EXP 	Presentation_image_f2_8: autoDraw = False
+96.9052 	EXP 	displayed_choice_image: image = 'LZ_natural\\LZ_natural_90.jpg'
+96.9052 	EXP 	Fixation_cross: autoDraw = True
+97.8983 	EXP 	displayed_choice_image: autoDraw = True
+97.9067 	EXP 	Fixation_cross: autoDraw = False
+98.7144 	EXP 	New trial (rep=0, index=11): OrderedDict([('imageone', 'LZ_natural\\LZ_natural_3.jpg'), ('imagetwo', 'LZ_natural\\LZ_natural_92.jpg'), ('imagethree', 'LZ_natural\\LZ_natural_40.jpg'), ('imagefour', 'LZ_natural\\LZ_natural_236.jpg'), ('imagefive', 'LZ_natural\\LZ_natural_23.jpg'), ('imagesix', 'LZ_natural\\LZ_natural_223.jpg'), ('imageseven', 'LZ_natural\\LZ_natural_232.jpg'), ('imageeight', 'LZ_natural\\LZ_natural_42.jpg'), ('imagenine', None), ('imageten', None), ('imageeleven', None), ('imagetwelve', None), ('imagethirteen', None), ('imagefourteen', None), ('imagefifteen', None), ('imagesixteen', None), ('frequency', 2), ('choice_image', 'LZ_natural\\LZ_natural_236.jpg'), ('choice_type', 1), ('correct_answer', 'a'), ('stimulus_type', 1), ('condition_code', 12)])
+98.7170 	DATA 	Keypress: l
+98.7195 	EXP 	Fixation_cross: autoDraw = False
+98.7195 	EXP 	displayed_choice_image: autoDraw = False
+98.7195 	EXP 	Crossm: autoDraw = True
+99.7178 	EXP 	Created sequence: sequential, trialTypes=1, nReps=0, seed=None
+99.7179 	EXP 	Created sequence: sequential, trialTypes=1, nReps=1, seed=None
+99.7181 	EXP 	New trial (rep=0, index=0): None
+99.7831 	EXP 	Crossm: autoDraw = False
+99.7831 	EXP 	Presentation_image_f2_1: image = 'LZ_natural\\LZ_natural_3.jpg'
+99.7831 	EXP 	Presentation_image_f2_2: image = 'LZ_natural\\LZ_natural_92.jpg'
+99.7831 	EXP 	Presentation_image_f2_3: image = 'LZ_natural\\LZ_natural_40.jpg'
+99.7831 	EXP 	Presentation_image_f2_4: image = 'LZ_natural\\LZ_natural_236.jpg'
+99.7831 	EXP 	Presentation_image_f2_5: image = 'LZ_natural\\LZ_natural_23.jpg'
+99.7831 	EXP 	Presentation_image_f2_6: image = 'LZ_natural\\LZ_natural_223.jpg'
+99.7831 	EXP 	Presentation_image_f2_7: image = 'LZ_natural\\LZ_natural_232.jpg'
+99.7831 	EXP 	Presentation_image_f2_8: image = 'LZ_natural\\LZ_natural_42.jpg'
+99.7831 	EXP 	Presentation_image_f2_1: autoDraw = True
+100.2382 	EXP 	Presentation_image_f2_1: autoDraw = False
+100.2801 	EXP 	Presentation_image_f2_2: autoDraw = True
+100.7309 	EXP 	Presentation_image_f2_2: autoDraw = False
+100.7799 	EXP 	Presentation_image_f2_3: autoDraw = True
+101.2307 	EXP 	Presentation_image_f2_3: autoDraw = False
+101.2802 	EXP 	Presentation_image_f2_4: autoDraw = True
+101.7310 	EXP 	Presentation_image_f2_4: autoDraw = False
+101.7801 	EXP 	Presentation_image_f2_5: autoDraw = True
+102.2308 	EXP 	Presentation_image_f2_5: autoDraw = False
+102.2802 	EXP 	Presentation_image_f2_6: autoDraw = True
+102.7307 	EXP 	Presentation_image_f2_6: autoDraw = False
+102.7799 	EXP 	Presentation_image_f2_7: autoDraw = True
+103.2310 	EXP 	Presentation_image_f2_7: autoDraw = False
+103.2800 	EXP 	Presentation_image_f2_8: autoDraw = True
+103.6703 	EXP 	Created sequence: sequential, trialTypes=1, nReps=0, seed=None
+103.6776 	EXP 	Presentation_image_f2_1: autoDraw = False
+103.6776 	EXP 	Presentation_image_f2_2: autoDraw = False
+103.6776 	EXP 	Presentation_image_f2_3: autoDraw = False
+103.6776 	EXP 	Presentation_image_f2_4: autoDraw = False
+103.6776 	EXP 	Presentation_image_f2_5: autoDraw = False
+103.6776 	EXP 	Presentation_image_f2_6: autoDraw = False
+103.6776 	EXP 	Presentation_image_f2_7: autoDraw = False
+103.6776 	EXP 	Presentation_image_f2_8: autoDraw = False
+103.6776 	EXP 	displayed_choice_image: image = 'LZ_natural\\LZ_natural_236.jpg'
+103.6776 	EXP 	Fixation_cross: autoDraw = True
+104.6759 	EXP 	displayed_choice_image: autoDraw = True
+104.6843 	EXP 	Fixation_cross: autoDraw = False
+105.4880 	DATA 	Keypress: a
+105.4944 	EXP 	New trial (rep=0, index=12): OrderedDict([('imageone', 'LZ_natural\\LZ_natural_165.jpg'), ('imagetwo', 'LZ_natural\\LZ_natural_24.jpg'), ('imagethree', 'LZ_natural\\LZ_natural_79.jpg'), ('imagefour', 'LZ_natural\\LZ_natural_147.jpg'), ('imagefive', 'LZ_natural\\LZ_natural_100.jpg'), ('imagesix', 'LZ_natural\\LZ_natural_205.jpg'), ('imageseven', 'LZ_natural\\LZ_natural_196.jpg'), ('imageeight', 'LZ_natural\\LZ_natural_143.jpg'), ('imagenine', 'LZ_natural\\LZ_natural_177.jpg'), ('imageten', 'LZ_natural\\LZ_natural_65.jpg'), ('imageeleven', 'LZ_natural\\LZ_natural_190.jpg'), ('imagetwelve', 'LZ_natural\\LZ_natural_124.jpg'), ('imagethirteen', None), ('imagefourteen', None), ('imagefifteen', None), ('imagesixteen', None), ('frequency', 3), ('choice_image', 'LZ_natural\\LZ_natural_105.jpg'), ('choice_type', 0), ('correct_answer', 'l'), ('stimulus_type', 1), ('condition_code', 13)])
+105.4996 	EXP 	Fixation_cross: autoDraw = False
+105.4996 	EXP 	displayed_choice_image: autoDraw = False
+105.4996 	EXP 	Crossm: autoDraw = True
+106.4952 	EXP 	Created sequence: sequential, trialTypes=1, nReps=0, seed=None
+106.4954 	EXP 	Created sequence: sequential, trialTypes=1, nReps=0, seed=None
+106.4956 	EXP 	Created sequence: sequential, trialTypes=1, nReps=1, seed=None
+106.4958 	EXP 	New trial (rep=0, index=0): None
+106.6330 	EXP 	Crossm: autoDraw = False
+106.6330 	EXP 	Presentation_image_f3_1: image = 'LZ_natural\\LZ_natural_165.jpg'
+106.6330 	EXP 	Presentation_image_f3_2: image = 'LZ_natural\\LZ_natural_24.jpg'
+106.6330 	EXP 	Presentation_image_f3_3: image = 'LZ_natural\\LZ_natural_79.jpg'
+106.6330 	EXP 	Presentation_image_f3_4: image = 'LZ_natural\\LZ_natural_147.jpg'
+106.6330 	EXP 	Presentation_image_f3_5: image = 'LZ_natural\\LZ_natural_100.jpg'
+106.6330 	EXP 	Presentation_image_f3_6: image = 'LZ_natural\\LZ_natural_205.jpg'
+106.6330 	EXP 	Presentation_image_f3_7: image = 'LZ_natural\\LZ_natural_196.jpg'
+106.6330 	EXP 	Presentation_image_f3_8: image = 'LZ_natural\\LZ_natural_143.jpg'
+106.6330 	EXP 	Presentation_image_f3_9: image = 'LZ_natural\\LZ_natural_177.jpg'
+106.6330 	EXP 	Presentation_image_f3_10: image = 'LZ_natural\\LZ_natural_65.jpg'
+106.6330 	EXP 	Presentation_image_f3_11: image = 'LZ_natural\\LZ_natural_190.jpg'
+106.6330 	EXP 	Presentation_image_f3_12: image = 'LZ_natural\\LZ_natural_124.jpg'
+106.6330 	EXP 	Presentation_image_f3_1: autoDraw = True
+106.9322 	EXP 	Presentation_image_f3_1: autoDraw = False
+106.9749 	EXP 	Presentation_image_f3_2: autoDraw = True
+107.2794 	EXP 	Presentation_image_f3_2: autoDraw = False
+107.3216 	EXP 	Presentation_image_f3_3: autoDraw = True
+107.6206 	EXP 	Presentation_image_f3_4: autoDraw = True
+107.6274 	EXP 	Presentation_image_f3_3: autoDraw = False
+107.9252 	EXP 	Presentation_image_f3_4: autoDraw = False
+107.9745 	EXP 	Presentation_image_f3_5: autoDraw = True
+108.2797 	EXP 	Presentation_image_f3_5: autoDraw = False
+108.3217 	EXP 	Presentation_image_f3_6: autoDraw = True
+108.6209 	EXP 	Presentation_image_f3_7: autoDraw = True
+108.6273 	EXP 	Presentation_image_f3_6: autoDraw = False
+108.9254 	EXP 	Presentation_image_f3_7: autoDraw = False
+108.9748 	EXP 	Presentation_image_f3_8: autoDraw = True
+109.2798 	EXP 	Presentation_image_f3_8: autoDraw = False
+109.3221 	EXP 	Presentation_image_f3_9: autoDraw = True
+109.6211 	EXP 	Presentation_image_f3_10: autoDraw = True
+109.6275 	EXP 	Presentation_image_f3_9: autoDraw = False
+109.9253 	EXP 	Presentation_image_f3_10: autoDraw = False
+109.9749 	EXP 	Presentation_image_f3_11: autoDraw = True
+110.2797 	EXP 	Presentation_image_f3_11: autoDraw = False
+110.3217 	EXP 	Presentation_image_f3_12: autoDraw = True
+110.5144 	EXP 	Presentation_image_f3_1: autoDraw = False
+110.5144 	EXP 	Presentation_image_f3_2: autoDraw = False
+110.5144 	EXP 	Presentation_image_f3_3: autoDraw = False
+110.5144 	EXP 	Presentation_image_f3_4: autoDraw = False
+110.5144 	EXP 	Presentation_image_f3_5: autoDraw = False
+110.5144 	EXP 	Presentation_image_f3_6: autoDraw = False
+110.5144 	EXP 	Presentation_image_f3_7: autoDraw = False
+110.5144 	EXP 	Presentation_image_f3_8: autoDraw = False
+110.5144 	EXP 	Presentation_image_f3_9: autoDraw = False
+110.5144 	EXP 	Presentation_image_f3_10: autoDraw = False
+110.5144 	EXP 	Presentation_image_f3_11: autoDraw = False
+110.5144 	EXP 	Presentation_image_f3_12: autoDraw = False
+110.5144 	EXP 	displayed_choice_image: image = 'LZ_natural\\LZ_natural_105.jpg'
+110.5144 	EXP 	Fixation_cross: autoDraw = True
+111.5094 	EXP 	displayed_choice_image: autoDraw = True
+111.5186 	EXP 	Fixation_cross: autoDraw = False
+112.5119 	DATA 	Keypress: l
+114.4966 	EXP 	New trial (rep=0, index=13): OrderedDict([('imageone', 'LZ_natural\\LZ_natural_21.jpg'), ('imagetwo', 'LZ_natural\\LZ_natural_225.jpg'), ('imagethree', 'LZ_natural\\LZ_natural_199.jpg'), ('imagefour', 'LZ_natural\\LZ_natural_145.jpg'), ('imagefive', 'LZ_natural\\LZ_natural_48.jpg'), ('imagesix', 'LZ_natural\\LZ_natural_68.jpg'), ('imageseven', 'LZ_natural\\LZ_natural_182.jpg'), ('imageeight', 'LZ_natural\\LZ_natural_76.jpg'), ('imagenine', 'LZ_natural\\LZ_natural_16.jpg'), ('imageten', 'LZ_natural\\LZ_natural_34.jpg'), ('imageeleven', 'LZ_natural\\LZ_natural_221.jpg'), ('imagetwelve', 'LZ_natural\\LZ_natural_215.jpg'), ('imagethirteen', None), ('imagefourteen', None), ('imagefifteen', None), ('imagesixteen', None), ('frequency', 3), ('choice_image', 'LZ_natural\\LZ_natural_48.jpg'), ('choice_type', 1), ('correct_answer', 'a'), ('stimulus_type', 1), ('condition_code', 13)])
+114.4998 	DATA 	Keypress: l
+114.5022 	EXP 	Fixation_cross: autoDraw = False
+114.5022 	EXP 	displayed_choice_image: autoDraw = False
+114.5022 	EXP 	Crossm: autoDraw = True
+115.4972 	EXP 	Created sequence: sequential, trialTypes=1, nReps=0, seed=None
+115.4975 	EXP 	Created sequence: sequential, trialTypes=1, nReps=0, seed=None
+115.4977 	EXP 	Created sequence: sequential, trialTypes=1, nReps=1, seed=None
+115.4979 	EXP 	New trial (rep=0, index=0): None
+115.5941 	EXP 	Crossm: autoDraw = False
+115.5941 	EXP 	Crossm: autoDraw = False
+115.5941 	EXP 	Presentation_image_f3_1: image = 'LZ_natural\\LZ_natural_21.jpg'
+115.5941 	EXP 	Presentation_image_f3_2: image = 'LZ_natural\\LZ_natural_225.jpg'
+115.5941 	EXP 	Presentation_image_f3_3: image = 'LZ_natural\\LZ_natural_199.jpg'
+115.5941 	EXP 	Presentation_image_f3_4: image = 'LZ_natural\\LZ_natural_145.jpg'
+115.5941 	EXP 	Presentation_image_f3_5: image = 'LZ_natural\\LZ_natural_48.jpg'
+115.5941 	EXP 	Presentation_image_f3_6: image = 'LZ_natural\\LZ_natural_68.jpg'
+115.5941 	EXP 	Presentation_image_f3_7: image = 'LZ_natural\\LZ_natural_182.jpg'
+115.5941 	EXP 	Presentation_image_f3_8: image = 'LZ_natural\\LZ_natural_76.jpg'
+115.5941 	EXP 	Presentation_image_f3_9: image = 'LZ_natural\\LZ_natural_16.jpg'
+115.5941 	EXP 	Presentation_image_f3_10: image = 'LZ_natural\\LZ_natural_34.jpg'
+115.5941 	EXP 	Presentation_image_f3_11: image = 'LZ_natural\\LZ_natural_221.jpg'
+115.5941 	EXP 	Presentation_image_f3_12: image = 'LZ_natural\\LZ_natural_215.jpg'
+115.5941 	EXP 	Presentation_image_f3_1: autoDraw = True
+115.8980 	EXP 	Presentation_image_f3_1: autoDraw = False
+115.9395 	EXP 	Presentation_image_f3_2: autoDraw = True
+116.2381 	EXP 	Presentation_image_f3_2: autoDraw = False
+116.2871 	EXP 	Presentation_image_f3_3: autoDraw = True
+116.5864 	EXP 	Presentation_image_f3_4: autoDraw = True
+116.5924 	EXP 	Presentation_image_f3_3: autoDraw = False
+116.8906 	EXP 	Presentation_image_f3_4: autoDraw = False
+116.9397 	EXP 	Presentation_image_f3_5: autoDraw = True
+117.2451 	EXP 	Presentation_image_f3_5: autoDraw = False
+117.2872 	EXP 	Presentation_image_f3_6: autoDraw = True
+117.5860 	EXP 	Presentation_image_f3_7: autoDraw = True
+117.5927 	EXP 	Presentation_image_f3_6: autoDraw = False
+117.8905 	EXP 	Presentation_image_f3_7: autoDraw = False
+117.9401 	EXP 	Presentation_image_f3_8: autoDraw = True
+118.2448 	EXP 	Presentation_image_f3_8: autoDraw = False
+118.2870 	EXP 	Presentation_image_f3_9: autoDraw = True
+118.5862 	EXP 	Presentation_image_f3_10: autoDraw = True
+118.5929 	EXP 	Presentation_image_f3_9: autoDraw = False
+118.8906 	EXP 	Presentation_image_f3_10: autoDraw = False
+118.9399 	EXP 	Presentation_image_f3_11: autoDraw = True
+119.2451 	EXP 	Presentation_image_f3_11: autoDraw = False
+119.2871 	EXP 	Presentation_image_f3_12: autoDraw = True
+119.5121 	EXP 	Presentation_image_f3_1: autoDraw = False
+119.5121 	EXP 	Presentation_image_f3_2: autoDraw = False
+119.5121 	EXP 	Presentation_image_f3_3: autoDraw = False
+119.5121 	EXP 	Presentation_image_f3_4: autoDraw = False
+119.5121 	EXP 	Presentation_image_f3_5: autoDraw = False
+119.5121 	EXP 	Presentation_image_f3_6: autoDraw = False
+119.5121 	EXP 	Presentation_image_f3_7: autoDraw = False
+119.5121 	EXP 	Presentation_image_f3_8: autoDraw = False
+119.5121 	EXP 	Presentation_image_f3_9: autoDraw = False
+119.5121 	EXP 	Presentation_image_f3_10: autoDraw = False
+119.5121 	EXP 	Presentation_image_f3_11: autoDraw = False
+119.5121 	EXP 	Presentation_image_f3_12: autoDraw = False
+119.5121 	EXP 	displayed_choice_image: image = 'LZ_natural\\LZ_natural_48.jpg'
+119.5121 	EXP 	Fixation_cross: autoDraw = True
+120.5096 	EXP 	displayed_choice_image: autoDraw = True
+120.5179 	EXP 	Fixation_cross: autoDraw = False
+120.8197 	EXP 	New trial (rep=0, index=14): OrderedDict([('imageone', 'LZ_natural\\LZ_natural_5.jpg'), ('imagetwo', 'LZ_natural\\LZ_natural_216.jpg'), ('imagethree', 'LZ_natural\\LZ_natural_12.jpg'), ('imagefour', 'LZ_natural\\LZ_natural_146.jpg'), ('imagefive', 'LZ_natural\\LZ_natural_32.jpg'), ('imagesix', 'LZ_natural\\LZ_natural_138.jpg'), ('imageseven', 'LZ_natural\\LZ_natural_28.jpg'), ('imageeight', 'LZ_natural\\LZ_natural_6.jpg'), ('imagenine', 'LZ_natural\\LZ_natural_219.jpg'), ('imageten', 'LZ_natural\\LZ_natural_201.jpg'), ('imageeleven', 'LZ_natural\\LZ_natural_72.jpg'), ('imagetwelve', 'LZ_natural\\LZ_natural_228.jpg'), ('imagethirteen', None), ('imagefourteen', None), ('imagefifteen', None), ('imagesixteen', None), ('frequency', 3), ('choice_image', 'LZ_natural\\LZ_natural_171.jpg'), ('choice_type', 0), ('correct_answer', 'l'), ('stimulus_type', 1), ('condition_code', 13)])
+120.8243 	DATA 	Keypress: a
+120.8267 	EXP 	Fixation_cross: autoDraw = False
+120.8267 	EXP 	displayed_choice_image: autoDraw = False
+120.8267 	EXP 	Crossm: autoDraw = True
+121.8224 	EXP 	Created sequence: sequential, trialTypes=1, nReps=0, seed=None
+121.8226 	EXP 	Created sequence: sequential, trialTypes=1, nReps=0, seed=None
+121.8227 	EXP 	Created sequence: sequential, trialTypes=1, nReps=1, seed=None
+121.8228 	EXP 	New trial (rep=0, index=0): None
+121.9174 	EXP 	Crossm: autoDraw = False
+121.9174 	EXP 	Presentation_image_f3_1: image = 'LZ_natural\\LZ_natural_5.jpg'
+121.9174 	EXP 	Presentation_image_f3_2: image = 'LZ_natural\\LZ_natural_216.jpg'
+121.9174 	EXP 	Presentation_image_f3_3: image = 'LZ_natural\\LZ_natural_12.jpg'
+121.9174 	EXP 	Presentation_image_f3_4: image = 'LZ_natural\\LZ_natural_146.jpg'
+121.9174 	EXP 	Presentation_image_f3_5: image = 'LZ_natural\\LZ_natural_32.jpg'
+121.9174 	EXP 	Presentation_image_f3_6: image = 'LZ_natural\\LZ_natural_138.jpg'
+121.9174 	EXP 	Presentation_image_f3_7: image = 'LZ_natural\\LZ_natural_28.jpg'
+121.9174 	EXP 	Presentation_image_f3_8: image = 'LZ_natural\\LZ_natural_6.jpg'
+121.9174 	EXP 	Presentation_image_f3_9: image = 'LZ_natural\\LZ_natural_219.jpg'
+121.9174 	EXP 	Presentation_image_f3_10: image = 'LZ_natural\\LZ_natural_201.jpg'
+121.9174 	EXP 	Presentation_image_f3_11: image = 'LZ_natural\\LZ_natural_72.jpg'
+121.9174 	EXP 	Presentation_image_f3_12: image = 'LZ_natural\\LZ_natural_228.jpg'
+121.9174 	EXP 	Presentation_image_f3_1: autoDraw = True
+122.2172 	EXP 	Presentation_image_f3_1: autoDraw = False
+122.2665 	EXP 	Presentation_image_f3_2: autoDraw = True
+122.5713 	EXP 	Presentation_image_f3_2: autoDraw = False
+122.6136 	EXP 	Presentation_image_f3_3: autoDraw = True
+122.9129 	EXP 	Presentation_image_f3_4: autoDraw = True
+122.9192 	EXP 	Presentation_image_f3_3: autoDraw = False
+123.2174 	EXP 	Presentation_image_f3_4: autoDraw = False
+123.2663 	EXP 	Presentation_image_f3_5: autoDraw = True
+123.5714 	EXP 	Presentation_image_f3_5: autoDraw = False
+123.6136 	EXP 	Presentation_image_f3_6: autoDraw = True
+123.9127 	EXP 	Presentation_image_f3_7: autoDraw = True
+123.9190 	EXP 	Presentation_image_f3_6: autoDraw = False
+124.2170 	EXP 	Presentation_image_f3_7: autoDraw = False
+124.2662 	EXP 	Presentation_image_f3_8: autoDraw = True
+124.5713 	EXP 	Presentation_image_f3_8: autoDraw = False
+124.6136 	EXP 	Presentation_image_f3_9: autoDraw = True
+124.9126 	EXP 	Presentation_image_f3_10: autoDraw = True
+124.9193 	EXP 	Presentation_image_f3_9: autoDraw = False
+125.2171 	EXP 	Presentation_image_f3_10: autoDraw = False
+125.2665 	EXP 	Presentation_image_f3_11: autoDraw = True
+125.5715 	EXP 	Presentation_image_f3_11: autoDraw = False
+125.6135 	EXP 	Presentation_image_f3_12: autoDraw = True
+125.8366 	EXP 	Presentation_image_f3_1: autoDraw = False
+125.8366 	EXP 	Presentation_image_f3_2: autoDraw = False
+125.8366 	EXP 	Presentation_image_f3_3: autoDraw = False
+125.8366 	EXP 	Presentation_image_f3_4: autoDraw = False
+125.8366 	EXP 	Presentation_image_f3_5: autoDraw = False
+125.8366 	EXP 	Presentation_image_f3_6: autoDraw = False
+125.8366 	EXP 	Presentation_image_f3_7: autoDraw = False
+125.8366 	EXP 	Presentation_image_f3_8: autoDraw = False
+125.8366 	EXP 	Presentation_image_f3_9: autoDraw = False
+125.8366 	EXP 	Presentation_image_f3_10: autoDraw = False
+125.8366 	EXP 	Presentation_image_f3_11: autoDraw = False
+125.8366 	EXP 	Presentation_image_f3_12: autoDraw = False
+125.8366 	EXP 	displayed_choice_image: image = 'LZ_natural\\LZ_natural_171.jpg'
+125.8366 	EXP 	Fixation_cross: autoDraw = True
+126.8287 	EXP 	displayed_choice_image: autoDraw = True
+126.8362 	EXP 	Fixation_cross: autoDraw = False
+128.0396 	DATA 	Keypress: l
+128.0470 	EXP 	New trial (rep=0, index=15): OrderedDict([('imageone', 'LZ_natural\\LZ_natural_184.jpg'), ('imagetwo', 'LZ_natural\\LZ_natural_120.jpg'), ('imagethree', 'LZ_natural\\LZ_natural_161.jpg'), ('imagefour', 'LZ_natural\\LZ_natural_133.jpg'), ('imagefive', 'LZ_natural\\LZ_natural_53.jpg'), ('imagesix', 'LZ_natural\\LZ_natural_71.jpg'), ('imageseven', 'LZ_natural\\LZ_natural_37.jpg'), ('imageeight', 'LZ_natural\\LZ_natural_149.jpg'), ('imagenine', 'LZ_natural\\LZ_natural_132.jpg'), ('imageten', 'LZ_natural\\LZ_natural_101.jpg'), ('imageeleven', 'LZ_natural\\LZ_natural_56.jpg'), ('imagetwelve', 'LZ_natural\\LZ_natural_54.jpg'), ('imagethirteen', None), ('imagefourteen', None), ('imagefifteen', None), ('imagesixteen', None), ('frequency', 3), ('choice_image', 'LZ_natural\\LZ_natural_100.jpg'), ('choice_type', 0), ('correct_answer', 'l'), ('stimulus_type', 1), ('condition_code', 13)])
+128.0518 	EXP 	Fixation_cross: autoDraw = False
+128.0518 	EXP 	displayed_choice_image: autoDraw = False
+128.0518 	EXP 	Crossm: autoDraw = True
+129.0507 	EXP 	Created sequence: sequential, trialTypes=1, nReps=0, seed=None
+129.0509 	EXP 	Created sequence: sequential, trialTypes=1, nReps=0, seed=None
+129.0510 	EXP 	Created sequence: sequential, trialTypes=1, nReps=1, seed=None
+129.0511 	EXP 	New trial (rep=0, index=0): None
+129.1461 	EXP 	Crossm: autoDraw = False
+129.1461 	EXP 	Presentation_image_f3_1: image = 'LZ_natural\\LZ_natural_184.jpg'
+129.1461 	EXP 	Presentation_image_f3_2: image = 'LZ_natural\\LZ_natural_120.jpg'
+129.1461 	EXP 	Presentation_image_f3_3: image = 'LZ_natural\\LZ_natural_161.jpg'
+129.1461 	EXP 	Presentation_image_f3_4: image = 'LZ_natural\\LZ_natural_133.jpg'
+129.1461 	EXP 	Presentation_image_f3_5: image = 'LZ_natural\\LZ_natural_53.jpg'
+129.1461 	EXP 	Presentation_image_f3_6: image = 'LZ_natural\\LZ_natural_71.jpg'
+129.1461 	EXP 	Presentation_image_f3_7: image = 'LZ_natural\\LZ_natural_37.jpg'
+129.1461 	EXP 	Presentation_image_f3_8: image = 'LZ_natural\\LZ_natural_149.jpg'
+129.1461 	EXP 	Presentation_image_f3_9: image = 'LZ_natural\\LZ_natural_132.jpg'
+129.1461 	EXP 	Presentation_image_f3_10: image = 'LZ_natural\\LZ_natural_101.jpg'
+129.1461 	EXP 	Presentation_image_f3_11: image = 'LZ_natural\\LZ_natural_56.jpg'
+129.1461 	EXP 	Presentation_image_f3_12: image = 'LZ_natural\\LZ_natural_54.jpg'
+129.1461 	EXP 	Presentation_image_f3_1: autoDraw = True
+129.4466 	EXP 	Presentation_image_f3_1: autoDraw = False
+129.4884 	EXP 	Presentation_image_f3_2: autoDraw = True
+129.7934 	EXP 	Presentation_image_f3_2: autoDraw = False
+129.8356 	EXP 	Presentation_image_f3_3: autoDraw = True
+130.1347 	EXP 	Presentation_image_f3_3: autoDraw = False
+130.1347 	EXP 	Presentation_image_f3_4: autoDraw = True
+130.4392 	EXP 	Presentation_image_f3_4: autoDraw = False
+130.4884 	EXP 	Presentation_image_f3_5: autoDraw = True
+130.7935 	EXP 	Presentation_image_f3_5: autoDraw = False
+130.8355 	EXP 	Presentation_image_f3_6: autoDraw = True
+131.1350 	EXP 	Presentation_image_f3_7: autoDraw = True
+131.1417 	EXP 	Presentation_image_f3_6: autoDraw = False
+131.4394 	EXP 	Presentation_image_f3_7: autoDraw = False
+131.4884 	EXP 	Presentation_image_f3_8: autoDraw = True
+131.7867 	EXP 	Presentation_image_f3_8: autoDraw = False
+131.8359 	EXP 	Presentation_image_f3_9: autoDraw = True
+132.1351 	EXP 	Presentation_image_f3_10: autoDraw = True
+132.1413 	EXP 	Presentation_image_f3_9: autoDraw = False
+132.4397 	EXP 	Presentation_image_f3_10: autoDraw = False
+132.4890 	EXP 	Presentation_image_f3_11: autoDraw = True
+132.7939 	EXP 	Presentation_image_f3_11: autoDraw = False
+132.8362 	EXP 	Presentation_image_f3_12: autoDraw = True
+133.0640 	EXP 	Presentation_image_f3_1: autoDraw = False
+133.0640 	EXP 	Presentation_image_f3_2: autoDraw = False
+133.0640 	EXP 	Presentation_image_f3_3: autoDraw = False
+133.0640 	EXP 	Presentation_image_f3_4: autoDraw = False
+133.0640 	EXP 	Presentation_image_f3_5: autoDraw = False
+133.0640 	EXP 	Presentation_image_f3_6: autoDraw = False
+133.0640 	EXP 	Presentation_image_f3_7: autoDraw = False
+133.0640 	EXP 	Presentation_image_f3_8: autoDraw = False
+133.0640 	EXP 	Presentation_image_f3_9: autoDraw = False
+133.0640 	EXP 	Presentation_image_f3_10: autoDraw = False
+133.0640 	EXP 	Presentation_image_f3_11: autoDraw = False
+133.0640 	EXP 	Presentation_image_f3_12: autoDraw = False
+133.0640 	EXP 	displayed_choice_image: image = 'LZ_natural\\LZ_natural_100.jpg'
+133.0640 	EXP 	Fixation_cross: autoDraw = True
+134.0581 	EXP 	displayed_choice_image: autoDraw = True
+134.0671 	EXP 	Fixation_cross: autoDraw = False
+135.0877 	DATA 	Keypress: l
+135.0950 	EXP 	New trial (rep=0, index=16): OrderedDict([('imageone', 'LZ_natural\\LZ_natural_126.jpg'), ('imagetwo', 'LZ_natural\\LZ_natural_17.jpg'), ('imagethree', 'LZ_natural\\LZ_natural_239.jpg'), ('imagefour', 'LZ_natural\\LZ_natural_107.jpg'), ('imagefive', 'LZ_natural\\LZ_natural_169.jpg'), ('imagesix', 'LZ_natural\\LZ_natural_188.jpg'), ('imageseven', 'LZ_natural\\LZ_natural_115.jpg'), ('imageeight', 'LZ_natural\\LZ_natural_176.jpg'), ('imagenine', 'LZ_natural\\LZ_natural_153.jpg'), ('imageten', 'LZ_natural\\LZ_natural_4.jpg'), ('imageeleven', 'LZ_natural\\LZ_natural_36.jpg'), ('imagetwelve', 'LZ_natural\\LZ_natural_67.jpg'), ('imagethirteen', None), ('imagefourteen', None), ('imagefifteen', None), ('imagesixteen', None), ('frequency', 3), ('choice_image', 'LZ_natural\\LZ_natural_178.jpg'), ('choice_type', 0), ('correct_answer', 'l'), ('stimulus_type', 1), ('condition_code', 13)])
+135.0999 	EXP 	Fixation_cross: autoDraw = False
+135.0999 	EXP 	displayed_choice_image: autoDraw = False
+135.0999 	EXP 	Crossm: autoDraw = True
+136.0949 	EXP 	Created sequence: sequential, trialTypes=1, nReps=0, seed=None
+136.0953 	EXP 	Created sequence: sequential, trialTypes=1, nReps=0, seed=None
+136.0956 	EXP 	Created sequence: sequential, trialTypes=1, nReps=1, seed=None
+136.0958 	EXP 	New trial (rep=0, index=0): None
+136.2353 	EXP 	Crossm: autoDraw = False
+136.2353 	EXP 	Crossm: autoDraw = False
+136.2353 	EXP 	Presentation_image_f3_1: image = 'LZ_natural\\LZ_natural_126.jpg'
+136.2353 	EXP 	Presentation_image_f3_2: image = 'LZ_natural\\LZ_natural_17.jpg'
+136.2353 	EXP 	Presentation_image_f3_3: image = 'LZ_natural\\LZ_natural_239.jpg'
+136.2353 	EXP 	Presentation_image_f3_4: image = 'LZ_natural\\LZ_natural_107.jpg'
+136.2353 	EXP 	Presentation_image_f3_5: image = 'LZ_natural\\LZ_natural_169.jpg'
+136.2353 	EXP 	Presentation_image_f3_6: image = 'LZ_natural\\LZ_natural_188.jpg'
+136.2353 	EXP 	Presentation_image_f3_7: image = 'LZ_natural\\LZ_natural_115.jpg'
+136.2353 	EXP 	Presentation_image_f3_8: image = 'LZ_natural\\LZ_natural_176.jpg'
+136.2353 	EXP 	Presentation_image_f3_9: image = 'LZ_natural\\LZ_natural_153.jpg'
+136.2353 	EXP 	Presentation_image_f3_10: image = 'LZ_natural\\LZ_natural_4.jpg'
+136.2353 	EXP 	Presentation_image_f3_11: image = 'LZ_natural\\LZ_natural_36.jpg'
+136.2353 	EXP 	Presentation_image_f3_12: image = 'LZ_natural\\LZ_natural_67.jpg'
+136.2353 	EXP 	Presentation_image_f3_1: autoDraw = True
+136.5367 	EXP 	Presentation_image_f3_1: autoDraw = False
+136.5789 	EXP 	Presentation_image_f3_2: autoDraw = True
+136.8839 	EXP 	Presentation_image_f3_2: autoDraw = False
+136.9332 	EXP 	Presentation_image_f3_3: autoDraw = True
+137.2325 	EXP 	Presentation_image_f3_4: autoDraw = True
+137.2385 	EXP 	Presentation_image_f3_3: autoDraw = False
+137.5367 	EXP 	Presentation_image_f3_4: autoDraw = False
+137.5789 	EXP 	Presentation_image_f3_5: autoDraw = True
+137.8840 	EXP 	Presentation_image_f3_5: autoDraw = False
+137.9335 	EXP 	Presentation_image_f3_6: autoDraw = True
+138.2323 	EXP 	Presentation_image_f3_7: autoDraw = True
+138.2386 	EXP 	Presentation_image_f3_6: autoDraw = False
+138.5369 	EXP 	Presentation_image_f3_7: autoDraw = False
+138.5790 	EXP 	Presentation_image_f3_8: autoDraw = True
+138.8843 	EXP 	Presentation_image_f3_8: autoDraw = False
+138.9333 	EXP 	Presentation_image_f3_9: autoDraw = True
+139.2324 	EXP 	Presentation_image_f3_10: autoDraw = True
+139.2389 	EXP 	Presentation_image_f3_9: autoDraw = False
+139.5370 	EXP 	Presentation_image_f3_10: autoDraw = False
+139.5790 	EXP 	Presentation_image_f3_11: autoDraw = True
+139.8841 	EXP 	Presentation_image_f3_11: autoDraw = False
+139.9334 	EXP 	Presentation_image_f3_12: autoDraw = True
+140.1173 	EXP 	Presentation_image_f3_1: autoDraw = False
+140.1173 	EXP 	Presentation_image_f3_2: autoDraw = False
+140.1173 	EXP 	Presentation_image_f3_3: autoDraw = False
+140.1173 	EXP 	Presentation_image_f3_4: autoDraw = False
+140.1173 	EXP 	Presentation_image_f3_5: autoDraw = False
+140.1173 	EXP 	Presentation_image_f3_6: autoDraw = False
+140.1173 	EXP 	Presentation_image_f3_7: autoDraw = False
+140.1173 	EXP 	Presentation_image_f3_8: autoDraw = False
+140.1173 	EXP 	Presentation_image_f3_9: autoDraw = False
+140.1173 	EXP 	Presentation_image_f3_10: autoDraw = False
+140.1173 	EXP 	Presentation_image_f3_11: autoDraw = False
+140.1173 	EXP 	Presentation_image_f3_12: autoDraw = False
+140.1173 	EXP 	displayed_choice_image: image = 'LZ_natural\\LZ_natural_178.jpg'
+140.1173 	EXP 	Fixation_cross: autoDraw = True
+141.1137 	EXP 	displayed_choice_image: autoDraw = True
+141.1232 	EXP 	Fixation_cross: autoDraw = False
+142.1188 	DATA 	Keypress: l
+142.1264 	EXP 	New trial (rep=0, index=17): OrderedDict([('imageone', 'LZ_natural\\LZ_natural_129.jpg'), ('imagetwo', 'LZ_natural\\LZ_natural_10.jpg'), ('imagethree', 'LZ_natural\\LZ_natural_137.jpg'), ('imagefour', 'LZ_natural\\LZ_natural_222.jpg'), ('imagefive', 'LZ_natural\\LZ_natural_174.jpg'), ('imagesix', 'LZ_natural\\LZ_natural_213.jpg'), ('imageseven', 'LZ_natural\\LZ_natural_224.jpg'), ('imageeight', 'LZ_natural\\LZ_natural_85.jpg'), ('imagenine', 'LZ_natural\\LZ_natural_240.jpg'), ('imageten', 'LZ_natural\\LZ_natural_87.jpg'), ('imageeleven', 'LZ_natural\\LZ_natural_45.jpg'), ('imagetwelve', 'LZ_natural\\LZ_natural_214.jpg'), ('imagethirteen', None), ('imagefourteen', None), ('imagefifteen', None), ('imagesixteen', None), ('frequency', 3), ('choice_image', 'LZ_natural\\LZ_natural_28.jpg'), ('choice_type', 0), ('correct_answer', 'l'), ('stimulus_type', 1), ('condition_code', 13)])
+142.1315 	EXP 	Fixation_cross: autoDraw = False
+142.1315 	EXP 	displayed_choice_image: autoDraw = False
+142.1315 	EXP 	Crossm: autoDraw = True
+143.1279 	EXP 	Created sequence: sequential, trialTypes=1, nReps=0, seed=None
+143.1281 	EXP 	Created sequence: sequential, trialTypes=1, nReps=0, seed=None
+143.1284 	EXP 	Created sequence: sequential, trialTypes=1, nReps=1, seed=None
+143.1286 	EXP 	New trial (rep=0, index=0): None
+143.2285 	EXP 	Crossm: autoDraw = False
+143.2285 	EXP 	Presentation_image_f3_1: image = 'LZ_natural\\LZ_natural_129.jpg'
+143.2285 	EXP 	Presentation_image_f3_2: image = 'LZ_natural\\LZ_natural_10.jpg'
+143.2285 	EXP 	Presentation_image_f3_3: image = 'LZ_natural\\LZ_natural_137.jpg'
+143.2285 	EXP 	Presentation_image_f3_4: image = 'LZ_natural\\LZ_natural_222.jpg'
+143.2285 	EXP 	Presentation_image_f3_5: image = 'LZ_natural\\LZ_natural_174.jpg'
+143.2285 	EXP 	Presentation_image_f3_6: image = 'LZ_natural\\LZ_natural_213.jpg'
+143.2285 	EXP 	Presentation_image_f3_7: image = 'LZ_natural\\LZ_natural_224.jpg'
+143.2285 	EXP 	Presentation_image_f3_8: image = 'LZ_natural\\LZ_natural_85.jpg'
+143.2285 	EXP 	Presentation_image_f3_9: image = 'LZ_natural\\LZ_natural_240.jpg'
+143.2285 	EXP 	Presentation_image_f3_10: image = 'LZ_natural\\LZ_natural_87.jpg'
+143.2285 	EXP 	Presentation_image_f3_11: image = 'LZ_natural\\LZ_natural_45.jpg'
+143.2285 	EXP 	Presentation_image_f3_12: image = 'LZ_natural\\LZ_natural_214.jpg'
+143.2285 	EXP 	Presentation_image_f3_1: autoDraw = True
+143.5299 	EXP 	Presentation_image_f3_1: autoDraw = False
+143.5722 	EXP 	Presentation_image_f3_2: autoDraw = True
+143.8775 	EXP 	Presentation_image_f3_2: autoDraw = False
+143.9265 	EXP 	Presentation_image_f3_3: autoDraw = True
+144.2256 	EXP 	Presentation_image_f3_4: autoDraw = True
+144.2320 	EXP 	Presentation_image_f3_3: autoDraw = False
+144.5297 	EXP 	Presentation_image_f3_4: autoDraw = False
+144.5724 	EXP 	Presentation_image_f3_5: autoDraw = True
+144.8771 	EXP 	Presentation_image_f3_5: autoDraw = False
+144.9266 	EXP 	Presentation_image_f3_6: autoDraw = True
+145.2256 	EXP 	Presentation_image_f3_7: autoDraw = True
+145.2321 	EXP 	Presentation_image_f3_6: autoDraw = False
+145.5298 	EXP 	Presentation_image_f3_7: autoDraw = False
+145.5721 	EXP 	Presentation_image_f3_8: autoDraw = True
+145.8705 	EXP 	Presentation_image_f3_8: autoDraw = False
+145.9262 	EXP 	Presentation_image_f3_9: autoDraw = True
+146.2252 	EXP 	Presentation_image_f3_10: autoDraw = True
+146.2318 	EXP 	Presentation_image_f3_9: autoDraw = False
+146.5298 	EXP 	Presentation_image_f3_10: autoDraw = False
+146.5721 	EXP 	Presentation_image_f3_11: autoDraw = True
+146.8775 	EXP 	Presentation_image_f3_11: autoDraw = False
+146.9265 	EXP 	Presentation_image_f3_12: autoDraw = True
+147.1368 	EXP 	Presentation_image_f3_1: autoDraw = False
+147.1368 	EXP 	Presentation_image_f3_2: autoDraw = False
+147.1368 	EXP 	Presentation_image_f3_3: autoDraw = False
+147.1368 	EXP 	Presentation_image_f3_4: autoDraw = False
+147.1368 	EXP 	Presentation_image_f3_5: autoDraw = False
+147.1368 	EXP 	Presentation_image_f3_6: autoDraw = False
+147.1368 	EXP 	Presentation_image_f3_7: autoDraw = False
+147.1368 	EXP 	Presentation_image_f3_8: autoDraw = False
+147.1368 	EXP 	Presentation_image_f3_9: autoDraw = False
+147.1368 	EXP 	Presentation_image_f3_10: autoDraw = False
+147.1368 	EXP 	Presentation_image_f3_11: autoDraw = False
+147.1368 	EXP 	Presentation_image_f3_12: autoDraw = False
+147.1368 	EXP 	displayed_choice_image: image = 'LZ_natural\\LZ_natural_28.jpg'
+147.1368 	EXP 	Fixation_cross: autoDraw = True
+148.1349 	EXP 	displayed_choice_image: autoDraw = True
+148.1440 	EXP 	Fixation_cross: autoDraw = False
+148.7157 	DATA 	Keypress: l
+148.7181 	EXP 	Fixation_cross: autoDraw = False
+148.7181 	EXP 	displayed_choice_image: autoDraw = False
+148.7181 	EXP 	perf_review_accuracyval: text = 0.8333333333333334
+148.7181 	EXP 	perf_review_accuracyval: autoDraw = True
+148.7181 	EXP 	text_3: autoDraw = True
+152.9646 	DATA 	Keypress: space
+152.9671 	EXP 	perf_review_accuracyval: autoDraw = False
+152.9671 	EXP 	text_3: autoDraw = False
+152.9671 	EXP 	text_2: autoDraw = True
+153.3104 	DATA 	Keypress: space
+153.9676 	EXP 	text_2: autoDraw = False
+153.9676 	EXP 	text_2: autoDraw = False
+156.0515 	EXP 	window1: mouseVisible = True
