@@ -8,8 +8,8 @@ library(dplyr)
 # File loading. To be replaced with one big file with data from all participants universally.
 
 
-data = read_csv("data/7_new_STLI_2020_Nov_23_1853.csv")
-
+#data = read_csv("data/7_new_STLI_2020_Nov_23_1853.csv")
+data = read_csv("C:\\Users\\Ram\\OneDrive - University of Sussex\\Desktop\\LZ pilot data\\03\\3_new_STLI_updated_2013_Jun_06_0314.csv")
 
 # Correct answer verification through string comparison
 
