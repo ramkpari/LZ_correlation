@@ -9,5 +9,9 @@ Contains all the code,analysis and processing files for LZ correlation experimen
  3. Run the experiment script using the .py file or through the psychopy builder. 
  
  
-#### Depreceted Frame time based versions
-Note , All frame time specified versions have been depreciated and archived. If running any of the versions with predefined frame times, make sure you use the version associated with the referesh of the monitor you plan on using it with. 
+#### Depreciated Frame time based versions
+Note , All frame time specified versions have been depreciated and archived. If running any of the versions with predefined frame times, make sure you use the version associated with the refresh of the monitor you plan on using it with. 
+
+
+## Condition codes used within the experiment 
+EEG triggers are programmed in the experiment to fire at the start of the presentation phase of the stimuli and is based on the type of stimuli and the frequency at which it's being displayed. Example ' 11 ' for Natural images being presented at 1 Hz. First digit indicates stimuli type and second digit indicates the frequency.  **"67"** is used as the trigger to indicate the onset of breaks.
