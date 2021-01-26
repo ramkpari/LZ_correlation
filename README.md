@@ -1,6 +1,8 @@
 # LZ Correlation Experiment
 Contains all the code,analysis and processing files for LZ correlation experiment.
 
+The main experiment file is new_STLI_updated.psyexp and currently has 5 blocks with a break in between (4 in total). At the start of each presentaion phase , a respective EEG trigger is sent based on the stimulus type and stimulus presentation frequency and also durind the break. In total the experiment has 540 trials , equally split across 3 different types of stimulus and stimulus presentation frequency. Note that while the number is equally split across each type and frequency , the number of trials might not be equal across a certain combination of bot stimulus type and frequnecy. 
+
 ## Requirments for the Experiment    
 Experiment requires Psychopy , with atlast version v2020.2.5 and Python with a minimum version of 3.6.2
  
