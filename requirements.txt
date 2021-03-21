@@ -1,0 +1,8 @@
+mne
+imageio
+PIL
+numpy
+pathlib
+jupyter
+matplotlib
+pyplot
