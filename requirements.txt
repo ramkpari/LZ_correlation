@@ -1,4 +1,5 @@
 mne
+scipy
 imageio
 PIL
 numpy
